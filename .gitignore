@@ -1,0 +1,12 @@
+# Ignoring latex files
+*.sty
+*.log
+*.pdf
+*.bst
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls 
+*.out
+*.synctex.gz
