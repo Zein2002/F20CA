@@ -1,12 +1,42 @@
-# Ignoring latex files
-*.sty
-*.log
+## PDFs
 *.pdf
-*.bst
+
+## Core latex/pdflatex auxiliary files:
 *.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls 
+*.lof
+*.log
+*.lot
+*.fls
 *.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.sty
+
+## Intermediate documents: 
+*.dvi
+*.xdv
+*-converted-to.*
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bst
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
 *.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## VSCode Settings
+.vscode/
