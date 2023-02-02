@@ -1,0 +1,412 @@
+[
+    {
+        "question": "In what children's game are participants chased by someone designated \"It\"?",
+        "content": [
+            "Tag",
+            "Simon Says",
+            "Charades",
+            "Hopscotch"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "On a radio, stations are changed by using what control?",
+        "content": [
+            "Tuning",
+            "Volume",
+            "Bass",
+            "Treble"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "Which material is most dense?",
+        "content": [
+            "Silver",
+            "Styrofoam",
+            "Butter",
+            "Gold"
+        ],
+        "correct": 3
+    },
+    {
+        "question": "Which state in the United States is largest by area?",
+        "content": [
+            "Alaska",
+            "California",
+            "Texas",
+            "Hawaii"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "What is Aurora Borealis commonly known as?",
+        "content": [
+            "Fairy Dust",
+            "Northern Lights",
+            "Book of ages",
+            "a Game of Thrones main character"
+        ],
+        "correct": 1
+    },
+    {
+        "correct": 2,
+        "content": [
+            "1998",
+            "1989",
+            "1979",
+            "1800"
+        ],
+        "question": "When did Margaret Thatcher became the first female Prime Minister of Britain?"
+    },
+    {
+        "correct": 2,
+        "content": [
+            "15th April",
+            "12th December",
+            "1st May",
+            "1st August"
+        ],
+        "question": "When is the International Workers' Day?"
+    },
+    {
+        "correct": 2,
+        "content": [
+            "1962",
+            "1963",
+            "1964",
+            "1965"
+        ],
+        "question": "When did China test their first atomic device?"
+    },
+    {
+        "correct": 3,
+        "content": [
+            "1904",
+            "1905",
+            "1908",
+            "1909"
+        ],
+        "question": "When did Commander Robert Peary discover the North Pole?"
+    },
+    {
+        "correct": 0,
+        "content": [
+            "819/sq. km",
+            "602/sq. km",
+            "415/sq. km",
+            "500/sq. km"
+        ],
+        "question": "What is the population density of Kerala?"
+    },
+    {
+        "correct": 1,
+        "content": [
+            "4 km",
+            "25 km",
+            "500 m to 9 km",
+            "150 km"
+        ],
+        "question": "What is the range of missile 'Akash'?"
+    },
+    {
+        "question": "In the U.S., if it's not Daylight Saving Time, it's what?",
+        "content": [
+            "Borrowed time",
+            "Overtime",
+            "Standard time",
+            "Party time"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "Which part of the body are you most likely to \"stub\"?",
+        "content": [
+            "Toe",
+            "Knee",
+            "Elbow",
+            "Brain"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "Which country is largest by area?",
+        "content": [
+            "UK",
+            "USA",
+            "Russia",
+            "China"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "What does the \"F\" stand for in FBI?",
+        "content": [
+            "Foreign",
+            "Federal",
+            "Flappy",
+            "Face"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "The US declared war on which country after the bombing of Pearl Harbor?",
+        "content": [
+            "Japan",
+            "Russia",
+            "Germany",
+            "China"
+        ],
+        "correct": 0
+    },
+    {
+        "correct": 0,
+        "content": [
+            "14th November",
+            "11th December",
+            "15th October",
+            "1st July"
+        ],
+        "question": "When is the World's Diabetes Day?"
+    },
+    {
+        "correct": 0,
+        "content": [
+            "Kelvin",
+            "Celsius",
+            "Centigrade",
+            "Fahrenheit"
+        ],
+        "question": "What is the S.I. unit of temperature?"
+    },
+    {
+        "correct": 0,
+        "content": [
+            "July 21, 1969",
+            "July 21, 1970",
+            "July 21, 1963",
+            "July 21, 1972"
+        ],
+        "question": "When did US astronauts Neil Armstrong and Edwin E. Aldrin land on the moon?"
+    },
+    {
+        "correct": 0,
+        "content": [
+            "1999",
+            "1989",
+            "1979",
+            "1969"
+        ],
+        "question": "When did 19 NATO members and 11 'Partners for Peace' join hands for peace plan for Kosovo Crisis?"
+    },
+    {
+        "question": "An albino gorilla usually has what color fur?",
+        "content": [
+            "Brown",
+            "Black",
+            "White",
+            "Golden"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "When you enter a situation without a definite plan of action, you are said to be \"playing it by\" what?",
+        "content": [
+            "Fingertips",
+            "Ear",
+            "Nose",
+            "Mouth"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "What is commonly known as the \"Emerald City\" in the United States?",
+        "content": [
+            "Palos Verdes, CA",
+            "Seattle, WA",
+            "New York, NY",
+            "Dallas, TX"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "What is the national emblem of Canada?",
+        "content": [
+            "Maple Leaf",
+            "Brown Bear",
+            "Maple Syrup",
+            "Waffle"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "What is the name of the largest freshwater lake in the world?",
+        "content": [
+            "Lake Union",
+            "Lake Superior",
+            "Lake Largest",
+            "Lake Goodwin"
+        ],
+        "correct": 0
+    },
+    {
+        "correct": 1,
+        "content": [
+            "1908 at London",
+            "1980 at Moscow",
+            "1936 at Berlin",
+            "1924 at Paris"
+        ],
+        "question": "When and where was hockey introduced for women in Olympics?"
+    },
+    {
+        "question": "Which of the following consumer goods is the Gerber Products Co. best known for?",
+        "content": [
+            "Potato chips",
+            "Fine wines",
+            "Chewing gum",
+            "Baby Food"
+        ],
+        "correct": 3
+    },
+    {
+        "question": "In which of these household appliances would you find a lint screen?",
+        "content": [
+            "Dishwasher",
+            "Microwave oven",
+            "Clothes dryer",
+            "Trash compactor"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "What are the three primary colors?",
+        "content": [
+            "Red, green, blue",
+            "Magenta, pink, cyan",
+            "Yellow, salmon, brown",
+            "White, grey, black"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "In aviation, what does UFO stand for?",
+        "content": [
+            "Unified Flying Object",
+            "Unitary Flinging Obsession",
+            "United Flag Opposition",
+            "Unidentified Flying Object"
+        ],
+        "correct": 3
+    },
+    {
+        "question": "In aviation, what does UFO stand for?",
+        "content": [
+            "Unified Flying Object",
+            "Unitary Flinging Obsession",
+            "United Flag Opposition",
+            "Unidentified Flying Object"
+        ],
+        "correct": 3
+    },
+    {
+        "correct": 2,
+        "content": [
+            "1789 AD",
+            "1798 AD",
+            "1792 AD",
+            "1729 AD"
+        ],
+        "question": "When did France became Republic?"
+    },
+    {
+        "correct": 2,
+        "content": [
+            "Group A only",
+            "Group B only",
+            "Group A and O",
+            "Group AB only"
+        ],
+        "question": "Of the blood groups A, B, AB and O, which one is transfused into a person whose blood group is A?"
+    },
+    {
+        "question": "What kind of animal traditionally lives in a sty?",
+        "content": [
+            "Cow",
+            "Pig",
+            "Fox",
+            "Teenager"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "The EPA urges people to produce less waste by engaging in efforts to reduce, reuse and what?",
+        "content": [
+            "Recycle",
+            "Rewrap",
+            "Repossess",
+            "Retire"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "What is the second most common gas in the air?",
+        "content": [
+            "Nitrogen",
+            "Oxygen",
+            "Water",
+            "Helium"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "Which month has only 28 days (unless it's a leap year)?",
+        "content": [
+            "March",
+            "September",
+            "June",
+            "Feburary"
+        ],
+        "correct": 3
+    },
+    {
+        "correct": 0,
+        "content": [
+            "1986 at Athens",
+            "1988 at Seoul",
+            "1924 at St. Louis",
+            "1908 at London"
+        ],
+        "question": "When and where was weightlifting introduced in Olympics?"
+    },
+    {
+        "correct": 1,
+        "content": [
+            "1960",
+            "1961",
+            "1962",
+            "1963"
+        ],
+        "question": "When did Yuri Alekseyevich Gagaris of Russia, the first man to reach space, reach space?"
+    },
+    {
+        "question": "What are the dimensions of A4 paper?",
+        "content": [
+            "8.3\" x 11.7\"",
+            "8.5\" x 11\"",
+            "30cm x 50cm",
+            "8.5\" x 14\""
+        ],
+        "correct": 0
+    },
+    {
+        "correct": 2,
+        "content": [
+            "Ethiopia",
+            "Nigeria",
+            "Zambia",
+            "Chad"
+        ],
+        "question": "Which of these African countries is situated south of the equator?"
+    }
+]
