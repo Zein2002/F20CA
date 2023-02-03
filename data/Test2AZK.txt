@@ -1,0 +1,225 @@
+﻿Test 2
+In this test, Z is the host and A + K are users.
+
+Z - Hello, participants, how are you guys doing today?
+
+K - Good. Thank you.
+
+Z - Can I have your names?
+
+K - Katie
+
+A - Abdullah.
+
+Z - Nice to meet you, Katie and Abdullah. Would you like to play 'Who wants to be a millionaire?'
+
+A - I'd love to. 
+
+K - Yes, please. 
+
+Z - Good. First question. On a radio, stations are changed by using what control?
+
+K - FM.
+
+A - No, that's frequency. Um, tuning knob.
+
+K - Sure 
+
+Z - Is tuning knob your final answer? 
+
+A - Yes.
+
+K - Yes.
+
+Z - Correct. It is the tuning knob.
+
+K - Well done. 
+
+A - Thank you. 
+
+Z - Question 2. When did China test their first atomic device?
+
+A - Can we have hint, please? 
+
+K - Yea.
+
+Z - Of course you can. 1904 and 1905, 1908, 1909.
+
+K - I have no idea. I like 08, but that's just because it sounds pretty.
+
+Z - Is 1908 your final answer?
+
+A - We'll go with that.
+
+Z - Good. That is the wrong answer. It is 1909.
+
+K - Ohh we were only 1 off.
+
+Z - Good try. Next question. What country is the largest area?
+
+A - Russia. 
+
+K - I was thinking that.
+
+A - Were you now? Sure.
+
+Z - Do you agree on Russia? 
+
+K - Yes.
+
+A - Yes, we do. 
+
+Z - Correct. Good job.
+
+Z - Next question, what does the F stand for in FBI 
+
+A - Fed, fed
+
+K - Few...
+
+A - Federal Bureau of Investigation?
+
+K - He only asked for the F.
+
+Z - Do you agree on Federal?
+
+K - Yes.
+ 
+A - Yes.
+
+Z - Correct. Good job.
+
+Z - Next question. The US declared war on which country after the bombing of Pearl Harbor?
+
+K - I don't know. 
+
+A - You don't know this? Come on.
+
+K - Somewhere.
+
+Z - You guys seem to be on the disagreement. Could you give me a final answer? 
+
+K - Yeah, answer.
+
+A - Japan.
+
+Z - Japan is your final answer?
+
+A - Yes.
+
+Z - Correct. It is Japan.
+
+Z - Next question. When is the world's diabetes day?
+
+A - You know this one?
+
+K - Well, it's not happened this year so far, so we can rule out January.
+
+A - OK. Can we have a hint, please?
+
+K - Oh, yeah
+
+Z - Sure. The 14th of November, the 11th of December, 15th of October or the 1st of July. 
+
+A - So that helps. 
+
+K - It, it could be just before Christmas, like a warning sign.
+
+
+A - Ooh, yea, yea, yea
+
+A - So can we do 11th? No. December 15th please. Is that?
+
+K - Wait, no, 11th of December.
+
+A - 11th of December.
+
+Z - Is your final answer the 11th of December 
+
+A - Yes.
+
+K - I feel like it's wrong.
+
+Z - Unfortunately, is the 14th of November.
+
+K - Before Halloween. Halloween? No, that's October.
+
+Z - Next question. What is the SI unit of temperature?
+
+A - Um, Kelvin
+
+K - Sure.
+
+Z - You guys agree on Calvin? 
+
+K - Yeah.
+
+Z - Correct. Good job.
+
+Z - Next question. An albino gorilla usually has what color of fur?
+
+A - Purple 
+
+K - White. No.
+
+A - Purple.
+
+K - White.
+
+A - No. 
+
+K - I am so sure I know this one. It's white
+
+A - It's spotted purple.
+
+K - No, that doesn't make sense. Gorillas don't have spots and they're white anyway. 
+
+Z - You seem to be on a disagreement. Would you like a hint or would you maybe like to give a final answer?
+
+A - A hint please.
+
+Z - The options are brown, black, white or golden. 
+
+K - Purple wasn't an answer, so you're wrong.
+
+A - But, but, the thing is, it's what's closest to purple. It's gold. Sorry, black. Black is the closest
+
+Z - Is your final answer black? 
+
+K - No. 
+
+A - Yes.
+
+K - No. It's white.
+
+Z - You don't seem to be agreeing on a question. Uh, we can move on. 
+
+K - Can we move on? I'm not putting your wrong answer.
+
+Z - Next question. What is commonly known as the Emerald City in the United States?
+
+K - I thought this was about Wizard of Oz.
+
+A - Kansas?
+
+K - Yeah, Wizard of Oz.
+
+A - Kansas.
+
+Z - Incorrect. Would you like a hint? 
+
+A - Yes please.
+
+Z - Palos Verdes, California. Seattle, Washington. New York, New York. Dallas, Texas.
+
+K - Seattle. 
+
+A - Go for it.
+
+K - I have no idea.
+
+Z - Seattle is correct.
+
+A - You can stop it now.
+
+K - I got that one.

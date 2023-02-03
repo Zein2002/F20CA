@@ -1,0 +1,219 @@
+Test 1
+In this test, L is the host and A + J are users.
+
+
+L - Hi, how are you?
+
+J - It's a good thank you. 
+
+A - Good, good. 
+
+L - What are your names? 
+
+J - My name is Jack. 
+
+A - My name is Aron
+
+L - Hi, Jack and Aron. Do you wanna play a quiz? 
+
+J - Yes. 
+
+A - Yes.
+
+L - OK. So here comes the first question. Which state in the United States is largest by area?
+
+J - I think Texas is bigger than California.
+
+A - I think just Texas 
+
+J - Probably Texas, I think Texas.
+
+A - Yeah
+
+L - Is Texas your final answer?
+
+J - Yes.
+
+A - Yes.
+
+L - The answer is correct.
+
+L - When did Margaret Thatcher become the first female Prime Minister of Britain?
+
+J - 1979
+
+A - I have no idea
+
+J - I actually know that it is 1979.
+
+L - 1979 is the correct answer, well done.
+
+L - When did China test their first atomic device?
+
+A - I have no idea
+
+J - I don't know.
+
+L - Would you like any hints?
+
+A - Yes.
+
+J - Yes.
+
+L - So we have four options 1961, 1962, 1964 or 1965.
+
+J - 1965? What do you think?
+
+A - I think it is 1964.
+
+J - I think you might be right.
+
+A - Let's go with 1964.
+
+J - OK.
+
+L - Well done.
+
+L - What are the dimensions of an A4 paper?
+
+A - I do not know. 
+
+J - Can we have a clue?
+
+L - Yes, of course. So there are four answers possible either it's 8.3 by 11.7, inches, 8.5 by 11 inches 30 times 50 centimeters, or 8.5 by 14 inches.
+
+J - 8.5 by 11 inches.
+
+A - Yes.
+
+L - That was the wrong answer. The correct answer was 8.3 by 11.7 inches.
+
+L - When did Yuri Gagarin of Russia, the first man to reach space, reach space?
+
+J - 1969?
+
+A - No, earlier, 1966.
+
+J - I have no idea.
+
+L - Do you want options? 
+
+J - Yes please. 
+
+A - Yes.
+
+L - So there is 1960, 1961, 1962 or 1963.
+
+J - 1963?
+
+L - So you wanna go with 1963?
+
+J - Actually I'm gonna go with 61.
+
+A - OK, let's go with that.
+
+L - That was the correct answer.
+
+
+###################################### THIS QUESTION REQUIRES THE OPTIONS TO BE REVEALED AT THE START #####################################
+L - A light year is related to what? A-Energy, B-speed, C-distance, D-intensity?
+
+A - C
+
+J - Let's go with C.
+
+L - Is C your final answer?
+
+A - Yes.
+
+L - That's correct.
+
+###################################### END OF QUESTION ######################################
+
+L - What was the name of the American general who led the revolt against the British and declared American independence?
+
+J - I feel like I should know this, but I don't
+
+A - I don't feel like I should know this, but I don't.
+
+J - Are there any options? 
+
+L - Yes. George Washington, George Washington, Bill Clinton. George Bush none of the above.
+
+A - I'm assuming George Washington.
+
+J - We'll go with that, yes. 
+
+L- That's correct.
+
+L - Which month has only 28 days? Unless it's a leap year?
+
+A - February
+
+J - February
+
+L - Is that your final answer?
+
+J - Yeah.
+
+L - Correct.
+
+L - What is the second most common gas in the air?
+
+A - Hydrogen is the first.
+
+J - In the air, not oxygen?
+
+A - No, the air is about 30% oxygen.
+
+J - Then oxygen the second?
+
+A - Yes.
+
+L - Oxygen, that's correct.
+
+L - The the EPA urges people to produce less waste by engaging in efforts to reduce reuse and what?
+
+A -Recycle.
+
+J - Recycle.
+
+L - Is that your final answer? 
+
+A - Yes.
+
+J - Yes.
+
+L - That's correct.
+
+L - What kind of animal traditionally lives in a sty?
+
+A - What.
+
+J - What is a sty?
+
+A - I have no idea.
+
+J - I don't know either. Could you clarify what to sty is?
+
+L - No, I cannot, but would you like options?
+
+A - Yes.
+
+J - Yes please.
+
+L - Cow, pig, fox, teenager.
+
+A - Is it a fox, they live is wholes?
+
+J - Yes, and I would say a cow lives in a stable more than a sty.
+
+A - Yeah and they are just out there.
+
+J - Yeah, let's go with fox.
+
+L - Is that your final answer?
+
+A - Yeah.
+
+L - That is incorrect, the correct answer was pig.
