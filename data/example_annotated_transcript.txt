@@ -1,0 +1,49 @@
+Transcribed by: Jason Sweeney
+Status: Complete
+
+YouTube Link: https://www.youtube.com/watch?v=g44f9mCMzpA
+Dialogue Annotation Options:
+[question()] [offer-answer()] [options()] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat] [accept-answer] [final-answer()] [confirm-agreement] [confirm-final-answer]
+
+User/System Format:
+U1: User 1 | U2: User 2 | S: System
+
+
+
+-------- Transcript --------
+
+S: where are you most likely to pay a service charge? [question (#567)]
+S: in a church on a tennis court, at a petrol station in a restaurant? [options (church,tennis,petrol_station,restaurant)]
+U2: I think I know this one, I would say in a restaurant [offer-answer(restaurant)]
+U2: I would hope that that's right [check-answer]
+U2: Because if we're the first couple to ever go out in the first question I wouldn't be surprised [chit-chat]
+U1: you pay the bill I pay the service charge [chit-chat]
+U2: okay in a restaurant [final-answer (restaurant)] 
+S: it's the right answer, you got 500 pounds [accept-answer]
+U2: 500 in the bank [chit-chat]
+
+S: which sport is most associated with Catterick Linfield park and Ripon? [question #789]
+S: cricket, football, greyhound racing, horse racing [options (cricket, football, greyhound racing, horse racing)]
+U1: horse racing [offer-answer (horse racing)]
+U2: it was the first thing that popped into my head [agreement]
+U2: and the second thing that popped in was I really hope Hillary knows this [chit-chat]
+U2: so yes, horse racing [final-answer (horse racing)]
+U1: we're pretty confident about it [agreement]
+S: it's the right answer, you have 1,000 pounds [accept-answer]
+
+S: Which former Blue Peter presenter is the mother of a famous daughter called Sophie? [question #234]
+S: Valerie singleton, Tina Heath, Janet Ellis, Lesley Judd? [options (Valerie Singleton, Tina Heath, Janet Ellis, Lesley Judd)]
+U2: I know that one [offer-to-answer]
+U1: thank goodness for that [chit-chat]
+U2: well see no when you say that then I panic and think well maybe I don't [chit-chat]
+U2: okay um, Sophie is now known as Sophie ellis-bextor [chit-chat?]
+U2: so I'm assuming that it's Janet Janet Ellis [offer-answer Janet Ellis]
+U1: good thinking [agreement]
+U2: that's my way of thinking [chit-chat]
+U1: I like that [agreement]
+U2: okay [agreement]
+U2: would you agree? [ask-agreement]
+U1: totally [agreement]
+S: final answer? [confirm-agreement]
+U1: final answer [confirm-final-answer]
+S: yeah it's the right answer [accept-answer]
