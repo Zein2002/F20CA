@@ -1,8 +1,12 @@
 Transcribed by: 
 Status: Incomplete
+
 YouTube Link: https://www.youtube.com/watch?v=bDugrVUWdzg
-Potential Annotation Options:
+Dialogue Annotation Options:
 [agreement] [offer-answer] [chit-chat] [accept-answer] [final-answer] [confidence] [offer-agreement]
+
+User/System Format:
+U1: User 1 | U2: User 2 | S: System
 
 
 
