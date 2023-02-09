@@ -2,8 +2,8 @@ Transcribed by: Aron
 Status: Complete
 YouTube Link: https://www.youtube.com/watch?v=mbsnsKAWRqU
 
-Dialogue Annotation Options:
-[question()] [offer-answer()] [options()] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
+Dialogue Annotation options
+[question] [offer-answer()] [options] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
 [accept-answer] [final-answer()] [confirm-agreement] [confirm-final-answer]
 
 User/System Format:
@@ -13,37 +13,37 @@ U1: User 1 | U2: User 2 | S: System
 
 -------- Transcript --------
 
-S: what's the weather like if the day is described as nippy [question (#???)]
-S: cold, wet, foggy, hot [options (cold,wet,foggy,hot)]
+S: what's the weather like if the day is described as nippy [question]
+S: cold, wet, foggy, hot [options]
 U2: cold [offer-answer (cold)]
 U1: yeah [agreement]
 S: it's the right answer you have 100 pounds, well played [accept-answer]
 
-S: which term of endearment is also a word meaning expensive? [question (#???)]
-S: dear, darling, honey, beloved [options (dear,darling,honey,beloved)]
+S: which term of endearment is also a word meaning expensive? [question]
+S: dear, darling, honey, beloved [options]
 U1: that would be dear [final-answer (dear)]
 S: you have 200 pounds [accept-answer] 
 
-S: by what abbreviation of the name was Margaret Thatcher popularly known? [question (#???)] 
-S: meg, peggy, maggie, marge [options (meg,peggy,maggie,marge)]
+S: by what abbreviation of the name was Margaret Thatcher popularly known? [question] 
+S: meg, peggy, maggie, marge [options]
 U2: pretty sure it is maggie [offer-answer (maggie)]
 U1: yeah [agreement]
 S: you have 300 pounds [accept-answer]
 
-S: if you approach something with boldness and courage what are you said to grasp? [question (#???)]
-S: the bramble, the thorn, the nettle, the holly [options (the bramble,the thorn,the nettle,the holly)]
+S: if you approach something with boldness and courage what are you said to grasp? [question]
+S: the bramble, the thorn, the nettle, the holly [options]
 U2: the nettle I'm sure [offer-answer (nettle)]
 U1: the nettle yeah [agreement]
 S: that's right you got 500 punds [accept-answer]
 
-S: which department in a company is sometimes known as Human Resources? [question (#???)] 
-S: account, marketing, personnel, information technology [options (account,marketing,personnel, information technology)]
+S: which department in a company is sometimes known as Human Resources? [question] 
+S: account, marketing, personnel, information technology [options]
 U1: personnel? [offer-answer (personnel)]
 U2: uhum [agreement]
 S: right answer you've got a thousand pounds [accept-answer]
 
-S: who presents the ITV dating show love on a Saturday night? [question (#???)]
-S: Davina McCall, Ulrika Jonsson, Denise Van Outen, June Sarpong [options (Davina McCall, Ulrika Jonsson, Denise Van Outen, June Sarpong)] 
+S: who presents the ITV dating show love on a Saturday night? [question]
+S: Davina McCall, Ulrika Jonsson, Denise Van Outen, June Sarpong [options] 
 U2: I have no idea [chit-chat]
 U1: one topic was you probably don't watch that much television [chit-chat]
 U1: but I'm pretty sure that's Davina [offer-answer (Davina McCall)]
@@ -56,8 +56,8 @@ U2: go for it [agreement]
 yeah [agreement]
 S: that's the right answer you've got 2000 pounds [accept-answer]
 
-S: which invaders of Britain are sometimes referred to as Danes [question (#???)] 
-S: Saxons, Romans, Spanish, Vikings [options (Saxons,Romans,Spanish,Vikings)]
+S: which invaders of Britain are sometimes referred to as Danes [question] 
+S: Saxons, Romans, Spanish, Vikings [options]
 U1: it is one of two isn't it? [ask-agreement] 
 U2: uhum [confirm-agreement]
 U1: well it's not the Romans and it's not the Spanish is it? [reject-option (Romans,Spanish)] 
@@ -70,8 +70,8 @@ U1: so if it Nordic it is got to be the Vikings [offer-answer (Vikings)]
 U2: yeah it's got to be [agreement]
 S: it's the right answer [accept-answer]
 
-S: which word follows Palazzo to give the name of an item of clothing? [question (#???)]
-S: jacket, pants, shirt, boot [options (jacket,pants,shirt,boot)]
+S: which word follows Palazzo to give the name of an item of clothing? [question]
+S: jacket, pants, shirt, boot [options]
 U1: jacket palazzo pants palazzo shirt palazzo boot palazzo follows?[chit-chat]
 U2: no it's the other way around [chit-chat]
 U1: oh so it's palazzo jacket I was gonna say [chit-chat] 
@@ -81,8 +81,8 @@ U1: palazzo pants? [offer-answer (pants)]
 U2: yeah yep yeah [agreement]
 S: it's the right answer [accept-answer]
 
-S: which country was chosen to co-host football's Euro 2008 with Austria? [quesstion (#???)]
-S: Switzerland, Germany, Slovakia, Liechtenstein [options (Switzerland, Germany, Slovakia, Liechtenstein)]
+S: which country was chosen to co-host football's Euro 2008 with Austria? [quesstion ()]
+S: Switzerland, Germany, Slovakia, Liechtenstein [options]
 U1: well it's one of two is isn't it Switzerland or Germany surely [reject-option (Slovakia,Liechtenstein)]
 U2: uhm [chit-chat]
 U1: it's not Slovakia because because it's too far [reject-option (Slovakia)]

@@ -2,8 +2,9 @@ Transcribed by: Katie
 Status: Complete
 YouTube Link: https://www.youtube.com/watch?v=VdMNuc9LTrU
 
-Dialogue Annotation Options:
-[question()] [offer-answer()] [options()] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat] [accept-answer] [final-answer()] [confirm-agreement] [confirm-final-answer()] [reject-option()] [reject-option-agreement()]
+Dialogue Annotation options
+[question] [offer-answer()] [options] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
+[accept-answer] [final-answer()] [confirm-agreement] [confirm-final-answer]
 
 User/System Format:
 U1: User 1 | U2: User 2 | S: System
@@ -13,8 +14,8 @@ U1: User 1 | U2: User 2 | S: System
 -------- Transcript --------
 
 S: Question number one is for 500 pounds [chit-chat]
-S: Which of these cities is most associated with Robin Hood? [question()]
-S : Nottingham, Leicester, Manchester, Oxford [options(Nottigham, Leicester, Manchester, Oxford)]
+S: Which of these cities is most associated with Robin Hood? [question]
+S: Nottingham, Leicester, Manchester, Oxford [options]
 U1: Well [chit-chat]
 U2: Well, it's not Manchester is it? [reject-option(manchester)]
 U1: No [reject-option-agreement(manchester)]
@@ -25,8 +26,8 @@ S: Final answer? [final-answer(nottingham)]
 U1: Final answer. [confirm-final-answer(nottingham)]
 S: That is a right answer [accept-answer]
 
-S: How many girls are there in the group Girls Aloud [question()]
-S: Three, four , five, six [options(three, four, five, six)]
+S: How many girls are there in the group Girls Aloud [question]
+S: Three, four , five, six [options]
 U1: That's a very similar sort of question to unter den Linden isn't it really [chit-chat]
 U2: Let's see what, you got Cheryl Tweedy [chit-chat] 
 U2: You've got the one called Nadine, [chit-chat]
@@ -46,8 +47,8 @@ S: Final answer? [final-answer(five)]
 U1: Yes [confirm-final-answer(five)]
 S: It's the right answer [accept-answer]
 
-S: Which of these politicians is the former MP for Chesterfield [question()]
-S: Tony Benn, Norman Tebbit, David Steel, Neil Kinnock [options(tony benn, norman tebbit, david steel, neil kinnock)]
+S: Which of these politicians is the former MP for Chesterfield [question]
+S: Tony Benn, Norman Tebbit, David Steel, Neil Kinnock [options]
 U1: I don't think it's David Steel [reject-option(david steel)]
 U2: Yea, he's Scotland wasn't he[reject-option-agreement(david steel)]
 U1: yeah Scotland or Cumbria [chit-chat]
@@ -72,7 +73,7 @@ S: you just won $10,000 [accept-answer]
 
 S: Which of these colors does not appear on the national flag of Brazil? [question] 
 S: John Thompson's plain [chit-chat]
-S: Green, yellow, red, blue [options(green, yellow, red, blue)]
+S: Green, yellow, red, blue [options]
 U1: Red [offer-answer(red)]
 U2: Red [agreement]
 U1: Absolutely [agreement]

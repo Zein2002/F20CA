@@ -2,8 +2,8 @@ Transcribed by: Jason
 Status: Complete
 YouTube Link: https://www.youtube.com/watch?v=pb3DqMkTZ_k
 
-Dialogue Annotation Options:
-[question()] [offer-answer()] [options()] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
+Dialogue Annotation options
+[question()] [offer-answer()] [options] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
 [accept-answer] [final-answer()] [confirm-agreement] [confirm-final-answer]
 
 User/System Format:
@@ -13,8 +13,8 @@ U1: User 1 | U2: User 2 | S: System
 
 -------- Transcript --------
 
-S: which of these countries shares a border with Russia? [question ()]
-S: Pakistan, Nepal, Bangladesh, Mongolia [options (pakistan, nepal, bangladesh, mogolia)]
+S: which of these countries shares a border with Russia? [question]
+S: Pakistan, Nepal, Bangladesh, Mongolia [options]
 U1: Mongolia [offer-answer (mongolia)]
 U2: yeah [agreement]
 U2: We both think it's Mongolia [final-answer (mongolia)]
@@ -25,7 +25,7 @@ U1: Mongolia [confirm-final-answer]
 S: You just won 64,000 [accept-answer]
 
 U1: Which of these bishops is not automatically a member of the House of Lords? [question()]
-U1: Winchester, Durham, London, Salisbury [options (Winchester, Durham, London, Salisbury)]
+U1: Winchester, Durham, London, Salisbury [options]
 S: it's worth 125,000 pounds [chit-chat]
 U1: That's tough, bishop of durham definitely isn't, I don't know that [chit-chat]
 U1: Whenever they have to be a bishop, someone always talks about the bishop of Durham, so therefor I would assume that he is automatically a member of the house of lords [reject-option (Durham)]
@@ -43,34 +43,34 @@ U2: Yes [confirm-final-answer]
 U1: Yes [confirm-final-answer]
 S: You had 64,000 pounds, you just lost 32,000 pounds [accept-answer]
 
-S: in which sport do fielders wear one oversized glove for catching the ball? [question ()]
-S: Squash, Tennis, Snooker, Baseball [options (sqash, tennis, snooker, baseball)]
+S: in which sport do fielders wear one oversized glove for catching the ball? [question]
+S: Squash, Tennis, Snooker, Baseball [options]
 U1: Baseball, baseball [offer-answer (baseball)]
 U2: Baseball [final-answer (baseball)]
 S: Baseball, it's the right answer, you've got 200 pounds [accept-answer]
 
-S: which word goes in front of "reaction", "gang" and "letter" to make well-known phrases [question ()]
-S: cable, chain, clamp, clasp [options (cable, chain, clamp, clasp)]
+S: which word goes in front of "reaction", "gang" and "letter" to make well-known phrases [question]
+S: cable, chain, clamp, clasp [options]
 U2: My turn? [offer-to-answer]
 U1: Your turn [agreement]
 U2: chain [final-answer (chain)]
 S: It's the right answer you've got 300 pounds [accept-answer]
 
-S: what name is given to a costly ornamental building with no practical purpose [question ()]
-S: Colly, Nolly, Folly, Bolly [options (colly, nolly, folly, bolly)]
+S: what name is given to a costly ornamental building with no practical purpose [question]
+S: Colly, Nolly, Folly, Bolly [options]
 U2: I wish it was Bolly, but it's not [reject-option (bolly)]
 U1: A glass of folly, folly [offer-answer (folly)]
 U2: yeah, folly [agreement]
 S: 500 pounds, right answer [accept-answer]
 
-S: in cookery what name is given to a puree of stewed fruit mixed with cream or custard [question ()]
-S: Fool, Fondue, Fricasse, fusilli [options (fool, fondue, fricasse, fusilli)]
+S: in cookery what name is given to a puree of stewed fruit mixed with cream or custard [question]
+S: Fool, Fondue, Fricasse, fusilli [options]
 U2: Oh it's got to be Fool [offer-answer (fool)]
 U1: Fool [agreement]
 S: Right answer, 1000 pounds, well played [accept-answer]
 
-S: which is the only four-legged animal to appear in the title of a Shakespeare play [question ()]
-S: Horse, Rat, Lion, Shrew [options (horse, rat, lion, shrew)]
+S: which is the only four-legged animal to appear in the title of a Shakespeare play [question]
+S: Horse, Rat, Lion, Shrew [options]
 U1: it's uh, I was worried until we saw shrew [offer-answer (shrew)]
 U2: Yeah, so was i [agreement]
 U2: Teaming of the rat [chit-chat]
@@ -81,8 +81,8 @@ U1: Final answer [confirm-final-answer]
 U2: Yes [confirm-final-answer]
 S: It's the right answer, you've got 2000 pounds [accept-answer]
 
-S: which of these is a phrase for a piece of damning and irrefutable evidence in a criminal prosecution? [question ()]
-U1: smoking gun, smoking fish, smoking paper, smoking book [options (smoking gun, smoking fish, smoking paper, smoking book)]
+S: which of these is a phrase for a piece of damning and irrefutable evidence in a criminal prosecution? [question]
+U1: smoking gun, smoking fish, smoking paper, smoking book [options]
 U1: They usually talk about this in um, american presidential, campaigns, you know, the smoking gun, I think, is the thing [offer-answer (chit-chat)]
 U2: That's the one that I would automatically go for, but I think that's what it is [offer-answer (smoking gun)]
 U1: Shall we say final answer? [ask-agreement]
@@ -91,8 +91,8 @@ U1: Smoking gun [final-answer (smoking gun)]
 U2: Smoking gun [agreement]
 S: It's the right answer, you've got 4,000 pounds [accept-answer]
 
-S: bikini atoll lies in which ocean? [question ()]
-S: Atlantic, Pacific, Arctic, Indian [options (atlantic, pacific, arctic, indian)]
+S: bikini atoll lies in which ocean? [question]
+S: Atlantic, Pacific, Arctic, Indian [options]
 U2: I give up [chit-chat]
 U1: I feel very strongly that I know, the [chit-chat]
 U1: Because of the, it's where they did the nuclear tests in the, in the fifties and [chit-chat]
