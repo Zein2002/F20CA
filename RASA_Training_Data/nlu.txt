@@ -209,116 +209,102 @@ nlu:
     - Why are you agreeing with him?
     - He's very bright, Ross
 
-- intent: confirm-agreement
-  examples: |
-    - Yes.
-    - Final answer?
-    - Final answer
-    - Final answer?
-    - Final answer?
-    - Is that your final answer?
-    - Final answer?
-    - uhum
-    - Final answer?
-    - Final answer?
-    - Final answer?
-
 - intent: offer-answer
   examples: |
-    - He might have visited the others but it's Nottingham, isn't it?
-    - it's five Chris
-    - Alright, five
-    - Kinnock?
-    - My leanings are for Tony Ben
-    - Tony Benn? Tony Benn?
-    - Red
-    - Red
-    - Well I think it's pantomime
-    - Well, it's got to be soap on a rope
+    - he might have visited the others but it's [nottingham](answer), isn't it?
+    - it's [five](answer) chris
+    - alright, [five](answer)
+    - kinnock?
+    - my leanings are for tony ben
+    - tony benn? tony benn?
+    - [red](answer)
+    - [red](answer)
+    - well i think it's [pantomime](answer)
+    - well, it's got to be soap on a rope
     - the baby?
-    - Travel?
-    - I think it's D
-    - well, well, I've been thinking it's coffee
-    - opera
-    - I'm, I've, I would have thought Georgette but that's just a first, you know
-    - Ok, Georgette
-    - Oh, it is Florence then
-    - It's Florence.
-    - It is Florence
-    - It is Florence
-    - I think it's Florence
-    - It's Benny Hill
-    - I think, I think it's archeology
-    - cold
-    - pretty sure it is maggie
-    - the nettle I'm sure
-    - personnel?
-    - but I'm pretty sure that's Davina
-    - so if it Nordic it is got to be the Vikings
-    - palazzo pants?
-    - it's Switzerland isn't it?
-    - Mongolia
-    - I'd be inclined to go with London
-    - Something doesn't ring true about the bishop of london
-    - Baseball, baseball
-    - A glass of folly, folly
-    - Oh it's got to be Fool
-    - it's uh, I was worried until we saw shrew
-    - They usually talk about this in um, american presidential, campaigns, you know, the smoking gun, I think, is the thing
-    - That's the one that I would automatically go for, but I think that's what it is
-    - I think it's pacific
+    - [travel](answer)?
+    - i think it's d
+    - well, well, i've been thinking it's [coffee](answer)
+    - [opera](answer)
+    - i'm, i've, i would have thought [georgette](answer) but that's just a first, you know
+    - ok, [georgette](answer)
+    - oh, it is [florence](answer) then
+    - it's [florence](answer).
+    - it is [florence](answer)
+    - it is [florence](answer)
+    - i think it's [florence](answer)
+    - it's benny hill
+    - i think, i think it's [archeology](answer)
+    - [cold](answer)
+    - pretty sure it is [maggie](answer)
+    - the [nettle](answer) i'm sure
+    - [personnel](answer)?
+    - but i'm pretty sure that's davina
+    - so if it nordic it is got to be the [vikings](answer)
+    - palazzo [pants](answer)?
+    - it's [switzerland](answer) isn't it?
+    - [mongolia](answer)
+    - i'd be inclined to go with [london](answer)
+    - something doesn't ring true about the bishop of [london](answer)
+    - [baseball](answer), [baseball](answer)
+    - a glass of [folly](answer), [folly](answer)
+    - oh it's got to be [fool](answer)
+    - it's uh, i was worried until we saw [shrew](answer)
+    - they usually talk about this in um, american presidential, campaigns, you know, the smoking gun, i think, is the thing
+    - that's the one that i would automatically go for, but i think that's what it is
+    - i think it's [pacific](answer)
 
 - intent: final-answer
   examples: |
-    - Final answer?
-    - Final answer?
-    - Final answer?
-    - Final answer?
-    - Yes, travel. Travel
-    - Travel.
-    - I think it has to be. Yes, it is my final answer
-    - Benny Hill
-    - that would be dear
-    - ome on then, Switzerland, final asnwer
-    - We both think it's Mongolia
-    - Bishop of london
-    - Baseball
-    - chain
-    - It's uh, shrew
-    - Smoking gun
-    - Pacific, final answer
+    - final answer?
+    - final answer?
+    - final answer?
+    - final answer?
+    - yes, [travel](answer). [travel](answer)
+    - [travel](answer).
+    - i think it has to be. yes, it is my final answer
+    - benny hill
+    - that would be [dear](answer)
+    - ome on then, [switzerland](answer), final asnwer
+    - we both think it's [mongolia](answer)
+    - bishop of [london](answer)
+    - [baseball](answer)
+    - [chain](answer)
+    - it's uh, [shrew](answer)
+    - smoking gun
+    - [pacific](answer), final answer
 
 - intent: confirm-final-answer
   examples: |
-    - Final answer.
-    - Yes
-    - Final answer.
-    - Final answer.
-    - Final answer.
+    - final answer.
+    - yes
+    - final answer.
+    - final answer.
+    - final answer.
 
 - intent: reject-option
   examples: |
-    - Well, it's not Manchester is it?
-    - I don't think it's David Steel
-    - No, I don't believe so
-    - I don't think Norman Tebbit worked up north for an MP
-    - yeah yeah there is, but there ain't no red on there
-    - well it's not the Romans and it's not the Spanish is it?
-    - well it's one of two is isn't it Switzerland or Germany surely
-    - it's not Slovakia because because it's too far
-    - we lost now and so I don't think it's Germany
-    - no I don't think it's Slovakia
-    - it's not Liechtenstein
-    - it's not Germany because Germany have got 2000 and they've got 2010 they wouldn't
-    - Whenever they have to be a bishop, someone always talks about the bishop of Durham, so therefor I would assume that he is automatically a member of the house of lords
-    - So is Salisbury, so is Winchester
-    - I wish it was Bolly, but it's not
-    - It would be the pacific or the indian because I, I would stake the farm and the fact that it's not the atlantic or the arctic
+    - well, it's not [manchester](answer) is it?
+    - i don't think it's david steel
+    - no, i don't believe so
+    - i don't think norman tebbit worked up north for an mp
+    - yeah yeah there is, but there ain't no [red](answer) on there
+    - well it's not the romans and it's not the spanish is it?
+    - well it's one of two is isn't it switzerland or germany surely
+    - it's not [slovakia](answer) because because it's too far
+    - we lost now and so i don't think it's [germany](answer)
+    - no i don't think it's [slovakia](answer)
+    - it's not [liechtenstein](answer)
+    - it's not [germany](answer) because [germany](answer) have got 2000 and they've got 2010 they wouldn't
+    - whenever they have to be a bishop, someone always talks about the bishop of [durham](answer), so therefor i would assume that he is automatically a member of the house of lords
+    - so is salisbury, so is winchester
+    - i wish it was [bolly](answer), but it's not
+    - it would be the pacific or the indian because i, i would stake the farm and the fact that it's not the atlantic or the arctic
 
 - intent: reject-option-agreement
   examples: |
-    - No
-    - Yea, he's Scotland wasn't h
-    - No red
+    - no
+    - yea, he's scotland wasn't h
+    - no [red](answer)
     - yeah
 
