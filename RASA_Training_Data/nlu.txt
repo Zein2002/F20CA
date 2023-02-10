@@ -1,0 +1,324 @@
+version: "3.1"
+
+nlu:
+- intent: offer-to-answer
+  examples: |
+    - You know this
+    - I think
+    - I was gonna say wasps, uhm, I don't know
+    - Florence is a different, uhm
+    - My turn?
+
+- intent: check-answer
+  examples: |
+    - Do you know this one?
+    - Do you know?
+    - Do you know this one?
+    - Could it be wasps?
+    - Or are we gonna go with worms?
+    - region, isn't it?
+    - Oh, is it not?
+    - It is Florence or Genoa and Genoa is likely north, quite a bit north of Florence
+    - Do you know that
+    - Is that where they did what, they did nuclear tests?
+
+- intent: agreement
+  examples: |
+    - It is Nottingham
+    - Five people
+    - Tony Benn
+    - Red
+    - Absolutely
+    - it's 100 percent
+    - C. Red.
+    - Yeah, I think so too
+    - Yes
+    - Travel.
+    - It's Man United
+    - yeah, yeah I guess it is
+    - Americano's got to be coffee
+    - I think it's opera, yeah
+    - Yeah
+    - Ok
+    - I'm happy to go with your
+    - No, absolutely
+    - Yeah. Benny Hill
+    - I think I'm right but I'm not a hundred percent sure but I think, I am prepared to take apart on that
+    - I do
+    - yeah
+    - yeah
+    - the nettle yeah
+    - uhum
+    - I've got no idea with this but I'm very happy to go with what
+    - I'm sure it's Davina
+    - come on
+    - yeah
+    - go for it
+    - yeah
+    - yeah it's got to be
+    - yeah yep yeah
+    - I'm happy to follow you on this one
+    - yeah
+    - Yes
+    - yeah
+    - Yeah, I think so
+    - Your turn
+    - yeah, folly
+    - Fool
+    - Yeah, so was i
+    - Shrew
+    - yes
+    - Smoking gun
+    - If you're sure, Ross
+    - Yes I would go with you on that
+    - I agree with Ross
+
+- intent: ask-agreement
+  examples: |
+    - Not absolutely, well I don't know, what's your percentage of certainty
+    - Do you agree?
+    - do you?
+    - are you sure
+    - Are you happy to go with it?
+    - Are you sure? Cause it is your charity too.
+    - Do you think you're right?
+    - final answer
+    - it is one of two isn't it?
+    - do we?
+    - Should we go
+    - Shall we say final answer?
+    - No, um, should we say Pacific, final answer?
+
+- intent: chit-chat
+  examples: |
+    - Question number one is for 500 pounds
+    - Well
+    - Somebody who robbed him
+    - That's a very similar sort of question to unter den Linden isn't it really
+    - Let's see what, you got Cheryl Tweedy
+    - You've got the one called Nadine,
+    - You've got the ginger one, Miller,
+    - And the other two Nicola, Kimberly.
+    - Yeah
+    - Well hang on, he's got to agree
+    - You've got Cheryl Tweedy
+    - The ginger one
+    - The ginger one, Nicola Roberts
+    - Kimberly, Nadine, that's four.
+    - And Sarah Harding, yes
+    - yeah Scotland or Cumbria
+    - Tony Benn, Norman Tebbit, said it there you can imagine
+    - Tony been talking about his persecutor
+    - I say David Steele, Scotland, I say Neil Kinnock, Wales
+    - Tony Benn, Norman Tebbit, hmm, Chesterfield?
+    - His dad might have git him work up there though
+    - John Thompson's plain
+    - Well, that's nice isn't it.
+    - Why so certain?
+    - I can visualize it
+    - Yeah, it's the bit of the green background and the yellow and the blue bits in the middle.
+    - Your knowledge of the Brazilian flag, it's probably like mine, sitting wondering the number of times they won the World Cup
+    - Exactly, I've watched that, I haven't watch Mary Poppins
+    - We should play this one
+    - I think we should play this one
+    - You're sure of this
+    - question number, it's for 200 quid.
+    - well I've never heard of an americano water
+    - Seb nodding happily
+    - Nell, trust him?
+    - That sounds very definite, yes
+    - I am fewer
+    - Nell, you have no clue
+    - No
+    - Nell, do what your mom said just smile
+    - that's good
+    - uhm
+    - Uhm, I'm really not sure about this
+    - I wouldn't like to guess either
+    - Uhm, no
+    - Seb, you've had that face since a hundred quid
+    - Uh, I'm not, no, I don't know, I have no idea
+    - I wouldn't risk it on what I know about that
+    - But you're if you're sure, I'll back your judgements about that
+    - Oh my lord
+    - Yeah
+    - You're more likely to know than I am
+    - Georgette, Georgette
+    - Ohh
+    - Ih, Ih, It's not, hm-hm
+    - it's not Turin and it's not Bologna
+    - It's not Turin, it's not Bologna
+    - Tuscany, Toscana. I broke the world record in Florence. I should know this.
+    - You should know this, shouldn't you?
+    - But I'm no absolutely certain, but it, I'm pretty sure it's Florence. But it's a lot to drop, isn't it? Sixteen down to one, and we got sixteen.
+    - It is, I suppose it depends on how positive we feel about it really, oh
+    - I mean, it feels right
+    - I don't know
+    - Seb is looking terribly pleased with life
+    - I'm not sure but it's, it's uh, it's
+    - but uh, you do seem to know
+    - Do you think?
+    - Fantastic
+    - We could drop to thirty-two and we've got 64 and it wasn't astronomy, certainly not acting I don't think was medicine.
+    - yes Mortimer wheeler is an archaeologist, was
+    - yes, he, he is an archeologist, was
+    - Nell, do you think it's right?
+    - Why?
+    - Because he's a Lord
+    - I have no idea
+    - one topic was you probably don't watch that much television
+    - so when you think Vikings you think
+    - Nordic
+    - and the boats and all sort of stuff Nordic, the Saxons what do you think of the Saxons?
+    - Saxxone it is European
+    - jacket palazzo pants palazzo shirt palazzo boot palazzo follows
+    - no it's the other way around
+    - oh so it's palazzo jacket I was gonna say
+    - stay with me stay with me
+    - I was gonna think palazzo jacket palazzo pants palazzo shirt palazzo boots
+    - uhm
+    - has Germany not got the World Cup in 2010, we bid we bid against Germany
+    - where are we now in 2004
+    - so when is the next world cup?
+    - 2006
+    - well actually even if they have got the next one they wouldn't have the euro
+    - they wouldn't have
+    - they wouldn't have the euro if they have got the world cup final, they wouldn't have it
+    - they are not neighbouring I dont' if that makes a difference
+    - and why would you go to Liechtenstein?
+    - they only got one stadium
+    - wasn't Liechtenstein the country that England played and they were drafting and it was gonna be
+    - it's whether it's Germany
+    - why?
+    - because
+    - because the Germans wouldn't share it with anybody
+    - I don't know like you but it's the logical answer
+    - yeah, doesn't mean it's the right answer
+    - no
+    - it's worth 125,000 pounds
+    - That's tough, bishop of durham definitely isn't, I don't know that
+    - Teaming of the rat
+    - I give up
+    - I feel very strongly that I know, the
+    - Because of the, it's where they did the nuclear tests in the, in the fifties and
+    - I think so
+    - You see what I mean
+    - um
+    - Have you ever heard of it?
+    - No
+    - Why are you agreeing with him?
+    - He's very bright, Ross
+
+- intent: confirm-agreement
+  examples: |
+    - Yes.
+    - Final answer?
+    - Final answer
+    - Final answer?
+    - Final answer?
+    - Is that your final answer?
+    - Final answer?
+    - uhum
+    - Final answer?
+    - Final answer?
+    - Final answer?
+
+- intent: offer-answer
+  examples: |
+    - He might have visited the others but it's Nottingham, isn't it?
+    - it's five Chris
+    - Alright, five
+    - Kinnock?
+    - My leanings are for Tony Ben
+    - Tony Benn? Tony Benn?
+    - Red
+    - Red
+    - Well I think it's pantomime
+    - Well, it's got to be soap on a rope
+    - the baby?
+    - Travel?
+    - I think it's D
+    - well, well, I've been thinking it's coffee
+    - opera
+    - I'm, I've, I would have thought Georgette but that's just a first, you know
+    - Ok, Georgette
+    - Oh, it is Florence then
+    - It's Florence.
+    - It is Florence
+    - It is Florence
+    - I think it's Florence
+    - It's Benny Hill
+    - I think, I think it's archeology
+    - cold
+    - pretty sure it is maggie
+    - the nettle I'm sure
+    - personnel?
+    - but I'm pretty sure that's Davina
+    - so if it Nordic it is got to be the Vikings
+    - palazzo pants?
+    - it's Switzerland isn't it?
+    - Mongolia
+    - I'd be inclined to go with London
+    - Something doesn't ring true about the bishop of london
+    - Baseball, baseball
+    - A glass of folly, folly
+    - Oh it's got to be Fool
+    - it's uh, I was worried until we saw shrew
+    - They usually talk about this in um, american presidential, campaigns, you know, the smoking gun, I think, is the thing
+    - That's the one that I would automatically go for, but I think that's what it is
+    - I think it's pacific
+
+- intent: final-answer
+  examples: |
+    - Final answer?
+    - Final answer?
+    - Final answer?
+    - Final answer?
+    - Yes, travel. Travel
+    - Travel.
+    - I think it has to be. Yes, it is my final answer
+    - Benny Hill
+    - that would be dear
+    - ome on then, Switzerland, final asnwer
+    - We both think it's Mongolia
+    - Bishop of london
+    - Baseball
+    - chain
+    - It's uh, shrew
+    - Smoking gun
+    - Pacific, final answer
+
+- intent: confirm-final-answer
+  examples: |
+    - Final answer.
+    - Yes
+    - Final answer.
+    - Final answer.
+    - Final answer.
+
+- intent: reject-option
+  examples: |
+    - Well, it's not Manchester is it?
+    - I don't think it's David Steel
+    - No, I don't believe so
+    - I don't think Norman Tebbit worked up north for an MP
+    - yeah yeah there is, but there ain't no red on there
+    - well it's not the Romans and it's not the Spanish is it?
+    - well it's one of two is isn't it Switzerland or Germany surely
+    - it's not Slovakia because because it's too far
+    - we lost now and so I don't think it's Germany
+    - no I don't think it's Slovakia
+    - it's not Liechtenstein
+    - it's not Germany because Germany have got 2000 and they've got 2010 they wouldn't
+    - Whenever they have to be a bishop, someone always talks about the bishop of Durham, so therefor I would assume that he is automatically a member of the house of lords
+    - So is Salisbury, so is Winchester
+    - I wish it was Bolly, but it's not
+    - It would be the pacific or the indian because I, I would stake the farm and the fact that it's not the atlantic or the arctic
+
+- intent: reject-option-agreement
+  examples: |
+    - No
+    - Yea, he's Scotland wasn't h
+    - No red
+    - yeah
+
