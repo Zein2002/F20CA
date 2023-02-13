@@ -7,6 +7,9 @@ nlu:
     - I think
     - I was gonna say wasps, uhm, I don't know
     - Florence is a different, uhm
+    - this is definitely one for me
+    - Is that me?
+    - Oh, it's definitely, knowing, no
     - My turn?
 
 - intent: check-answer
@@ -19,6 +22,19 @@ nlu:
     - region, isn't it?
     - Oh, is it not?
     - It is Florence or Genoa and Genoa is likely north, quite a bit north of Florence
+    - You know this?
+    - Sorry, do you know, do you know this one, Tim?
+    - Do you know this one, Christopher?
+    - What do you think?
+    - Any idea?
+    - Gerald Ford?
+    - Richard Nixon
+    - You know that one?
+    - Do you know?
+    - I'd guess, what do you guess?
+    - What would you like to do?
+    - what do you think?
+    - you're confident are you?
     - Do you know that
     - Is that where they did what, they did nuclear tests?
 
@@ -45,6 +61,41 @@ nlu:
     - Yeah. Benny Hill
     - I think I'm right but I'm not a hundred percent sure but I think, I am prepared to take apart on that
     - I do
+    - Yeah
+    - Yes
+    - Yeah
+    - Alright
+    - Yes.
+    - Well, I think
+    - Hmm, yeah
+    - Yes, it was
+    - Okay
+    - Yeah
+    - I think we agree
+    - I think we agree
+    - Yeah.
+    - Yeah
+    - Yeah
+    - no
+    - Yeah
+    - Haven't got a clue
+    - I hope so
+    - I'd think it's heat
+    - Yeah
+    - well I can't see anything else, but it's just a guess
+    - Okay
+    - we can
+    - yes we can
+    - confident
+    - yes
+    - yes
+    - we can agree
+    - let's go with citadel
+    - of let's go with citadel
+    - yes I would agree with tha
+    - absolutely, Scheherezade
+    - yeah
+    - fine
     - yeah
     - yeah
     - the nettle yeah
@@ -54,7 +105,6 @@ nlu:
     - come on
     - yeah
     - go for it
-    - yeah
     - yeah it's got to be
     - yeah yep yeah
     - I'm happy to follow you on this one
@@ -82,6 +132,21 @@ nlu:
     - Are you happy to go with it?
     - Are you sure? Cause it is your charity too.
     - Do you think you're right?
+    - You were going to say bouillabaisse?
+    - Would you agree with me?
+    - Are you sure?
+    - Wouldn't that make sense?
+    - Didn't he go to newcastle after the england job?
+    - At Ronald Reagan?
+    - What do you want to do?
+    - is it worth the risk?
+    - We go for heat?
+    - can we agree?
+    - can we agree?
+    - are you confident?
+    - but I'm not absolutely sure, what do you think?
+    - does that ring bells with you too?
+    - final answer?
     - final answer
     - it is one of two isn't it?
     - do we?
@@ -165,6 +230,92 @@ nlu:
     - Nell, do you think it's right?
     - Why?
     - Because he's a Lord
+    - This is probably the last one you'll know
+    - This one's for you, Tim
+    - You know this?
+    - blablablaballabal
+    - Go on, Tim
+    - What are you whispering you two?
+    - I'm not sure
+    - Yes, I do, but I'm not in it
+    - Oh
+    - How do you do questions?
+    - you have all three lifelines untouched
+    - You're a football fan
+    - Not a newcastle fan
+    - Okay, uhm, we can either go fifty-fifty, or we can phone a friend
+    - Well, Kevin Keegan, when was Kevin Keegan manager of newcastle
+    - Well, he was, and so was Ruud Gullit
+    - Ruud Gullit, yeah
+    - Ahh
+    - And when did he have the england job?
+    - Haaa
+    - Can you remember who took over from Keegan?
+    - Uh
+    - Was it Bobby Robson?
+    - Who took over then?
+    - I can't remember whether he took over from Keegan or Gullit
+    - And how long was Robson there?
+    - Until the, the present manager
+    - He wasn't there since nineteen-ninety-seven, was he?
+    - It's a five year thing
+    - That's it
+    - I, I don't think Ruud Gullit was manager for five years
+    - Let's go fifty-fifty
+    - Okay, computer take away two random answers, leave Tim and Terrie the right answer and one of the wrong ones
+    - These questions are too easy
+    - I doubt that
+    - I don't know
+    - Why do you think it might be Reagan?
+    - Well, he's, he is a fairly physical, fit guy, went on to become an actor
+    - who would know would anybody know, phone a friend wise
+    - There might two.
+    - Or the audience?
+    - I want to leave the really difficult ones for the audience
+    - We'd probably need to phone a friend, wouldn't we? To stay alive
+    - Who's likely to know, Jeremy, Jeremy Bryant likely to know this?
+    - I don't know, would he know?
+    - What about your lady?
+    - Judith?
+    - Do you, do you think, we should ask the audience? Get a feel for it
+    - And then, it it's still not convicing, phone a friend
+    - Okay, see what the audience thinks
+    - all vote now
+    - How good do you feel about that?
+    - Well, it's
+    - it's a doubt, it's a doubt, I'm sure the, uh, the audience are doubtful as well
+    - Ahh, we've got to stay in the game, haven't we?
+    - Oh, take your time sir
+    - O'Brien! I've hung around long enough here with you
+    - Tim?
+    - You're not gonna show off again, are you?
+    - South Pacific, there is nothing like a day
+    - How's your greek, tim?
+    - Terrible
+    - Uhm
+    - We'd regret it for the rest of our lives if it did turn out to be heat and we said, we said, no, we're not gonna take the 64 thousand
+    - Well, my gut feeling is what your gut feeling is, but it is a guess
+    - Mhm
+    - If we lose, we go down to 32,000 still a lot of money,
+    - Oh what shame, Oh what a shame
+    - Oh
+    - that I'd like to see, her lasagne
+    -  we've met Claire we did a sports day with Claire last year in fact that was a forum for sports relief
+    - good
+    - Are you sure it's not keep?
+    - well I can't see any sense in it being keep citadel you think up on the shining crystal on the hill with a quite Salvation Armyesqe
+    - well you say definitely not
+    - why would it be kremlin, tell me why?
+    - the russian salvation army
+    - keep that's castle keep
+    - that' castle keep castle keep
+    - we have got to be confident
+    - I was probably giving birth at the time but I would agree with that
+    - how long was Andrew Bonar Law?
+    - well I don't know but Ramsay MacDonald definitely had a very short period in office in the twenties
+    - Neville Chamberlain was once and he was there from all he had to do
+    - yes 80% I'm 80% there
+    - but I could be wrong and if I'm wrong I apologize
     - I have no idea
     - one topic was you probably don't watch that much television
     - so when you think Vikings you think
@@ -235,6 +386,24 @@ nlu:
     - i think it's [florence](answer)
     - it's benny hill
     - i think, i think it's [archeology](answer)
+    - well, i think the answer is c, [belgium](answer)
+    - i think it was probably kevin keegan, wouldn't you
+    - it would be a guess, uh, i'd be inclined to guess, uhm ronald reagan, but uhm
+    - south pacific
+    - [heat](answer)?
+    - sunglasses
+    - of course, can we agree it is her smile?
+    - that is [fanlight](answer), i am confident
+    - [beer](answer)
+    - no she definitely comes from [liverpool](answer) i think we can agree on that
+    - i think it's [keep](answer)
+    - i think it's [citadel](answer) that has a style that's something the back of my mind is saying [citadel](answer) bu
+    - [citadel](answer)
+    - st andrews
+    - shehrezade the answer to that
+    - right i would say ramsey macdonald who had one very short period in office very short
+    - i would say ramsay macdonald
+    - right ramsay macdonald
     - [cold](answer)
     - pretty sure it is [maggie](answer)
     - the [nettle](answer) i'm sure
@@ -264,6 +433,25 @@ nlu:
     - [travel](answer).
     - i think it has to be. yes, it is my final answer
     - benny hill
+    - it's tickety boo
+    - it's a toughie. it must be, uhm, a removal van
+    - real ale
+    - no, [bouffant](answer)
+    - the answer is d, poisoned chalice
+    - yeah, that's alright, it's crazy frog
+    - [belgium](answer)
+    - keegan.
+    - kevin keegan.
+    - if my friend agrees, i think we'll go with ronald reagan
+    - patrick o'brien
+    - i'd have to go with o'brien
+    - we're gonna both guess [heat](answer)
+    - [heat](answer)
+    - plum job
+    - yeah
+    - yes, it is
+    - final answer st andrews
+    - [scheherezade](answer), final answer
     - that would be [dear](answer)
     - ome on then, [switzerland](answer), final asnwer
     - we both think it's [mongolia](answer)
@@ -281,6 +469,12 @@ nlu:
     - final answer.
     - final answer.
     - final answer.
+    - final answer
+    - final answer. ronald reagan
+    - yeah, final answer
+    - i'm afraid so but it's worth the chance
+    - yeah
+    - final answer
 
 - intent: reject-option
   examples: |
@@ -289,6 +483,18 @@ nlu:
     - no, i don't believe so
     - i don't think norman tebbit worked up north for an mp
     - yeah yeah there is, but there ain't no [red](answer) on there
+    - well, it wouldn't be pickety moo
+    - bill clinton didn't come from illinois, did he?
+    - no, no it's not [lasangne](answer), definitely not
+    - well it's not [kremlin](answer) i think that's fair to say
+    - i don't think it's a [castle](answer)
+    - well i don't think it's kremlin i don't think it's castle
+    - i'm sure it's not [keep](answer)
+    - it's not [castle](answer)
+    - that doesn't sound right at all, [castle](answer)
+    - definitely not kremlim
+    - so david lloyd george i would say no
+    - bonar law i would say no
     - well it's not the romans and it's not the spanish is it?
     - well it's one of two is isn't it switzerland or germany surely
     - it's not [slovakia](answer) because because it's too far
@@ -306,5 +512,6 @@ nlu:
     - no
     - yea, he's scotland wasn't h
     - no [red](answer)
+    - i don't think so
     - yeah
 
