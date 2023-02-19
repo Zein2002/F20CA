@@ -1,10 +1,10 @@
 Transcribed by: Xander Wickham
-Status: Incomplete
+Status: Completed
 YouTube Link: https://www.youtube.com/watch?v=ldCSYLaYx0Q
 
 Dialogue Annotation Options:
 [question()] [offer-answer()] [options()] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
-[accept-answer] [final-answer()] [confirm-agreement] [confirm-final-answer]
+[accept-answer] [final-answer()] [confirm-agreement] [confirm-final-answer] [uncertain]
 
 User/System Format:
 U1: User 1 | U2: User 2 | S: System
@@ -12,238 +12,112 @@ U1: User 1 | U2: User 2 | S: System
 
 
 -------- Transcript --------
-
-S: Welcome to a charity special Who Wants to Be a Millionaire 
-
-S: It's a tough life for celebrities these days you've either got to face snakes spiders and unspeakable marsupial body parts in the Australian jungle risk breaking your neck on the ice rink or worse still worst of all have to sit opposite me but our celebrities on the show do put a brave face on it knowing there is a real chance of making a million pounds for their favourite cause
-
-S: Now coming up later on this show we got Maxand Paddy, A-List comedians Peter Kay and Patrick McGuinness but first now will you welcome our first two famous and possibly largest ever fortune seekers England rugby heroes Martin Johnson that Will Greenwood.
-
-S: I thought for a second there had been an eclipse but it was just these two coming in
-Back tonight for the professional rugby players Benevolent Fund is Midland born Martin Johnson who is a rugby giant in every sense of the word
-
-S: In fact he is regarded as one of the greatest rugby forwards of all timeMartin of course famously broke every Australians' heart by captaining England to magnificent Rugby World Cup victory. Yes! in 2003. I remember how sorry w for the Australians we all felt.
-
-S: Martin quit while he was on top and retired from international rugby a few months later although he did continue to play for Leicester right up to 2005 and nowadays splits his time between motivational speaking and running his Martin Johnson rugby camp where boys and girls can go to develop their playing skills and their instinct to win.
-
-S: Sitting next to him looking at him oddly and here to raise money for the child bereavement charity his Will Greenwood who hails from Blackburn in Lancashire. 
-S: Will was also by Martin side during that epic glorious 2003 World Cup victory being two years younger but a lot smaller than his captain, Will continue to play an  international level for a little longer he was selected for the British and Irish Lions tour of New Zealand in 2005 he too retired from the game completely in 2006 with 55 England caps and 31 tries to his name he now brings his experience and personality to bear as an after-dinner speaker and a much sought after rugby pundit on TV 
-S: Welcome guys. Martin why this particular charity I mean obviously because your involvement in rugby what what do you do for these guys?
-U1: Well I think particularly with the the PRA benevolent fund there's a guy called Matt Hanson at Leicester who unfortunately injured got badly injured in their training excercise and a couple of years ago and is now paralyzed so we do a lot of the club at Leicesster to help Matt, he needs constant care and 
-S: So it's mainly that sort of thing because I think oh come on rugby players after it's finished they can carry on working
-
-U1: and Yeah they can 
-
-U1: The guys are gonna injured and also just helping guys start a career once they finish rugby because then as you say they're in a position where they have to carry on working it's not where they can retire at age 32 [] 
-U1: Whatever and they've got they've got to keep on going so it's a good charity
-
-S: Will the child bereavement charity; there's a particular reason why you're involved with it isn't it? []
-
-U2: Yeah very much so we we lost our little boy Freddie on September the 19th 2002 and the child bereavement charity were there for us immediately []
-U2: They help grieving families they help families who lose a child or even lose a parent, come to come to terms of that process and those first few hours, those first few weeks are very very important and we we owe them a lot in that short space of time but they also help to to train professionals so the nurses the doctors the policemen who are on hand when these tragic accidents take place and it's it's all very important to help these families in those early early weeks in the early hours 
-
-S: Okay Now Martin and Will are just 12 questions away from scoring a possible 1 million pounds for their two charities and if any of those questions  should prove a little bit tricky to tackle Haha they of course have their lifelines to convert them a 5050, phone-a-friend, and as always asked the audience
-
 S: Right, Martin, Will lots of luck let's play Who Wants to Be a Millionaire
 
-S1: So question number one is for 500 pounds here we go []
-U1: Your on son haha.
+S1: So question number one is for 500 pounds here we go [chit-chat]
+U1: Your on son haha.[chit-chat]
 
-S: What is the specific name for a painting which is a likeness of a person usually showing their face?
-S: Pastel
-S: Fresco
-S: Portrait 
-S: Mural
+S: What is the specific name for a painting which is a likeness of a person usually showing their face? [question]
+S: Pastel[options(Pastel)]
+S: Fresco[options(Fresco)]
+S: Portrait[options(Portrait)]
+S: Mural[options(Mural)]
 
-U2: I would hazard a guess it is C portrait 
-U1: Yeah very nice first one 
-S: Final Answer? []
-U1: Yeah []
-S: It is the right answer you have five hundred pound []
+U2: I would hazard a guess it is C portrait [offer-answer(Portrait)]
+U1: Yeah very nice first one [agreement]
+S: Final Answer? [final-answer(Portrait)]
+U1: Yeah [accept-answer]
+S: It is the right answer you have five hundred pound [accept-answer]
 
-S: Question number two will 1000 pounds it is the last point at which you could go home with nothing 
-S: You have all three lifelines, Will I am sure it won't happen []
-S: Question number two will guarantee a thousand pound
-S: Here we go.
-S: Which king of England was defeated at the Battle of Hastings?
-S: Ethelred
-S: Harold
-S: Alfred
-S: Edward
-U2: Harold wouldn't it? Yep.
-U1: Yep
-U2: Yep
-U2: Harold Harold
-U1: Harold
-S: It's the right Answer you have one thousand pounds []
+S: Question number two will 1000 pounds it is the last point at which you could go home with nothing [chit-chat]
+S: You have all three lifelines, Will I am sure it won't happen [chit-chat]
+S: Question number two will guarantee a thousand pound [question()]
+S: Here we go. [chit-chat]
+S: Which king of England was defeated at the Battle of Hastings? [question()]
+S: Ethelred [options(Ethelred)]
+S: Harold [options(Harold)]
+S: Alfred [options(Alfred)]
+S: Edward [options(Edward)]
+U2: Harold wouldn't it? Yep. [ask-agreement]
+U1: Yep [agreement]
+U2: Yep [agreement]
+U2: Harold Harold [agreement]
+U1: Harold [agreement]
+S: It's the right Answer you have one thousand pounds [accept-answer]
 
-S: See your better now 
-S: Do you still sometimes look back on the World Cup and think I sort of see that Jonny Wilkinson goal  and think is it gonna go over sure I would []
+S: Right meanwhile you have two lifelines you have 2,000 pounds you're guaranteed one thousand pound [chit-chat]
+S: Question number four is for five thousand here it comes [chit-chat]
+S: Where on the body with a shrug be worn? [question()]
+S: On the head [options(On the head)]
+S: Around the shoulders [options(Around the shoulders)]
+S: On the Foot[options(On the Foot)]
+S: Around the hips [options(Around the hips)]
+S: A shrug [chit-chat]
+U1: Well you think you think around the shoulders [offer-answer(Around the shoulders)]
+U2: Yeah [agreement]
+U1: Can't say I'm sure, can you [ask-agreement]
+U1: A Shrug [chit-chat]
+U2: A Shrug [chit-chat]
+U2: A Shurg would be worn where would it not be worn [chit-chat]
+U2: You won't wear a shrug on your head would you? [offer-answer(not(On the head))]
+U1: I wouldn't [agreement]
+U2: You ever had a shurg on your head [chit-chat]
+U1: Not that I know of [chit-chat]
+U1: what's your missus wear? [chit-chat]
+U2: What does my misses wears? She wear a shurg [chit-chat]
+U1: Does she? [chit-chat]
+U2: I am sure she has a shurg[chit-chat]
+U1: So is it a shurg [chit-chat]
+U1: gotta be on the shoulder innit [offer-answer(Around the shoulders)]
+U2: Your gut instict is always pretty good [ask-agreement]
+U1: Yeah [agreement]
+U1: Round the shoulders [agreement]
+U2: Round goes round [agreement]
+U1: Gotta say that [agreement]
+U2: Round the shoulders [agreement]
+U1: Get on with it [agreement]
+S: Final answer? [confirm-final-answer]
+U1: Yeah I keep shrugging [chit-chat]
+U2: Yeah there you go shrugging [chit-chat]
+U2: Go get around the sharp shoulders [chit-chat]
+U1: Weren't you thinking that from the start [chit-chat]
+U2: Yeah [chit-chat]
+S: Final Answer? [confirm-final-answer]
+U2: Our answer? [ask-agreement]
+U1: Is now [accept-answer]
+S: There is no going backwards [confirm-agreement]
+U1: Never change my mind [agreement]
+S: It's the right answer you have five thousand pounds [confirm-final-answer]
+U2: Yes! [chit-chat]
+U1: It's obvious [chit-chat]
+S: it's a little short sort of cardign thing that you were [chit-chat]
+S: You have got five grand. [chit-chat]
+S: yeah question number five is for ten thousand pounds you still got two lifelines lets go [chit-chat]
 
-U2: I was at the bottem of a rut couldn't see a thing []
-U1: I don't think you think about it like that. I think sometimes you forget you just go Christ we won the World Cup []
-U1: when you got the tournament's just happened again this time yeah sort of even brings it home to when you watch it I think because when you when you're doing it you have a different perspective like you have different perspective means that here too watching it on the TV or watching in 
-S: Everyone's image Martin is that great shot of Johnson just going yeah 
-U1: Yeah Yeah and
-S: Peak of your life isn't it
-U1: No I think it's again strange because people say what was it like to lift the trophy in it wasn't a big ego trip for me just being there and doing the whole thing for us the experience is not just the final or even the tournament for us the experience is years of building up disappointments successes all those memories not for me actually picking the World Cup I think it's far more of a memory for people watching than it is that when You Play []
-S: Right this is for 2,000 pounds you have three lifelines here we go in 2005 which chef declared that women can't cook to save their lives?
-S: Gary Rhodes []
-S: James Martin
-S: Ken Hom
-S: Gordon Ramsay
-S: For two grand
-U1: What did we say at the start? 
-U2: Any
-U1: Any Cookery Questions. []
-U2: Any Cookery Questions.
-U1: No Cookery Questions.
-U2: Who is likely to say something like that?
-U1: Your man Ramsey innit
-U2: Yeah Your most likley but I wouldn't I've not heard him say or not read him in print having said it so I would be potentially to ask the audience
-S: Your gonna ask them?
-U1: Got to haven't you?
-U2: Yeah I think so
-S: Right Okay it's just first lifeline being used you know it's worth two thousand pounds right audience this is the question
-
-S: In 2005 which chef declared that women can't cook to save their lives?
-S: Now A is Gary Rhodes
-S: B is James Martin
-S: C Ken Hom
-S: D Gordon Ramsay
-S: A B C or D all vote now []
-
-S: 89% 9 think it might be Gary rose 1% each for Martin and Hom 
-S: Its just kind of confirmed what you think
-U2: Yeah pretty have to go with 89% []
-S: if they're wrong you can just sort of run into the audience like Canton
-U1: our tails between our legs if we're wrong here 
-S: Final answer? []
-U1: Yeah
-U2: Final Answer
-S: It's the right answer
-
-S: How's it going then tactically skipper []
-U2: why do you presuming he's captain []
-S: Cause he's eightr foot 3 and you're three foot eight and I'm one foot two
-U1: How's it going well you don't want to use your lifeline early on but we had to because we weren't sure so yeah it did us with a cooking question early on. We are not happy with that.
-S: Sorry. I didn't want to upset you Martin
-S: Right meanwhile you have two lifelines you have 2,000 pounds you're guaranteed one thousand pound []
-S: Question number four is for five thousand here it comes
-S: Where on the body with a shrug be worn?
-S: On the head 
-S: Around the shoulders []
-S: On the Foot
-S: Around the hips 
-S: A shrug []
-U1: Well you think you think around the shoulders
-U2: Yeah
-U1: Can't say I'm sure, can you []
-U1: A Shrug
-U2: A Shrug
-U2: A Shurgh would be worn where would it not be worn 
-U2: You won't wear a shrug on your head would you?
-U1: I wouldn't []
-U2: You ever had a shurg on your head/
-U1: Not that I know of []
-U1: what's your missus wear?
-U2: What does my misses wear? She wear a shurg []
-U1: Does she? []
-U2: I am sure she has a shurg
-U1: So is it a shurg
-U1: gotta be on the shoulder innit 
-U2: Your gut instict is always pretty good 
-U1: Yeah []
-U1: Round the shoulders
-U2: Round goes round 
-U1: Gotta say that
-U2: Round the shoulders 
-U1: Get on with it
-S: Final answer?
-U1: Yeah I keep shrugging []
-U2: yeah there you go shrugging[]
-U2: go get around the sharp shoulders []
-U1: Weren't you thinking that from the start
-U2: Yeah []
-S: Final Answer
-U2: Our answer?
-U1: Is now
-S: There is no going backwards 
-U1: Never change my mind 
-S: It's the right answer you have five thousand pounds 
-U2: Yes!
-U1: It's obvious
-S: it's a little short sort of cardign thing that you were
-S: You have got five grand.
-S: yeah question number five is for ten thousand pounds you still got two lifelines lets go[]
-
-S: What number is oppsite four on a standard dice?
-U1: we're rocking
-S: one []
-S: Two []
-S: Three []
-S: Five []
-S: now come on you two all those misspent nights 
-U1: Oppsite Side of a dice add up to 7 don't they?
-U1: six and one four and three 5 and 2 []
-U2: That's why you're the man you are 
-U2: You know things like that 
-U1: I think Molly my daughter knows 
-U2: Does she? I would not have known that
-U1: Now I am doubting myself []
-U2: No no no you know you know so it's got to be a very four plus three
-U2: It's gotta be C then isn't it
-U1: yeah three []
-U2: Hes good 
-S: You don't know you've no idea []
-U2: That's why 
-S: He might be wrong 
-U2: he won't be wrong 
-S: He won't be wrong 
-U1: three 
-S: Final Answer?
-U1: four three seven six one seven five two seven yeah three []
-S: Its the right out so you got 10,000 []
-S: Right you have 10,000 pounds feel good []
-U2: Better
-U1: No
-U1: Feel Worse
-S: Martin how 
-U1: no I'm feel what feel worth Martin this []
-U1: is how we won the word doubting yourself you got him going []
-S: You got saved 
-S: Question Number six is for 20,000 you are two away from a fifty thousand pounds you have two lifelines []
-S: question number six you can double your money here for 20 grand 
-S: Now have a look. Coronation Street actress Sue Nicholls married the actor who played which character?
-S: Ernest Bishop []
-S: Des Barnes
-S: Alan Bradley
-S: Don Brennan []
-U1: we talked about two things coming up cooking and coronations street
-S: Now hang on cooking and clothes we didn't like them oh no it's basically anything beginning with C we don't like do we cooking clothes and Cory now 
-U1: no pressure but you're here for the corry question
-U2: Did I have my mum down as phone-a-friend
-U1: coronations street actress Sue Nicholls married the actor which played which character
-U1: So that's real 
-U1: So it is talking abouyt real life stuff
-U2: Dom Brennan was the old dude 
-U2: Des Barnes was the young stud wasn't he []
-U1: I don't know
-U2: Ernest Bishop and Allen Bradley oh you are kidding me you kidding me 
-U2: You can't phone me old man cuz my mum would be within spitting distance of my old man []
-S: chatting in the background 
-U1: 50/50 is any good to us?
-U2: no cause you know any of those characters are
-S: You have got no other phone a friends 
-U2: yeah I've got no girls
-S: well I'm sure you're wife is please to hear that you have got no girls
-U2: Girls watch coronation street 
-U1: That's a generalisation I would  distance myself from that comment
-U1: come on think it through make the play []
-U2: yeah make it play. yeah but he wouldn't know, he wouldn't know I don't know []
-U2 plenty of time no rush no stress 
-U2: its a punt that my mum is sat next to my dad
-U2: I've got to take that punt I think 
-S: Will your dad know if your mom's not there 
-U2 Not a clue my dad won't have a clue []
-U1: chat with your dad for 30 seconds if she's not there []
+S: What number is oppsite four on a standard dice? [question()]
+U1: We're rocking [chit-chat]
+S: One [option(One)]
+S: Two [option(Two)]
+S: Three [option(Three)]
+S: Five [option(Five)]
+S: Now come on you two all those misspent nights [chit-chat]
+U1: Oppsite Side of a dice add up to 7 don't they? [offer-answer()]
+U1: Six and one four and three 5 and 2 [offer-answer()]
+U2: That's why you're the man you are [chit-chat]
+U2: You know things like that [chit-chat]
+U1: I think Molly my daughter knows [chit-chat]
+U2: Does she? I would not have known that [chit-chat]
+U1: Now I am doubting myself [chit-chat]
+U2: No no no you know you know so it's got to be a very four plus three [chit-chat]
+U2: It's gotta be C then isn't it [offer-answer(Three)]
+U1: yeah three [offer-answer(C)]
+U2: Hes good [agreement]
+S: You don't know you've no idea [chit-chat]
+U2: That's why [chit-chat]
+S: He might be wrong [chit-chat]
+U2: he won't be wrong [chit-chat]
+S: He won't be wrong [chit-chat]
+U1: Three [offer-answer(Three)]
+S: Final Answer? [confirm-final-answer]
+U1: four three seven six one seven five two seven yeah three [offer-answer(three)]
+S: Its the right out so you got 10,000 [confirm-agreement]
