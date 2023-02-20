@@ -1,9 +1,9 @@
 Transcribed by: Xander Wickham
-Status: Completed
+Status: Incomplete
 YouTube Link: https://www.youtube.com/watch?v=ldCSYLaYx0Q
 
 Dialogue Annotation Options:
-[question()] [offer-answer()] [options()] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
+[question] [offer-answer()] [options()] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
 [accept-answer] [final-answer()] [confirm-agreement] [confirm-final-answer] [uncertain]
 
 User/System Format:
@@ -12,28 +12,25 @@ U1: User 1 | U2: User 2 | S: System
 
 
 -------- Transcript --------
-S: Right, Martin, Will lots of luck let's play Who Wants to Be a Millionaire
 
+S: Right, Martin, Will lots of luck let's play Who Wants to Be a Millionaire
 S1: So question number one is for 500 pounds here we go [chit-chat]
 U1: Your on son haha.[chit-chat]
-
 S: What is the specific name for a painting which is a likeness of a person usually showing their face? [question]
 S: Pastel[options(Pastel)]
 S: Fresco[options(Fresco)]
 S: Portrait[options(Portrait)]
 S: Mural[options(Mural)]
-
 U2: I would hazard a guess it is C portrait [offer-answer(Portrait)]
 U1: Yeah very nice first one [agreement]
 S: Final Answer? [final-answer(Portrait)]
 U1: Yeah [accept-answer]
 S: It is the right answer you have five hundred pound [accept-answer]
-
 S: Question number two will 1000 pounds it is the last point at which you could go home with nothing [chit-chat]
 S: You have all three lifelines, Will I am sure it won't happen [chit-chat]
-S: Question number two will guarantee a thousand pound [question()]
+S: Question number two will guarantee a thousand pound [question]
 S: Here we go. [chit-chat]
-S: Which king of England was defeated at the Battle of Hastings? [question()]
+S: Which king of England was defeated at the Battle of Hastings? [question]
 S: Ethelred [options(Ethelred)]
 S: Harold [options(Harold)]
 S: Alfred [options(Alfred)]
@@ -44,10 +41,9 @@ U2: Yep [agreement]
 U2: Harold Harold [agreement]
 U1: Harold [agreement]
 S: It's the right Answer you have one thousand pounds [accept-answer]
-
 S: Right meanwhile you have two lifelines you have 2,000 pounds you're guaranteed one thousand pound [chit-chat]
 S: Question number four is for five thousand here it comes [chit-chat]
-S: Where on the body with a shrug be worn? [question()]
+S: Where on the body with a shrug be worn? [question]
 S: On the head [options(On the head)]
 S: Around the shoulders [options(Around the shoulders)]
 S: On the Foot[options(On the Foot)]
@@ -93,13 +89,12 @@ U1: It's obvious [chit-chat]
 S: it's a little short sort of cardign thing that you were [chit-chat]
 S: You have got five grand. [chit-chat]
 S: yeah question number five is for ten thousand pounds you still got two lifelines lets go [chit-chat]
-
-S: What number is oppsite four on a standard dice? [question()]
+S: What number is oppsite four on a standard dice? [question]
 U1: We're rocking [chit-chat]
-S: One [option(One)]
-S: Two [option(Two)]
-S: Three [option(Three)]
-S: Five [option(Five)]
+S: One [options(One)]
+S: Two [options(Two)]
+S: Three [options(Three)]
+S: Five [options(Five)]
 S: Now come on you two all those misspent nights [chit-chat]
 U1: Oppsite Side of a dice add up to 7 don't they? [offer-answer()]
 U1: Six and one four and three 5 and 2 [offer-answer()]
