@@ -3,7 +3,7 @@ Status: Incomplete
 YouTube Link: https://www.youtube.com/watch?v=QwYRB_cWFcE
 
 Dialogue Annotation Options:
-[question] [offer-answer()] [options()] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
+[question()] [offer-answer()] [options()] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
 [accept-answer] [final-answer()] [confirm-agreement] [confirm-final-answer] [inform] [reject-option ()]
 
 User/System Format:
@@ -13,18 +13,19 @@ U1: User 1 | U2: User 2 | S: System
 
 -------- Transcript --------
 
-S: Who Wants to Be a Millionaire question number one is 500 quid the mop top hairstyle was most associated with which pop group [question]
-S: Beatles [options]
-S: Sex Pistols [options]
-S: Duran Duran [options]
-S: Black Sabbath [options]
+S: Who Wants to Be a Millionaire question number one is 500 quid the mop top hairstyle was most associated with which pop group [question()]
+S: Beatles [options(Beatles)]
+S: Sex Pistols [options(Sex Pistols)]
+S: Duran Duran [options(Duran Duran)]
+S: Black Sabbath [options(Black Sabbath)]
 U1: well [chit-chat]
 U2: the Beatles next [final-answer(Beatles)]
 S: Right Answer 500 pounds [confirm-final-answer]
 S: Last point of which you could go home with nothing but it won't happen you have three life this will guarantee you a thousand pounds Peter [chit-chat]
 U2: Okay but stop at services and get a meal [chit-chat]
 S: Question number two here it comes [chit-chat]
-S: The classic film Casablanca is set in which country? [question]
+
+S: The classic film Casablanca is set in which country? [question()]
 S: Turkey [options(Turkey)]
 S: Morocco [options(Morocco)]
 S: Egypt [options(Egypt)]
