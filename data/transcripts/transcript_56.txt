@@ -3,7 +3,7 @@ Status: Complete
 YouTube Link: https://www.youtube.com/watch?v=pb3DqMkTZ_k
 
 Dialogue Annotation options
-[question()] [offer-answer()] [options] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
+[question] [offer-answer()] [options] [offer-to-answer] [check-answer] [agreement] [ask-agreement] [chit-chat]
 [accept-answer] [final-answer()] [confirm-agreement] [confirm-final-answer]
 
 User/System Format:
@@ -24,7 +24,7 @@ S: Final answer? [confirm-agreement]
 U1: Mongolia [confirm-final-answer]
 S: You just won 64,000 [accept-answer]
 
-U1: Which of these bishops is not automatically a member of the House of Lords? [question()]
+U1: Which of these bishops is not automatically a member of the House of Lords? [question]
 U1: Winchester, Durham, London, Salisbury [options]
 S: it's worth 125,000 pounds [chit-chat]
 U1: That's tough, bishop of durham definitely isn't, I don't know that [chit-chat]
