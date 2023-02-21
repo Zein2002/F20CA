@@ -1,5 +1,5 @@
 Transcribed by: Xander Wickham
-Status: Complete
+Status: Incomplete
 YouTube Link: https://www.youtube.com/watch?v=ldCSYLaYx0Q
 
 Dialogue Annotation Options
@@ -15,7 +15,7 @@ U1: User 1 | U2: User 2 | S: System
 
 S: Right, Martin, Will lots of luck let's play Who Wants to Be a Millionaire
 
-S1: So question number one is for 500 pounds here we go [chit-chat]
+S: So question number one is for 500 pounds here we go [chit-chat]
 U1: Your on son haha.[chit-chat]
 
 S: What is the specific name for a painting which is a likeness of a person usually showing their face? [question]
