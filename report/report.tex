@@ -50,7 +50,16 @@ School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\
 \section{Introduction}
 \label{sec:introduction}
 
-\textit{from coursework spec:} main research or technical question addressed
+\textit{from coursework spec:} main research or technical question addressed \\
+Socially assistive robots (SARs) are a crucial part of the future of many sectors, for example, in education or healthcare \cite{gunson_visually_aware_2022}. Especially the latter depends on technology advancements as it is facing numerous obstacles in the future, such as increasing spendings and a growing percentage of older people. A serious lack of healthcare workers is already occurring, with 10 million more healthworkers needed worldwide by 2030 \cite{cooper_ari_2020,Health_workforce_2023}. SARs can pose a solution to the problem, as they are able to support healthcare in various ways, such as encouraging older people to keep living independently for longer or reducing caregiver burden \cite{cooper_ari_2020}.
+
+These scenarios require SARs to be able to handle multi-party interactions as it is likely that more than one person will interact with the system. Compared to handling dyadic interactions, handling multi-party conversations includes more complex challenges, such as Speaker Recognition, Addressee Recognition, Response Selection (summarised in “who says what to whom“) and turn-taking \cite{Group_1_unpublished_paper,Johansson_Skantze_2015}. 
+
+\textit{Include here what exactly we examined about turn-taking}
+
+In this work, we propose a model trained on multi-party human-human conversation data. We collected the data from recordings of special “Who wants to be millionaire?“ episodes where two candidates collaborated to answer the host's questions.
+
+\textit{Include results here.}
 
 
 \section{Background}
@@ -60,16 +69,20 @@ School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\
 
 \subsection{Socially Assistive Robots}
 \label{subsec:socially_assistive_robots}
-Socially assistive robots (SARs) are a crucial part of the future of many sectors, for example, in education or healthcare \cite{gunson_visually_aware_2022}. Especially the latter depends on technology advancements as it is facing numerous obstacles in the future, such as increasing spendings and a growing percentage of older people. A serious lack of healthcare workers is already occurring, with 10 million more healthworkers needed worldwide by 2030 \cite{cooper_ari_2020,Health_workforce_2023}. SARs have the capability to support healthcare in various ways, such as encouraging older people to keep living independently or reducing emergency visits \cite{cooper_ari_2020}.
+The difficulty of designing successful SARs lies in creating robots that can effectively converse with humans and adhere to social norms \cite{moujahid_multi_party_2022}. The more expressive a robot is, the more it will be perceived as intelligent, conscious and polite \cite{moujahid_multi_party_2022}. To achieve such a positive perception, multiple parts need to be combined into one conversational system, such as the ability to carry out visually grounded as well as task-based dialogues, to perceive and discuss its environment and to chit-chat \cite{gunson_visually_aware_2022}.
 
-\subsection{SPRING-ARI}
-\label{subsec:spring_ari}
-The difficulty of designing such a SAR lies in creating robots that can effectively converse with humans and adhere to social norms \cite{moujahid_multi_party_2022}. The more expressive a robot is, the more it will be perceived as intelligent, conscious and polite \cite{moujahid_multi_party_2022}. To achieve this positive perception, multiple parts need to be combined into one conversational system, such as the ability to carry out visually grounded as well as task-based dialogues, to perceive and discuss its environment and to chit-chat \cite{gunson_visually_aware_2022}. In particular, a combination of a SAR with a spoken dialogue system is still rare. Research concerning such a system has been conducted on a SAR robot deployed in an eldercare hospital reception area in the course of the SPRING research project \cite{addlesee_comprehensive_2020}. SPRING-ARI is deployed on a humanoid robot, called ARI, produced by Pal Robotics \cite{palrobot}. The design of ARI is focused on a few key factors: mobility, lightness, safety, simplicity, and modernity \cite{cooper_ari_2020}. The particular robot which is used for SPRING-ARI is equipped with a touch screen on its torso, gaze control through LCD eyes (liquid crystal display eyes) and 360° view. Its capabilities can be extended with custom AI algorithms, in the case of SPRING-ARI a visual perception system, a dialogue system, and a social interaction planner \cite{addlesee_comprehensive_2020}. While the SPRING-ARI system successfully demonstrates that task-based, social and visually grounded dialogue can be combined with physical actions, it still lacks the ability to handle conversations with more than one person simultaneously \cite{addlesee_comprehensive_2020}. 
+Research concerning such a system has been conducted on a SAR robot deployed in an eldercare hospital reception area in the course of the SPRING research project \cite{addlesee_comprehensive_2020}. SPRING-ARI is deployed on a humanoid robot, called ARI, produced by Pal Robotics \cite{palrobot}. The design of ARI is focused on a few key factors: mobility, lightness, safety, simplicity, and modernity \cite{cooper_ari_2020}. The particular robot which is used for SPRING-ARI is equipped with a touch screen on its torso, gaze control through LCD eyes (liquid crystal display eyes) and 360° view. Its capabilities can be extended with custom AI algorithms, in the case of SPRING-ARI a visual perception system, a dialogue system, and a social interaction planner \cite{addlesee_comprehensive_2020}. While the SPRING-ARI system successfully demonstrates that task-based, social and visually grounded dialogue can be combined with physical actions, it still lacks the ability to handle conversations with more than one person simultaneously \cite{addlesee_comprehensive_2020}.
 
 \subsection{Multi-party Human Robot Interaction}
 \label{subsec:multi_party}
-\textit{Explain why multi-person conversation is important, relevant} \\
-Multi-party engagement and fluent-turn taking in multi-party environments is becoming a more active research area as dialogue systems in general improve beyond simpler task-based systems \cite{skantze_turn_taking_2021}. However, state-of-the-art models for training such robots are still too simplistic \cite{skantze_turn_taking_2021}. There is a need to 
+As stated above, this endeavour becomes considerably more difficult when dealing with multi-party interactions \cite{Group_1_unpublished_paper}. Especially turn-taking poses a central problem. It is defined as follows: 
+
+\begin{quote}
+  The rules of turn-taking organize the conversation into turns, during which one of the participants has the right to speak while the others agree to listen \cite{Żarkowski_2019}
+\end{quote}
+
+In dyadic conversations, there are only two roles a participant can take: speaker or listener, hence it is clear when and to whom the turn is yielded. In multi-party conversations, participants can take multiple roles, therefore turn-taking needs to be coordinated \cite{Johansson_Skantze_2015}. Research has found that humans signal their intents mostly through gaze, but also through pauses, prosody, and body positioning \cite{Żarkowski_2019}. Earlier models for conversational systems relied on silence time-outs to coordinate turn-taking, however, this approach is found to be too simplistic \cite{skantze_turn_taking_2021}. Using 
+
 
 
 \section{Design and Implementation}
