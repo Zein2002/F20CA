@@ -13,14 +13,14 @@ U1: User 1 | U2: User 2 | S: System
 
 -------- Transcript --------
 
-S: Traditionally foresters counted the number of rings on a tree stump to gain what information about the tree?
-S: name, age, marital status, occupations
+S: Traditionally foresters counted the number of rings on a tree stump to gain what information about the tree? [question]
+S: name, age, marital status, occupations [options]
 U2: I think it's age [offer-answer(age)]
 U1: Well yeah it is probably that one [agreement]
 S: right answer [accept-answer]
 
-S: Which household object is most likely to have a hob on top?
-S: piano, cooker, wardrobe sofa
+S: Which household object is most likely to have a hob on top? [question]
+S: piano, cooker, wardrobe sofa [options]
 U1: that's obviously a ladies question so [chit-chat]
 U2: oh no [chit-chat]
 U1: I'm sorry I'm sorry [chit-chat]
@@ -28,27 +28,27 @@ U2: would you believe me that it is cooker? [offer-answer (cooker)]
 U1: I would [agreement]
 S: You've got 200 pounds [accept-answer]
 
-S: which of these is a common defect in photographs taken with a flash camera?
-S: red-ear, red-nose, red-eye, red-chin
+S: which of these is a common defect in photographs taken with a flash camera? [question]
+S: red-ear, red-nose, red-eye, red-chin [options]
 U2: after a night-out it could be red-nose but I think it's red eye [offer-answer (red-eye)]
 U1: yeah [agreement]
 S: you have 300 pounds [accept-answer]
 
-S: what is the name of the government department that deals with the domestic affairs of the UK?
-S: Home Office, Home ministry, home cabinet, home agency
+S: what is the name of the government department that deals with the domestic affairs of the UK? [question]
+S: Home Office, Home ministry, home cabinet, home agency [options]
 U2: home office [final-answer (home office)]
 S: that's right you've got 500 pounds [accept-answer]
 
-S: which actress married Percy Gibson in 2002?
-S: Stephanie Beacham, Joan Collins, Kate O'Mara, Jane Asher
+S: which actress married Percy Gibson in 2002? [question]
+S: Stephanie Beacham, Joan Collins, Kate O'Mara, Jane Asher [options]
 U2: It's Joan collins [offer-answer (Joan collins)]
 S: Do we agree? [ask-agreement]
 U1: We do agree [confirm-agreement]
 S: that's the right answer you have 1000 pounds [accept-answer]
 
 
-S: Tony McCoy and Adrian Maguire are famous names in which sport?
-S: Golf, darts, horse racing, rallying
+S: Tony McCoy and Adrian Maguire are famous names in which sport? [question]
+S: Golf, darts, horse racing, rallying [options]
 U2: can I just say that I think we both obviously feels sport could be a strong point and as it has come so early in the day that's not really great for us is it [chit-chat]
 U1: you think we peaked too early? [chit-chat]
 U2: I think so [chit-chat]
@@ -58,42 +58,42 @@ S: final answer [ask-agreement]
 U2: yeah [confirm-final-answer]
 S: you've got 2000 pounds [accept-answer]
 
-S: which of these is a type of beer?
-S: plump, podgy, stout, stocky
+S: which of these is a type of beer? [question]
+S: plump, podgy, stout, stocky [options]
 U2: I abide by your expert advise [check-answer]
 U1: stout [offer-answer (stout)]
 S: you've got 100 pounds [accept-answer]
 
-S: which phrase means a compromise or a place to take a break on long journey?
-S: Midway motel halfway house fiveway in highway pub 
+S: which phrase means a compromise or a place to take a break on long journey? [question]
+S: Midway motel halfway house fiveway in highway pub [options]
 U2: might I? [chit-chat]
-U1: yeah [agrement]
+U1: yeah [agreement]
 U2: halfway house [final-answer (halfway house)]
 S: you've got 200 pounds [accept-answer]
 
-S: how is bread without butter or a spread on top described?
-S: arid bread dry bread desiccated bread parched bread 
+S: how is bread without butter or a spread on top described? [question]
+S: arid bread dry bread desiccated bread parched bread [options]
 U2: we'll have dry bread shall we? [offer-answer (dry bread)]
 U1: let's try dry bread [agreement]
 S: right answer, 300 pounds [accept-answer]
 
-S: which creatures are most associated with the phrase hear no evil see no evil speak no evil?
-S: giraffes, lions monkeys elephants
+S: which creatures are most associated with the phrase hear no evil see no evil speak no evil? [question]
+S: giraffes, lions monkeys elephants [options]
 U1: monkeys [final-answer (monkeys)]
 S: right answer, 500 pounds [accept-answer]
 
-S: which of these have the smallest answer?
-S: 3 plus 3, 3 x 3, 3 divided by 3, 3 cubed
+S: which of these have the smallest answer? [question]
+S: 3 plus 3, 3 x 3, 3 divided by 3, 3 cubed [options]
 U2: you are the mathematician but I'd say 3 divided by 3 [offer-answer (3 divided by 3)]
 U1: what 3 divided by three, yeah [agreement]
 U1: I would be in trouble if I got that one wrong [chit-chat]
 U2: you would [chit-chat]
 S: final answer? [ask-agreement]
 U2: yeah [confirm-final-answer]
-S: you've got 1000 pounds
+S: you've got 1000 pounds [accept-answer]
 
-S: which of these composers died in 1958?
-S: Vaighan Williams Schubert Bizet Tchaikovsky 
+S: which of these composers died in 1958? [question]
+S: Vaighan Williams Schubert Bizet Tchaikovsky [options]
 U2: Vaughan Williams [final-answer (Vaughan Williams)]
 S: are you certain? [ask-agreement]
 U2: yeah [confirm-final-answer]

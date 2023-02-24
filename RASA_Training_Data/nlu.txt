@@ -3,6 +3,7 @@ version: "3.1"
 nlu:
 - intent: offer-to-answer
   examples: |
+    - Should we play?
     - You know this
     - I think
     - I was gonna say wasps, uhm, I don't know
@@ -39,10 +40,9 @@ nlu:
     - you're confident are you?
     - I abide by your expert advise
     - Do you know that
+    - Don't tease us, which one do you think it is
     - Is that where they did what, they did nuclear tests?
     - i think have you got any ideas
-    - Do you know that?
-    - How sure are you?
 
 - intent: agreement
   examples: |
@@ -57,10 +57,12 @@ nlu:
     - It's Martin.
     - It is Nottingham
     - Five people
+    - Yes, me too
     - Tony Benn
     - Red
     - Absolutely
     - it's 100 percent
+    - No red
     - C. Red.
     - Yeah, I think so too
     - Yes
@@ -155,6 +157,7 @@ nlu:
     - I would
     - yeah
     - yeah horse racing
+    - yeah
     - let's try dry bread
     - what 3 divided by three, yeah
     - yeah Vuaghan Williams
@@ -187,22 +190,8 @@ nlu:
     - yeah i'm happy with that
     - yeah
     - Snakes on a plane
+    - I know it' Hawaiian
     - Yeah
-    - Yeah very nice first one
-    - Yep
-    - Yep
-    - Harold Harold
-    - Harold
-    - Yeah
-    - I wouldn't
-    - Yeah
-    - Round the shoulders
-    - Round goes round
-    - Gotta say that
-    - Round the shoulders
-    - Get on with it
-    - Never change my mind
-    - Hes good
 
 - intent: ask-agreement
   examples: |
@@ -249,21 +238,13 @@ nlu:
     - shall we go with Raikkonen?
     - yeah?
     - yellow submarine?
-    - Harold wouldn't it? Yep.
-    - Can't say I'm sure, can you
-    - Your gut instict is always pretty good
-    - Our answer?
 
 - intent: chit-chat
   examples: |
     - To make brass rubbings
     - I know what I think it is but I'm not absolutely definite
-    - Gareth Hale and Norman Pace
-    - You trust her?
     - I do.
-    - who cooks in your house?
     - I do
-    - Do you use spoons?
     - I do
     - and what I'm thinking actually is when we take medications they say take- to take 10 milliliters which is like a cup full of that medicine bottle if you halve that. But I'm not completely certain to be honest
     - Think we should ask for help?
@@ -278,27 +259,10 @@ nlu:
     - it's like the word spiral would be turning round so that that makes sense
     - none of the others are in Texas. I didn't know it was a port but
     - I think I know but I think I'd like to 50/50
-    - what do you think it is?
     - I have no idea
-    - Where did Brian Blessed come from in your brain?
     - I don't know, I don't know
-    - Why could it not be Oliver?
     - I don't remember him being in anything but I vaguely remember the film.
-    - I have absolutely no idea
-    - Me neither
-    - But I- I- wasn't Beethoven's first name ludwig?
-    - Yeah but it's the person that catalogued them so it's- it's nothing to do with that
-    - I think we should call Lewis
-    - Lewis? You sure?
-    - Yeah.
-    - He's the man?
-    - He's the man.
-    - Lewis
     - He's sure.
-    - What you thinking Paul? Have you heard of it?
-    - I have heard of it.
-    - Maybe the Conservatives
-    - Question number one is for 500 pounds
     - Well
     - Somebody who robbed him
     - That's a very similar sort of question to unter den Linden isn't it really
@@ -307,7 +271,6 @@ nlu:
     - You've got the ginger one, Miller,
     - And the other two Nicola, Kimberly.
     - Yeah
-    - Well hang on, he's got to agree
     - You've got Cheryl Tweedy
     - The ginger one
     - The ginger one, Nicola Roberts
@@ -319,31 +282,21 @@ nlu:
     - I say David Steele, Scotland, I say Neil Kinnock, Wales
     - Tony Benn, Norman Tebbit, hmm, Chesterfield?
     - His dad might have git him work up there though
-    - John Thompson's plain
     - Well, that's nice isn't it.
-    - Why so certain?
     - I can visualize it
     - Yeah, it's the bit of the green background and the yellow and the blue bits in the middle.
-    - Your knowledge of the Brazilian flag, it's probably like mine, sitting wondering the number of times they won the World Cup
     - Exactly, I've watched that, I haven't watch Mary Poppins
     - We should play this one
     - I think we should play this one
     - You're sure of this
-    - question number, it's for 200 quid.
     - well I've never heard of an americano water
-    - Seb nodding happily
-    - Nell, trust him?
     - That sounds very definite, yes
     - I am fewer
-    - Nell, you have no clue
     - No
-    - Nell, do what your mom said just smile
-    - that's good
     - uhm
     - Uhm, I'm really not sure about this
     - I wouldn't like to guess either
     - Uhm, no
-    - Seb, you've had that face since a hundred quid
     - Uh, I'm not, no, I don't know, I have no idea
     - I wouldn't risk it on what I know about that
     - But you're if you're sure, I'll back your judgements about that
@@ -356,12 +309,10 @@ nlu:
     - it's not Turin and it's not Bologna
     - It's not Turin, it's not Bologna
     - Tuscany, Toscana. I broke the world record in Florence. I should know this.
-    - You should know this, shouldn't you?
     - But I'm no absolutely certain, but it, I'm pretty sure it's Florence. But it's a lot to drop, isn't it? Sixteen down to one, and we got sixteen.
     - It is, I suppose it depends on how positive we feel about it really, oh
     - I mean, it feels right
     - I don't know
-    - Seb is looking terribly pleased with life
     - I'm not sure but it's, it's uh, it's
     - but uh, you do seem to know
     - Do you think?
@@ -369,20 +320,13 @@ nlu:
     - We could drop to thirty-two and we've got 64 and it wasn't astronomy, certainly not acting I don't think was medicine.
     - yes Mortimer wheeler is an archaeologist, was
     - yes, he, he is an archeologist, was
-    - Nell, do you think it's right?
-    - Why?
     - Because he's a Lord
-    - This is probably the last one you'll know
     - This one's for you, Tim
     - You know this?
     - blablablaballabal
     - Go on, Tim
-    - What are you whispering you two?
     - I'm not sure
-    - Yes, I do, but I'm not in it
     - Oh
-    - How do you do questions?
-    - you have all three lifelines untouched
     - You're a football fan
     - Not a newcastle fan
     - Okay, uhm, we can either go fifty-fifty, or we can phone a friend
@@ -404,11 +348,8 @@ nlu:
     - That's it
     - I, I don't think Ruud Gullit was manager for five years
     - Let's go fifty-fifty
-    - Okay, computer take away two random answers, leave Tim and Terrie the right answer and one of the wrong ones
     - These questions are too easy
-    - I doubt that
     - I don't know
-    - Why do you think it might be Reagan?
     - Well, he's, he is a fairly physical, fit guy, went on to become an actor
     - who would know would anybody know, phone a friend wise
     - There might two.
@@ -422,15 +363,11 @@ nlu:
     - Do you, do you think, we should ask the audience? Get a feel for it
     - And then, it it's still not convicing, phone a friend
     - Okay, see what the audience thinks
-    - all vote now
     - How good do you feel about that?
     - Well, it's
     - it's a doubt, it's a doubt, I'm sure the, uh, the audience are doubtful as well
     - Ahh, we've got to stay in the game, haven't we?
-    - Oh, take your time sir
     - O'Brien! I've hung around long enough here with you
-    - Tim?
-    - You're not gonna show off again, are you?
     - South Pacific, there is nothing like a day
     - How's your greek, tim?
     - Terrible
@@ -468,18 +405,14 @@ nlu:
     - Well she's a lovely girl of course yeah
     - It's not one of the the great movies of all time I would say
     - But I do think I can remove three of those which can probably give us an answer
-    - well it would out of 4 yes
     - I think to recommend Larry
     - Put it that way
-    - I recommend it to the house
     - I recomment it
     - I don't know
     - Great
     - Nor do I
     - It's going well
     - We can keep our 16,000
-    - You can keep your 16,000
-    - If you do play and give me a wrong answer you lose 15 give me the right answer and you double it
     - Quite exciting to take a risk though wouldn't it
     - Yes it would be exciting
     - Would you risk it if it were your own money
@@ -493,7 +426,6 @@ nlu:
     - Well what do you feel is there a name that you prefer
     - We'll do it you think
     - Right we'll go for it
-    - You had 16,000 pounds
     - Well I've seen the film
     - I've seen the film yeah
     - Don't want to phone a friend
@@ -544,7 +476,6 @@ nlu:
     - might I?
     - I would be in trouble if I got that one wrong
     - you would
-    - it's worth 125,000 pounds
     - That's tough, bishop of durham definitely isn't, I don't know that
     - Teaming of the rat
     - I give up
@@ -553,132 +484,23 @@ nlu:
     - I think so
     - You see what I mean
     - um
-    - Have you ever heard of it?
     - No
-    - Why are you agreeing with him?
     - He's very bright, Ross
-    - you're terribly pleased with yourself
-    - blimey you're right about her being bossy
-    - Hayley thinks she knows this
-    - what do you want to see come up on the screen?
-    - okay, do you like him?
     - now he's had his hair cut, yes
-    - happy?
     - yeah
     - yes
-    - now Hayley where are you from?
     - Liverpool, if i don't know i'm a bit stupid
-    - i thought there was a hint of scouse in your voice
     - just about
     - it's still there now so i'm presuming they've not moved it in since then
-    - Oh blooming heck
-    - We've both said our worst subject is sport
-    - Knock up, okay.
-    - Is it rugby league that sounds quite sort of manly doesn't it? Knock up
-    - Knock up
-    - only thing I know that you do at the start of anything is tee something's off
-    - you tee off in golf
-    - is that what you do at the start?
-    - yeah
-    - knock oh oh oh no
-    - every single person is gonna be saying you're an idiot
-    - I can't imagine you would knock up in motor racing
-    - I don't even know what that means
-    - Take your time, look at it
-    - But I don't think we can guess
     - Yeah this is much easier
-    - are you nodding happily
     - yep. I like pizza
-    - Do you like pizza?
     - I don't like Hawaiian I don't really understand sweet and savoury together
     - well I like we either
     - yeah I like pizza
     - I've ordered it many a time
-    - why are you grinning at me?
     - Because I think i know it
-    - Why?
     - Is it 'cause they're all a bit la?
     - I would love to be right
-    - I don't know this I'm not gonna pretend to know
-    - I know who I don't think it is but
-    - Which comedian famously told jokes sitting on a stool with a drink and a cigarette?
-    - They always told you when you were doing your GCSEs to read the question carefully
-    - yeah
-    - so that's what I'm doing, which comedian told jokes sitting on- well hang on, no hang on, hang on, hang on,
-    - I'm thinking Peter as in Peter Cook and Dudley Moore but actually
-    - maybe you don't sit on the stool
-    - I'm not, I'm not familiar with the other ones
-    - I actually don't know I think, I think it just came to me but maybe yeah
-    - Maybe I don't know that
-    - now what can you do you've got five grand you'd lose 4,000 pounds too if you gave me a wrong answer.
-    - I don't know what to do
-    - this is the thing though you say this is what's gonna happen I think we're going to do 5050 then we're still gonna want to phone a friend and that's annoying
-    - Who would know it? Would your Dad know it?
-    - Erm, possibly yeah I'm sure he would erm
-    - how much is this for now I'm confused
-    - 10,000 pounds
-    - what about anyone that you? Would anyone you know know this
-    - No?
-    - Matt's dad might know it but but I wouldn't
-    - 10,000 pounds yeah?
-    - yes
-    - sorry Craig
-    - It's alright
-    - but it's important
-    - I know, I know, I do not want you to lose four grand
-    - I think we should phone my dad
-    -  So question number one is for 500 pounds here we go
-    - Your on son haha
-    - Question number two will 1000 pounds it is the last point at which you could go home with nothing
-    - You have all three lifelines, Will I am sure it won't happen
-    - Here we go.
-    - Right meanwhile you have two lifelines you have 2,000 pounds you're guaranteed one thousand pound
-    - Question number four is for five thousand here it comes
-    - On the head, Around the shoulders, On the Foot, Around the hips, A shrug
-    - A Shrug
-    - A Shrug
-    - A Shurg would be worn where would it not be worn
-    - You ever had a shurg on your head
-    - Not that I know of
-    - what's your missus wear?
-    - What does my misses wears? She wear a shurg
-    - Does she?
-    - I am sure she has a shur
-    - So is it a shurg
-    - Yeah I keep shrugging
-    - Yeah there you go shrugging
-    - Go get around the sharp shoulders
-    - Weren't you thinking that from the start
-    - Yeah
-    - Yes!
-    - It's obvious
-    - it's a little short sort of cardign thing that you were
-    - You have got five grand.
-    - yeah question number five is for ten thousand pounds you still got two lifelines lets go
-    - We're rocking
-    - Now come on you two all those misspent nights
-    - That's why you're the man you are
-    - You know things like that
-    - I think Molly my daughter knows
-    - Does she? I would not have known that
-    - Now I am doubting myself
-    - No no no you know you know so it's got to be a very four plus three
-    - You don't know you've no idea
-    - That's why
-    - He might be wrong
-    - he won't be wrong
-    - He won't be wrong
-    - well
-    - Last point of which you could go home with nothing but it won't happen you have three life this will guarantee you a thousand pounds Peter
-    - Okay but stop at services and get a meal
-    - Question number two here it comes
-    - You know that
-    - Yeah
-    - Well say it then
-    - I was stalling
-    - Why
-    - Just waiting for that Man on his keyboard backstage
-    - but for now on it's the music that slowly undermines your feeling of security
 
 - intent: offer-answer
   examples: |
@@ -698,6 +520,7 @@ nlu:
     - my leanings are for tony ben
     - tony benn? tony benn?
     - [red](answer)
+    - yeah yeah there is, but there ain't no [red](answer) on there
     - [red](answer)
     - well i think it's [pantomime](answer)
     - well, it's got to be soap on a rope
@@ -781,18 +604,7 @@ nlu:
     - vernon kay
     - i think it was kimi raikkonen
     - um i think yellow submarine jill
-    - realistically it is gonna be- i mean this isn't final answer but i think you're right i think it's rugby league
     - yeah, do you think it's [hawaiian](answer)?
-    - i would hazard a guess it is c [portrait](answer)
-    - well you think you think around the shoulders
-    - you won't wear a shrug on your head would you?
-    - gotta be on the shoulder innit
-    - [](answer)o[](answer)p[](answer)p[](answer)s[](answer)i[](answer)t[](answer)e[](answer) [](answer)s[](answer)i[](answer)d[](answer)e[](answer) [](answer)o[](answer)f[](answer) [](answer)a[](answer) [](answer)d[](answer)i[](answer)c[](answer)e[](answer) [](answer)a[](answer)d[](answer)d[](answer) [](answer)u[](answer)p[](answer) [](answer)t[](answer)o[](answer) [](answer)7[](answer) [](answer)d[](answer)o[](answer)n[](answer)'[](answer)t[](answer) [](answer)t[](answer)h[](answer)e[](answer)y[](answer)?[](answer)
-    - [](answer)s[](answer)i[](answer)x[](answer) [](answer)a[](answer)n[](answer)d[](answer) [](answer)o[](answer)n[](answer)e[](answer) [](answer)f[](answer)o[](answer)u[](answer)r[](answer) [](answer)a[](answer)n[](answer)d[](answer) [](answer)t[](answer)h[](answer)r[](answer)e[](answer)e[](answer) [](answer)5[](answer) [](answer)a[](answer)n[](answer)d[](answer) [](answer)2[](answer)
-    - it's gotta be c then isn't it
-    - yeah three
-    - [three](answer)
-    - four [three](answer) seven six one seven five two seven yeah [three](answer)
 
 - intent: final-answer
   examples: |
@@ -809,10 +621,7 @@ nlu:
     - [gabriel](answer).
     - [australia](answer)
     - yeah, [martin](answer)
-    - final answer?
-    - final answer?
-    - final answer?
-    - final answer?
+    - it is the baby
     - yes, [travel](answer). [travel](answer)
     - [travel](answer).
     - i think it has to be. yes, it is my final answer
@@ -868,10 +677,6 @@ nlu:
     - it's snakes on a plane
     - [hawaiian](answer)
     - los angeles
-    - it's peter cook
-    - final answer?
-    - the [beatles](answer) next
-    - all right [morocco](answer)
 
 - intent: confirm-final-answer
   examples: |
@@ -905,7 +710,6 @@ nlu:
     - i don't think it's david steel
     - no, i don't believe so
     - i don't think norman tebbit worked up north for an mp
-    - yeah yeah there is, but there ain't no [red](answer) on there
     - well, it wouldn't be pickety moo
     - bill clinton didn't come from illinois, did he?
     - no, no it's not [lasangne](answer), definitely not
@@ -933,14 +737,13 @@ nlu:
     - so is salisbury, so is winchester
     - i wish it was [bolly](answer), but it's not
     - it would be the pacific or the indian because i, i would stake the farm and the fact that it's not the atlantic or the arctic
+    - they're not going to do nuclear tests in the [indian](answer) ocean
     - um well i know it wasn't lewis hamilton and it wasn't alonso
-    - the only one i don't think it is is les dawson
 
 - intent: reject-option-agreement
   examples: |
     - no
     - yea, he's scotland wasn't h
-    - no [red](answer)
     - i don't think so
     - no
     - no

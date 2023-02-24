@@ -81,7 +81,7 @@ U1: palazzo pants? [offer-answer (pants)]
 U2: yeah yep yeah [agreement]
 S: it's the right answer [accept-answer]
 
-S: which country was chosen to co-host football's Euro 2008 with Austria? [quesstion ()]
+S: which country was chosen to co-host football's Euro 2008 with Austria? [question]
 S: Switzerland, Germany, Slovakia, Liechtenstein [options]
 U1: well it's one of two is isn't it Switzerland or Germany surely [reject-option (Slovakia,Liechtenstein)]
 U2: uhm [chit-chat]

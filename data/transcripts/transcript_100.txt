@@ -31,7 +31,7 @@ U1: I don't like Hawaiian I don't really understand sweet and savoury together [
 U2: well I like we either [chit-chat]
 U1: yeah I like pizza [chit-chat]
 U1: yeah, do you think it's Hawaiian? [offer-answer(Hawaiian)]
-U2: I know it' Hawaiian [accept]
+U2: I know it' Hawaiian [agreement]
 U1: Hawaiian [final-answer (Hawaiian)]
 U2: I've ordered it many a time [chit-chat]
 S: Final answer? [confirm-agreement]

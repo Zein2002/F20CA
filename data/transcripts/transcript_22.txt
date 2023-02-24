@@ -33,7 +33,7 @@ S: The final answer, you said with great confidence. You got two hundred quid [a
 S: someone given an unwelcome responsibility is said to be left holding what? [question]
 S: his breath, the baby, his ground, the stage [options]
 U2: the baby? [offer-answer(the baby)]
-U1: It is the baby [confirm-agreement, final-answer(the baby)] //TODO!
+U1: It is the baby [final-answer(the baby)]
 S: It's the right answer! You got three hundred pounds [accept-answer]
 
 S: Alan Whicker is best known for presenting TV programs on what subjects? [question]
@@ -59,7 +59,7 @@ U2: do you? [ask-agreement]
 U1: yeah, yeah I guess it is [agreement]
 U2: well I've never heard of an americano water [chit-chat]
 U1: Americano's got to be coffee [agreement]
-U2: So yeah, coffee [confrim-agreement]
+U2: So yeah, coffee [confirm-agreement]
 S: Final answer? [confirm-agreement]
 U1: We're gonna go with coffee [confirm-final-answer]
 S: It's the right answer, you got two thousand pounds [accept-answer] 
