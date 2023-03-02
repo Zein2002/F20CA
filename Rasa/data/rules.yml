@@ -1,0 +1,53 @@
+# version: "3.1"
+
+# rules:
+
+# - rule: test1
+#   steps:
+#   - intent: offer-to-answer
+#   - action: utter_offer-to-answer
+
+# - rule: test2
+#   steps:
+#   - intent: check-answer
+#   - action: utter_check-answer
+
+# - rule: test3
+#   steps:
+#   - intent: agreement
+#   - action: utter_agreement
+
+# - rule: test4
+#   steps:
+#   - intent: ask-agreement
+#   - action: utter_ask-agreement
+
+# - rule: test5
+#   steps:
+#   - intent: chit-chat
+#   - action: utter_chit-chat
+
+# - rule: test6
+#   steps:
+#   - intent: offer-answer
+#   - action: utter_offer-answer
+
+# - rule: test7
+#   steps:
+#   - intent: final-answer
+#   - action: utter_final-answer
+
+# - rule: test8
+#   steps:
+#   - intent: confirm-final-answer
+#   - action: utter_confirm-final-answer
+
+# - rule: test9
+#   steps:
+#   - intent: reject-option
+#   - action: utter_reject-option
+
+# - rule: test10
+#   steps:
+#   - intent: reject-option-agreement
+#   - action: utter_reject-option-agreement

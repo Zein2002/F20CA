@@ -22,7 +22,7 @@ S: Thats the right answer you have won 100 pounds [accept-answer]
 S: The RRP of an item refers to its recommended what [question]
 S: Right place, retail price, red panda, rubber plant [options]
 U1: Go for it [chit-chat]
-U2: Retail price [final-answer()]
+U2: Retail price [final-answer(Retail price)]
 S: That's the right answer now you got 200 pounds [accept-answer]
 
 S: In 2004 a model Jordan announced her engagement to which singer [question]
