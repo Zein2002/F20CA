@@ -13,7 +13,7 @@ U1: User 1 | U2: User 2 | S: System
 
 -------- Transcript --------
 
-S: what is the most famous feature of Leonardo da Vinci's Mona Lisa? [question ()]
+S: what is the most famous feature of Leonardo da Vinci's Mona Lisa? [question]
 S: her fingernails, her sunglasses, her smile, her lasagne [options]
 U2: that I'd like to see, her lasagne [chit-chat] 
 S: is that your final answer? [confirm-agreement]
@@ -24,13 +24,13 @@ U2: of course, can we agree it is her smile? [offer-answer (her smile)]
 U1: we can [agreement]
 S: it's the right answer [accept-answer]
 
-S: which of these is a highly desirable job? [question ()] 
+S: which of these is a highly desirable job? [question] 
 S: pear job, apple job, plum job banana job [options] 
 U2: can we agree? [ask-agreement]
 U1: yes we can [agreement]
 U1: plum job [final-answer (plum-job)]
 
-S: What is the name for a small window usually found over a door? [question ()] 
+S: What is the name for a small window usually found over a door? [question] 
 S: daylight, sunlight, candlelight, fanlight [options]
 U2: that is fanlight, I am confident [offer-answer (fanlight)]
 U2: are you confident? [ask-agreement]
@@ -40,23 +40,22 @@ S: final answer? [confirm-agreement]
 U2: yeah [confirm-final-answer (fanlight)]
 S: that's the right answer you've got 300 pounds [accept-answer]
 
-S: which of these is most likely to be stored in a keg? [question ()]
+S: which of these is most likely to be stored in a keg? [question]
 S: biscuits, butter, beer, bread [options]
 U2: what do you think? [check-answer]
 U1: beer [offer-answer (beer)]
 U2: yes [agreement]
 S: right answer [accept-answer]
 
-S: in the name of the organization mi5 the I stands for which word? [question ()] 
+S: in the name of the organization mi5 the I stands for which word? [question] 
 S: items, information, interest, intelligence [options]
 U1: I think it is safe to say intelligence [offer-answer (intelligence)
 U2: yes [agreement]
 S: you have one thousand pounds [accept-answer]
 
 
-S: the actress and presenter Claire Sweeney comes from which city? [question ()]
+S: the actress and presenter Claire Sweeney comes from which city? [question]
 S: Glasgow, Liverpool, Birmingham, Southampton [options] 
-happened []
 U2:  we've met Claire we did a sports day with Claire last year in fact that was a forum for sports relief [chit-chat]
 U2: no she definitely comes from Liverpool I think we can agree on that [offer-answer (liverpool)]
 U1: we can agree [agreement]
@@ -65,7 +64,7 @@ S: final answer? [confirm-agreement]
 U2: yeah [final-answer (liverpool)]
 S: you have we got 2,000 pounds [accept-answer]
 
-S: what is the name of the hole in which Salvation Army meetings are held? [question ()]
+S: what is the name of the hole in which Salvation Army meetings are held? [question]
 S: Castle, Kremlin, Citadel, Keep [options]
 U2: well it's not Kremlin I think that's fair to say [reject-option (kremlin)]
 U1: I don't think it's a castle [reject-option (castle)]
@@ -93,7 +92,7 @@ U2: yes, it is [final-answer (citadel)]
 S: correct answer [accept-answer]
 
 
-S: the 2005 British Open golf tournament was held at which Scottish course? [question ()]
+S: the 2005 British Open golf tournament was held at which Scottish course? [question]
 S: canoustie, turnberry, troon, st andrews? [options]
 U1: St Andrews [offer-answer (St andrews)]
 U2: yes I would agree with that[agreement]
@@ -109,7 +108,7 @@ U1: absolutely, Scheherezade [agreement]
 U2: Scheherezade, final answer [final-answer (Scheherezade)]
 S: right answer [accept-answer]
 
-S: which 20th century British prime minister had the shortest term of office? [question ()]
+S: which 20th century British prime minister had the shortest term of office? [question]
 S: Ramsay MacDonald, David Lloyd George, Andew Bonar Law, Neville Chamberlain [options]
 U1: right I would say Ramsey MacDonald who had one very short period in office very short [offer-answer (Ramsay MacDonald)]
 U2: how long was Andrew Bonar Law? [chit-chat]

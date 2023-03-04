@@ -37,7 +37,7 @@ U1: Horse? [offer-answer(horse)]
 U2: Horse. [agreement]
 U1: Horse [final-answer(horse)]
 S: Final answer, both of you? [confirm-agreement]
-U1: yeah 
+U1: yeah [confirm-final-answer (horse)]
 S: it's right [accept-answer]
 
 S: Which of these has not yet been the title of a king of England? [question]

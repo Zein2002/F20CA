@@ -191,7 +191,7 @@ S: It is the right answer, yes [accept-answer]
 S: Emile de Becque is a leading character in which stage musical [question]
 S: Chicago, South Pacific, Sweet Charity, Guys and Dolls [options]
 U2: Do you know? [check-answer]
-U1: Haven't got a clue [agreement] # TODO: check this
+U1: Haven't got a clue [chit-chat]
 U2: South Pacific [offer-answer(South Pacific)]
 S: You're not gonna show off again, are you? [chit-chat]
 U2: South Pacific, there is nothing like a day [chit-chat]
