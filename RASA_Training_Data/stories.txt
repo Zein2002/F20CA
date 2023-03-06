@@ -13,6 +13,8 @@ stories:
   - intent: agreement
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "church"
   - action: utter_accept-answer
 
 - story: path 2
@@ -73,6 +75,8 @@ stories:
   - intent: agreement
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "teaspoon"
   - action: utter_accept-answer
 
 - story: path 6
@@ -98,6 +102,8 @@ stories:
     - answer: "Pirouette"
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "Pirouette"
   - action: utter_accept-answer
 
 - story: path 7
@@ -113,7 +119,11 @@ stories:
     - answer: "Houston"
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "Houston"
   - intent: confirm-final-answer
+    entities:
+    - answer: "Houston"
   - action: utter_accept-answer
 
 - story: path 8
@@ -131,6 +141,8 @@ stories:
   - intent: agreement
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "BrianBlessed"
   - intent: chit-chat
   - intent: chit-chat
   - action: utter_accept-answer
@@ -166,6 +178,8 @@ stories:
     - answer: "Gabriel"
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "Gabriel"
   - action: utter_accept-answer
 
 - story: path 12
@@ -192,6 +206,8 @@ stories:
     - answer: "Martin"
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "Martin"
   - action: utter_accept-answer
 
 - story: path 14
@@ -274,7 +290,7 @@ stories:
     entities:
     - answer: "normantebbit"
   - intent: chit-chat
-  - intent: offer-to-answer
+  - intent: chit-chat
   - intent: offer-answer
     entities:
     - answer: "tonybenn"
@@ -462,6 +478,8 @@ stories:
     - answer: "soaponarope"
   - intent: agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "soaponarope"
   - action: utter_accept-answer
 
 - story: path 26
@@ -518,6 +536,8 @@ stories:
   - action: utter_confirm-agreement
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "coffee"
   - action: utter_accept-answer
 
 - story: path 30
@@ -553,12 +573,18 @@ stories:
   - action: utter_question
   - intent: chit-chat
   - intent: offer-to-answer
-  - intent: check-answer
-  - intent: offer-to-answer
-  - intent: check-answer
+  - intent: offer-answer
+    entities:
+    - answer: "wasps"
+  - intent: chit-chat
+  - intent: offer-answer
+    entities:
+    - answer: "worms"
   - intent: agreement
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "worms"
   - action: utter_accept-answer
 
 - story: path 34
@@ -578,13 +604,15 @@ stories:
   - intent: offer-answer
     entities:
     - answer: "georgette"
-  - intent: agreement
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "georgette"
   - intent: confirm-final-answer
+    entities:
+    - answer: "georgette"
   - intent: chit-chat
   - action: utter_accept-answer
-  - intent: chit-chat
 
 - story: path 35
   steps:
@@ -593,7 +621,12 @@ stories:
   - intent: offer-to-answer
   - intent: chit-chat
   - intent: check-answer
-  - intent: chit-chat
+  - intent: reject-option
+    entities:
+    - answer: "turin"
+  - intent: reject-option
+    entities:
+    - answer: "bologna"
   - intent: check-answer
   - intent: chit-chat
   - intent: offer-answer
@@ -872,7 +905,7 @@ stories:
   - action: utter_question
   - action: utter_options
   - intent: check-answer
-  - intent: agreement
+  - intent: chit-chat
   - intent: offer-answer
     entities:
     - answer: "SouthPacific"
@@ -919,9 +952,10 @@ stories:
   - action: utter_accept-answer
   - intent: chit-chat
   - intent: chit-chat
-  - intent: question
-    entities:
-    - answer: ""
+
+- story: path 50
+  steps:
+  - action: utter_question
   - action: utter_options
   - intent: chit-chat
   - action: utter_confirm-agreement
@@ -937,18 +971,20 @@ stories:
     - answer: "hersmile"
   - intent: agreement
   - action: utter_accept-answer
-  - intent: question
-    entities:
-    - answer: ""
+
+- story: path 51
+  steps:
+  - action: utter_question
   - action: utter_options
   - intent: ask-agreement
   - intent: agreement
   - intent: final-answer
     entities:
     - answer: "plum-job"
-  - intent: question
-    entities:
-    - answer: ""
+
+- story: path 52
+  steps:
+  - action: utter_question
   - action: utter_options
   - intent: offer-answer
     entities:
@@ -960,9 +996,10 @@ stories:
     entities:
     - answer: "fanlight"
   - action: utter_accept-answer
-  - intent: question
-    entities:
-    - answer: ""
+
+- story: path 53
+  steps:
+  - action: utter_question
   - action: utter_options
   - intent: check-answer
   - intent: offer-answer
@@ -970,15 +1007,17 @@ stories:
     - answer: "beer"
   - intent: agreement
   - action: utter_accept-answer
-  - intent: question
-    entities:
-    - answer: ""
+
+- story: path 54
+  steps:
+  - action: utter_question
   - action: utter_options
   - intent: agreement
   - action: utter_accept-answer
-  - intent: question
-    entities:
-    - answer: ""
+
+- story: path 55
+  steps:
+  - action: utter_question
   - action: utter_options
   - intent: chit-chat
   - intent: offer-answer
@@ -991,9 +1030,10 @@ stories:
     entities:
     - answer: "liverpool"
   - action: utter_accept-answer
-  - intent: question
-    entities:
-    - answer: ""
+
+- story: path 56
+  steps:
+  - action: utter_question
   - action: utter_options
   - intent: reject-option
     entities:
@@ -1041,9 +1081,10 @@ stories:
     entities:
     - answer: "citadel"
   - action: utter_accept-answer
-  - intent: question
-    entities:
-    - answer: ""
+
+- story: path 57
+  steps:
+  - action: utter_question
   - action: utter_options
   - intent: offer-answer
     entities:
@@ -1067,9 +1108,10 @@ stories:
     entities:
     - answer: "Scheherezade"
   - action: utter_accept-answer
-  - intent: question
-    entities:
-    - answer: ""
+
+- story: path 58
+  steps:
+  - action: utter_question
   - action: utter_options
   - intent: offer-answer
     entities:
@@ -1100,7 +1142,261 @@ stories:
     - answer: "ramsaymacdonald"
   - intent: reject-option
 
-- story: path 50
+- story: path 59
+  steps:
+  - action: utter_question
+  - action: utter_options
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: agreement
+  - intent: chit-chat
+  - intent: final-answer
+    entities:
+    - answer: "semiskimmed"
+  - intent: final-answer
+    entities:
+    - answer: "semiskimmed"
+  - intent: final-answer
+    entities:
+    - answer: "semiskimmed"
+  - intent: 
+    entities:
+    - answer: "accept-answer"
+
+- story: path 60
+  steps:
+  - action: utter_question
+  - action: utter_options
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: final-answer
+    entities:
+    - answer: "fisherman"
+  - intent: final-answer
+    entities:
+    - answer: "fisherman"
+  - action: utter_accept-answer
+  - action: utter_accept-answer
+
+- story: path 61
+  steps:
+  - action: utter_question
+  - action: utter_options
+  - intent: offer-to-answer
+  - intent: offer-to-answer
+  - intent: chit-chat
+  - intent: check-answer
+  - intent: offer-answer
+    entities:
+    - answer: "postersandpackaging"
+  - intent: agreement
+  - intent: chit-chat
+  - action: utter_accept-answer
+
+- story: path 62
+  steps:
+  - action: utter_question
+  - action: utter_options
+  - intent: offer-answer
+    entities:
+    - answer: "Europe"
+  - intent: confirm-final-answer
+    entities:
+    - answer: "Europe"
+  - action: utter_accept-answer
+
+- story: path 63
+  steps:
+  - action: utter_question
+  - action: utter_options
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: offer-answer
+    entities:
+    - answer: "tureen"
+  - intent: offer-answer
+    entities:
+    - answer: "tureen"
+  - action: utter_confirm-agreement
+  - intent: final-answer
+    entities:
+    - answer: "tureen"
+  - intent: confirm-final-answer
+    entities:
+    - answer: "tureen"
+  - intent: agreement
+  - action: utter_accept-answer
+
+- story: path 64
+  steps:
+  - action: utter_question
+  - intent: chit-chat
+  - action: utter_options
+  - intent: chit-chat
+  - intent: final-answer
+    entities:
+    - answer: "ianmckellen"
+  - intent: chit-chat
+  - intent: chit-chat
+  - action: utter_confirm-agreement
+  - intent: confirm-final-answer
+    entities:
+    - answer: "ianmckellen"
+  - action: utter_accept-answer
+
+- story: path 65
+  steps:
+  - action: utter_question
+  - action: utter_options
+  - intent: offer-to-answer
+  - intent: offer-answer
+    entities:
+    - answer: "samuel"
+  - intent: offer-answer
+    entities:
+    - answer: "samuel"
+  - intent: agreement
+  - intent: chit-chat
+  - intent: agreement
+  - intent: chit-chat
+  - intent: confirm-firnal-answer
+    entities:
+    - answer: "samuel"
+  - action: utter_accept-answer
+  - action: utter_accept-answer
+
+- story: path 66
+  steps:
+  - action: utter_question
+  - action: utter_options
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: offer-to-answer
+  - intent: offer-answer
+    entities:
+    - answer: "calcium"
+  - intent: agreement
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: offer-answer
+    entities:
+    - answer: "copper"
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: final-answer
+    entities:
+    - answer: "copper"
+  - intent: agreement
+  - action: utter_accept-answer
+
+- story: path 67
+  steps:
+  - action: utter_question
+  - action: utter_options
+  - intent: chit-chat
+  - intent: offer-answer
+    entities:
+    - answer: "canada"
+  - intent: offer-answer
+    entities:
+    - answer: "canada"
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: agreement
+  - action: utter_confirm-agreement
+  - intent: confirm-final-answer
+    entities:
+    - answer: "canada"
+  - intent: confirm-final-answer
+    entities:
+    - answer: "canada"
+  - intent: agreement
+  - intent: agreement
+  - action: utter_accept-answer
+
+- story: path 68
+  steps:
+  - action: utter_question
+  - action: utter_options
+  - intent: offer-answer
+    entities:
+    - answer: "georgebushsenior"
+  - intent: reject-option
+    entities:
+    - answer: "jimmycarter"
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: agreement
+  - intent: chit-chat
+  - intent: chit-chat
+  - action: utter_confirm-agreement
+  - intent: offer-to-answer
+  - intent: agreement
+  - action: utter_accept-answer
+
+- story: path 69
+  steps:
+  - action: utter_question
+  - action: utter_options
+  - intent: chit-chat
+  - intent: reject-option
+    entities:
+    - answer: "poetry"
+  - intent: reject-option-agreement
+    entities:
+    - answer: "poetry"
+  - intent: chit-chat
+  - intent: reject-option
+    entities:
+    - answer: "painting"
+  - intent: chit-chat
+  - intent: offer-answer
+    entities:
+    - answer: "pottery"
+  - intent: offer-answer
+    entities:
+    - answer: "printing"
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: agreement
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: agreement
+  - intent: chit-chat
+  - intent: agreement
+  - intent: offer-answer
+    entities:
+    - answer: "printing"
+  - intent: chit-chat
+  - intent: chit-chat
+  - intent: ask-agreement
+  - intent: agreement
+  - intent: final-answer
+    entities:
+    - answer: "printing"
+  - intent: agreement
+  - intent: final-answer
+    entities:
+    - answer: "printing"
+  - intent: final-answer
+    entities:
+    - answer: "printing"
+  - action: utter_accept-answer
+
+- story: path 70
   steps:
   - action: utter_question
   - action: utter_options
@@ -1110,7 +1406,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 51
+- story: path 71
   steps:
   - action: utter_question
   - action: utter_options
@@ -1120,7 +1416,7 @@ stories:
     - answer: "Retailprice"
   - action: utter_accept-answer
 
-- story: path 52
+- story: path 72
   steps:
   - action: utter_question
   - action: utter_options
@@ -1131,7 +1427,7 @@ stories:
     - answer: "PeterAndre"
   - action: utter_accept-answer
 
-- story: path 53
+- story: path 73
   steps:
   - action: utter_question
   - action: utter_options
@@ -1142,7 +1438,7 @@ stories:
     - answer: "MargaretThatcher"
   - action: utter_accept-answer
 
-- story: path 54
+- story: path 74
   steps:
   - action: utter_question
   - action: utter_options
@@ -1152,7 +1448,7 @@ stories:
     - answer: "Asia"
   - action: utter_accept-answer
 
-- story: path 55
+- story: path 75
   steps:
   - action: utter_question
   - action: utter_options
@@ -1168,7 +1464,7 @@ stories:
     - answer: "Journalism"
   - action: utter_accept-answer
 
-- story: path 56
+- story: path 76
   steps:
   - action: utter_question
   - action: utter_options
@@ -1193,7 +1489,7 @@ stories:
     - answer: "Larry"
   - action: utter_accept-answer
 
-- story: path 57
+- story: path 77
   steps:
   - action: utter_question
   - intent: chit-chat
@@ -1235,7 +1531,7 @@ stories:
     - answer: "WillSelf"
   - intent: reject-option
 
-- story: path 58
+- story: path 78
   steps:
   - action: utter_question
   - action: utter_options
@@ -1246,7 +1542,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 59
+- story: path 79
   steps:
   - action: utter_question
   - action: utter_options
@@ -1258,7 +1554,7 @@ stories:
     - answer: "pink"
   - action: utter_accept-answer
 
-- story: path 60
+- story: path 80
   steps:
   - action: utter_question
   - action: utter_options
@@ -1267,7 +1563,7 @@ stories:
     - answer: "playball"
   - action: utter_accept-answer
 
-- story: path 61
+- story: path 81
   steps:
   - action: utter_question
   - action: utter_options
@@ -1277,7 +1573,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 62
+- story: path 82
   steps:
   - action: utter_question
   - action: utter_options
@@ -1291,7 +1587,7 @@ stories:
     - answer: "herring"
   - action: utter_accept-answer
 
-- story: path 63
+- story: path 83
   steps:
   - action: utter_question
   - action: utter_options
@@ -1309,7 +1605,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 64
+- story: path 84
   steps:
   - action: utter_question
   - action: utter_options
@@ -1325,7 +1621,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 65
+- story: path 85
   steps:
   - action: utter_question
   - action: utter_options
@@ -1381,7 +1677,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 66
+- story: path 86
   steps:
   - action: utter_question
   - action: utter_options
@@ -1399,7 +1695,7 @@ stories:
     - answer: "Sweetener"
   - action: utter_accept-answer
 
-- story: path 67
+- story: path 87
   steps:
   - action: utter_question
   - action: utter_options
@@ -1429,7 +1725,7 @@ stories:
     - answer: "Gallipoli"
   - action: utter_accept-answer
 
-- story: path 68
+- story: path 88
   steps:
   - action: utter_question
   - action: utter_options
@@ -1439,7 +1735,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 69
+- story: path 89
   steps:
   - action: utter_question
   - action: utter_options
@@ -1448,7 +1744,7 @@ stories:
     - answer: "dear"
   - action: utter_accept-answer
 
-- story: path 70
+- story: path 90
   steps:
   - action: utter_question
   - action: utter_options
@@ -1458,7 +1754,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 71
+- story: path 91
   steps:
   - action: utter_question
   - action: utter_options
@@ -1468,7 +1764,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 72
+- story: path 92
   steps:
   - action: utter_question
   - action: utter_options
@@ -1478,7 +1774,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 73
+- story: path 93
   steps:
   - action: utter_question
   - action: utter_options
@@ -1495,7 +1791,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 74
+- story: path 94
   steps:
   - action: utter_question
   - action: utter_options
@@ -1503,7 +1799,10 @@ stories:
   - action: utter_confirm-agreement
   - intent: reject-option
     entities:
-    - answer: "Romans,Spanish"
+    - answer: "Romans"
+  - intent: reject-option
+    entities:
+    - answer: "Spanish"
   - intent: reject-option-agreement
   - intent: chit-chat
   - intent: chit-chat
@@ -1515,7 +1814,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 75
+- story: path 95
   steps:
   - action: utter_question
   - action: utter_options
@@ -1530,13 +1829,11 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 76
+- story: path 96
   steps:
   - action: utter_question
   - action: utter_options
-  - intent: reject-option
-    entities:
-    - answer: "Slovakia,Liechtenstein"
+  - intent: chit-chat
   - intent: chit-chat
   - intent: reject-option
     entities:
@@ -1588,7 +1885,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 77
+- story: path 97
   steps:
   - action: utter_question
   - action: utter_options
@@ -1600,7 +1897,7 @@ stories:
     - answer: "eating"
   - action: utter_accept-answer
 
-- story: path 78
+- story: path 98
   steps:
   - action: utter_question
   - action: utter_options
@@ -1609,7 +1906,7 @@ stories:
     - answer: "icey"
   - action: utter_accept-answer
 
-- story: path 79
+- story: path 99
   steps:
   - action: utter_question
   - action: utter_options
@@ -1623,7 +1920,7 @@ stories:
   - intent: chit-chat
   - action: utter_accept-answer
 
-- story: path 80
+- story: path 100
   steps:
   - action: utter_question
   - action: utter_options
@@ -1632,11 +1929,11 @@ stories:
     - answer: "shanerichie"
   - action: utter_accept-answer
 
-- story: path 81
+- story: path 101
   steps:
   - action: utter_question
 
-- story: path 82
+- story: path 102
   steps:
   - action: utter_question
   - intent: offer-answer
@@ -1645,9 +1942,11 @@ stories:
   - intent: agreement
   - intent: chit-chat
   - intent: confirm-final-answer
+    entities:
+    - answer: "ranulphfiennes"
   - action: utter_accept-answer
 
-- story: path 83
+- story: path 103
   steps:
   - action: utter_question
   - action: utter_options
@@ -1661,9 +1960,11 @@ stories:
     - answer: "janebirkin"
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "janebirkin"
   - action: utter_accept-answer
 
-- story: path 84
+- story: path 104
   steps:
   - action: utter_question
   - action: utter_options
@@ -1676,7 +1977,7 @@ stories:
     - answer: "windsor"
   - action: utter_accept-answer
 
-- story: path 85
+- story: path 105
   steps:
   - action: utter_question
   - action: utter_options
@@ -1688,7 +1989,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 86
+- story: path 106
   steps:
   - action: utter_question
   - action: utter_options
@@ -1716,7 +2017,7 @@ stories:
     - answer: "trapeze"
   - action: utter_accept-answer
 
-- story: path 87
+- story: path 107
   steps:
   - action: utter_question
   - action: utter_options
@@ -1745,7 +2046,7 @@ stories:
     - answer: "ridingcrop"
   - action: utter_accept-answer
 
-- story: path 88
+- story: path 108
   steps:
   - action: utter_question
   - action: utter_options
@@ -1755,7 +2056,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 89
+- story: path 109
   steps:
   - action: utter_question
   - action: utter_options
@@ -1764,7 +2065,7 @@ stories:
     - answer: "apartment"
   - action: utter_accept-answer
 
-- story: path 90
+- story: path 110
   steps:
   - action: utter_question
   - action: utter_options
@@ -1776,7 +2077,7 @@ stories:
     - answer: "revival"
   - action: utter_accept-answer
 
-- story: path 91
+- story: path 111
   steps:
   - action: utter_question
   - action: utter_options
@@ -1806,7 +2107,7 @@ stories:
     - answer: "officialreceiver"
   - action: utter_accept-answer
 
-- story: path 92
+- story: path 112
   steps:
   - action: utter_question
   - action: utter_options
@@ -1829,7 +2130,7 @@ stories:
     - answer: "oral"
   - action: utter_accept-answer
 
-- story: path 93
+- story: path 113
   steps:
   - action: utter_question
   - action: utter_options
@@ -1846,7 +2147,7 @@ stories:
     - answer: "jerrymaguire"
   - action: utter_accept-answer
 
-- story: path 94
+- story: path 114
   steps:
   - action: utter_question
   - action: utter_options
@@ -1856,7 +2157,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 95
+- story: path 115
   steps:
   - action: utter_question
   - action: utter_options
@@ -1869,7 +2170,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 96
+- story: path 116
   steps:
   - action: utter_question
   - action: utter_options
@@ -1879,7 +2180,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 97
+- story: path 117
   steps:
   - action: utter_question
   - action: utter_options
@@ -1888,7 +2189,7 @@ stories:
     - answer: "homeoffice"
   - action: utter_accept-answer
 
-- story: path 98
+- story: path 118
   steps:
   - action: utter_question
   - action: utter_options
@@ -1899,7 +2200,7 @@ stories:
   - action: utter_confirm-agreement
   - action: utter_accept-answer
 
-- story: path 99
+- story: path 119
   steps:
   - action: utter_question
   - action: utter_options
@@ -1912,9 +2213,11 @@ stories:
   - intent: agreement
   - intent: ask-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "horseracing"
   - action: utter_accept-answer
 
-- story: path 100
+- story: path 120
   steps:
   - action: utter_question
   - action: utter_options
@@ -1924,7 +2227,7 @@ stories:
     - answer: "stout"
   - action: utter_accept-answer
 
-- story: path 101
+- story: path 121
   steps:
   - action: utter_question
   - action: utter_options
@@ -1935,7 +2238,7 @@ stories:
     - answer: "halfwayhouse"
   - action: utter_accept-answer
 
-- story: path 102
+- story: path 122
   steps:
   - action: utter_question
   - action: utter_options
@@ -1945,7 +2248,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 103
+- story: path 123
   steps:
   - action: utter_question
   - action: utter_options
@@ -1954,7 +2257,7 @@ stories:
     - answer: "monkeys"
   - action: utter_accept-answer
 
-- story: path 104
+- story: path 124
   steps:
   - action: utter_question
   - action: utter_options
@@ -1966,9 +2269,11 @@ stories:
   - intent: chit-chat
   - intent: ask-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "3dividedby3"
   - action: utter_accept-answer
 
-- story: path 105
+- story: path 125
   steps:
   - action: utter_question
   - action: utter_options
@@ -1977,10 +2282,12 @@ stories:
     - answer: "VaughanWilliams"
   - intent: ask-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "VaughanWilliams"
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 106
+- story: path 126
   steps:
   - action: utter_question
   - action: utter_options
@@ -1995,9 +2302,11 @@ stories:
   - intent: agreement
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "mongolia"
   - action: utter_accept-answer
 
-- story: path 107
+- story: path 127
   steps:
   - action: utter_question
   - action: utter_options
@@ -2026,10 +2335,14 @@ stories:
     - answer: "london"
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "london"
   - intent: confirm-final-answer
+    entities:
+    - answer: "london"
   - action: utter_accept-answer
 
-- story: path 108
+- story: path 128
   steps:
   - action: utter_question
   - action: utter_options
@@ -2041,7 +2354,7 @@ stories:
     - answer: "baseball"
   - action: utter_accept-answer
 
-- story: path 109
+- story: path 129
   steps:
   - action: utter_question
   - action: utter_options
@@ -2052,7 +2365,7 @@ stories:
     - answer: "chain"
   - action: utter_accept-answer
 
-- story: path 110
+- story: path 130
   steps:
   - action: utter_question
   - action: utter_options
@@ -2065,7 +2378,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 111
+- story: path 131
   steps:
   - action: utter_question
   - action: utter_options
@@ -2075,7 +2388,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 112
+- story: path 132
   steps:
   - action: utter_question
   - action: utter_options
@@ -2090,10 +2403,14 @@ stories:
   - intent: agreement
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "shrew"
   - intent: confirm-final-answer
+    entities:
+    - answer: "shrew"
   - action: utter_accept-answer
 
-- story: path 113
+- story: path 133
   steps:
   - action: utter_question
   - action: utter_options
@@ -2111,7 +2428,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 114
+- story: path 134
   steps:
   - action: utter_question
   - action: utter_options
@@ -2143,7 +2460,7 @@ stories:
   - intent: chit-chat
   - action: utter_accept-answer
 
-- story: path 115
+- story: path 135
   steps:
   - action: utter_question
   - action: utter_options
@@ -2153,7 +2470,7 @@ stories:
     - answer: "dressinggown"
   - action: utter_accept-answer
 
-- story: path 116
+- story: path 136
   steps:
   - action: utter_question
   - action: utter_options
@@ -2166,7 +2483,7 @@ stories:
     - answer: "bananasplit"
   - action: utter_accept-answer
 
-- story: path 117
+- story: path 137
   steps:
   - action: utter_question
   - action: utter_options
@@ -2175,7 +2492,7 @@ stories:
     - answer: "cartwheel"
   - action: utter_accept-answer
 
-- story: path 118
+- story: path 138
   steps:
   - action: utter_question
   - action: utter_options
@@ -2187,9 +2504,12 @@ stories:
     entities:
     - answer: "horse"
   - action: utter_confirm-agreement
+  - intent: confirm-final-answer
+    entities:
+    - answer: "horse"
   - action: utter_accept-answer
 
-- story: path 119
+- story: path 139
   steps:
   - action: utter_question
   - action: utter_options
@@ -2209,7 +2529,7 @@ stories:
     - answer: "charlestheseventh"
   - action: utter_accept-answer
 
-- story: path 120
+- story: path 140
   steps:
   - action: utter_question
   - action: utter_options
@@ -2233,7 +2553,7 @@ stories:
     - answer: "michigan"
   - action: utter_accept-answer
 
-- story: path 121
+- story: path 141
   steps:
   - action: utter_question
   - action: utter_options
@@ -2253,7 +2573,7 @@ stories:
     - answer: "fame"
   - action: utter_accept-answer
 
-- story: path 122
+- story: path 142
   steps:
   - action: utter_question
   - action: utter_options
@@ -2267,7 +2587,7 @@ stories:
     - answer: "secondary"
   - action: utter_accept-answer
 
-- story: path 123
+- story: path 143
   steps:
   - action: utter_question
   - action: utter_options
@@ -2292,7 +2612,7 @@ stories:
     - answer: "milk"
   - action: utter_accept-answer
 
-- story: path 124
+- story: path 144
   steps:
   - action: utter_question
   - action: utter_options
@@ -2313,7 +2633,7 @@ stories:
     - answer: "forvalour"
   - action: utter_accept-answer
 
-- story: path 125
+- story: path 145
   steps:
   - action: utter_question
   - action: utter_options
@@ -2323,7 +2643,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 126
+- story: path 146
   steps:
   - action: utter_question
   - action: utter_options
@@ -2343,7 +2663,7 @@ stories:
     - answer: "Melon"
   - action: utter_accept-answer
 
-- story: path 127
+- story: path 147
   steps:
   - action: utter_question
   - intent: offer-answer
@@ -2364,7 +2684,7 @@ stories:
     - answer: "VernonKay"
   - action: utter_accept-answer
 
-- story: path 128
+- story: path 148
   steps:
   - action: utter_question
   - action: utter_options
@@ -2392,7 +2712,7 @@ stories:
     - answer: "KimiRaikkonen"
   - action: utter_accept-answer
 
-- story: path 129
+- story: path 149
   steps:
   - action: utter_question
   - action: utter_options
@@ -2410,7 +2730,7 @@ stories:
     - answer: "Yellowsubmarine"
   - action: utter_accept-answer
 
-- story: path 130
+- story: path 150
   steps:
   - action: utter_question
   - action: utter_options
@@ -2427,7 +2747,7 @@ stories:
     - answer: "marypoppins"
   - action: utter_accept-answer
 
-- story: path 131
+- story: path 151
   steps:
   - action: utter_question
   - action: utter_options
@@ -2450,7 +2770,7 @@ stories:
     - answer: "bath"
   - action: utter_accept-answer
 
-- story: path 132
+- story: path 152
   steps:
   - action: utter_question
   - action: utter_options
@@ -2480,7 +2800,7 @@ stories:
     - answer: "goodintentions"
   - action: utter_accept-answer
 
-- story: path 133
+- story: path 153
   steps:
   - action: utter_question
   - action: utter_options
@@ -2504,7 +2824,7 @@ stories:
     - answer: "french"
   - action: utter_accept-answer
 
-- story: path 134
+- story: path 154
   steps:
   - action: utter_question
   - action: utter_options
@@ -2540,7 +2860,7 @@ stories:
     - answer: "liverpool"
   - action: utter_accept-answer
 
-- story: path 135
+- story: path 155
   steps:
   - action: utter_question
   - action: utter_options
@@ -2552,7 +2872,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 136
+- story: path 156
   steps:
   - action: utter_question
   - action: utter_options
@@ -2567,7 +2887,7 @@ stories:
     - answer: "horseracing"
   - action: utter_accept-answer
 
-- story: path 137
+- story: path 157
   steps:
   - action: utter_question
   - action: utter_options
@@ -2587,7 +2907,7 @@ stories:
     - answer: "janetellis"
   - action: utter_accept-answer
 
-- story: path 138
+- story: path 158
   steps:
   - action: utter_question
   - action: utter_options
@@ -2602,7 +2922,7 @@ stories:
     - answer: "viniculturist"
   - action: utter_accept-answer
 
-- story: path 139
+- story: path 159
   steps:
   - action: utter_question
   - action: utter_options
@@ -2625,7 +2945,7 @@ stories:
     - answer: "coot"
   - action: utter_accept-answer
 
-- story: path 140
+- story: path 160
   steps:
   - action: utter_question
   - action: utter_options
@@ -2659,7 +2979,7 @@ stories:
     - answer: "robert"
   - action: utter_accept-answer
 
-- story: path 141
+- story: path 161
   steps:
   - action: utter_question
   - intent: check-answer
@@ -2688,7 +3008,7 @@ stories:
     - answer: "epiphany"
   - action: utter_accept-answer
 
-- story: path 142
+- story: path 162
   steps:
   - action: utter_question
   - action: utter_options
@@ -2698,7 +3018,7 @@ stories:
   - intent: agreement
   - action: utter_accept-answer
 
-- story: path 143
+- story: path 163
   steps:
   - action: utter_question
   - action: utter_options
@@ -2709,9 +3029,11 @@ stories:
   - intent: agreement
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "snakesonaplane"
   - action: utter_accept-answer
 
-- story: path 144
+- story: path 164
   steps:
   - action: utter_question
   - action: utter_options
@@ -2729,9 +3051,11 @@ stories:
   - intent: chit-chat
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "hawaiian"
   - action: utter_accept-answer
 
-- story: path 145
+- story: path 165
   steps:
   - action: utter_question
   - intent: chit-chat
@@ -2742,11 +3066,13 @@ stories:
   - intent: agreement
   - action: utter_confirm-agreement
   - intent: confirm-final-answer
+    entities:
+    - answer: "losangeles"
   - intent: chit-chat
   - intent: chit-chat
   - action: utter_accept-answer
 
-- story: path 146
+- story: path 166
   steps:
   - action: utter_question
   - action: utter_options
@@ -2759,7 +3085,7 @@ stories:
     - answer: "coronation"
   - action: utter_accept-answer
 
-- story: path 147
+- story: path 167
   steps:
   - action: utter_question
   - action: utter_options
@@ -2768,7 +3094,7 @@ stories:
     - answer: "immunity"
   - action: utter_accept-answer
 
-- story: path 148
+- story: path 168
   steps:
   - action: utter_question
   - action: utter_options
@@ -2779,15 +3105,17 @@ stories:
     - answer: "bye"
   - action: utter_accept-answer
 
-- story: path 149
+- story: path 169
   steps:
   - action: utter_question
+  - action: utter_options
+  - intent: chit-chat
   - intent: confirm-final-answer
     entities:
     - answer: "skull"
   - action: utter_accept-answer
 
-- story: path 150
+- story: path 170
   steps:
   - action: utter_question
   - action: utter_options
@@ -2796,7 +3124,7 @@ stories:
   - intent: reject-option
     entities:
     - answer: "alibongo"
-  - intent: eject-option-agreement
+  - intent: reject-option-agreement
     entities:
     - answer: "alibongo"
   - intent: offer-answer
@@ -2812,7 +3140,7 @@ stories:
     - answer: "davidblaine"
   - action: utter_accept-answer
 
-- story: path 151
+- story: path 171
   steps:
   - action: utter_question
   - action: utter_options
@@ -2826,7 +3154,7 @@ stories:
     - answer: "raj"
   - action: utter_accept-answer
 
-- story: path 152
+- story: path 172
   steps:
   - action: utter_question
   - action: utter_options
@@ -2840,7 +3168,7 @@ stories:
     - answer: "jazz"
   - action: utter_accept-answer
 
-- story: path 153
+- story: path 173
   steps:
   - action: utter_question
   - action: utter_options
