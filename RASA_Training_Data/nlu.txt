@@ -753,7 +753,6 @@ nlu:
     - a [coot](answer) is black
     - it's not [pentecost](answer)
     - don't say [ali bongo](answer)
-    
     - so if it nordic it can't be the [vikings](answer)
     - not palazzo [pants](answer)
     - it's not [switzerland](answer) right?
