@@ -1,66 +1,18 @@
 version: "3.1"
 
 intents:
-  - question
-  - options
-  - accept-answer
   - confirm-agreement
   - offer-to-answer
   - check-answer
   - agreement
   - ask-agreement
-  - chit-chat
   - offer-answer
   - final-answer
   - confirm-final-answer
   - reject-option
-  - reject-option-agreement
 
 entities:
   - answer
-
-responses:
-  utter_offer-to-answer:
-  - text: "offer to answer detected"
-
-  utter_check-answer:
-  - text: "check answer detected"
-
-  utter_agreement:
-  - text: "agreement detected"
-
-  utter_ask-agreement:
-  - text: "ask agreement detected"
-
-  utter_offer-answer:
-  - text: "offer answer detected"
-
-  utter_final-answer:
-  - text: "final answer detected"
-
-  utter_confirm-final-answer:
-  - text: "confirm final answer detected"
-
-  utter_reject-option:
-  - text: "reject option detected"
-
-  utter_reject-option-agreement:
-  - text: "reject option agremeent detected"
-
-  utter_chit-chat:
-  - text: "chit chat detected"
-
-  utter_question:
-  - text: "QUESTION"
-
-  utter_options:
-  - text: "OPTIONS"
-
-  utter_accept-answer:
-  - text: "ACCEPT ANSWER"
-
-  utter_confirm-agreement:
-  - text: "CONFIRM AGREEMENT"
 
 session_config:
   session_expiration_time: 60

@@ -6,7 +6,7 @@ recipe: default.v1
 # https://rasa.com/docs/rasa/nlu/components/
 language: en
 
-pipeline:   
+pipeline:
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
@@ -31,7 +31,6 @@ pipeline:
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
-
 policies:
 # # No configuration for policies was provided. The following default policies were used to train your model.
 # # If you'd like to customize them, uncomment and adjust the policies.
