@@ -753,6 +753,40 @@ nlu:
     - a [coot](answer) is black
     - it's not [pentecost](answer)
     - don't say [ali bongo](answer)
+    - so if it nordic it can't be the [vikings](answer)
+    - not palazzo [pants](answer)
+    - it's not [switzerland](answer) right?
+    - not [blazer](answer)
+    - not [eating](answer)
+    - not [eating](answer)
+    - not [icey](answer)
+    - not the [millenium dome](answer)
+    - it isn't the [millenium dome](answer)
+    - it is not [shane richie](answer) right?
+    - i think it's not [ranulph fiennes](answer)
+    - it cannot be [jane birkin](answer)
+    - okay i know that it is not [windsor](answer) yes?
+    - it wasn't the [united nations](answer)
+    - now my mind says it's not [trapeze](answer)
+    - i think it's not [mars](answer)
+    - [riding crop](answer) definitely not
+    - [riding crop](answer) definitely not
+    - i think it's not [tacky](answer)
+    - i think it's not gonna be tea spoon
+    - i think it's a, [pirouette](answer).
+    - no let's not go for [pirouette](answer)
+    - okay it's not [houston](answer).
+    - i think it's not[brian blessed](answer)
+    - i think it's not [martin](answer).
+    - he might have visited the others but it's not [nottingham](answer), is it?
+    - it's not [five](answer) chris
+    - not kinnock
+    - my leanings are that it is not [tony benn](answer)
+    - not [tony benn](answer)? not [tony benn](answer)?
+    - definintely not [red](answer)
+    - yeah yeah there is, but there ain't no [red](answer) on there
+    - [red](answer)
+    - I don't think it is [italy](answer)
 
 - intent: reject-option-agreement
   examples: |

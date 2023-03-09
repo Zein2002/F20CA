@@ -9,11 +9,59 @@ class DialogManager():
         self.Model = ModelTrainer.RNN()
         self.Model.eval()
         self.Model.load_state_dict(torch.load(os.path.join(current_path, "Model.pth")))
-
         self.Formatter = ModelTrainer.TextDataset()
 
-        self.model_memory = self.Model.initialise_hidden()
+        self.max_lines = 5
+        self.threshhold = 0.5
 
+        self.conversations = {}
+
+    def new_conversation(self, conversation_id):
+        self.conversations[conversation_id] = Conversation(self)
+
+    def terminate_conversation(self, conversation_id):
+        del self.conversations[conversation_id]
+ 
+    def process_line(self, conversation_id, user, intent):
+        conv = self.conversations[conversation_id]
+
+        formatted_input = self.Formatter.to_one_hot(user, intent)
+
+        output = []
+        probabilities = []
+        
+        #model_output, conv.hidden = self.Model(formatted_input.unsqueeze(0), conv.hidden)
+        model_output, conv.hidden, conv.cell = self.Model(formatted_input.unsqueeze(0), conv.hidden, conv.cell)
+        probabilities.append(model_output)
+        model_output = self.Formatter.from_one_hot(model_output, self.threshhold)
+        output.append(model_output)
+
+        i = 0
+
+        while model_output != 0 and i < self.max_lines:
+
+            #model_output, conv.hidden = self.Model(self.Formatter.output_to_input(model_output).unsqueeze(0), conv.hidden)
+            model_output, conv.hidden, conv.cell = self.Model(self.Formatter.output_to_input(model_output).unsqueeze(0), conv.hidden, conv.cell)
+            probabilities.append(model_output)
+            model_output = self.Formatter.from_one_hot(model_output, self.threshhold)
+
+            if model_output != 0:
+                output.append(model_output)
+            
+            i+= 1
+
+
+
+        for i in range(0, len(output)):
+            output[i] = self.one_hot_to_text(output[i])
+
+        print(probabilities)
+
+        return output
+    
+    def init_hidden(self):
+        return self.Model.initialise_hidden()
+    
     def one_hot_to_text(self, input):
         match input:
             case 0:
@@ -27,50 +75,29 @@ class DialogManager():
             case 4:
                 return "confirm-agreement"
 
-    def get_next(self, user, user_intent, answer=None):
+class Conversation():
+    def __init__(self, Manager, hidden=None, cell=None):
+        self.DM = Manager
 
-        formatted_input = self.Formatter.to_one_hot(user, user_intent)
-
-        output = []
-        
-        model_output, self.model_memory = self.Model(formatted_input.unsqueeze(0), self.model_memory)
-
-        #print(model_output)
-
-        model_output = self.Formatter.from_one_hot(model_output)
-
-        output.append(model_output)
-
-        max_lines = 5
-
-        i = 0
-
-        while model_output != 0 and i < max_lines:
-
-            model_output, new_hidden = self.Model(self.Formatter.output_to_input(model_output).unsqueeze(0), self.model_memory)
-
-            model_output = self.Formatter.from_one_hot(model_output)
-
-            if model_output != 0:
-                self.model_memory = new_hidden
-                output.append(model_output)
-            
-            i+= 1
-
-        for i in range(0, len(output)):
-            output[i] = self.one_hot_to_text(output[i])
-
-        return output
+        if(hidden == None):
+            self.hidden = self.DM.init_hidden()
+            self.cell = self.DM.init_hidden()
+        else:
+            self.cell = cell
 
 #Function for testing the model against manual user input
 def main():
 
     DM = DialogManager()
 
+    DM.new_conversation(1)
+
+    #conv = Conversation(DM)
+
     #Hard coded start to question
     print(["question"])
     #This should make the model print options
-    print(DM.get_next("S", "question"))
+    print(DM.process_line(1, "S", "question"))
 
     #Main loop
     while True:
@@ -79,9 +106,7 @@ def main():
         user = user_input.split(" ")[0]
         intent = user_input.split(" ")[1]
 
-        print(DM.get_next(user, intent))
-
-        pass
+        print(DM.process_line(1, user, intent))
 
 """
     Input must be the user (U1 or U2), followed by a space followed by the intent of the user
