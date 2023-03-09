@@ -20,6 +20,7 @@ nlu:
     - My turn?
     - I think I know this one
     - I know that one
+    - So, what are you saying?
     - Do you want to do this one?
     - Do you want to say it or shall I?
 
@@ -259,6 +260,7 @@ nlu:
     - Snakes on a plane
     - I know it' Hawaiian
     - Yeah
+    - I was just gonna say, I don't know what it is, but I'm looking at rabbit
     - yes, yes
     - David Blaine
     - Yea
@@ -306,12 +308,8 @@ nlu:
     - Shall we say final answer?
     - No, um, should we say Pacific, final answer?
     - you're happy?
-    - melon?
-    - Vernon Kay, Jill?
-    - Raikkonen?
     - shall we go with Raikkonen?
     - yeah?
-    - yellow submarine?
     - are you confident it's french
     - do you wanna go for it
     - sure i'm sure it's liverpool aren't you
@@ -476,9 +474,13 @@ nlu:
     - i think it's [prada](answer)
     - i think it's [melon](answer)
     - probably about 90 sure it's [melon](answer)
+    - [melon](answer)?
     - [vernon kay](answer)
+    - [vernon kay](answer), jill?
     - i think it was [kimi raikkonen](answer)
+    - raikkonen?
     - um i think [yellow submarine](answer) jill
+    - [yellow submarine](answer)?
     - well i'm pretty sure it's [mary poppins](answer)
     - why would you say that i think it's [bath](answer)
     - i was thinking [good intentions](answer) i don't
@@ -498,6 +500,8 @@ nlu:
     - i'm 100 percent sure it's [epiphany](answer)
     - [scotland](answer)
     - yeah, do you think it's [hawaiian](answer)?
+    - [stars](answer)
+    - miffy, it sound like a [rabbit](answer) to me
     - well, i'll say to you, i'm pretty sure it's [david blaine](answer)
     - i'd say it's [raj](answer).
     - it is a [viceroy](answer)?
@@ -609,6 +613,8 @@ nlu:
     - it's [snakes on a plane](answer)
     - [hawaiian](answer)
     - [los angeles](answer)
+    - final answer [rabbit](answer)
+    - final answer [rabbit](answer)
     - it's [coronation](answer)
     - [jazz](answer)
     - so, [viceroy](answer).
@@ -695,6 +701,7 @@ nlu:
     - yes.
     - final answer
     - [los angeles](answer)
+    - yeah
     - its [immunity](answer)
     - em, [bye](answer)
     - [skull](answer)
@@ -753,54 +760,4 @@ nlu:
     - a [coot](answer) is black
     - it's not [pentecost](answer)
     - don't say [ali bongo](answer)
-    - so if it nordic it can't be the [vikings](answer)
-    - not palazzo [pants](answer)
-    - it's not [switzerland](answer) right?
-    - not [blazer](answer)
-    - not [eating](answer)
-    - not [eating](answer)
-    - not [icey](answer)
-    - not the [millenium dome](answer)
-    - it isn't the [millenium dome](answer)
-    - it is not [shane richie](answer) right?
-    - i think it's not [ranulph fiennes](answer)
-    - it cannot be [jane birkin](answer)
-    - okay i know that it is not [windsor](answer) yes?
-    - it wasn't the [united nations](answer)
-    - now my mind says it's not [trapeze](answer)
-    - i think it's not [mars](answer)
-    - [riding crop](answer) definitely not
-    - [riding crop](answer) definitely not
-    - i think it's not [tacky](answer)
-    - i think it's not gonna be tea spoon
-    - i think it's a, [pirouette](answer).
-    - no let's not go for [pirouette](answer)
-    - okay it's not [houston](answer).
-    - i think it's not[brian blessed](answer)
-    - i think it's not [martin](answer).
-    - he might have visited the others but it's not [nottingham](answer), is it?
-    - it's not [five](answer) chris
-    - not kinnock
-    - my leanings are that it is not [tony benn](answer)
-    - not [tony benn](answer)? not [tony benn](answer)?
-    - definintely not [red](answer)
-    - yeah yeah there is, but there ain't no [red](answer) on there
-    - [red](answer)
-    - I don't think it is [italy](answer)
-
-- intent: reject-option-agreement
-  examples: |
-    - no
-    - yea, he's scotland wasn't h
-    - no, it doesn't
-    - i don't think so
-    - hmm, no, nah i don't think it's [poetry](answer)
-    - no
-    - no
-    - no yeah
-    - yeah
-    - yeah it's hearing
-    - yeah
-    - right, okay
-    - no 
 
