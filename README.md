@@ -49,8 +49,8 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#group_members">Group Members</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -66,6 +66,21 @@ This Repository contains our exploration code for the F20CA group project. The a
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- GROUP MEMBERS -->
+Sweeney, Jason; js418  
+Lyttle, Charlie; cl157  
+Szeles, Aron; as472  
+Miller, Jack J; jjm7  
+Clark, Cale; cc164  
+Said, Zein; zs2008  
+Schauer, Laura M;  lms9  
+Sayed, Abdullah; as512  
+McAskill, Katie; klm12  
+Wickham, Xander; aw127  
+Byars, Tom; tjb10  
+Fenlon, Roman; rf104
 
 
 <!-- ROADMAP -->
@@ -116,28 +131,4 @@ Our supervisors:
 [stars-url]: https://github.com/Zein2002/F20CA/stargazers
 [issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
 [issues-url]: https://github.com/Zein2002/F20CA/issues
-[product-screenshot]: images/screenshot.png
-
-# F20CA
-F20CA - Conversational Agents and Spoken Language Processing  
-Group Project, "Multi-person Conversation"  
-  
-### Supervisors:
-Lemon, Oliver; o.lemon  
-Gunson, Nancie; n.gunson  
-Addlesee, Angus; angus.addlesee  
-Hernandez Garcia, Daniel; d.hernandez_garcia  
-  
-### Group Members:
-Sweeney, Jason; js418  
-Lyttle, Charlie; cl157  
-Szeles, Aron; as472  
-Miller, Jack J; jjm7  
-Clark, Cale; cc164  
-Said, Zein; zs2008  
-Schauer, Laura M;  lms9  
-Sayed, Abdullah; as512  
-McAskill, Katie; klm12  
-Wickham, Xander; aw127  
-Byars, Tom; tjb10  
-Fenlon, Roman; rf104
+[product-screenshot]: https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
