@@ -15,11 +15,15 @@
 %%e.agirre@ehu.es or Sergi.Balari@uab.es
 %% and that of ACL 08 by Joakim Nivre and Noah Smith
 
-\documentclass[11pt]{article}
+\documentclass[hidelinks, 11pt]{article}
 \usepackage{acl2016}
 \usepackage{times}
 \usepackage{url}
 \usepackage{latexsym}
+
+% For referencing sections across the article
+\usepackage{nameref}
+\usepackage[]{hyperref}
 
 \aclfinalcopy % Uncomment this line for the final submission
 %\def\aclpaperid{***} %  Enter the acl Paper ID here
@@ -44,6 +48,7 @@ School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\
 \maketitle
 \begin{abstract}
   This should be a 6-8 page conference paper with appendices, if relevant.
+  Good reports from last year: 1 and 7
 \end{abstract}
 
 
@@ -90,8 +95,9 @@ In dyadic conversations, there are only two roles a participant can take: speake
 \label{sec:data_collection}
 
 \begin{itemize}
-  \item Talk about multi-party data collection
-  \item There’s a need to collect data of multi-party human robot interaction because there’s proof that humans behave differently when they interact with each other vs. interact with a robot.To justify why we still went with human-human data is that there’s only little data available of human-robot interaction and there wasn’t enough time in the period of this project to collect it by ourselves.
+  \item (Laura) Talk about multi-party data collection
+  \item (Aron and Katie) How we collected our data, describe the intents we used to label the data
+  \item (Aron and Katie) Cohen's Kappa for our data collection method: probably need to annotate a couple of transcripts twice for reporting on this
 \end{itemize}
 
 \section{Design and Implementation}
@@ -106,8 +112,9 @@ In dyadic conversations, there are only two roles a participant can take: speake
 \label{subsec:nlu}
 
 \begin{itemize}
-  \item Description of RASA
-  \item Different versions of the model: show difference in F-Score
+  \item Very short escription of RASA
+  \item Refer to the intents described in \ref{sec:data_collection} \nameref{sec:data_collection}
+  \item Different versions of the model: show difference in F-Score, Confusion Matrix, ... (Laura: look up in literature what is used, what should be used)
 \end{itemize}
 
 \subsection{Dialogue Management}
