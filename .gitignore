@@ -1,5 +1,6 @@
 ## PDFs
 *.pdf
+notes.txt
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
