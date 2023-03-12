@@ -1,0 +1,19 @@
+version: "3.1"
+
+intents:
+  - confirm-agreement
+  - offer-to-answer
+  - check-answer
+  - agreement
+  - ask-agreement
+  - offer-answer
+  - final-answer
+  - confirm-final-answer
+  - reject-option
+
+entities:
+  - answer
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
