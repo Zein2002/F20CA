@@ -1,0 +1,708 @@
+version: "3.1"
+
+nlu:
+- intent: offer-to-answer
+  examples: |
+    - I think
+    - this is definitely one for me
+    - Is that me?
+    - Yes, I think
+    - It's, it's, um
+    - Well I'm pretty sure I know what it is
+    - Shall I go for this one
+    - yes I can go for this without further ado
+    - I think I know
+    - My turn?
+    - I think I know this one
+    - I know that one
+    - Do you want to say it or shall I?
+
+- intent: check-answer
+  examples: |
+    - Do you want to do this one?
+    - Go on, go on Linda
+    - What about you?
+    - Do you know this one?
+    - Do you know?
+    - Do you know this one?
+    - Oh, is it not?
+    - You know this?
+    - Sorry, do you know, do you know this one, Tim?
+    - Do you know this one, Christopher?
+    - What do you think?
+    - Any idea?
+    - You know that one?
+    - Do you know?
+    - I'd guess, what do you guess?
+    - What would you like to do?
+    - what do you think?
+    - you're confident are you?
+    - Would you like to go for this one?
+    - yeah? do you want to test it
+    - do you know this one?
+    - I abide by your expert advise
+    - Do you know that
+    - Don't tease us, which one do you think it is
+    - You have no idea?
+    - Any idea?
+    - i think have you got any ideas
+    - I think I know too what would you say?
+    - I know it darling. You know it, don't ya?
+
+- intent: agreement
+  examples: |
+    - We'll go with that, yeah, definitely.
+    - I don't know, I'll have to take your word for it
+    - That's what I thought but I'm not su- okay.
+    - Yeah. Yeah, let's take a chance
+    - yes.
+    - Yes
+    - Yep, garters
+    - Yes, me too
+    - Absolutely
+    - it's 100 percent
+    - Yes
+    - Yes
+    - It's, absolutely, it's got to be
+    - Yeah, I think so too
+    - Yes
+    - yeah, yeah I guess it is
+    - Yeah
+    - I'm happy to go with your
+    - No, absolutely
+    - Yeah.
+    - I do
+    - Yeah
+    - Yes
+    - Yeah
+    - Alright
+    - Yes.
+    - Well, I think
+    - Hmm, yeah
+    - Yes, it was
+    - Okay
+    - Yeah
+    - I think we agree
+    - I think we agree
+    - Yeah.
+    - Yeah
+    - Yeah
+    - no
+    - Yeah
+    - I hope so
+    - Yeah
+    - Okay
+    - we can
+    - yes we can
+    - confident
+    - yes
+    - yes
+    - we can agree
+    - yes I would agree with tha
+    - absolutely
+    - yeah
+    - fine
+    - Yes
+    - It is
+    - Yes
+    - Yes
+    - Yes
+    - okay
+    - Yes, alright
+    - I think it is
+    - Yes, yes
+    - Yeah, yes
+    - yeah
+    - Yes,
+    - Yes yes
+    - You do that one
+    - OK
+    - OK
+    - I will accept your recommendation
+    - Yeah
+    - Let's do it
+    - No disagreement about that
+    - No
+    - Yep
+    - Yeah
+    - Yeah
+    - Yeah
+    - Yep
+    - Yeah, definately
+    - Yeah
+    - Yeah
+    - OK, go with the gut
+    - Yeah
+    - Right
+    - OK
+    - There you are
+    - yeah
+    - yeah
+    - uhum
+    - I've got no idea with this but I'm very happy to go with what
+    - come on
+    - yeah
+    - go for it
+    - yeah it's got to be
+    - yeah yep yeah
+    - I'm happy to follow you on this one
+    - yes
+    - yeah, i'm sure
+    - yeah let's do that
+    - yeah
+    - you're saying the receiver yes
+    - yes yes yes
+    - yes show me the money
+    - Well yeah it is probably that one
+    - I would
+    - yeah
+    - yeah
+    - yeah
+    - Yes
+    - yeah
+    - Yeah, I think so
+    - Your turn
+    - yeah, folly
+    - Fool
+    - Yeah, so was i
+    - yes
+    - If you're sure, Ross
+    - Yes I would go with you on that
+    - I agree with Ross
+    - yeah
+    - Yep
+    - I think so, yes. Yea.
+    - I'd go with that
+    - we'll go with that then because i'm i'm not 100 sure on that
+    - yeah
+    - yeah
+    - yeah, no, I agree
+    - yeah
+    - if we both think so
+    - i think so yeah i'm probably about 70 80 percent
+    - yeah
+    - yeah i'm happy with that
+    - yeah
+    - agree it's
+    - i'm happy to go with it yeah you're
+    - did you go for it yeah why not french
+    - i've got no clue mate so i'm with you
+    - sure
+    - no let's do it
+    - if you happen to go for it final i'll go for it just
+    - I would go along with that
+    - that's the first thing that popped into my head
+    - totally
+    - I think you're right
+    - yeah yeah yeah
+    - I think you're right then
+    - If you know it's the answer then let's do it
+    - I agree
+    - Yeah
+    - yes, yes
+    - Yea
+    - yea, it must be.
+
+- intent: ask-agreement
+  examples: |
+    - Think we should do it?
+    - Are you sure?
+    - you sure?
+    - Not absolutely, well I don't know, what's your percentage of certainty
+    - Do you agree?
+    - do you?
+    - are you sure
+    - Are you happy to go with it?
+    - Are you sure? Cause it is your charity too.
+    - Do you think you're right?
+    - You were going to say bouillabaisse?
+    - Would you agree with me?
+    - Are you sure?
+    - Wouldn't that make sense?
+    - Didn't he go to newcastle after the england job?
+    - At Ronald Reagan?
+    - What do you want to do?
+    - is it worth the risk?
+    - We go for heat?
+    - can we agree?
+    - can we agree?
+    - are you confident?
+    - but I'm not absolutely sure, what do you think?
+    - does that ring bells with you too?
+    - Should we go for printing?
+    - I'm not confident but I'm prepared to go for Larry
+    - it is one of two isn't it?
+    - are you sure?
+    - should we go for it
+    - Do we agree?
+    - are you certain?
+    - do we?
+    - Should we go
+    - Shall we say final answer?
+    - No, um, should we say Pacific, final answer?
+    - you're happy?
+    - melon?
+    - Vernon Kay, Jill?
+    - Raikkonen?
+    - shall we go with Raikkonen?
+    - yeah?
+    - yellow submarine?
+    - are you confident it's french
+    - do you wanna go for it
+    - sure i'm sure it's liverpool aren't you
+    - yep you want to go with it
+    - would you agree?
+    - I know it's the answer. What do you think?
+
+- intent: offer-answer
+  examples: |
+    - [region](answer), isn't it?
+    - that's [gareth and norman](answer)
+    - [watch](answer)
+    - i'm thinking [teaspoon](answer)
+    - i think it's gonna be [tea spoon](answer)
+    - i think it's a, [pirouette](answer).
+    - no let's go for [pirouette](answer)
+    - okay it's a, [houston](answer).
+    - i think it's [brian blessed](answer)
+    - i think it's c, [martin](answer).
+    - he might have visited the others but it's [nottingham](answer), isn't it?
+    - it's [five](answer) chris
+    - alright, [five](answer)
+    - [kinnock](answer)?
+    - my leanings are for [tony benn](answer)
+    - [tony benn](answer)? [tony benn](answer)?
+    - [red](answer)
+    - yeah yeah there is, but there ain't no [red](answer) on there
+    - [red](answer)
+    - i'd go for [italy](answer)
+    - i think she was [greek](answer)
+    - all right then, let's go for [greece](answer)
+    - okay let's go [greece](answer), let's go for it
+    - well i think it's probably [on the ball](answer)
+    - um i think it's [olive](answer)
+    - i would say [waders](answer), wouldn't you?
+    - they've gotta be [waders](answer)
+    - i mean it's got to be [waders](answer)
+    - well i think it's [pantomime](answer)
+    - well, it's got to be [soap on a rope](answer)
+    - [the baby](answer)?
+    - [travel](answer)?
+    - i think it's [d](answer)
+    - well, well, i've been thinking it's [coffee](answer)
+    - [opera](answer)
+    - could it be [wasps](answer)?
+    - or are we gonna go with [worms](answer)?
+    - i'm, i've, i would have thought [georgette](answer) but that's just a first, you know
+    - ok, [georgette](answer)
+    - oh, it is [florence](answer) then
+    - it's [florence](answer).
+    - it is [florence](answer)
+    - it is [florence](answer)
+    - i think it's [florence](answer)
+    - it's [benny hill](answer)
+    - i think, i think it's [archeology](answer)
+    - well, i think the answer is c, [belgium](answer)
+    - i think it was probably [kevin keegan](answer), wouldn't you
+    - it would be a guess, uh, i'd be inclined to guess, uhm [ronald reagan](answer), but uhm
+    - [south pacific](answer)
+    - [heat](answer)?
+    - [sunglasses](answer)
+    - of course, can we agree it is [her smile](answer)?
+    - that is [fanlight](answer), i am confident
+    - [beer](answer)
+    - no she definitely comes from [liverpool](answer) i think we can agree on that
+    - i think it's [keep](answer)
+    - i think it's [citadel](answer) that has a style that's something the back of my mind is saying [citadel](answer) bu
+    - [citadel](answer)
+    - [st andrews](answer)
+    - [shehrezade](answer) the answer to that
+    - right i would say [ramsey macdonald](answer) who had one very short period in office very short
+    - i would say [ramsay macdonald](answer)
+    - right [ramsay macdonald](answer)
+    - i think, i think we agree it's probably [postage and pafacking]](answer), uh [packaging](answer), [packaging](answer)
+    - it is in [europe](answer)
+    - [tureen](answer)
+    - [tureen](answer)
+    - it's [samuel](answer)
+    - [samuel](answer) taylor coleridge, in fact, the taylor bit you've missed out i think
+    - i think it's [calcium](answer)
+    - it might be [copper](answer)
+    - [canada](answer)
+    - we think this is [canada](answer), we think this is [canada](answer)
+    - because i think it's [george bush senior](answer)
+    - [pottery](answer) or
+    - [printing](answer) i think
+    - [printing](answer)
+    - i think the answer is [larry](answer)
+    - if i were to guess i would save that it's by [will self](answer) but i don't think we can guess
+    - [will self](answer) looking good to me
+    - [pink](answer)
+    - [metal fatigue](answer)
+    - [herring](answer)
+    - [mcenroe](answer)
+    - [gold](answer), i think
+    - [john grisham](answer)
+    - i thought it was [grisham](answer) but then you see crichton's name there
+    - [john grisham](answer)
+    - i'm certain it's [grisham](answer)
+    - [grisham](answer), ok it's a jury, [grisham](answer), legal
+    - [sweetener](answer)
+    - it's definately [gallipoli](answer)
+    - it's definately [gallipoli](answer)
+    - [cold](answer)
+    - pretty sure it is [maggie](answer)
+    - the [nettle](answer) i'm sure
+    - [personnel](answer)?
+    - but i'm pretty sure that's [davina](answer)
+    - so if it nordic it is got to be the [vikings](answer)
+    - palazzo [pants](answer)?
+    - it's [switzerland](answer) isn't it?
+    - [blazer](answer)?
+    - [eating](answer)
+    - [eating](answer)?
+    - [icey](answer)?
+    - [millenium dome](answer)?
+    - [millenium dome](answer)
+    - shane? [shane richie](answer)
+    - i think it's [ranulph fiennes](answer)
+    - it has to be [jane birkin](answer)
+    - okay i know that its [windsor](answer) yes?
+    - it was the [united nations](answer)
+    - now my mind says [trapeze](answer)
+    - i think it's [mars](answer)
+    - [riding crop](answer)
+    - [riding crop](answer)
+    - i think it's [tacky](answer)
+    - [apartment](answer)
+    - [revival](answer)
+    - [revival](answer)
+    - well i think it is [official receiver](answer)
+    - it must be [official receiver](answer)
+    - [oral](answer)
+    - [oral](answer) yeah but should we think about [oral](answer) i mean it is definitely [oral](answer)
+    - i think it is [jerry maguire](answer)
+    - i think it's [age](answer)
+    - would you believe me that it is [cooker](answer)?
+    - after a night-out it could be red-nose but i think it's [red eye](answer)
+    - it's [joan collins](answer)
+    - [horse racing](answer)
+    - [stout](answer)
+    - we'll have [dry bread](answer) shall we?
+    - you are the mathematician but i'd say [3 divided by 3](answer)
+    - [mongolia](answer)
+    - i'd be inclined to go with [london](answer)
+    - something doesn't ring true about the bishop of [london](answer)
+    - [baseball](answer), [baseball](answer)
+    - a glass of [folly](answer), [folly](answer)
+    - oh it's got to be [fool](answer)
+    - it's uh, i was worried until we saw [shrew](answer)
+    - i think it's [pacific](answer)
+    - [horse](answer)?
+    - [charles the seventh](answer)?
+    - it must be [michigan](answer) then
+    - [fame](answer)?
+    - i think it's [secondary](answer). it's general certificate of [secondary](answer) education
+    - it's [milk](answer)
+    - i think it's [for valour](answer)
+    - i think it's [prada](answer)
+    - i think it's [melon](answer)
+    - probably about 90 sure it's [melon](answer)
+    - [vernon kay](answer)
+    - i think it was [kimi raikkonen](answer)
+    - um i think [yellow submarine](answer) jill
+    - well i'm pretty sure it's [mary poppins](answer)
+    - why would you say that i think it's [bath](answer)
+    - i was thinking [good intentions](answer) i don't
+    - i'm thinking [good intentions](answer) but i said
+    - i think well it's [french](answer) isn't it
+    - no i don't i think why would it not be [french](answer)
+    - yeah i think it's [liverpool](answer)
+    - would say in a [restaurant](answer) i would hope
+    - [horse racing](answer)
+    - okay well she's sophie is now known as sophie ellis-bextor so i'm assuming that it's [janet ellis](answer)
+    - it's got to be [viniculturist](answer)
+    - its [robert](answer)
+    - is it [robert](answer) winston
+    - it was [robert](answer) winston
+    - it's the [epiphany](answer)
+    - i'm 100 percent sure it's [epiphany](answer)
+    - [scotland](answer)
+    - yeah, do you think it's [hawaiian](answer)?
+    - well, i'll say to you, i'm pretty sure it's [david blaine](answer)
+    - i'd say it's [raj](answer).
+    - it is a [viceroy](answer)?
+
+- intent: final-answer
+  examples: |
+    - yeah, i thought it was [church](answer) so... [church](answer)
+    - [gareth and norman](answer)
+    - okay, a [watch](answer).
+    - [teaspoon](answer) chris.
+    - okay chris, we're gonna go for [pirouette](answer)
+    - it's [houston](answer)
+    - [brian blessed](answer)
+    - [goody two shoes](answer)
+    - [garters](answer)
+    - [gabriel](answer).
+    - [gabriel](answer).
+    - [australia](answer)
+    - yeah, [martin](answer)
+    - [greece](answer)
+    - [chinstrap](answer)
+    - [waders](answer), final answer
+    - it is [the baby](answer)
+    - yes, [travel](answer). [travel](answer)
+    - [travel](answer).
+    - i think it has to be. yes, it is my final answer
+    - [benny hill](answer)
+    - it's [tickety boo](answer)
+    - it's a toughie. it must be, uhm, [a removal van](answer)
+    - [real ale](answer)
+    - no, [bouffant](answer)
+    - the answer is d, [poisoned chalice](answer)
+    - yeah, that's alright, it's [crazy frog](answer)
+    - [belgium](answer)
+    - [keegan](answer).
+    - [kevin keegan](answer).
+    - if my friend agrees, i think we'll go with [ronald reagan](answer)
+    - [patrick o'brien](answer)
+    - i'd have to go with [o'brien](answer)
+    - we're gonna both guess [heat](answer)
+    - [heat](answer)
+    - [plum job]](answer)
+    - final answer [st andrews](answer)
+    - [scheherezade](answer), final answer
+    - we will go for [semi](answer)
+    - [skimmed](answer)
+    - [skimmed](answer)
+    - [fisherman](answer)
+    - [fisherman](answer)
+    - [tureen](answer)
+    - yes, and i know, it's actually sir [ian mckellen](answer), final answer
+    - alright, our final answer is [copper](answer)
+    - we, wuh, we, wuh, we're going to go for [printing](answer)
+    - final answer is [printing](answer) because it seems so unlikely
+    - that'll be the [crack of dawn](answer) then
+    - [retail price](answer)
+    - [peter andre](answer)
+    - we'll have d [margaret thatcher](answer)
+    - well i'll go for [asia](answer) please
+    - so a [journalism](answer) is the answer
+    - [cross](answer)
+    - we'll go for [pink](answer)
+    - [play ball](answer), d
+    - [erring gull](answer)
+    - [john mcenroe](answer)
+    - [sweetener](answer)
+    - it's definately [gallipoli](answer), c
+    - no doubt, [gallipoli](answer) c
+    - that would be [dear](answer)
+    - ome on then, [switzerland](answer), final asnwer
+    - good okay [windsor](answer) please
+    - that's cool we should go for it then [trapeze](answer)
+    - yeah let's go for [mars](answer)
+    - [riding crop](answer)
+    - [official receiver](answer)
+    - [oral](answer) examination
+    - [home office](answer)
+    - [halfway house](answer)
+    - [monkeys](answer)
+    - [vaughan williams](answer)
+    - we both think it's [mongolia](answer)
+    - bishop of [london](answer)
+    - [baseball](answer)
+    - [chain](answer)
+    - it's uh, [shrew](answer)
+    - [smoking gun](answer)
+    - [pacific](answer), final answer
+    - it's [dressing gown](answer).
+    - it's [banana split](answer)
+    - [cartwheel](answer)
+    - [horse](answer)
+    - [charles the seventh](answer).
+    - we'll go with [fame](answer).
+    - we'll go with [milk](answer)
+    - [for valour](answer).
+    - final answer
+    - final answer chris
+    - i'm pretty sure it's [mary poppins](answer)
+    - happy yeah happy [good intentions](answer)
+    - [french](answer) [french](answer) final answer
+    - we're pretty confident about [horse racing](answer)
+    - [robert](answer) winston
+    - it's [snakes on a plane](answer)
+    - [hawaiian](answer)
+    - [los angeles](answer)
+    - it's [coronation](answer)
+    - [jazz](answer)
+    - so, [viceroy](answer).
+
+- intent: confirm-final-answer
+  examples: |
+    - yes
+    - yeah
+    - yes.
+    - yes
+    - yep
+    - final answer.
+    - yep.
+    - [martin](answer)
+    - final answer.
+    - yes
+    - final answer.
+    - final answer.
+    - final answer.
+    - i'm happy with that
+    - final answer, yes
+    - an [arrow](answer).
+    - agreed
+    - final answer
+    - we're gonna go with [coffee](answer)
+    - final answer
+    - yeah, go on, [georgette](answer)
+    - [georgette](answer)
+    - final answer
+    - final answer. [ronald reagan](answer)
+    - yeah, final answer
+    - yeah
+    - final answer
+    - that's our final answer
+    - yes, that's our final answer
+    - yes, final answer
+    - yes
+    - yes
+    - final answer
+    - yes
+    - final answer
+    - final answer
+    - yeah
+    - yeah b
+    - [john grisham](answer)
+    - yep
+    - yeah, absolutely, i think
+    - yeah
+    - so yes [ranulph fiennes](answer)
+    - yes final answer
+    - final answer
+    - yes
+    - yeah
+    - yeah
+    - yeah
+    - [mongolia](answer)
+    - yes
+    - yes
+    - final answer
+    - yes
+    - i am actually
+    - yeah
+    - yes
+    - final answer.
+    - [fame](answer).
+    - yes, yep.
+    - final answer.
+    - final answer.
+    - yep.
+    - yep.
+    - yea, yea. if he's sure, i'm happy.
+    - yes
+    - yes
+    - final answer
+    - yeah should we go for it yeah i'm happy
+    - yes
+    - final answer
+    - [viniculturist](answer)
+    - final answer
+    - final answer
+    - final answer.
+    - final answer.
+    - yes.
+    - final answer
+    - [los angeles](answer)
+    - its [immunity](answer)
+    - em, [bye](answer)
+    - [skull](answer)
+    - yes
+    - yes
+    - yes
+    - yes, definitely
+    - yeah i think should
+    - let's go for it yeah
+
+- intent: reject-option
+  examples: |
+    - well, it's not [manchester](answer) is it?
+    - i don't think it's [david steel](answer)
+    - no, i don't believe so
+    - i don't think [norman tebbit](answer) worked up north for an mp
+    - it's not [turin](answer)
+    - and it's not [bologna](answer)
+    - well, it wouldn't be [pickety moo](answer)
+    - [bill clinton](answer) didn't come from illinois, did he?
+    - no, no it's not [lasangne](answer), definitely not
+    - well it's not [kremlin](answer) i think that's fair to say
+    - i don't think it's a [castle](answer)
+    - well i don't think it's kremlin i don't think it's castle
+    - i'm sure it's not [keep](answer)
+    - it's not [castle](answer)
+    - that doesn't sound right at all, [castle](answer)
+    - definitely not kremlim
+    - so [david lloyd george](answer) i would say no
+    - bonar law i would say no
+    - [jimmy carter](answer)'s peanuts
+    - i don't remember one of bernhard leach's poems
+    - i don't think it's [painting](answer)
+    - first novel well [irving welsh](answer) first novel im sure is very well known
+    - i don't think it's [stephen king](answer), horror man
+    - [patricia cornwell](answer) what does she do detectives
+    - i don't think it's [michael crichton](answer)
+    - well it's not the [romans](answer)
+    - and it's not the [spanish](answer) is it?
+    - it's not [slovakia](answer) because because it's too far
+    - we lost now and so i don't think it's [germany](answer)
+    - no i don't think it's [slovakia](answer)
+    - it's not [liechtenstein](answer)
+    - it's not [germany](answer) because [germany](answer) have got 2000 and they've got 2010 they wouldn't
+    - well [auditory](answer) is hearing
+    - i wish it was [bolly](answer), but it's not
+    - i would stake the farm and the fact that it's not the [atlantic](answer) or the [arctic](answer)
+    - they're not going to do nuclear tests in the [indian](answer) ocean
+    - [ontario](answer) is in canada
+    - um well i know it wasn't [lewis hamilton](answer) and it wasn't [alonso](answer)
+    - it's not [pentecost](answer)
+    - don't say [ali bongo](answer)
+    - hmm, no, nah i don't think it's [poetry](answer)
+    - so if it nordic it can't be the [vikings](answer)
+    - not palazzo [pants](answer)
+    - it's not [switzerland](answer) right?
+    - not [blazer](answer)
+    - not [eating](answer)
+    - not [eating](answer)
+    - not [icey](answer)
+    - not the [millenium dome](answer)
+    - it isn't the [millenium dome](answer)
+    - it is not [shane richie](answer) right?
+    - i think it's not [ranulph fiennes](answer)
+    - it cannot be [jane birkin](answer)
+    - okay i know that it is not [windsor](answer) yes?
+    - it wasn't the [united nations](answer)
+    - now my mind says it's not [trapeze](answer)
+    - i think it's not [mars](answer)
+    - [riding crop](answer) definitely not
+    - [riding crop](answer) definitely not
+    - i think it's not [tacky](answer)
+    - i think it's not gonna be tea spoon
+    - i think it's a, [pirouette](answer).
+    - no let's not go for [pirouette](answer)
+    - okay it's not [houston](answer).
+    - i think it's not [brian blessed](answer)
+    - i think it's not [martin](answer).
+    - he might have visited the others but it's not [nottingham](answer), is it?
+    - it's not [five](answer) chris
+    - not kinnock
+    - my leanings are that it is not [tony benn](answer)
+    - not [tony benn](answer)? not [tony benn](answer)?
+    - definintely not [red](answer)
+    - yeah yeah there is, but there ain't no [red](answer) on there
+    - [red](answer)
+    - I don't think it is [italy](answer)

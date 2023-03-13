@@ -1,0 +1,170 @@
+[
+  {
+    "text": "you're confident are you?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.6645867228507996
+    }
+  },
+  {
+    "text": "we can agree",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9931683540344238
+    }
+  },
+  {
+    "text": "yeah",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.404827743768692
+    }
+  },
+  {
+    "text": "i think it's a, pirouette.",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "reject-option",
+      "confidence": 0.9395569562911987
+    }
+  },
+  {
+    "text": "red",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "reject-option",
+      "confidence": 0.6623624563217163
+    }
+  },
+  {
+    "text": "yeah yeah there is, but there ain't no red on there",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "reject-option",
+      "confidence": 0.8639514446258545
+    }
+  },
+  {
+    "text": "travel?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.8383790850639343
+    }
+  },
+  {
+    "text": "tureen",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.5544374585151672
+    }
+  },
+  {
+    "text": "john grisham",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.7285564541816711
+    }
+  },
+  {
+    "text": "sweetener",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.7964648008346558
+    }
+  },
+  {
+    "text": "riding crop",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.9461334943771362
+    }
+  },
+  {
+    "text": "heat",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.8207294940948486
+    }
+  },
+  {
+    "text": "horse",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.962399959564209
+    }
+  },
+  {
+    "text": "charles the seventh.",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.8038319945335388
+    }
+  },
+  {
+    "text": "final answer",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.7958093285560608
+    }
+  },
+  {
+    "text": "los angeles",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.7862659692764282
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.8692934513092041
+    }
+  },
+  {
+    "text": "yeah",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.404827743768692
+    }
+  },
+  {
+    "text": "yes.",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.8692934513092041
+    }
+  },
+  {
+    "text": "mongolia",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.8830741047859192
+    }
+  },
+  {
+    "text": "fame.",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.896213173866272
+    }
+  }
+]
