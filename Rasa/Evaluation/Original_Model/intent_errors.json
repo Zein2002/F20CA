@@ -1,0 +1,42 @@
+[
+  {
+    "text": "yeah",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.4445340931415558
+    }
+  },
+  {
+    "text": "final answer",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5108696818351746
+    }
+  },
+  {
+    "text": "final answer?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5108696818351746
+    }
+  },
+  {
+    "text": "travel?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.5734484195709229
+    }
+  },
+  {
+    "text": "los angeles",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.7728989720344543
+    }
+  }
+]

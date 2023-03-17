@@ -1,0 +1,178 @@
+[
+  {
+    "text": "You know this",
+    "intent": "offer-to-answer",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.874194860458374
+    }
+  },
+  {
+    "text": "should we go for it",
+    "intent": "offer-to-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.7507017254829407
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.899890661239624
+    }
+  },
+  {
+    "text": "we can agree",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.6133338809013367
+    }
+  },
+  {
+    "text": "yeah",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.3109641373157501
+    }
+  },
+  {
+    "text": "final answer?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5046755075454712
+    }
+  },
+  {
+    "text": "final answer",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5046755075454712
+    }
+  },
+  {
+    "text": "tureen",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.5579246282577515
+    }
+  },
+  {
+    "text": "riding crop",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.6539732217788696
+    }
+  },
+  {
+    "text": "horse?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.5474322438240051
+    }
+  },
+  {
+    "text": "charles the seventh?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.5777276754379272
+    }
+  },
+  {
+    "text": "travel.",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.5776075124740601
+    }
+  },
+  {
+    "text": "heat",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.510579526424408
+    }
+  },
+  {
+    "text": "yeah",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.3109641373157501
+    }
+  },
+  {
+    "text": "sweetener",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.7170207500457764
+    }
+  },
+  {
+    "text": "final answer",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5046755075454712
+    }
+  },
+  {
+    "text": "final answer?",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5046755075454712
+    }
+  },
+  {
+    "text": "yeah",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.3109641373157501
+    }
+  },
+  {
+    "text": "john grisham",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.6698014140129089
+    }
+  },
+  {
+    "text": "mongolia",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.6267236471176147
+    }
+  },
+  {
+    "text": "fame.",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.48816978931427
+    }
+  },
+  {
+    "text": "los angeles",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.500946581363678
+    }
+  }
+]

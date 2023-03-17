@@ -1,0 +1,31 @@
+[
+  {
+    "text": "shane? shane richie",
+    "entities": [
+      {
+        "start": 7,
+        "end": 19,
+        "value": "shane richie",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.5773260593414307,
+        "value": "shane",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 7,
+        "end": 19,
+        "confidence_entity": 0.9336381554603577,
+        "value": "shane richie",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

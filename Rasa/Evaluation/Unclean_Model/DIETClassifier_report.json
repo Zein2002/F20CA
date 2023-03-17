@@ -1,0 +1,28 @@
+{
+  "answer": {
+    "precision": 0.9977728285077951,
+    "recall": 1.0,
+    "f1-score": 0.9988851727982163,
+    "support": 448,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9977728285077951,
+    "recall": 1.0,
+    "f1-score": 0.9988851727982163,
+    "support": 448
+  },
+  "macro avg": {
+    "precision": 0.9977728285077951,
+    "recall": 1.0,
+    "f1-score": 0.9988851727982163,
+    "support": 448
+  },
+  "weighted avg": {
+    "precision": 0.9977728285077951,
+    "recall": 1.0,
+    "f1-score": 0.9988851727982163,
+    "support": 448
+  },
+  "accuracy": 0.9997046662728883
+}

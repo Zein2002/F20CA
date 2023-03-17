@@ -1,0 +1,90 @@
+[
+  {
+    "text": "yes",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9283207654953003
+    }
+  },
+  {
+    "text": "we can agree",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.639639139175415
+    }
+  },
+  {
+    "text": "yeah",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5711374282836914
+    }
+  },
+  {
+    "text": "tureen",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.4958830177783966
+    }
+  },
+  {
+    "text": "john grisham",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.4922524690628052
+    }
+  },
+  {
+    "text": "sweetener",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.5663020014762878
+    }
+  },
+  {
+    "text": "mongolia",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5610149502754211
+    }
+  },
+  {
+    "text": "travel.",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.5429020524024963
+    }
+  },
+  {
+    "text": "yeah",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5711374282836914
+    }
+  },
+  {
+    "text": "final answer.",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.5118983387947083
+    }
+  },
+  {
+    "text": "final answer",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.5118983387947083
+    }
+  }
+]
