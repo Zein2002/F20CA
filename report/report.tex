@@ -108,17 +108,17 @@ As the system uses the annotations to train the system, ensuring that they are r
 
 To calculate Cohen's kappa, a sample of 4 transcripts were re-annotated by a team member, without them seeing the original annotations to remove any possible bias. This was approximately 15\% of the total transcripts.
 
-Every occurrence by both raters of each annotation label was gathered. An overall agreement rate was calculated using - 
+Every occurrence by both raters of each annotation label was gathered. An overall agreement rate was calculated using -
 
 $Agreement = totalAgreed / total$
 $Agreement = 329/341 = 0.9648$
 
-This alone is not reliable enough to trust. 
-To calculate the chance of an agreement happening between the two raters, first the probability of a rater choosing a label was calculated. This was done for each rater for every label using - 
+This alone is not reliable enough to trust.
+To calculate the chance of an agreement happening between the two raters, first the probability of a rater choosing a label was calculated. This was done for each rater for every label using -
 
 $Prob(Rx[label]) = Rx Total for [label] / total$
 
-Then the chance of agreement for each annotation label was calculated using - 
+Then the chance of agreement for each annotation label was calculated using -
 $ChanceAgreement[label] = Prob(R1[label]) * Prob(R2[label])$
 
 The overall chance of agreement was calculated by summing the chance of agreements for each annotation label.
@@ -159,7 +159,7 @@ As well as these reasons, Google's API boasted diarization capabilities, along w
 \end{itemize}
 
 \begin{figure}
-  \includegraphics[width=\columnwidth]{../Rasa/Evaluation/intent_confusion_matrix.png}
+  \includegraphics[width=\columnwidth]{../Rasa/Evaluation/Clean_Model/intent_confusion_matrix.png}
   \caption{Intent Recognition Confusion Matrix}
   \label{fig:intent_confusion_matrix}
 \end{figure}
