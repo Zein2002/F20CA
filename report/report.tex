@@ -25,6 +25,9 @@
 \usepackage{nameref}
 \usepackage[]{hyperref}
 
+% for todo notes 
+\usepackage{todonotes}
+
 \aclfinalcopy % Uncomment this line for the final submission
 %\def\aclpaperid{***} %  Enter the acl Paper ID here
 
@@ -110,6 +113,15 @@ In dyadic conversations, there are only two roles a participant can take: speake
 
 \subsection{Automatic Speech Recognition}
 \label{subsec:asr}
+
+To enable interaction between users and the conversational system, the first step is to transform user's speech into text, in order to pass text further onto intent recognition (NLU). Transforming audio into text works through Speech-To-Text (STT)software. In recent years, STT systems are becoming more accurate and fast, however, research found that none of the existing systems can yet reliably handle conversations in real time \cite{Addlesee_Yu_Eshghi_2020}.
+
+The system we \todo{Get rid of pronoun} have built required two things specifically from the ASR that are not available in all ASR systems. The first being real time transcription. As our system is going to be used on a robot, it must transcribe what the user is saying in real-time to avoid long delays before the system responds. For a usable system in this context the time taken for a system to respond can be no longer than the delay a human would leave before responding or only marginally longer. In addition, our system requires diarization. Diarization is the process of taking a single audio file, in which two or more people are speaking, and determining who is speaking at what time. As two users would be speaking to each other and to our system, our system must recognise when each individual is talking. \todo{Those two sentences have the same content} This would allow us to track the intents of each user and determine when they have agreed with each other.
+We tried many of the most popular STT systems including Amazon's Transcribe, IBM's Watson and locally running Pyannote. These are all valid options for transcription but lack real-time diarization, that is, diarising the speech as it is spoken.
+Finally, we \todo{Get rid of pronoun} settled with Google's Cloud Speech-to-Text API due to its high accuracy, real-time transcription capabilities, and customisability. Also, as it is widely used, resources available for troubleshooting and integration were readily available.
+
+As well as these reasons, Google's API boasted diarization capabilities, along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate and often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other. This is in accordance with the findings of \cite{addlesee_comprehensive_2020}. Diarization is quite resource-heavy meaning that running a diarization algorithm in real time takes an extreme amount of resources and, unfortunately, is not feasible on normal, consumer-grade hardware. And although diarization APIs exist, they do not respond fast enough for our use case. This made Google's diarization unusable for our system, therefore we decided to handle the diarization separately and integrate it with the real time Google transcription.
+
 
 \begin{itemize}
   \item (Laura) Previous research, difficulties of ASR
