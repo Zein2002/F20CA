@@ -102,6 +102,32 @@ In dyadic conversations, there are only two roles a participant can take: speake
   \item (Aron and Katie) How we collected our data, describe the intents we used to label the data
   \item (Aron and Katie) Cohen's Kappa for our data collection method: probably need to annotate a couple of transcripts twice for reporting on this
 \end{itemize}
+\subsection{Cohen's Kappa Coefficient}
+\subsubsection{Calculation}
+As the system uses the annotations to train the system, ensuring that they are reliable and consistent is essential for accurate training. Cohen's kappa was used on a sample of the completed transcripts to evaluate their accuracy. Cohen's kappa is used to measure the reliability between raters on categorical data. It is said to be more accurate than calculating the agreement as it accounts for agreements happening by chance.
+
+To calculate Cohen's kappa, a sample of 4 transcripts were re-annotated by a team member, without them seeing the original annotations to remove any possible bias. This was approximately 15\% of the total transcripts.
+
+Every occurrence by both raters of each annotation label was gathered. An overall agreement rate was calculated using - 
+
+$Agreement = totalAgreed / total$
+$Agreement = 329/341 = 0.9648$
+
+This alone is not reliable enough to trust. 
+To calculate the chance of an agreement happening between the two raters, first the probability of a rater choosing a label was calculated. This was done for each rater for every label using - 
+
+$Prob(Rx[label]) = Rx Total for [label] / total$
+
+Then the chance of agreement for each annotation label was calculated using - 
+$ChanceAgreement[label] = Prob(R1[label]) * Prob(R2[label])$
+
+The overall chance of agreement was calculated by summing the chance of agreements for each annotation label.
+
+Finally, the kappa score was calculated.
+$KappaScore = (Agree-ChanceAgree)/(1-ChanceAgree)$
+$KappaScore = (0.9648-0.1175)/(1-0.1175) = 0.9601$
+\subsubsection{Analysis}
+According to Cohen, a Kappa score of 0.9601 is interpreted as almost perfect agreement. From this, the annotation of transcripts can be concluded as reliable and therefore the training model will accurately learn from this data.
 
 \section{Design and Implementation}
 \label{sec:implementation}

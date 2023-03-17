@@ -21,6 +21,7 @@ nlu:
     - I think I know this one
     - I know that one
     - So, what are you saying?
+    - should we go for it
     - Do you want to do this one?
     - Do you want to say it or shall I?
 
@@ -58,6 +59,9 @@ nlu:
     - i think have you got any ideas
     - I think I know too what would you say?
     - I know it darling. You know it, don't ya?
+    - I think we we know this don't we?
+    - well I think you know this
+    - Do we want to think about anything else?
 
 - intent: agreement
   examples: |
@@ -260,7 +264,27 @@ nlu:
     - Snakes on a plane
     - I know it' Hawaiian
     - Yeah
+    - Yeah very nice first one
+    - Yep
+    - Yep
+    - Harold Harold
+    - Harold
+    - Yeah
+    - I wouldn't
+    - Your gut instict is always pretty good
+    - Yeah
+    - Round the shoulders
+    - Round goes round
+    - Gotta say that
+    - Round the shoulders
+    - Get on with it
+    - Never change my mind
+    - yeah three
+    - Hes good
     - I was just gonna say, I don't know what it is, but I'm looking at rabbit
+    - Court, yes
+    - I'm I'm 99.9% certain
+    - As am i
     - yes, yes
     - David Blaine
     - Yea
@@ -318,6 +342,7 @@ nlu:
     - final answer
     - final answer
     - I know it's the answer. What do you think?
+    - Our answer?
 
 - intent: offer-answer
   examples: |
@@ -500,8 +525,19 @@ nlu:
     - i'm 100 percent sure it's [epiphany](answer)
     - [scotland](answer)
     - yeah, do you think it's [hawaiian](answer)?
+    - i would hazard a guess it is c [portrait](answer)
+    - [harold](answer) wouldn't it? yep.
+    - well you think you think [around the shoulders](answer)
+    - gotta be on the shoulder innit
+    - six and one four and [three](answer) 5 and 2
+    - it's gotta be c then isn't it
+    - [three](answer)
     - [stars](answer)
     - miffy, it sound like a [rabbit](answer) to me
+    - [eyes](answer)? going with [eyes](answer)?
+    - i mean it's 2,000 pounds mm-hmm i'm thinking [polynesia](answer) let's go for it
+    - i, poly many islands [polynesia](answer) i guess
+    - we're both thinking a,
     - well, i'll say to you, i'm pretty sure it's [david blaine](answer)
     - i'd say it's [raj](answer).
     - it is a [viceroy](answer)?
@@ -613,8 +649,16 @@ nlu:
     - it's [snakes on a plane](answer)
     - [hawaiian](answer)
     - [los angeles](answer)
+    - final answer?
+    - four [three](answer) seven six one seven five two seven yeah [three](answer)
+    - the [beatles](answer) next
+    - all right [morocco](answer)
     - final answer [rabbit](answer)
     - final answer [rabbit](answer)
+    - [eyes](answer). [eyes](answer) chris. final answer.
+    - [harold wilson](answer)
+    - yes, b, final answer
+    - [](answer)f[](answer)i[](answer)n[](answer)a[](answer)l[](answer) [](answer)a[](answer)n[](answer)s[](answer)w[](answer)e[](answer)r[](answer),[](answer) [](answer)i[](answer)n[](answer)n[](answer)s[](answer) [](answer)o[](answer)f[](answer) [](answer)c[](answer)o[](answer)u[](answer)r[](answer)t[](answer)
     - it's [coronation](answer)
     - [jazz](answer)
     - so, [viceroy](answer).
@@ -759,5 +803,6 @@ nlu:
     - well obviuosly a [mallard](answer) is a duck and it's got lots of bloody colors and mainly green and brown
     - a [coot](answer) is black
     - it's not [pentecost](answer)
+    - you won't wear a shrug on your head would you?
     - don't say [ali bongo](answer)
 
