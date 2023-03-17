@@ -122,13 +122,6 @@ Finally, we \todo{Get rid of pronoun} settled with Google's Cloud Speech-to-Text
 
 As well as these reasons, Google's API boasted diarization capabilities, along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate and often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other. This is in accordance with the findings of \cite{addlesee_comprehensive_2020}. Diarization is quite resource-heavy meaning that running a diarization algorithm in real time takes an extreme amount of resources and, unfortunately, is not feasible on normal, consumer-grade hardware. And although diarization APIs exist, they do not respond fast enough for our use case. This made Google's diarization unusable for our system, therefore we decided to handle the diarization separately and integrate it with the real time Google transcription.
 
-
-\begin{itemize}
-  \item (Laura) Previous research, difficulties of ASR
-  \item (Charlie \& Jason) Difficulties and choice of ASR (why Google over others?)
-  \item (Charlie \& Jason) Chosen set-up
-\end{itemize}
-
 \subsection{Natural Language Understanding}
 \label{subsec:nlu}
 
@@ -138,6 +131,12 @@ As well as these reasons, Google's API boasted diarization capabilities, along w
   \item Refer to the intents described in \ref{sec:data_collection} \nameref{sec:data_collection}
   \item Evaluation - show different versions of the model: difference in F-Score, Confusion Matrix, ...
 \end{itemize}
+
+\begin{figure}
+  \includegraphics[width=\columnwidth]{../Rasa/Evaluation/intent_confusion_matrix.png}
+  \caption{Intent Recognition Confusion Matrix}
+  \label{fig:intent_confusion_matrix}
+\end{figure}
 
 \subsection{Dialogue Management}
 \label{subsec:dialogue_management}
