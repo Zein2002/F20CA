@@ -1,5 +1,5 @@
 Transcribed by: Xander
-Status: Incomplete
+Status: Complete
 YouTube Link: https://www.youtube.com/watch?v=QwYRB_cWFcE
 
 Dialogue Annotation Options
@@ -15,8 +15,8 @@ U1: User 1 | U2: User 2 | S: System
 
 S: Who Wants to Be a Millionaire question number one is 500 quid the mop top hairstyle was most associated with which pop group [question]
 S: Beatles, Sex Pistols, Duran Duran, Black Sabbath [options]
-U1: well [chit-chat]
-U2: the Beatles next [final-answer(Beatles)]
+U1: Well [chit-chat]
+U2: The Beatles next [final-answer(Beatles)]
 S: Right Answer 500 pounds [confirm-final-answer]
 S: Last point of which you could go home with nothing but it won't happen you have three life this will guarantee you a thousand pounds Peter [chit-chat]
 U2: Okay but stop at services and get a meal [chit-chat]
@@ -28,7 +28,7 @@ U1: You know that [chit-chat]
 U2: Yeah [chit-chat]
 U1: Well say it then [chit-chat]
 U2: all right Morocco [final-answer(Morocco)]
-S: It's the right answer [confirm-final-answer]
+S: It's the right answer [accept-answer]
 U2: I was stalling [chit-chat]
 S: Why [chit-chat]
 U2: Just waiting for that Man on his keyboard backstage [chit-chat]
