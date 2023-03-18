@@ -1,28 +1,28 @@
 {
   "answer": {
-    "precision": 0.9977728285077951,
-    "recall": 1.0,
-    "f1-score": 0.9988851727982163,
-    "support": 448,
+    "precision": 0.991304347826087,
+    "recall": 0.9287169042769857,
+    "f1-score": 0.9589905362776024,
+    "support": 491,
     "confused_with": {}
   },
   "micro avg": {
-    "precision": 0.9977728285077951,
-    "recall": 1.0,
-    "f1-score": 0.9988851727982163,
-    "support": 448
+    "precision": 0.991304347826087,
+    "recall": 0.9287169042769857,
+    "f1-score": 0.9589905362776024,
+    "support": 491
   },
   "macro avg": {
-    "precision": 0.9977728285077951,
-    "recall": 1.0,
-    "f1-score": 0.9988851727982163,
-    "support": 448
+    "precision": 0.991304347826087,
+    "recall": 0.9287169042769857,
+    "f1-score": 0.9589905362776024,
+    "support": 491
   },
   "weighted avg": {
-    "precision": 0.9977728285077951,
-    "recall": 1.0,
-    "f1-score": 0.9988851727982163,
-    "support": 448
+    "precision": 0.991304347826087,
+    "recall": 0.9287169042769857,
+    "f1-score": 0.9589905362776024,
+    "support": 491
   },
-  "accuracy": 0.9997046662728883
+  "accuracy": 0.9863445378151261
 }

@@ -1,9 +1,18 @@
 {
-  "offer-to-answer": {
-    "precision": 1.0,
+  "agreement": {
+    "precision": 0.9803921568627451,
+    "recall": 0.9803921568627451,
+    "f1-score": 0.9803921568627451,
+    "support": 102,
+    "confused_with": {
+      "ask-agreement": 2
+    }
+  },
+  "reject-option": {
+    "precision": 0.9605263157894737,
     "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 13,
+    "f1-score": 0.9798657718120806,
+    "support": 73,
     "confused_with": {}
   },
   "check-answer": {
@@ -25,6 +34,20 @@
       "agreement": 2
     }
   },
+  "offer-to-answer": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 13,
+    "confused_with": {}
+  },
+  "ask-agreement": {
+    "precision": 0.92,
+    "recall": 1.0,
+    "f1-score": 0.9583333333333334,
+    "support": 46,
+    "confused_with": {}
+  },
   "final-answer": {
     "precision": 0.9591836734693877,
     "recall": 0.9494949494949495,
@@ -35,22 +58,6 @@
       "confirm-final-answer": 2
     }
   },
-  "agreement": {
-    "precision": 0.9803921568627451,
-    "recall": 0.9803921568627451,
-    "f1-score": 0.9803921568627451,
-    "support": 102,
-    "confused_with": {
-      "ask-agreement": 2
-    }
-  },
-  "reject-option": {
-    "precision": 0.9605263157894737,
-    "recall": 1.0,
-    "f1-score": 0.9798657718120806,
-    "support": 73,
-    "confused_with": {}
-  },
   "offer-answer": {
     "precision": 0.9696969696969697,
     "recall": 0.9523809523809523,
@@ -60,13 +67,6 @@
       "final-answer": 4,
       "reject-option": 3
     }
-  },
-  "ask-agreement": {
-    "precision": 0.92,
-    "recall": 1.0,
-    "f1-score": 0.9583333333333334,
-    "support": 46,
-    "confused_with": {}
   },
   "accuracy": 0.9628975265017667,
   "macro avg": {

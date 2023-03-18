@@ -1,93 +1,99 @@
 {
+  "reject-option": {
+    "precision": 1.0,
+    "recall": 0.6301369863013698,
+    "f1-score": 0.773109243697479,
+    "support": 73,
+    "confused_with": {
+      "offer-answer": 26,
+      "agreement": 1
+    }
+  },
+  "final-answer": {
+    "precision": 0.95,
+    "recall": 0.9595959595959596,
+    "f1-score": 0.9547738693467336,
+    "support": 99,
+    "confused_with": {
+      "offer-answer": 3,
+      "confirm-final-answer": 1
+    }
+  },
+  "agreement": {
+    "precision": 0.9702970297029703,
+    "recall": 0.9607843137254902,
+    "f1-score": 0.9655172413793103,
+    "support": 102,
+    "confused_with": {
+      "confirm-final-answer": 2,
+      "ask-agreement": 2
+    }
+  },
+  "ask-agreement": {
+    "precision": 0.9333333333333333,
+    "recall": 0.9130434782608695,
+    "f1-score": 0.9230769230769231,
+    "support": 46,
+    "confused_with": {
+      "offer-answer": 2,
+      "agreement": 2
+    }
+  },
+  "offer-to-answer": {
+    "precision": 0.8571428571428571,
+    "recall": 0.9230769230769231,
+    "f1-score": 0.888888888888889,
+    "support": 13,
+    "confused_with": {
+      "check-answer": 1
+    }
+  },
+  "offer-answer": {
+    "precision": 0.8274111675126904,
+    "recall": 0.9702380952380952,
+    "f1-score": 0.8931506849315068,
+    "support": 168,
+    "confused_with": {
+      "final-answer": 4,
+      "check-answer": 1
+    }
+  },
   "confirm-final-answer": {
-    "precision": 0.875,
-    "recall": 0.875,
-    "f1-score": 0.875,
-    "support": 40,
+    "precision": 0.918918918918919,
+    "recall": 0.8717948717948718,
+    "f1-score": 0.8947368421052632,
+    "support": 39,
     "confused_with": {
       "offer-answer": 3,
       "final-answer": 1
     }
   },
-  "reject-option": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 47,
-    "confused_with": {}
-  },
-  "final-answer": {
-    "precision": 0.9557522123893806,
-    "recall": 0.9473684210526315,
-    "f1-score": 0.9515418502202644,
-    "support": 114,
-    "confused_with": {
-      "offer-answer": 3,
-      "confirm-final-answer": 2
-    }
-  },
-  "agreement": {
-    "precision": 1.0,
-    "recall": 0.9823529411764705,
-    "f1-score": 0.9910979228486646,
-    "support": 170,
-    "confused_with": {
-      "ask-agreement": 2,
-      "confirm-final-answer": 1
-    }
-  },
-  "offer-answer": {
-    "precision": 0.9682539682539683,
-    "recall": 0.9786096256684492,
-    "f1-score": 0.973404255319149,
-    "support": 187,
-    "confused_with": {
-      "final-answer": 4
-    }
-  },
   "check-answer": {
-    "precision": 0.9696969696969697,
-    "recall": 1.0,
-    "f1-score": 0.9846153846153847,
-    "support": 32,
-    "confused_with": {}
-  },
-  "offer-to-answer": {
-    "precision": 1.0,
-    "recall": 0.9047619047619048,
-    "f1-score": 0.9500000000000001,
-    "support": 21,
+    "precision": 0.9230769230769231,
+    "recall": 0.9230769230769231,
+    "f1-score": 0.9230769230769231,
+    "support": 26,
     "confused_with": {
-      "check-answer": 1,
-      "ask-agreement": 1
+      "offer-to-answer": 2
     }
   },
-  "ask-agreement": {
-    "precision": 0.8958333333333334,
-    "recall": 0.9555555555555556,
-    "f1-score": 0.924731182795699,
-    "support": 45,
-    "confused_with": {
-      "confirm-final-answer": 2
-    }
-  },
-  "accuracy": 0.9664634146341463,
+  "accuracy": 0.9081272084805654,
   "macro avg": {
-    "precision": 0.9580670604592065,
-    "recall": 0.9554560560268764,
-    "f1-score": 0.9562988244748952,
-    "support": 656
+    "precision": 0.9225225287109617,
+    "recall": 0.8939684438838128,
+    "f1-score": 0.9020413270628784,
+    "support": 566
   },
   "weighted avg": {
-    "precision": 0.967015316015525,
-    "recall": 0.9664634146341463,
-    "f1-score": 0.966554282145675,
-    "support": 656
+    "precision": 0.9168540662294404,
+    "recall": 0.9081272084805654,
+    "f1-score": 0.9053065236813157,
+    "support": 566
   },
   "micro avg": {
-    "precision": 0.9664634146341463,
-    "recall": 0.9664634146341463,
-    "f1-score": 0.9664634146341463,
-    "support": 656
+    "precision": 0.9081272084805654,
+    "recall": 0.9081272084805654,
+    "f1-score": 0.9081272084805654,
+    "support": 566
   }
 }

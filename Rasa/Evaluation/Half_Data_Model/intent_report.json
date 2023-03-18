@@ -1,88 +1,101 @@
 {
   "check-answer": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 12,
-    "confused_with": {}
+    "precision": 0.8,
+    "recall": 0.6153846153846154,
+    "f1-score": 0.6956521739130435,
+    "support": 26,
+    "confused_with": {
+      "offer-to-answer": 4,
+      "agreement": 4
+    }
+  },
+  "offer-answer": {
+    "precision": 0.7513812154696132,
+    "recall": 0.8095238095238095,
+    "f1-score": 0.7793696275071632,
+    "support": 168,
+    "confused_with": {
+      "final-answer": 11,
+      "reject-option": 6
+    }
   },
   "confirm-final-answer": {
-    "precision": 0.8387096774193549,
-    "recall": 0.9285714285714286,
-    "f1-score": 0.8813559322033899,
-    "support": 28,
+    "precision": 0.6326530612244898,
+    "recall": 0.7948717948717948,
+    "f1-score": 0.7045454545454547,
+    "support": 39,
     "confused_with": {
+      "agreement": 3,
       "ask-agreement": 2
     }
   },
   "reject-option": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 35,
-    "confused_with": {}
-  },
-  "offer-answer": {
-    "precision": 0.9897959183673469,
-    "recall": 0.9603960396039604,
-    "f1-score": 0.9748743718592964,
-    "support": 101,
+    "precision": 0.7857142857142857,
+    "recall": 0.7534246575342466,
+    "f1-score": 0.7692307692307693,
+    "support": 73,
     "confused_with": {
-      "final-answer": 2,
-      "confirm-final-answer": 2
+      "offer-answer": 16,
+      "final-answer": 1
     }
   },
-  "ask-agreement": {
-    "precision": 0.88,
-    "recall": 1.0,
-    "f1-score": 0.9361702127659575,
-    "support": 22,
-    "confused_with": {}
-  },
   "final-answer": {
-    "precision": 0.9629629629629629,
-    "recall": 0.9629629629629629,
-    "f1-score": 0.9629629629629629,
-    "support": 54,
+    "precision": 0.8048780487804879,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.7292817679558011,
+    "support": 99,
     "confused_with": {
-      "offer-answer": 1,
-      "confirm-final-answer": 1
+      "offer-answer": 19,
+      "agreement": 6
+    }
+  },
+  "agreement": {
+    "precision": 0.7363636363636363,
+    "recall": 0.7941176470588235,
+    "f1-score": 0.7641509433962265,
+    "support": 102,
+    "confused_with": {
+      "confirm-final-answer": 7,
+      "offer-answer": 5
     }
   },
   "offer-to-answer": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 11,
-    "confused_with": {}
-  },
-  "agreement": {
-    "precision": 1.0,
-    "recall": 0.9680851063829787,
-    "f1-score": 0.9837837837837838,
-    "support": 94,
+    "precision": 0.4375,
+    "recall": 0.5384615384615384,
+    "f1-score": 0.4827586206896552,
+    "support": 13,
     "confused_with": {
-      "confirm-final-answer": 2,
-      "ask-agreement": 1
+      "agreement": 3,
+      "offer-answer": 1
     }
   },
-  "accuracy": 0.969187675070028,
+  "ask-agreement": {
+    "precision": 0.7368421052631579,
+    "recall": 0.6086956521739131,
+    "f1-score": 0.6666666666666666,
+    "support": 46,
+    "confused_with": {
+      "agreement": 7,
+      "offer-answer": 3
+    }
+  },
+  "accuracy": 0.7420494699646644,
   "macro avg": {
-    "precision": 0.958933569843708,
-    "recall": 0.9775019421901663,
-    "f1-score": 0.9673934079469237,
-    "support": 357
+    "precision": 0.7106665441019588,
+    "recall": 0.697643297709426,
+    "f1-score": 0.6989570029880975,
+    "support": 566
   },
   "weighted avg": {
-    "precision": 0.9714657107082465,
-    "recall": 0.969187675070028,
-    "f1-score": 0.9697806667115142,
-    "support": 357
+    "precision": 0.74812175092625,
+    "recall": 0.7420494699646644,
+    "f1-score": 0.7415847929571255,
+    "support": 566
   },
   "micro avg": {
-    "precision": 0.969187675070028,
-    "recall": 0.969187675070028,
-    "f1-score": 0.969187675070028,
-    "support": 357
+    "precision": 0.7420494699646644,
+    "recall": 0.7420494699646644,
+    "f1-score": 0.7420494699646644,
+    "support": 566
   }
 }

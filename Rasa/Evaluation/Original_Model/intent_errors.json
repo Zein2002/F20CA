@@ -1,5 +1,261 @@
 [
   {
+    "text": "this is definitely one for me",
+    "intent": "offer-to-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.6077688932418823
+    }
+  },
+  {
+    "text": "Is that me?",
+    "intent": "offer-to-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.6808640360832214
+    }
+  },
+  {
+    "text": "It's, it's, um",
+    "intent": "offer-to-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9824140667915344
+    }
+  },
+  {
+    "text": "Well I'm pretty sure I know what it is",
+    "intent": "offer-to-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9987348914146423
+    }
+  },
+  {
+    "text": "Shall I go for this one",
+    "intent": "offer-to-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9306899309158325
+    }
+  },
+  {
+    "text": "yes I can go for this without further ado",
+    "intent": "offer-to-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9552260637283325
+    }
+  },
+  {
+    "text": "My turn?",
+    "intent": "offer-to-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.7348324656486511
+    }
+  },
+  {
+    "text": "I know that one",
+    "intent": "offer-to-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.37423354387283325
+    }
+  },
+  {
+    "text": "Do you want to say it or shall I?",
+    "intent": "offer-to-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9995661377906799
+    }
+  },
+  {
+    "text": "What about you?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.6018297672271729
+    }
+  },
+  {
+    "text": "You know this?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.9593749642372131
+    }
+  },
+  {
+    "text": "What do you think?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.898625910282135
+    }
+  },
+  {
+    "text": "Any idea?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9968541264533997
+    }
+  },
+  {
+    "text": "I'd guess, what do you guess?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9323250651359558
+    }
+  },
+  {
+    "text": "What would you like to do?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.5386621952056885
+    }
+  },
+  {
+    "text": "what do you think?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9158818125724792
+    }
+  },
+  {
+    "text": "you're confident are you?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9995055198669434
+    }
+  },
+  {
+    "text": "Would you like to go for this one?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.6600900888442993
+    }
+  },
+  {
+    "text": "yeah? do you want to test it",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.7714797854423523
+    }
+  },
+  {
+    "text": "You have no idea?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9677243232727051
+    }
+  },
+  {
+    "text": "i think have you got any ideas",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9965167045593262
+    }
+  },
+  {
+    "text": "I think I know too what would you say?",
+    "intent": "check-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.5798201560974121
+    }
+  },
+  {
+    "text": "yes.",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9992444515228271
+    }
+  },
+  {
+    "text": "it's 100 percent",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.635745108127594
+    }
+  },
+  {
+    "text": "Well, I think",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.5933481454849243
+    }
+  },
+  {
+    "text": "I think we agree",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9858266711235046
+    }
+  },
+  {
+    "text": "no",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.49408331513404846
+    }
+  },
+  {
+    "text": "we can",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5339394807815552
+    }
+  },
+  {
+    "text": "yes we can",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9451403021812439
+    }
+  },
+  {
+    "text": "confident",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9368694424629211
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9992444515228271
+    }
+  },
+  {
+    "text": "we can agree",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9995575547218323
+    }
+  },
+  {
     "text": "yeah",
     "intent": "agreement",
     "intent_prediction": {
@@ -8,19 +264,451 @@
     }
   },
   {
-    "text": "final answer",
-    "intent": "ask-agreement",
+    "text": "fine",
+    "intent": "agreement",
     "intent_prediction": {
       "name": "confirm-final-answer",
-      "confidence": 0.5108696818351746
+      "confidence": 0.9556987881660461
     }
   },
   {
-    "text": "final answer?",
+    "text": "okay",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.7094499468803406
+    }
+  },
+  {
+    "text": "I think it is",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.7897202372550964
+    }
+  },
+  {
+    "text": "You do that one",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9275550246238708
+    }
+  },
+  {
+    "text": "OK",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.8907665610313416
+    }
+  },
+  {
+    "text": "No disagreement about that",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.43110600113868713
+    }
+  },
+  {
+    "text": "OK, go with the gut",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.8612380027770996
+    }
+  },
+  {
+    "text": "There you are",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.999748170375824
+    }
+  },
+  {
+    "text": "uhum",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.5690110325813293
+    }
+  },
+  {
+    "text": "come on",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.7748384475708008
+    }
+  },
+  {
+    "text": "I'm happy to follow you on this one",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.7287028431892395
+    }
+  },
+  {
+    "text": "you're saying the receiver yes",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9869776368141174
+    }
+  },
+  {
+    "text": "yes yes yes",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.8838052153587341
+    }
+  },
+  {
+    "text": "yes show me the money",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.9834700226783752
+    }
+  },
+  {
+    "text": "If you're sure, Ross",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9982300400733948
+    }
+  },
+  {
+    "text": "if we both think so",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.5069898366928101
+    }
+  },
+  {
+    "text": "agree it's",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9975987076759338
+    }
+  },
+  {
+    "text": "did you go for it yeah why not french",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.40284571051597595
+    }
+  },
+  {
+    "text": "i've got no clue mate so i'm with you",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.7100077867507935
+    }
+  },
+  {
+    "text": "sure",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9895700216293335
+    }
+  },
+  {
+    "text": "no let's do it",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.7035788893699646
+    }
+  },
+  {
+    "text": "if you happen to go for it final i'll go for it just",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9477545619010925
+    }
+  },
+  {
+    "text": "that's the first thing that popped into my head",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.999782383441925
+    }
+  },
+  {
+    "text": "I think you're right",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9875921607017517
+    }
+  },
+  {
+    "text": "I think you're right then",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9598107933998108
+    }
+  },
+  {
+    "text": "If you know it's the answer then let's do it",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9116870164871216
+    }
+  },
+  {
+    "text": "I agree",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.7769538164138794
+    }
+  },
+  {
+    "text": "yes, yes",
+    "intent": "agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.974097728729248
+    }
+  },
+  {
+    "text": "Not absolutely, well I don't know, what's your percentage of certainty",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9994533658027649
+    }
+  },
+  {
+    "text": "Wouldn't that make sense?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9324625134468079
+    }
+  },
+  {
+    "text": "Didn't he go to newcastle after the england job?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.42223793268203735
+    }
+  },
+  {
+    "text": "At Ronald Reagan?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9969310164451599
+    }
+  },
+  {
+    "text": "is it worth the risk?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.9563820958137512
+    }
+  },
+  {
+    "text": "We go for heat?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9916398525238037
+    }
+  },
+  {
+    "text": "but I'm not absolutely sure, what do you think?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9078308939933777
+    }
+  },
+  {
+    "text": "I'm not confident but I'm prepared to go for Larry",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9999567270278931
+    }
+  },
+  {
+    "text": "it is one of two isn't it?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.9869722723960876
+    }
+  },
+  {
+    "text": "Shall we say final answer?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.7524759769439697
+    }
+  },
+  {
+    "text": "melon?",
     "intent": "ask-agreement",
     "intent_prediction": {
       "name": "confirm-final-answer",
-      "confidence": 0.5108696818351746
+      "confidence": 0.9631907939910889
+    }
+  },
+  {
+    "text": "Vernon Kay, Jill?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9894934892654419
+    }
+  },
+  {
+    "text": "Raikkonen?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9904216527938843
+    }
+  },
+  {
+    "text": "shall we go with Raikkonen?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9523932933807373
+    }
+  },
+  {
+    "text": "yeah?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.4445340931415558
+    }
+  },
+  {
+    "text": "yellow submarine?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "reject-option",
+      "confidence": 0.4097627103328705
+    }
+  },
+  {
+    "text": "I know it's the answer. What do you think?",
+    "intent": "ask-agreement",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.5902014970779419
+    }
+  },
+  {
+    "text": "region, isn't it?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.9985313415527344
+    }
+  },
+  {
+    "text": "it's five chris",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.9992120265960693
+    }
+  },
+  {
+    "text": "alright, five",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.4114421606063843
+    }
+  },
+  {
+    "text": "kinnock?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.5552757382392883
+    }
+  },
+  {
+    "text": "my leanings are for tony benn",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.979375422000885
+    }
+  },
+  {
+    "text": "tony benn? tony benn?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.7389540076255798
+    }
+  },
+  {
+    "text": "red",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.7812712788581848
+    }
+  },
+  {
+    "text": "yeah yeah there is, but there ain't no red on there",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.8980088829994202
+    }
+  },
+  {
+    "text": "i'd go for italy",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9746334552764893
+    }
+  },
+  {
+    "text": "all right then, let's go for greece",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.5705209970474243
+    }
+  },
+  {
+    "text": "i would say waders, wouldn't you?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.661654531955719
     }
   },
   {
@@ -32,11 +720,1683 @@
     }
   },
   {
+    "text": "i think it was probably kevin keegan, wouldn't you",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.7535985708236694
+    }
+  },
+  {
+    "text": "it would be a guess, uh, i'd be inclined to guess, uhm ronald reagan, but uhm",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.987023115158081
+    }
+  },
+  {
+    "text": "heat?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.39131036400794983
+    }
+  },
+  {
+    "text": "sunglasses",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.7126994132995605
+    }
+  },
+  {
+    "text": "of course, can we agree it is her smile?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9846477508544922
+    }
+  },
+  {
+    "text": "that is fanlight, i am confident",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9863499999046326
+    }
+  },
+  {
+    "text": "beer",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9689738154411316
+    }
+  },
+  {
+    "text": "citadel",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.7746060490608215
+    }
+  },
+  {
+    "text": "st andrews",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.3536287248134613
+    }
+  },
+  {
+    "text": "shehrezade the answer to that",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.7517204880714417
+    }
+  },
+  {
+    "text": "right i would say ramsey macdonald who had one very short period in office very short",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.6473780274391174
+    }
+  },
+  {
+    "text": "i would say ramsay macdonald",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.921644389629364
+    }
+  },
+  {
+    "text": "right ramsay macdonald",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.6345319747924805
+    }
+  },
+  {
+    "text": "it is in europe",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.5019124150276184
+    }
+  },
+  {
+    "text": "tureen",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.4738774001598358
+    }
+  },
+  {
+    "text": "canada",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.7177314162254333
+    }
+  },
+  {
+    "text": "we think this is canada, we think this is canada",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.8633939027786255
+    }
+  },
+  {
+    "text": "printing i think",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.9236724972724915
+    }
+  },
+  {
+    "text": "printing",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.7976260781288147
+    }
+  },
+  {
+    "text": "i think the answer is larry",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.6643175482749939
+    }
+  },
+  {
+    "text": "if i were to guess i would save that it's by will self but i don't think we can guess",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.805914044380188
+    }
+  },
+  {
+    "text": "pink",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.4322330951690674
+    }
+  },
+  {
+    "text": "herring",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.6788963079452515
+    }
+  },
+  {
+    "text": "mcenroe",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9908515810966492
+    }
+  },
+  {
+    "text": "gold, i think",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.911405086517334
+    }
+  },
+  {
+    "text": "john grisham",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.5558040142059326
+    }
+  },
+  {
+    "text": "i'm certain it's grisham",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9451121091842651
+    }
+  },
+  {
+    "text": "sweetener",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9723581671714783
+    }
+  },
+  {
+    "text": "it's definately gallipoli",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.943310022354126
+    }
+  },
+  {
+    "text": "cold",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.6611474752426147
+    }
+  },
+  {
+    "text": "pretty sure it is maggie",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.7382349371910095
+    }
+  },
+  {
+    "text": "the nettle i'm sure",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.8571724891662598
+    }
+  },
+  {
+    "text": "personnel?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.7507919073104858
+    }
+  },
+  {
+    "text": "but i'm pretty sure that's davina",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9086571335792542
+    }
+  },
+  {
+    "text": "so if it nordic it is got to be the vikings",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.6106271147727966
+    }
+  },
+  {
+    "text": "palazzo pants?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.5624547004699707
+    }
+  },
+  {
+    "text": "it's switzerland isn't it?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.4953518509864807
+    }
+  },
+  {
+    "text": "blazer?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9865601062774658
+    }
+  },
+  {
+    "text": "eating",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5744776129722595
+    }
+  },
+  {
+    "text": "eating?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5744776129722595
+    }
+  },
+  {
+    "text": "icey?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9582194685935974
+    }
+  },
+  {
+    "text": "millenium dome?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.9236763715744019
+    }
+  },
+  {
+    "text": "millenium dome",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.9236763715744019
+    }
+  },
+  {
+    "text": "shane? shane richie",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.8348380327224731
+    }
+  },
+  {
+    "text": "it has to be jane birkin",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.9955108165740967
+    }
+  },
+  {
+    "text": "okay i know that its windsor yes?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.650904655456543
+    }
+  },
+  {
+    "text": "it was the united nations",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.5536291599273682
+    }
+  },
+  {
+    "text": "now my mind says trapeze",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.9765827059745789
+    }
+  },
+  {
+    "text": "apartment",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.792271614074707
+    }
+  },
+  {
+    "text": "revival",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.816169261932373
+    }
+  },
+  {
+    "text": "it must be official receiver",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.5971227288246155
+    }
+  },
+  {
+    "text": "oral yeah but should we think about oral i mean it is definitely oral",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9959158301353455
+    }
+  },
+  {
+    "text": "mongolia",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.9427120089530945
+    }
+  },
+  {
+    "text": "i'd be inclined to go with london",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9091216325759888
+    }
+  },
+  {
+    "text": "something doesn't ring true about the bishop of london",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.5203278660774231
+    }
+  },
+  {
+    "text": "baseball, baseball",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.6573939919471741
+    }
+  },
+  {
+    "text": "a glass of folly, folly",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9327743649482727
+    }
+  },
+  {
+    "text": "fame?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9896997809410095
+    }
+  },
+  {
+    "text": "probably about 90 sure it's melon",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9608643651008606
+    }
+  },
+  {
+    "text": "vernon kay",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.4168229103088379
+    }
+  },
+  {
+    "text": "well i'm pretty sure it's mary poppins",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.5143248438835144
+    }
+  },
+  {
+    "text": "no i don't i think why would it not be french",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.327121764421463
+    }
+  },
+  {
+    "text": "yeah i think it's liverpool",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.7747212648391724
+    }
+  },
+  {
+    "text": "would say in a restaurant i would hope",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9405131340026855
+    }
+  },
+  {
+    "text": "its robert",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.49306613206863403
+    }
+  },
+  {
+    "text": "is it robert winston",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.5561016201972961
+    }
+  },
+  {
+    "text": "it was robert winston",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.765313982963562
+    }
+  },
+  {
+    "text": "i'm 100 percent sure it's epiphany",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9939718842506409
+    }
+  },
+  {
+    "text": "scotland",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.3281303644180298
+    }
+  },
+  {
+    "text": "it is a viceroy?",
+    "intent": "offer-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.8029970526695251
+    }
+  },
+  {
+    "text": "greece",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.8320245742797852
+    }
+  },
+  {
+    "text": "chinstrap",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.660654604434967
+    }
+  },
+  {
+    "text": "waders, final answer",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5947842597961426
+    }
+  },
+  {
+    "text": "it's tickety boo",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9161023497581482
+    }
+  },
+  {
+    "text": "it's a toughie. it must be, uhm, a removal van",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9836639165878296
+    }
+  },
+  {
+    "text": "real ale",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.6153196096420288
+    }
+  },
+  {
+    "text": "no, bouffant",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.6910276412963867
+    }
+  },
+  {
+    "text": "yeah, that's alright, it's crazy frog",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.959274411201477
+    }
+  },
+  {
+    "text": "belgium",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.799669086933136
+    }
+  },
+  {
+    "text": "keegan.",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9794597029685974
+    }
+  },
+  {
+    "text": "kevin keegan.",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.6097219586372375
+    }
+  },
+  {
+    "text": "if my friend agrees, i think we'll go with ronald reagan",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.20404227077960968
+    }
+  },
+  {
+    "text": "i'd have to go with o'brien",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9862544536590576
+    }
+  },
+  {
+    "text": "we're gonna both guess heat",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.5541514158248901
+    }
+  },
+  {
+    "text": "heat",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.39131036400794983
+    }
+  },
+  {
+    "text": "[plum job]](answer)",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.7658544182777405
+    }
+  },
+  {
+    "text": "final answer st andrews",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5149419903755188
+    }
+  },
+  {
+    "text": "scheherezade, final answer",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.48336899280548096
+    }
+  },
+  {
+    "text": "we will go for semi",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.6220895648002625
+    }
+  },
+  {
+    "text": "skimmed",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.5410618782043457
+    }
+  },
+  {
+    "text": "tureen",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.4738774001598358
+    }
+  },
+  {
+    "text": "yes, and i know, it's actually sir ian mckellen, final answer",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "reject-option",
+      "confidence": 0.3407439589500427
+    }
+  },
+  {
+    "text": "alright, our final answer is copper",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.4977581799030304
+    }
+  },
+  {
+    "text": "we, wuh, we, wuh, we're going to go for printing",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9512410759925842
+    }
+  },
+  {
+    "text": "final answer is printing because it seems so unlikely",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.2420690357685089
+    }
+  },
+  {
+    "text": "that'll be the crack of dawn then",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9981778860092163
+    }
+  },
+  {
+    "text": "retail price",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.6834748983383179
+    }
+  },
+  {
+    "text": "peter andre",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.794653594493866
+    }
+  },
+  {
+    "text": "we'll have d margaret thatcher",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9998406171798706
+    }
+  },
+  {
+    "text": "well i'll go for asia please",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.7893551588058472
+    }
+  },
+  {
+    "text": "cross",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.713620662689209
+    }
+  },
+  {
+    "text": "we'll go for pink",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.4883175492286682
+    }
+  },
+  {
+    "text": "erring gull",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.4615609347820282
+    }
+  },
+  {
+    "text": "john mcenroe",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.6688181161880493
+    }
+  },
+  {
+    "text": "sweetener",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9723581671714783
+    }
+  },
+  {
+    "text": "it's definately gallipoli, c",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9313307404518127
+    }
+  },
+  {
+    "text": "no doubt, gallipoli c",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.997579038143158
+    }
+  },
+  {
+    "text": "that would be dear",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.7627382874488831
+    }
+  },
+  {
+    "text": "that's cool we should go for it then trapeze",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.550303041934967
+    }
+  },
+  {
+    "text": "yeah let's go for mars",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.998658299446106
+    }
+  },
+  {
+    "text": "riding crop",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9121852517127991
+    }
+  },
+  {
+    "text": "oral examination",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "reject-option",
+      "confidence": 0.2285720258951187
+    }
+  },
+  {
+    "text": "we both think it's mongolia",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9960184693336487
+    }
+  },
+  {
+    "text": "bishop of london",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.8098161220550537
+    }
+  },
+  {
+    "text": "chain",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.979588508605957
+    }
+  },
+  {
+    "text": "it's uh, shrew",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.5451405644416809
+    }
+  },
+  {
+    "text": "smoking gun",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9930931329727173
+    }
+  },
+  {
+    "text": "pacific, final answer",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5702505707740784
+    }
+  },
+  {
+    "text": "it's dressing gown.",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9932733774185181
+    }
+  },
+  {
+    "text": "it's banana split",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9933944344520569
+    }
+  },
+  {
+    "text": "cartwheel",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5512359142303467
+    }
+  },
+  {
+    "text": "horse",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9441086053848267
+    }
+  },
+  {
+    "text": "charles the seventh.",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.5792623162269592
+    }
+  },
+  {
+    "text": "we'll go with fame.",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.987662672996521
+    }
+  },
+  {
+    "text": "we'll go with milk",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9751758575439453
+    }
+  },
+  {
+    "text": "final answer",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5108696818351746
+    }
+  },
+  {
+    "text": "i'm pretty sure it's mary poppins",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9476398825645447
+    }
+  },
+  {
+    "text": "happy yeah happy good intentions",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.6169277429580688
+    }
+  },
+  {
+    "text": "french french final answer",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.5029988288879395
+    }
+  },
+  {
+    "text": "we're pretty confident about horse racing",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.6840782165527344
+    }
+  },
+  {
+    "text": "robert winston",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.5735320448875427
+    }
+  },
+  {
     "text": "los angeles",
     "intent": "final-answer",
     "intent_prediction": {
       "name": "confirm-final-answer",
       "confidence": 0.7728989720344543
+    }
+  },
+  {
+    "text": "it's coronation",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9979009628295898
+    }
+  },
+  {
+    "text": "jazz",
+    "intent": "final-answer",
+    "intent_prediction": {
+      "name": "confirm-final-answer",
+      "confidence": 0.9946004152297974
+    }
+  },
+  {
+    "text": "i'm happy with that",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9912351369857788
+    }
+  },
+  {
+    "text": "agreed",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.9888492822647095
+    }
+  },
+  {
+    "text": "that's our final answer",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.7457807064056396
+    }
+  },
+  {
+    "text": "yes, that's our final answer",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.6819056272506714
+    }
+  },
+  {
+    "text": "yeah b",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.8109124302864075
+    }
+  },
+  {
+    "text": "john grisham",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.5558040142059326
+    }
+  },
+  {
+    "text": "yeah, absolutely, i think",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9991626739501953
+    }
+  },
+  {
+    "text": "so yes ranulph fiennes",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.8051914572715759
+    }
+  },
+  {
+    "text": "mongolia",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.9427120089530945
+    }
+  },
+  {
+    "text": "i am actually",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9996216297149658
+    }
+  },
+  {
+    "text": "yea, yea. if he's sure, i'm happy.",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9873147010803223
+    }
+  },
+  {
+    "text": "yeah should we go for it yeah i'm happy",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.977016270160675
+    }
+  },
+  {
+    "text": "viniculturist",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "reject-option",
+      "confidence": 0.4528246819972992
+    }
+  },
+  {
+    "text": "its immunity",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9497368931770325
+    }
+  },
+  {
+    "text": "em, bye",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9592975378036499
+    }
+  },
+  {
+    "text": "skull",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.38049280643463135
+    }
+  },
+  {
+    "text": "yes, definitely",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9968074560165405
+    }
+  },
+  {
+    "text": "yeah i think should",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.46119749546051025
+    }
+  },
+  {
+    "text": "let's go for it yeah",
+    "intent": "confirm-final-answer",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9979277849197388
+    }
+  },
+  {
+    "text": "well, it's not manchester is it?",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.7234928607940674
+    }
+  },
+  {
+    "text": "i don't think it's david steel",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9904955625534058
+    }
+  },
+  {
+    "text": "no, i don't believe so",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9496719241142273
+    }
+  },
+  {
+    "text": "i don't think norman tebbit worked up north for an mp",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.4864853620529175
+    }
+  },
+  {
+    "text": "well, it wouldn't be pickety moo",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9719023704528809
+    }
+  },
+  {
+    "text": "bill clinton didn't come from illinois, did he?",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.7047178745269775
+    }
+  },
+  {
+    "text": "well it's not kremlin i think that's fair to say",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9992223978042603
+    }
+  },
+  {
+    "text": "i don't think it's a castle",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9829983115196228
+    }
+  },
+  {
+    "text": "well i don't think it's kremlin i don't think it's castle",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.995254397392273
+    }
+  },
+  {
+    "text": "i'm sure it's not keep",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.6502183079719543
+    }
+  },
+  {
+    "text": "that doesn't sound right at all, castle",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "ask-agreement",
+      "confidence": 0.3785516619682312
+    }
+  },
+  {
+    "text": "definitely not kremlim",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9960267543792725
+    }
+  },
+  {
+    "text": "so david lloyd george i would say no",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.5879527926445007
+    }
+  },
+  {
+    "text": "bonar law i would say no",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.8104549050331116
+    }
+  },
+  {
+    "text": "jimmy carter's peanuts",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.4743398427963257
+    }
+  },
+  {
+    "text": "i don't remember one of bernhard leach's poems",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.8296871185302734
+    }
+  },
+  {
+    "text": "i don't think it's painting",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9134973883628845
+    }
+  },
+  {
+    "text": "first novel well irving welsh first novel im sure is very well known",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9994454979896545
+    }
+  },
+  {
+    "text": "i don't think it's stephen king, horror man",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9984369874000549
+    }
+  },
+  {
+    "text": "patricia cornwell what does she do detectives",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.708215594291687
+    }
+  },
+  {
+    "text": "i don't think it's michael crichton",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9327024221420288
+    }
+  },
+  {
+    "text": "well it's not the romans",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9966177344322205
+    }
+  },
+  {
+    "text": "and it's not the spanish is it?",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.40855672955513
+    }
+  },
+  {
+    "text": "it's not slovakia because because it's too far",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.5196636915206909
+    }
+  },
+  {
+    "text": "we lost now and so i don't think it's germany",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.776323139667511
+    }
+  },
+  {
+    "text": "no i don't think it's slovakia",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9477739334106445
+    }
+  },
+  {
+    "text": "it's not germany because germany have got 2000 and they've got 2010 they wouldn't",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9994291663169861
+    }
+  },
+  {
+    "text": "well auditory is hearing",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.48294156789779663
+    }
+  },
+  {
+    "text": "i would stake the farm and the fact that it's not the atlantic or the arctic",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9979010820388794
+    }
+  },
+  {
+    "text": "they're not going to do nuclear tests in the indian ocean",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.49904125928878784
+    }
+  },
+  {
+    "text": "ontario is in canada",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.5062141418457031
+    }
+  },
+  {
+    "text": "um well i know it wasn't lewis hamilton and it wasn't alonso",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.4277290999889374
+    }
+  },
+  {
+    "text": "hmm, no, nah i don't think it's poetry",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-to-answer",
+      "confidence": 0.4035583734512329
+    }
+  },
+  {
+    "text": "so if it nordic it can't be the vikings",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.8882313370704651
+    }
+  },
+  {
+    "text": "it isn't the millenium dome",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.4530927836894989
+    }
+  },
+  {
+    "text": "it is not shane richie right?",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.7538467049598694
+    }
+  },
+  {
+    "text": "i think it's not ranulph fiennes",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.7186771631240845
+    }
+  },
+  {
+    "text": "it cannot be jane birkin",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.5068380832672119
+    }
+  },
+  {
+    "text": "okay i know that it is not windsor yes?",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.6790574789047241
+    }
+  },
+  {
+    "text": "it wasn't the united nations",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9083252549171448
+    }
+  },
+  {
+    "text": "now my mind says it's not trapeze",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.6506987810134888
+    }
+  },
+  {
+    "text": "i think it's not mars",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.8594269752502441
+    }
+  },
+  {
+    "text": "riding crop definitely not",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9934030175209045
+    }
+  },
+  {
+    "text": "i think it's not tacky",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.6089193224906921
+    }
+  },
+  {
+    "text": "i think it's not gonna be tea spoon",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9996610879898071
+    }
+  },
+  {
+    "text": "i think it's a, pirouette.",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9999459981918335
+    }
+  },
+  {
+    "text": "no let's not go for pirouette",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9981878399848938
+    }
+  },
+  {
+    "text": "okay it's not houston.",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.6736373901367188
+    }
+  },
+  {
+    "text": "i think it's not brian blessed",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "offer-answer",
+      "confidence": 0.9928279519081116
+    }
+  },
+  {
+    "text": "he might have visited the others but it's not nottingham, is it?",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.3407846689224243
+    }
+  },
+  {
+    "text": "it's not five chris",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "final-answer",
+      "confidence": 0.9675973057746887
+    }
+  },
+  {
+    "text": "not kinnock",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.5257422924041748
+    }
+  },
+  {
+    "text": "my leanings are that it is not tony benn",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "check-answer",
+      "confidence": 0.6680144667625427
+    }
+  },
+  {
+    "text": "definintely not red",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.9944074153900146
+    }
+  },
+  {
+    "text": "yeah yeah there is, but there ain't no red on there",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.8980088829994202
+    }
+  },
+  {
+    "text": "red",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.7812712788581848
+    }
+  },
+  {
+    "text": "I don't think it is italy",
+    "intent": "reject-option",
+    "intent_prediction": {
+      "name": "agreement",
+      "confidence": 0.5929833650588989
     }
   }
 ]
