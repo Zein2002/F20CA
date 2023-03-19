@@ -28,6 +28,11 @@
 % for todo notes 
 \usepackage{todonotes}
 
+% maths
+\usepackage{amssymb}
+% cool maths printing
+\usepackage{amsmath}
+
 \aclfinalcopy % Uncomment this line for the final submission
 %\def\aclpaperid{***} %  Enter the acl Paper ID here
 
@@ -104,11 +109,19 @@ In dyadic conversations, there are only two roles a participant can take: speake
 \end{itemize}
 \subsection{Cohen's Kappa Coefficient}
 \subsubsection{Calculation}
-As the system uses the annotations to train the system, ensuring that they are reliable and consistent is essential for accurate training. Cohen's kappa was used on a sample of the completed transcripts to evaluate their accuracy. Cohen's kappa is used to measure the reliability between raters on categorical data. It is said to be more accurate than calculating the agreement as it accounts for agreements happening by chance.
+As the system uses the annotations to train the system, ensuring that they are reliable and consistent is essential for accurate training. Cohen's kappa was used on a sample of the completed transcripts to evaluate their accuracy. Cohen's kappa measures the reliability between raters on categorical data. It is said to be more accurate than calculating the agreement as it accounts for agreements happening by chance. \todo{add source}
 
-To calculate Cohen's kappa, a sample of 4 transcripts were re-annotated by a team member, without them seeing the original annotations to remove any possible bias. This was approximately 15\% of the total transcripts.
+To calculate Cohen's kappa, a sample of four transcripts were re-annotated by a team member, without them seeing the original annotations to remove any possible bias. This amounts to approximately 15\% of the total transcripts.
 
 Every occurrence by both raters of each annotation label was gathered. An overall agreement rate was calculated using -
+
+\begin{equation} \label{eq:likelihood_function}
+  \begin{split}
+    Agreement & = \frac{total Agreed}{total} \\
+    Agreement & = \frac{329}{341} \\
+    Agreement & = 0.9684
+  \end{split}
+\end{equation}
 
 $Agreement = totalAgreed / total$
 $Agreement = 329/341 = 0.9648$
@@ -177,6 +190,8 @@ As well as these reasons, Google's API boasted diarization capabilities, along w
 \subsection{Natural Language Generation}
 \label{subsec:nlg}
 
+To make the system feel more unique and less robotic, we made use of Natural Language Generation (NLG) for the phrases that the “host” says to the participants. We used OpenAI's API, specifically “gpt-3.5-turbo”, the same version that is used in ChatGPT. This allowed us to prompt for different outputs for the system that convey the same information. For example, when receiving a correct answer, “Yes, that's it! Well done!” and “You got it! Great job!” are both possible outputs. There are 50 different options for each response the “host” can say.
+
 
 \section{Evaluation}
 \label{sec:evaluation}
@@ -202,6 +217,9 @@ As well as these reasons, Google's API boasted diarization capabilities, along w
 \label{sec:future_work}
 
 \textit{from coursework spec:} suggestions for future work
+
+To further improve on NLG within this system, some content moderation could be performed on the generations, to ensure that there are no inappropriate outputs, this can be done entirely within OpenAI's API.  Also, the system could be updated to make use of GPT-4, which at this current time is not publicly available.
+
 
 
 \section*{Acknowledgments}
