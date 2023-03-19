@@ -107,6 +107,23 @@ In dyadic conversations, there are only two roles a participant can take: speake
   \item (Aron and Katie) How we collected our data, describe the intents we used to label the data
   \item (Aron and Katie) Cohen's Kappa for our data collection method: probably need to annotate a couple of transcripts twice for reporting on this
 \end{itemize}
+
+Data collection was performed in-house, by the team. We first collected all available recordings of Who Wants to Be a Millionaire with two participants. Using the YouTube API, we managed to get the transcripts for the vast majority of recordings. To annotate these transcripts, we came up with the following unified set of annotations that would allow us to capture as much information as possible, without saturating the data.
+\begin{itemize}
+\item question - The system presents the question
+\item options - The system presents the options
+\item chit-chat - Speech not related to the quiz
+\item offer-answer() - A player presents an answer to the other player
+\item offer-to-answer - A  player signals that he/she knows the answer
+\item check-answer - A player checking if the other player knows the answer
+\item agreement - Agreement between players about the answer
+\item ask-agreement - A player asks the other player for confirmation about their answer
+\item accept-answer System considers answer the final answer
+\item final-answer() - Players give final answer
+\item confirm-agreement - System tries to confirm the final answer with participants
+\item confirm-final-answer - Participants confirm their answer is final
+\end{itemize}
+
 \subsection{Cohen's Kappa Coefficient}
 \subsubsection{Calculation}
 As the system uses the annotations to train the system, ensuring that they are reliable and consistent is essential for accurate training. Cohen's kappa was used on a sample of the completed transcripts to evaluate their accuracy. Cohen's kappa measures the reliability between raters on categorical data. It is said to be more accurate than calculating the agreement as it accounts for agreements happening by chance. \todo{add source}
@@ -200,12 +217,25 @@ To make the system feel more unique and less robotic, we made use of Natural Lan
 
 \subsection{Methodology}
 \label{subsec:methodology}
+In this study, we performed extrinsic and intrinsic evaluations. The extrinsic evaluation focused on both subjective and objective measures of the system's performance. The subjective measures included the user's enjoyment and perception of the system's natural behaviour, while the objective measures included the number of turns taken and the agreement rate. Additionally, the correlation between correct answers and enjoyment was also examined. Overall, the evaluation aimed to assess the effectiveness of the system in engaging users and providing accurate responses.
 
+The evaluation focused on intrinsic measures of individual components in a multi-party conversational system. The components were assessed separately, with ASR being evaluated using the word error rate, NLU using precision, recall, accuracy, and F1 score, DM IDK YET, and NLG using n-gram-based overlap with BLEU. The aim was to assess the performance of each component and identify areas of improvement.
+
+Additionally, the evaluation also aimed to test the hypothesis that using verbal cues instead of silence cues in a multi-party conversational system increases user interaction and satisfaction with the system. This hypothesis needed to be statistically proved or disproved through significance testing.
 \subsection{Experiment Layout}
 \label{subsec:experiment_layout}
+The experiment followed a between-subjects design. Every participant was required to read and sign a consent form before they can play the quiz. This was an in-person experiment, with the quiz running on a laptop, where participants can see the questions and the options. Members of the experiment were required to play the quiz at least once. However, they were encouraged to play as many times as they can. After they no longer wished to play, they were asked to complete a questionnaire about their experience. The questionnaire queried them on their experience using a five-point Likert scale.
 
 \subsection{Results}
 \label{subsec:results}
+
+\begin{itemize}
+\item ASR results
+\item NLU result
+\item DM result
+\NLG result
+\item questionnaire result
+\end{itemize}
 
 \section{Conclusion}
 \label{sec:conclusion}

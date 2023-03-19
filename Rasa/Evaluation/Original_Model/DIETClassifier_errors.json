@@ -1,0 +1,3711 @@
+[
+  {
+    "text": "we can",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 3,
+        "end": 6,
+        "confidence_entity": 0.9019113183021545,
+        "value": "can",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "yes we can",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.8304048776626587,
+        "value": "can",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "confident",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.5853498578071594,
+        "value": "confident",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "come on",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.923188328742981,
+        "value": "come on",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "you're saying the receiver yes",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 14,
+        "end": 17,
+        "confidence_entity": 0.5815415382385254,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "yes show me the money",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.6122145652770996,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.9806849956512451,
+        "value": "money",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "we'll go with that then because i'm i'm not 100 sure on that",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 44,
+        "end": 47,
+        "confidence_entity": 0.47608011960983276,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 53,
+        "end": 55,
+        "confidence_entity": 0.5604383945465088,
+        "value": "on",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "did you go for it yeah why not french",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 31,
+        "end": 37,
+        "confidence_entity": 0.8924897909164429,
+        "value": "french",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it is one of two isn't it?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.9955778121948242,
+        "value": "two",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "melon?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.993222713470459,
+        "value": "melon",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "are you confident it's french",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.9976179003715515,
+        "value": "french",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "region, isn't it?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "region",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think it's gonna be tea spoon",
+    "entities": [
+      {
+        "start": 22,
+        "end": 31,
+        "value": "tea spoon",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "he might have visited the others but it's nottingham, isn't it?",
+    "entities": [
+      {
+        "start": 42,
+        "end": 52,
+        "value": "nottingham",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's five chris",
+    "entities": [
+      {
+        "start": 5,
+        "end": 9,
+        "value": "five",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "alright, five",
+    "entities": [
+      {
+        "start": 9,
+        "end": 13,
+        "value": "five",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "kinnock?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "kinnock",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "my leanings are for tony benn",
+    "entities": [
+      {
+        "start": 20,
+        "end": 29,
+        "value": "tony benn",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 25,
+        "end": 29,
+        "confidence_entity": 0.5222007632255554,
+        "value": "benn",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "red",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "red",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "yeah yeah there is, but there ain't no red on there",
+    "entities": [
+      {
+        "start": 39,
+        "end": 42,
+        "value": "red",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'd go for italy",
+    "entities": [
+      {
+        "start": 11,
+        "end": 16,
+        "value": "italy",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think she was greek",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "greek",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "all right then, let's go for greece",
+    "entities": [
+      {
+        "start": 29,
+        "end": 35,
+        "value": "greece",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "okay let's go greece, let's go for it",
+    "entities": [
+      {
+        "start": 14,
+        "end": 20,
+        "value": "greece",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "well i think it's probably on the ball",
+    "entities": [
+      {
+        "start": 27,
+        "end": 38,
+        "value": "on the ball",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 27,
+        "end": 29,
+        "confidence_entity": 0.9968867897987366,
+        "value": "on",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 34,
+        "end": 38,
+        "confidence_entity": 0.8846566677093506,
+        "value": "ball",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "um i think it's olive",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "olive",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i would say waders, wouldn't you?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 18,
+        "value": "waders",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i mean it's got to be waders",
+    "entities": [
+      {
+        "start": 22,
+        "end": 28,
+        "value": "waders",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think it's d",
+    "entities": [
+      {
+        "start": 13,
+        "end": 14,
+        "value": "d",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think it was probably kevin keegan, wouldn't you",
+    "entities": [
+      {
+        "start": 24,
+        "end": 36,
+        "value": "kevin keegan",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it would be a guess, uh, i'd be inclined to guess, uhm ronald reagan, but uhm",
+    "entities": [
+      {
+        "start": 55,
+        "end": 68,
+        "value": "ronald reagan",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "heat?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "heat",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "sunglasses",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "sunglasses",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "of course, can we agree it is her smile?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 39,
+        "value": "her smile",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 34,
+        "end": 39,
+        "confidence_entity": 0.47118011116981506,
+        "value": "smile",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "that is fanlight, i am confident",
+    "entities": [
+      {
+        "start": 8,
+        "end": 16,
+        "value": "fanlight",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "no she definitely comes from liverpool i think we can agree on that",
+    "entities": [
+      {
+        "start": 29,
+        "end": 38,
+        "value": "liverpool",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 60,
+        "end": 62,
+        "confidence_entity": 0.9141604900360107,
+        "value": "on",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i think it's keep",
+    "entities": [
+      {
+        "start": 13,
+        "end": 17,
+        "value": "keep",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think it's citadel that has a style that's something the back of my mind is saying citadel bu",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "citadel",
+        "entity": "answer"
+      },
+      {
+        "start": 85,
+        "end": 92,
+        "value": "citadel",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 30,
+        "end": 31,
+        "confidence_entity": 0.8170259594917297,
+        "value": "a",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "citadel",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "citadel",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "st andrews",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "st andrews",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "shehrezade the answer to that",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "shehrezade",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "right i would say ramsey macdonald who had one very short period in office very short",
+    "entities": [
+      {
+        "start": 18,
+        "end": 34,
+        "value": "ramsey macdonald",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 68,
+        "end": 74,
+        "confidence_entity": 0.9714719653129578,
+        "value": "office",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i would say ramsay macdonald",
+    "entities": [
+      {
+        "start": 12,
+        "end": 28,
+        "value": "ramsay macdonald",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "right ramsay macdonald",
+    "entities": [
+      {
+        "start": 6,
+        "end": 22,
+        "value": "ramsay macdonald",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think, i think we agree it's probably [postage and pafacking]](answer), uh packaging, packaging",
+    "entities": [
+      {
+        "start": 77,
+        "end": 86,
+        "value": "packaging",
+        "entity": "answer"
+      },
+      {
+        "start": 88,
+        "end": 97,
+        "value": "packaging",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 41,
+        "end": 52,
+        "confidence_entity": 0.9860510230064392,
+        "value": "postage and",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it's samuel",
+    "entities": [
+      {
+        "start": 5,
+        "end": 11,
+        "value": "samuel",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "samuel taylor coleridge, in fact, the taylor bit you've missed out i think",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "samuel",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 14,
+        "end": 23,
+        "confidence_entity": 0.9829176068305969,
+        "value": "coleridge",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i think it's calcium",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "calcium",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "canada",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "canada",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "we think this is canada, we think this is canada",
+    "entities": [
+      {
+        "start": 17,
+        "end": 23,
+        "value": "canada",
+        "entity": "answer"
+      },
+      {
+        "start": 42,
+        "end": 48,
+        "value": "canada",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "because i think it's george bush senior",
+    "entities": [
+      {
+        "start": 21,
+        "end": 39,
+        "value": "george bush senior",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.999786913394928,
+        "value": "george",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "pottery or",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "pottery",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "printing i think",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "printing",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "if i were to guess i would save that it's by will self but i don't think we can guess",
+    "entities": [
+      {
+        "start": 45,
+        "end": 54,
+        "value": "will self",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 42,
+        "end": 44,
+        "confidence_entity": 0.8018245100975037,
+        "value": "by",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "will self looking good to me",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "will self",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.9258944988250732,
+        "value": "good",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "pink",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "pink",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "metal fatigue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "metal fatigue",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "gold, i think",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "gold",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "john grisham",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "john grisham",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9857387542724609,
+        "value": "john",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i thought it was grisham but then you see crichton's name there",
+    "entities": [
+      {
+        "start": 17,
+        "end": 24,
+        "value": "grisham",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 42,
+        "end": 50,
+        "confidence_entity": 0.9917214512825012,
+        "value": "crichton",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i'm certain it's grisham",
+    "entities": [
+      {
+        "start": 17,
+        "end": 24,
+        "value": "grisham",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "grisham, ok it's a jury, grisham, legal",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "grisham",
+        "entity": "answer"
+      },
+      {
+        "start": 25,
+        "end": 32,
+        "value": "grisham",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 34,
+        "end": 39,
+        "confidence_entity": 0.7397454380989075,
+        "value": "legal",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "sweetener",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "sweetener",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's definately gallipoli",
+    "entities": [
+      {
+        "start": 16,
+        "end": 25,
+        "value": "gallipoli",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "cold",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "cold",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "the nettle i'm sure",
+    "entities": [
+      {
+        "start": 4,
+        "end": 10,
+        "value": "nettle",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "but i'm pretty sure that's davina",
+    "entities": [
+      {
+        "start": 27,
+        "end": 33,
+        "value": "davina",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "so if it nordic it is got to be the vikings",
+    "entities": [
+      {
+        "start": 36,
+        "end": 43,
+        "value": "vikings",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's switzerland isn't it?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 16,
+        "value": "switzerland",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "blazer?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "blazer",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "eating",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "eating",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "eating?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "eating",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "icey?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "icey",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "millenium dome?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "millenium dome",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.5988327860832214,
+        "value": "dome",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "millenium dome",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "millenium dome",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.5988327860832214,
+        "value": "dome",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "shane? shane richie",
+    "entities": [
+      {
+        "start": 7,
+        "end": 19,
+        "value": "shane richie",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.569837212562561,
+        "value": "richie",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i think it's ranulph fiennes",
+    "entities": [
+      {
+        "start": 13,
+        "end": 28,
+        "value": "ranulph fiennes",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it has to be jane birkin",
+    "entities": [
+      {
+        "start": 13,
+        "end": 24,
+        "value": "jane birkin",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "okay i know that its windsor yes?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 28,
+        "value": "windsor",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it was the united nations",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "united nations",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "riding crop",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "riding crop",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.7965427041053772,
+        "value": "crop",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i think it's tacky",
+    "entities": [
+      {
+        "start": 13,
+        "end": 18,
+        "value": "tacky",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "apartment",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "apartment",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "well i think it is official receiver",
+    "entities": [
+      {
+        "start": 19,
+        "end": 36,
+        "value": "official receiver",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.8033183813095093,
+        "value": "official",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it must be official receiver",
+    "entities": [
+      {
+        "start": 11,
+        "end": 28,
+        "value": "official receiver",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 11,
+        "end": 19,
+        "confidence_entity": 0.8307740688323975,
+        "value": "official",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "oral yeah but should we think about oral i mean it is definitely oral",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "oral",
+        "entity": "answer"
+      },
+      {
+        "start": 36,
+        "end": 40,
+        "value": "oral",
+        "entity": "answer"
+      },
+      {
+        "start": 65,
+        "end": 69,
+        "value": "oral",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think it is jerry maguire",
+    "entities": [
+      {
+        "start": 14,
+        "end": 27,
+        "value": "jerry maguire",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.7091208696365356,
+        "value": "maguire",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "after a night-out it could be red-nose but i think it's red eye",
+    "entities": [
+      {
+        "start": 56,
+        "end": 63,
+        "value": "red eye",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'd be inclined to go with london",
+    "entities": [
+      {
+        "start": 27,
+        "end": 33,
+        "value": "london",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "something doesn't ring true about the bishop of london",
+    "entities": [
+      {
+        "start": 48,
+        "end": 54,
+        "value": "london",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.5858787894248962,
+        "value": "something",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 28,
+        "end": 33,
+        "confidence_entity": 0.7588787078857422,
+        "value": "about",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 34,
+        "end": 37,
+        "confidence_entity": 0.7029997706413269,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 48,
+        "end": 54,
+        "confidence_entity": 0.6092318892478943,
+        "value": "london",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "a glass of folly, folly",
+    "entities": [
+      {
+        "start": 11,
+        "end": 16,
+        "value": "folly",
+        "entity": "answer"
+      },
+      {
+        "start": 18,
+        "end": 23,
+        "value": "folly",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "oh it's got to be fool",
+    "entities": [
+      {
+        "start": 18,
+        "end": 22,
+        "value": "fool",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's uh, i was worried until we saw shrew",
+    "entities": [
+      {
+        "start": 36,
+        "end": 41,
+        "value": "shrew",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think it's pacific",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "pacific",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "charles the seventh?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "charles the seventh",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.9455747604370117,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.38176220655441284,
+        "value": "seventh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i think it's secondary. it's general certificate of secondary education",
+    "entities": [
+      {
+        "start": 13,
+        "end": 22,
+        "value": "secondary",
+        "entity": "answer"
+      },
+      {
+        "start": 52,
+        "end": 61,
+        "value": "secondary",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think it's for valour",
+    "entities": [
+      {
+        "start": 13,
+        "end": 23,
+        "value": "for valour",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 17,
+        "end": 23,
+        "confidence_entity": 0.5378347635269165,
+        "value": "valour",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i think it's prada",
+    "entities": [
+      {
+        "start": 13,
+        "end": 18,
+        "value": "prada",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "vernon kay",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "vernon kay",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think it was kimi raikkonen",
+    "entities": [
+      {
+        "start": 15,
+        "end": 29,
+        "value": "kimi raikkonen",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "um i think yellow submarine jill",
+    "entities": [
+      {
+        "start": 11,
+        "end": 27,
+        "value": "yellow submarine",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 28,
+        "end": 32,
+        "confidence_entity": 0.6612833142280579,
+        "value": "jill",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "well i'm pretty sure it's mary poppins",
+    "entities": [
+      {
+        "start": 26,
+        "end": 38,
+        "value": "mary poppins",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 31,
+        "end": 38,
+        "confidence_entity": 0.7920271158218384,
+        "value": "poppins",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "why would you say that i think it's bath",
+    "entities": [
+      {
+        "start": 36,
+        "end": 40,
+        "value": "bath",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i was thinking good intentions i don't",
+    "entities": [
+      {
+        "start": 15,
+        "end": 30,
+        "value": "good intentions",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 15,
+        "end": 19,
+        "confidence_entity": 0.6058861017227173,
+        "value": "good",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i'm thinking good intentions but i said",
+    "entities": [
+      {
+        "start": 13,
+        "end": 28,
+        "value": "good intentions",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "yeah i think it's liverpool",
+    "entities": [
+      {
+        "start": 18,
+        "end": 27,
+        "value": "liverpool",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "would say in a restaurant i would hope",
+    "entities": [
+      {
+        "start": 15,
+        "end": 25,
+        "value": "restaurant",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 34,
+        "end": 38,
+        "confidence_entity": 0.819927990436554,
+        "value": "hope",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "okay well she's sophie is now known as sophie ellis-bextor so i'm assuming that it's janet ellis",
+    "entities": [
+      {
+        "start": 85,
+        "end": 96,
+        "value": "janet ellis",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "its robert",
+    "entities": [
+      {
+        "start": 4,
+        "end": 10,
+        "value": "robert",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "is it robert winston",
+    "entities": [
+      {
+        "start": 6,
+        "end": 12,
+        "value": "robert",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 13,
+        "end": 20,
+        "confidence_entity": 0.9964271187782288,
+        "value": "winston",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it was robert winston",
+    "entities": [
+      {
+        "start": 7,
+        "end": 13,
+        "value": "robert",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 14,
+        "end": 21,
+        "confidence_entity": 0.9966270923614502,
+        "value": "winston",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it's the epiphany",
+    "entities": [
+      {
+        "start": 9,
+        "end": 17,
+        "value": "epiphany",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 5,
+        "end": 17,
+        "confidence_entity": 0.7053065299987793,
+        "value": "the epiphany",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i'm 100 percent sure it's epiphany",
+    "entities": [
+      {
+        "start": 26,
+        "end": 34,
+        "value": "epiphany",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "scotland",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "scotland",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "well, i'll say to you, i'm pretty sure it's david blaine",
+    "entities": [
+      {
+        "start": 44,
+        "end": 56,
+        "value": "david blaine",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'd say it's raj.",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "raj",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "greece",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "greece",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "waders, final answer",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "waders",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's tickety boo",
+    "entities": [
+      {
+        "start": 5,
+        "end": 16,
+        "value": "tickety boo",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's a toughie. it must be, uhm, a removal van",
+    "entities": [
+      {
+        "start": 33,
+        "end": 46,
+        "value": "a removal van",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 33,
+        "end": 34,
+        "confidence_entity": 0.8983360528945923,
+        "value": "a",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 43,
+        "end": 46,
+        "confidence_entity": 0.5285358428955078,
+        "value": "van",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "real ale",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "real ale",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 5,
+        "end": 8,
+        "confidence_entity": 0.6091410517692566,
+        "value": "ale",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "no, bouffant",
+    "entities": [
+      {
+        "start": 4,
+        "end": 12,
+        "value": "bouffant",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "the answer is d, poisoned chalice",
+    "entities": [
+      {
+        "start": 17,
+        "end": 33,
+        "value": "poisoned chalice",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.6400604248046875,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 26,
+        "end": 33,
+        "confidence_entity": 0.5433206558227539,
+        "value": "chalice",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "yeah, that's alright, it's crazy frog",
+    "entities": [
+      {
+        "start": 27,
+        "end": 37,
+        "value": "crazy frog",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "kevin keegan.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "kevin keegan",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.9555575847625732,
+        "value": "keegan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "if my friend agrees, i think we'll go with ronald reagan",
+    "entities": [
+      {
+        "start": 43,
+        "end": 56,
+        "value": "ronald reagan",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 50,
+        "end": 56,
+        "confidence_entity": 0.7841060757637024,
+        "value": "reagan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "patrick o'brien",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "patrick o'brien",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.5665196180343628,
+        "value": "patrick",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 10,
+        "end": 15,
+        "confidence_entity": 0.8633134365081787,
+        "value": "brien",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i'd have to go with o'brien",
+    "entities": [
+      {
+        "start": 20,
+        "end": 27,
+        "value": "o'brien",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 22,
+        "end": 27,
+        "confidence_entity": 0.8897714614868164,
+        "value": "brien",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "heat",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "heat",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "final answer st andrews",
+    "entities": [
+      {
+        "start": 13,
+        "end": 23,
+        "value": "st andrews",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "scheherezade, final answer",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "scheherezade",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "we will go for semi",
+    "entities": [
+      {
+        "start": 15,
+        "end": 19,
+        "value": "semi",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "skimmed",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "skimmed",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "yes, and i know, it's actually sir ian mckellen, final answer",
+    "entities": [
+      {
+        "start": 35,
+        "end": 47,
+        "value": "ian mckellen",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 5,
+        "end": 8,
+        "confidence_entity": 0.9006384015083313,
+        "value": "and",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.49909707903862,
+        "value": "ian",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "we, wuh, we, wuh, we're going to go for printing",
+    "entities": [
+      {
+        "start": 40,
+        "end": 48,
+        "value": "printing",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "final answer is printing because it seems so unlikely",
+    "entities": [
+      {
+        "start": 16,
+        "end": 24,
+        "value": "printing",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "that'll be the crack of dawn then",
+    "entities": [
+      {
+        "start": 15,
+        "end": 28,
+        "value": "crack of dawn",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 24,
+        "end": 28,
+        "confidence_entity": 0.5188423991203308,
+        "value": "dawn",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "retail price",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "retail price",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.6755126714706421,
+        "value": "price",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "peter andre",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "peter andre",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "well i'll go for asia please",
+    "entities": [
+      {
+        "start": 17,
+        "end": 21,
+        "value": "asia",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.5147397518157959,
+        "value": "please",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "so a journalism is the answer",
+    "entities": [
+      {
+        "start": 5,
+        "end": 15,
+        "value": "journalism",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 19,
+        "end": 22,
+        "confidence_entity": 0.5637239217758179,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "we'll go for pink",
+    "entities": [
+      {
+        "start": 13,
+        "end": 17,
+        "value": "pink",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "play ball, d",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "play ball",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 5,
+        "end": 9,
+        "confidence_entity": 0.5730249881744385,
+        "value": "ball",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "erring gull",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "erring gull",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "sweetener",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "sweetener",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's definately gallipoli, c",
+    "entities": [
+      {
+        "start": 16,
+        "end": 25,
+        "value": "gallipoli",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "no doubt, gallipoli c",
+    "entities": [
+      {
+        "start": 10,
+        "end": 19,
+        "value": "gallipoli",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "that would be dear",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "value": "dear",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "ome on then, switzerland, final asnwer",
+    "entities": [
+      {
+        "start": 13,
+        "end": 24,
+        "value": "switzerland",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9409207701683044,
+        "value": "ome on",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "good okay windsor please",
+    "entities": [
+      {
+        "start": 10,
+        "end": 17,
+        "value": "windsor",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "that's cool we should go for it then trapeze",
+    "entities": [
+      {
+        "start": 37,
+        "end": 44,
+        "value": "trapeze",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.9148910641670227,
+        "value": "cool",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 37,
+        "end": 44,
+        "confidence_entity": 0.9624211192131042,
+        "value": "trapeze",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "yeah let's go for mars",
+    "entities": [
+      {
+        "start": 18,
+        "end": 22,
+        "value": "mars",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "riding crop",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "riding crop",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.7965427041053772,
+        "value": "crop",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "oral examination",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "oral",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "chain",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "chain",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's uh, shrew",
+    "entities": [
+      {
+        "start": 9,
+        "end": 14,
+        "value": "shrew",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "smoking gun",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "smoking gun",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.9330639839172363,
+        "value": "gun",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "pacific, final answer",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "pacific",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's dressing gown.",
+    "entities": [
+      {
+        "start": 5,
+        "end": 18,
+        "value": "dressing gown",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 14,
+        "end": 18,
+        "confidence_entity": 0.7434054613113403,
+        "value": "gown",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it's banana split",
+    "entities": [
+      {
+        "start": 5,
+        "end": 17,
+        "value": "banana split",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 5,
+        "end": 11,
+        "confidence_entity": 0.7761029005050659,
+        "value": "banana",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "charles the seventh.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "charles the seventh",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.9455747604370117,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.38176220655441284,
+        "value": "seventh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "we'll go with fame.",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "value": "fame",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "we'll go with milk",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "value": "milk",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "for valour.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "for valour",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'm pretty sure it's mary poppins",
+    "entities": [
+      {
+        "start": 21,
+        "end": 33,
+        "value": "mary poppins",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 26,
+        "end": 33,
+        "confidence_entity": 0.7559467554092407,
+        "value": "poppins",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "happy yeah happy good intentions",
+    "entities": [
+      {
+        "start": 17,
+        "end": 32,
+        "value": "good intentions",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "we're pretty confident about horse racing",
+    "entities": [
+      {
+        "start": 29,
+        "end": 41,
+        "value": "horse racing",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 23,
+        "end": 28,
+        "confidence_entity": 0.7346508502960205,
+        "value": "about",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 35,
+        "end": 41,
+        "confidence_entity": 0.8402479887008667,
+        "value": "racing",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "robert winston",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "robert",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9977042078971863,
+        "value": "winston",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "an arrow.",
+    "entities": [
+      {
+        "start": 3,
+        "end": 8,
+        "value": "arrow",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.8030315637588501,
+        "value": "an",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 3,
+        "end": 8,
+        "confidence_entity": 0.6217300295829773,
+        "value": "arrow",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "final answer. ronald reagan",
+    "entities": [
+      {
+        "start": 14,
+        "end": 27,
+        "value": "ronald reagan",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.8807748556137085,
+        "value": "reagan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "john grisham",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "john grisham",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9857387542724609,
+        "value": "john",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "so yes ranulph fiennes",
+    "entities": [
+      {
+        "start": 7,
+        "end": 22,
+        "value": "ranulph fiennes",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.7962382435798645,
+        "value": "fiennes",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "its immunity",
+    "entities": [
+      {
+        "start": 4,
+        "end": 12,
+        "value": "immunity",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "em, bye",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "bye",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "skull",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "skull",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "well, it's not manchester is it?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 25,
+        "value": "manchester",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i don't think it's david steel",
+    "entities": [
+      {
+        "start": 19,
+        "end": 30,
+        "value": "david steel",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 25,
+        "end": 30,
+        "confidence_entity": 0.7896618843078613,
+        "value": "steel",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i don't think norman tebbit worked up north for an mp",
+    "entities": [
+      {
+        "start": 14,
+        "end": 27,
+        "value": "norman tebbit",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 14,
+        "end": 20,
+        "confidence_entity": 0.9922385811805725,
+        "value": "norman",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 48,
+        "end": 50,
+        "confidence_entity": 0.8928259015083313,
+        "value": "an",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "well, it wouldn't be pickety moo",
+    "entities": [
+      {
+        "start": 21,
+        "end": 32,
+        "value": "pickety moo",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 29,
+        "end": 32,
+        "confidence_entity": 0.9453023076057434,
+        "value": "moo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bill clinton didn't come from illinois, did he?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "bill clinton",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 5,
+        "end": 12,
+        "confidence_entity": 0.9750055074691772,
+        "value": "clinton",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 20,
+        "end": 24,
+        "confidence_entity": 0.7818655967712402,
+        "value": "come",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 40,
+        "end": 46,
+        "confidence_entity": 0.4567227363586426,
+        "value": "did he",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "no, no it's not lasangne, definitely not",
+    "entities": [
+      {
+        "start": 16,
+        "end": 24,
+        "value": "lasangne",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "well it's not kremlin i think that's fair to say",
+    "entities": [
+      {
+        "start": 14,
+        "end": 21,
+        "value": "kremlin",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "well i don't think it's kremlin i don't think it's castle",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 51,
+        "end": 57,
+        "confidence_entity": 0.9715918898582458,
+        "value": "castle",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i'm sure it's not keep",
+    "entities": [
+      {
+        "start": 18,
+        "end": 22,
+        "value": "keep",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "so david lloyd george i would say no",
+    "entities": [
+      {
+        "start": 3,
+        "end": 21,
+        "value": "david lloyd george",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 15,
+        "end": 21,
+        "confidence_entity": 0.9996115565299988,
+        "value": "george",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "jimmy carter's peanuts",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "jimmy carter",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.709212064743042,
+        "value": "carter",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.5696791410446167,
+        "value": "peanuts",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i don't remember one of bernhard leach's poems",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 41,
+        "end": 46,
+        "confidence_entity": 0.4686718285083771,
+        "value": "poems",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i don't think it's painting",
+    "entities": [
+      {
+        "start": 19,
+        "end": 27,
+        "value": "painting",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "first novel well irving welsh first novel im sure is very well known",
+    "entities": [
+      {
+        "start": 17,
+        "end": 29,
+        "value": "irving welsh",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i don't think it's stephen king, horror man",
+    "entities": [
+      {
+        "start": 19,
+        "end": 31,
+        "value": "stephen king",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 40,
+        "end": 43,
+        "confidence_entity": 0.6220073699951172,
+        "value": "man",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "patricia cornwell what does she do detectives",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "patricia cornwell",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i don't think it's michael crichton",
+    "entities": [
+      {
+        "start": 19,
+        "end": 35,
+        "value": "michael crichton",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 27,
+        "end": 35,
+        "confidence_entity": 0.9987032413482666,
+        "value": "crichton",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "and it's not the spanish is it?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 24,
+        "value": "spanish",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.6236342191696167,
+        "value": "and",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it's not slovakia because because it's too far",
+    "entities": [
+      {
+        "start": 9,
+        "end": 17,
+        "value": "slovakia",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "we lost now and so i don't think it's germany",
+    "entities": [
+      {
+        "start": 38,
+        "end": 45,
+        "value": "germany",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 3,
+        "end": 7,
+        "confidence_entity": 0.8625306487083435,
+        "value": "lost",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.9845640659332275,
+        "value": "and",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 38,
+        "end": 45,
+        "confidence_entity": 0.7011928558349609,
+        "value": "germany",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it's not germany because germany have got 2000 and they've got 2010 they wouldn't",
+    "entities": [
+      {
+        "start": 9,
+        "end": 16,
+        "value": "germany",
+        "entity": "answer"
+      },
+      {
+        "start": 25,
+        "end": 32,
+        "value": "germany",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 25,
+        "end": 32,
+        "confidence_entity": 0.36551421880722046,
+        "value": "germany",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 42,
+        "end": 50,
+        "confidence_entity": 0.8712655305862427,
+        "value": "2000 and",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 63,
+        "end": 67,
+        "confidence_entity": 0.7125290036201477,
+        "value": "2010",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "well auditory is hearing",
+    "entities": [
+      {
+        "start": 5,
+        "end": 13,
+        "value": "auditory",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 5,
+        "end": 13,
+        "confidence_entity": 0.38201281428337097,
+        "value": "auditory",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 17,
+        "end": 24,
+        "confidence_entity": 0.7562499642372131,
+        "value": "hearing",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i wish it was bolly, but it's not",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "value": "bolly",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i would stake the farm and the fact that it's not the atlantic or the arctic",
+    "entities": [
+      {
+        "start": 54,
+        "end": 62,
+        "value": "atlantic",
+        "entity": "answer"
+      },
+      {
+        "start": 70,
+        "end": 76,
+        "value": "arctic",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 23,
+        "end": 26,
+        "confidence_entity": 0.9953325390815735,
+        "value": "and",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "answer",
+        "start": 70,
+        "end": 76,
+        "confidence_entity": 0.7821022868156433,
+        "value": "arctic",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "they're not going to do nuclear tests in the indian ocean",
+    "entities": [
+      {
+        "start": 45,
+        "end": 51,
+        "value": "indian",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 52,
+        "end": 57,
+        "confidence_entity": 0.8927521109580994,
+        "value": "ocean",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ontario is in canada",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "ontario",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "um well i know it wasn't lewis hamilton and it wasn't alonso",
+    "entities": [
+      {
+        "start": 25,
+        "end": 39,
+        "value": "lewis hamilton",
+        "entity": "answer"
+      },
+      {
+        "start": 54,
+        "end": 60,
+        "value": "alonso",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 31,
+        "end": 43,
+        "confidence_entity": 0.9533615112304688,
+        "value": "hamilton and",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it's not pentecost",
+    "entities": [
+      {
+        "start": 9,
+        "end": 18,
+        "value": "pentecost",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "don't say ali bongo",
+    "entities": [
+      {
+        "start": 10,
+        "end": 19,
+        "value": "ali bongo",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.6591341495513916,
+        "value": "bongo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hmm, no, nah i don't think it's poetry",
+    "entities": [
+      {
+        "start": 32,
+        "end": 38,
+        "value": "poetry",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "so if it nordic it can't be the vikings",
+    "entities": [
+      {
+        "start": 32,
+        "end": 39,
+        "value": "vikings",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "not palazzo pants",
+    "entities": [
+      {
+        "start": 12,
+        "end": 17,
+        "value": "pants",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's not switzerland right?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "value": "switzerland",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "not blazer",
+    "entities": [
+      {
+        "start": 4,
+        "end": 10,
+        "value": "blazer",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "not eating",
+    "entities": [
+      {
+        "start": 4,
+        "end": 10,
+        "value": "eating",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "not icey",
+    "entities": [
+      {
+        "start": 4,
+        "end": 8,
+        "value": "icey",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "not the millenium dome",
+    "entities": [
+      {
+        "start": 8,
+        "end": 22,
+        "value": "millenium dome",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it isn't the millenium dome",
+    "entities": [
+      {
+        "start": 13,
+        "end": 27,
+        "value": "millenium dome",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it is not shane richie right?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 22,
+        "value": "shane richie",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think it's not ranulph fiennes",
+    "entities": [
+      {
+        "start": 17,
+        "end": 32,
+        "value": "ranulph fiennes",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it cannot be jane birkin",
+    "entities": [
+      {
+        "start": 13,
+        "end": 24,
+        "value": "jane birkin",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "okay i know that it is not windsor yes?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 34,
+        "value": "windsor",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it wasn't the united nations",
+    "entities": [
+      {
+        "start": 14,
+        "end": 28,
+        "value": "united nations",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "riding crop definitely not",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "riding crop",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i think it's not tacky",
+    "entities": [
+      {
+        "start": 17,
+        "end": 22,
+        "value": "tacky",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "he might have visited the others but it's not nottingham, is it?",
+    "entities": [
+      {
+        "start": 46,
+        "end": 56,
+        "value": "nottingham",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's not five chris",
+    "entities": [
+      {
+        "start": 9,
+        "end": 13,
+        "value": "five",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "my leanings are that it is not tony benn",
+    "entities": [
+      {
+        "start": 31,
+        "end": 40,
+        "value": "tony benn",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "answer",
+        "start": 36,
+        "end": 40,
+        "confidence_entity": 0.48278746008872986,
+        "value": "benn",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "not tony benn? not tony benn?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 13,
+        "value": "tony benn",
+        "entity": "answer"
+      },
+      {
+        "start": 19,
+        "end": 28,
+        "value": "tony benn",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "definintely not red",
+    "entities": [
+      {
+        "start": 16,
+        "end": 19,
+        "value": "red",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "yeah yeah there is, but there ain't no red on there",
+    "entities": [
+      {
+        "start": 39,
+        "end": 42,
+        "value": "red",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "red",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "red",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I don't think it is italy",
+    "entities": [
+      {
+        "start": 20,
+        "end": 25,
+        "value": "italy",
+        "entity": "answer"
+      }
+    ],
+    "predicted_entities": []
+  }
+]
