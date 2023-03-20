@@ -148,11 +148,9 @@ Data collection was performed in-house, by the team. We first collected all avai
 \end{table}
 
 \subsection{Cohen's Kappa Coefficient}
-As the system uses the annotations to train the system, ensuring that they are reliable and consistent is essential for accurate training. Cohen's kappa was used on a sample of the completed transcripts to evaluate their accuracy. Cohen's kappa measures the reliability between raters on categorical data. It is said to be more accurate than calculating the agreement as it accounts for agreements happening by chance. \todo{add source}
+As the system uses the annotations to train the system, ensuring that they are reliable and consistent is essential for accurate training. Cohen's kappa was calculated for a sample of the completed transcripts to evaluate their accuracy. Cohen's kappa measures the reliability between raters on categorical data. It is more accurate than calculating the agreement as it accounts for agreements happening by chance \cite{Cohen_1960}.
 
-To calculate Cohen's kappa, a sample of four transcripts were re-annotated by a team member, without them seeing the original annotations to remove any possible bias. This amounts to approximately 15\% of the total transcripts.
-
-Every occurrence by both raters of each annotation label was gathered. An overall agreement rate was calculated using -
+To calculate Cohen's kappa, a sample of four transcripts were re-annotated by a team member, without them seeing the original annotations to remove any possible bias. This amounts to approximately 15\% of the total transcripts. Every occurrence by both raters of each annotation label was gathered. An overall agreement rate was calculated using -
 
 \begin{equation} \label{eq:kappa}
   \begin{split}
@@ -188,7 +186,7 @@ Finally, the kappa score was calculated.
   \end{split}
 \end{equation}
 
-According to Cohen \todo{add source}, a Kappa score of 0.9601 is interpreted as almost perfect agreement. From this, the annotation of transcripts can be concluded as reliable and therefore the training model will accurately learn from this data.
+A Kappa score of 0.9601 is interpreted as ``almost perfect agreement'' \cite{Cohen_1960}. From this, the annotation of transcripts can be concluded as reliable.
 
 \section{Design and Implementation}
 \label{sec:implementation}
