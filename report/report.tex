@@ -148,9 +148,9 @@ Data collection was performed in-house, by the team. We first collected all avai
 \end{table}
 
 \subsection{Cohen's Kappa Coefficient}
-As the system uses the annotations to train the system, ensuring that they are reliable and consistent is essential for accurate training. Cohen's kappa was used on a sample of the completed transcripts to evaluate their accuracy. Cohen's kappa measures the reliability between raters on categorical data. It is said to be more accurate than calculating the agreement as it accounts for agreements happening by chance. \todo{add source}
+As the annotations are used to train the system, ensuring that they are reliable and consistent is essential for accurate training. Cohen's kappa is used on a sample of the completed transcripts to evaluate their accuracy. Cohen's kappa measures the reliability between multiple raters on categorical data. It is more accurate than calculating just the agreement rate as it accounts for agreements happening by chance. \cite{McHugh_2012}
 
-To calculate Cohen's kappa, a sample of four transcripts were re-annotated by a team member, without them seeing the original annotations to remove any possible bias. This amounts to approximately 15\% of the total transcripts.
+To calculate Cohen's kappa, a sample of four transcripts are re-annotated by a team member, who hasn't seen the original annotations to remove any possible bias. This amounts to approximately 15\% of the total transcripts.
 
 Every occurrence by both raters of each annotation label was gathered. An overall agreement rate was calculated using -
 
@@ -162,13 +162,13 @@ Every occurrence by both raters of each annotation label was gathered. An overal
   \end{split}
 \end{equation}
 
-This alone is not reliable enough to trust.\todo{source} To calculate the chance of an agreement happening between the two raters, first the probability of a rater choosing a label was calculated. This was done for each rater for every label using -
+This alone is not reliable enough to trust.\cite{Sun_2011} To calculate the chance of an agreement happening between the two raters, first the probability of a rater choosing a label is calculated. This is done for each rater for every label using -
 
 \begin{equation}
   Prob(R_x[label]) = \frac{R_x \: Total \: for \: [label]}{total}
 \end{equation}
 
-Then the chance of agreement for each annotation label was calculated using -
+Then the chance of agreement for each annotation label is calculated using -
 
 \begin{equation}
   \begin{split}
@@ -177,9 +177,9 @@ Then the chance of agreement for each annotation label was calculated using -
   \end{split}
 \end{equation}
 
-The overall chance of agreement was calculated by summing the chance of agreements for each annotation label.
+The overall chance of agreement is calculated by summing the chance of agreements for each annotation label.
 
-Finally, the kappa score was calculated.
+Finally, the kappa score is calculated.
 
 \begin{equation}
   \begin{split}
@@ -188,7 +188,7 @@ Finally, the kappa score was calculated.
   \end{split}
 \end{equation}
 
-According to Cohen \todo{add source}, a Kappa score of 0.9601 is interpreted as almost perfect agreement. From this, the annotation of transcripts can be concluded as reliable and therefore the training model will accurately learn from this data.
+According to Cohen \cite{McHugh_2012}, a Kappa score of 0.9601 is interpreted as almost perfect agreement. From this, the annotation of transcripts can be concluded as reliable and therefore the training model will accurately learn from this data.
 
 \section{Design and Implementation}
 \label{sec:implementation}
