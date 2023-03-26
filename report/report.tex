@@ -24,10 +24,6 @@
 \usepackage{url}
 \usepackage{latexsym}
 
-% For referencing sections across the article
-\usepackage{nameref}
-\usepackage{hyperref}
-
 % for todo notes 
 \usepackage{todonotes}
 
@@ -35,6 +31,10 @@
 \usepackage{amssymb}
 % cool maths printing
 \usepackage{amsmath}
+
+\usepackage[hidelinks]{hyperref}
+% For referencing sections across the article
+\usepackage{cleveref}
 
 \aclfinalcopy % Uncomment this line for the final submission
 %\def\aclpaperid{***} %  Enter the acl Paper ID here
@@ -51,9 +51,9 @@
 
 \title{Instructions for ACL-2016 Proceedings}
 
-\author{Tom Byars, Cale Clark, Roman Fenlon, Charlie Lyttle, Katie McAskill, Jack Miller, Zein Said, \\
+\author{Tom Byars, Cale Clark, Charlie Lyttle, Katie McAskill, Jack Miller, Zein Said, \\
 {\bf Abdullah Sayed, Laura Schauer, Jason Sweeney, Aron Szeles, Xander Wickham} \\
-School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\ {\tt {tjb10, cc164, rf104, cl157, klm12, jjm7, zs2008,}} \\ {\tt {as512, lms9, js418, as472, aw127}@hw.ac.uk}}
+School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\ {\tt {tjb10, cc164, cl157, klm12, jjm7, zs2008,}} \\ {\tt {as512, lms9, js418, as472, aw127}@hw.ac.uk}}
 
 \date{February 2023}
 
@@ -69,13 +69,13 @@ School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\
 \label{sec:introduction}
 
 \textit{from coursework spec:} main research or technical question addressed \\
-Socially assistive robots (SARs) are a crucial part of the future of many sectors, for example, in education or healthcare \cite{gunson_visually_aware_2022}. Especially the latter depends on technology advancements as it is facing numerous obstacles in the future, such as increasing spendings and a growing percentage of older people. A serious lack of healthcare workers is already occurring, with 10 million more healthworkers needed worldwide by 2030 \cite{cooper_ari_2020,Health_workforce_2023}. SARs can pose a solution to the problem, as they are able to support healthcare in various ways, such as encouraging older people to keep living independently for longer or reducing caregiver burden \cite{cooper_ari_2020}.
+Socially assistive robots (SARs) are a crucial part of the future of many sectors, for example, education or healthcare \cite{gunson_visually_aware_2022}. Especially the latter depends on technology advancements as it is facing numerous obstacles in the future, such as increasing spendings and a growing percentage of older people. A serious lack of healthcare workers is already occurring, with 10 million more healthworkers needed worldwide by 2030 \cite{cooper_ari_2020,Health_workforce_2023}. SARs can pose a solution to the problem by supporting healthcare in various ways, such as encouraging older people to keep living independently for longer or reducing caregiver burden \cite{cooper_ari_2020}.
 
-These scenarios require SARs to be able to handle multi-party interactions as it is likely that more than one person will interact with the system. Compared to handling dyadic interactions, handling multi-party conversations includes more complex challenges, such as Speaker Recognition, Addressee Recognition, Response Selection (summarised in “who says what to whom“) and turn-taking \cite{Group_1_unpublished_paper,Johansson_Skantze_2015}.
+Healthcare SAR scenarios require SARs to be able to handle multi-party interactions as it is likely that more than one person will interact with the system. Compared to handling dyadic (two-party) interactions, handling multi-party conversations includes more complex challenges, such as Speaker Recognition, Addressee Recognition, Response Selection (summarised in “who says what to whom“) and coordination of turn-taking \cite{Group_1_unpublished_paper,Johansson_Skantze_2015}.
 
 \textit{Include here what exactly we examined about turn-taking}
 
-In this work, we propose a model trained on multi-party human-human conversation data. We collected the data from recordings of special “Who wants to be millionaire?“ episodes where two candidates collaborated to answer the host's questions.
+In this work, we propose a conversational system using a model trained on multi-party human-human conversation data. We collected the data from recordings of special “Who wants to be millionaire?“ episodes where two candidates collaborated to answer the host's questions.
 
 \textit{Include results here.}
 
@@ -89,14 +89,14 @@ In this work, we propose a model trained on multi-party human-human conversation
 \label{subsec:socially_assistive_robots}
 For healthcare, as well as for any other sector, the difficulty of successfully designing SARs lies in creating robots that can effectively converse with humans and adhere to social norms \cite{moujahid_multi_party_2022}. The more expressive a robot is, the more it will be perceived as intelligent, conscious and polite \cite{moujahid_multi_party_2022}. To achieve such a positive perception, multiple parts need to be combined into one conversational system, such as the ability to carry out visually grounded as well as task-based dialogues, to perceive and discuss its environment and to chit-chat \cite{gunson_visually_aware_2022}.
 
-The SPRING project conducts research on a SAR robot that is deployed in an eldercare hospital reception area \cite{addlesee_comprehensive_2020}. The conversational system is deployed on humanoid ARI robot produced by Pal Robotics \cite{palrobot}. ARIs capabilities can be extended with custom AI algorithms, in the case of SPRING-ARI a visual perception system, a dialogue system, and a social interaction planner \cite{addlesee_comprehensive_2020}. While the SPRING-ARI system successfully demonstrates that task-based, social and visually grounded dialogue can be combined with physical actions, it still lacks the ability to handle conversations with more than one person simultaneously \cite{addlesee_comprehensive_2020}.
+The SPRING project conducts research on a SAR robot deployed in an eldercare hospital reception area \cite{addlesee_comprehensive_2020}. The conversational system is deployed on the humanoid ARI robot produced by Pal Robotics \cite{palrobot}. ARIs capabilities can be extended with custom AI algorithms, in the case of SPRING-ARI a visual perception system, a dialogue system, and a social interaction planner \cite{addlesee_comprehensive_2020}. While the SPRING-ARI system successfully demonstrates that task-based, social and visually grounded dialogue can be combined with physical actions, it still lacks the ability to handle conversations with more than one person simultaneously \cite{addlesee_comprehensive_2020}.
 
 \subsection{Multi-party Human Robot Interaction}
 \label{subsec:multi_party}
-As stated above, the endeavour to create conversational systems becomes considerably more difficult when dealing with multi-party interactions \cite{Group_1_unpublished_paper}. Especially turn-taking poses a central problem. It is defined as follows:
+As stated before, the endeavour to create conversational systems becomes considerably more difficult when dealing with multi-party interactions \cite{Group_1_unpublished_paper}. Especially turn-taking poses a central problem. It is defined as follows:
 
 \begin{quote}
-  The rules of turn-taking organize the conversation into turns, during which one of the participants has the right to speak while the others agree to listen \cite{Żarkowski_2019}
+  The rules of turn-taking organize the conversation into turns, during which one of the participants has the right to speak while the others agree to listen. \cite{Żarkowski_2019}
 \end{quote}
 
 In dyadic conversations, there are only two roles a participant can take: speaker or listener, hence it is clear when and to whom the turn is yielded. In multi-party conversations, participants can take multiple roles, therefore turn-taking needs to be coordinated \cite{Johansson_Skantze_2015}. Humans signal their intents mostly through gaze, but also through pauses, prosody, and body positioning \cite{Żarkowski_2019}. To copy this behaviour, earlier models for conversational systems relied on silence time-outs to coordinate turn-taking, however, this approach is found to be too simplistic \cite{skantze_turn_taking_2021}. Instead, mimicking human turn-taking behaviour better by using a combination of verbal and non-verbal cues leads to robots that are better perceived \cite{moujahid_multi_party_2022}.
@@ -111,7 +111,7 @@ In dyadic conversations, there are only two roles a participant can take: speake
   \item (Laura) Talk about multi-party data collection
 \end{itemize}
 
-Data collection was performed in-house, by the team. We first collected all available recordings of Who Wants to Be a Millionaire with two participants. Using the YouTube API, we downloaded transcripts for the vast majority of recordings. To annotate these transcripts, we used the following unified set of annotations that would allow us to capture as much information as possible, without saturating the data. \\
+Data collection was performed by the team. We first collected all available recordings of ``Who Wants to Be a Millionaire'' with two participants, which were transcribed using the YouTube API. To annotate these transcripts, we used the unified set of annotations shown in \Cref{table:intents}. This list allows us to capture as much information as possible, without saturating the data.
 
 \noindent
 \begin{table}
@@ -148,38 +148,36 @@ Data collection was performed in-house, by the team. We first collected all avai
 \end{table}
 
 \subsection{Cohen's Kappa Coefficient}
-As the system uses the annotations to train the system, ensuring that they are reliable and consistent is essential for accurate training. Cohen's kappa was calculated for a sample of the completed transcripts to evaluate their accuracy. Cohen's kappa measures the reliability between raters on categorical data. It is more accurate than calculating the agreement as it accounts for agreements happening by chance \cite{Cohen_1960}.
+To ensure reliability and consistency, Cohen's kappa was calculated for a sample of the completed transcripts. It measures the reliability between raters on categorical data, while accounting for agreement happening by chance \cite{Cohen_1960}. A sample of four transcripts are re-annotated by a team member, which amounts to approximately 15\% of the total transcripts.
 
-To calculate Cohen's kappa, a sample of four transcripts are re-annotated by a team member, who hasn't seen the original annotations to remove any possible bias. This amounts to approximately 15\% of the total transcripts.
+% Every occurrence by both raters of each annotation label was gathered. An overall agreement rate was calculated using -
 
-Every occurrence by both raters of each annotation label was gathered. An overall agreement rate was calculated using -
+% \begin{equation} \label{eq:kappa}
+%   \begin{split}
+%     Agreement & = \frac{total \: Agreed}{total} \\
+%     % Agreement & = \frac{329}{341} \\
+%     Agreement & = \underline{\underline{0.9684}}
+%   \end{split}
+% \end{equation}
 
-\begin{equation} \label{eq:kappa}
-  \begin{split}
-    Agreement & = \frac{total \: Agreed}{total} \\
-    % Agreement & = \frac{329}{341} \\
-    Agreement & = \underline{\underline{0.9684}}
-  \end{split}
-\end{equation}
+% This alone is not reliable enough to trust.\cite{Sun_2011} To calculate the chance of an agreement happening between the two raters, first the probability of a rater choosing a label is calculated. This is done for each rater for every label using -
 
-This alone is not reliable enough to trust.\cite{Sun_2011} To calculate the chance of an agreement happening between the two raters, first the probability of a rater choosing a label is calculated. This is done for each rater for every label using -
+% \begin{equation}
+%   Prob(R_x[label]) = \frac{R_x \: Total \: for \: [label]}{total}
+% \end{equation}
 
-\begin{equation}
-  Prob(R_x[label]) = \frac{R_x \: Total \: for \: [label]}{total}
-\end{equation}
+% Then the chance of agreement for each annotation label is calculated using -
 
-Then the chance of agreement for each annotation label is calculated using -
+% \begin{equation}
+%   \begin{split}
+%     &ChanceAgreement[label] = \\
+%     &Prob(R_1[label]) * Prob(R_2[label])
+%   \end{split}
+% \end{equation}
 
-\begin{equation}
-  \begin{split}
-    &ChanceAgreement[label] = \\
-    &Prob(R_1[label]) * Prob(R_2[label])
-  \end{split}
-\end{equation}
+% The overall chance of agreement is calculated by summing the chance of agreements for each annotation label.
 
-The overall chance of agreement is calculated by summing the chance of agreements for each annotation label.
-
-Finally, the kappa score is calculated.
+% Finally, the kappa score is calculated.
 
 \begin{equation}
   \begin{split}
@@ -188,26 +186,31 @@ Finally, the kappa score is calculated.
   \end{split}
 \end{equation}
 
-A Kappa score of 0.9601 is interpreted as ``almost perfect agreement'' \cite{Cohen_1960}. From this, the annotation of transcripts can be concluded as reliable.
+\noindent
+A Kappa score of 0.9601 is interpreted as ``almost perfect agreement'' \cite{McHugh_2012}. From this, the annotation of transcripts can be concluded as reliable.
 
 \section{Design and Implementation}
 \label{sec:implementation}
 
+\begin{figure}
+  \includegraphics*[width=\columnwidth]{images/system_graph.png}
+  \caption{Architecture of the conversational system}
+  \label{fig:system_architecture}
+\end{figure}
+
 \begin{itemize}
   \item \textit{from coursework spec:} design and implementation of the system: components and architecture
-  \item Jack's System Graph
 \end{itemize}
 
 \subsection{Automatic Speech Recognition}
 \label{subsec:asr}
 
-To enable interaction between users and the conversational system, the first step is to transform user's speech into text, in order to pass text further onto intent recognition (NLU). Transforming audio into text works through Speech-To-Text (STT)software. In recent years, STT systems are becoming more accurate and fast, however, research found that none of the existing systems can yet reliably handle conversations in real time \cite{Addlesee_Yu_Eshghi_2020}.
+To enable interaction between users and the conversational system, the first step is to transform user's speech into text, in order to pass text further onto intent recognition (NLU). Transforming audio into text works through Speech-To-Text (STT) software. In recent years, STT systems became more accurate and fast, however, none of the existing systems can yet reliably handle conversations in real time \cite{addlesee_comprehensive_2020}.
 
-The system we \todo{Get rid of pronoun} have built required two things specifically from the ASR that are not available in all ASR systems. The first being real time transcription. As our system is going to be used on a robot, it must transcribe what the user is saying in real-time to avoid long delays before the system responds. For a usable system in this context the time taken for a system to respond can be no longer than the delay a human would leave before responding or only marginally longer. In addition, our system requires diarization. Diarization is the process of taking a single audio file, in which two or more people are speaking, and determining who is speaking at what time. As two users would be speaking to each other and to our system, our system must recognise when each individual is talking. \todo{Those two sentences have the same content} This would allow us to track the intents of each user and determine when they have agreed with each other.
-We tried many of the most popular STT systems including Amazon's Transcribe, IBM's Watson and locally running Pyannote. These are all valid options for transcription but lack real-time diarization, that is, diarising the speech as it is spoken.
-Finally, we \todo{Get rid of pronoun} settled with Google's Cloud Speech-to-Text API due to its high accuracy, real-time transcription capabilities, and customisability. Also, as it is widely used, resources available for troubleshooting and integration were readily available.
+Our conversational system required two non-standard aspects from the ASR: (1) real-time transcription and (2) diarization. As our system conceptualised for usage on a robot, it must transcribe what the user is saying in real-time to avoid response delays. Time taken for a system to respond can only be marginally longer than the delay a human would leave before responding \todo{source!}.
 
-As well as these reasons, Google's API boasted diarization capabilities, along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate and often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other. This is in accordance with the findings of \cite{addlesee_comprehensive_2020}. Diarization is quite resource-heavy meaning that running a diarization algorithm in real time takes an extreme amount of resources and, unfortunately, is not feasible on normal, consumer-grade hardware. And although diarization APIs exist, they do not respond fast enough for our use case. This made Google's diarization unusable for our system, therefore we decided to handle the diarization separately and integrate it with the real time Google transcription.
+Diarization is the process of determining the speaker in multi-party conversations. Therefore, to handle a ``Who wants to be millionaire?'' style game, our system must be able to diarise. This allows us to track the intents of each individual user and determine when users agree or disagree.
+We tried several STT systems including Amazon's Transcribe, IBM's Watson and locally running Pyannote. Our findings were that these are all valid options for transcription but lack real-time diarization. We settled with Google's Cloud Speech-to-Text API due to its high accuracy, real-time transcription capabilities, and customisability. As it is widely used, troubleshooting and integration resources were readily available. In addition, Google's API promised diarization capabilities, and along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate, and it often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other, supporting the findings of \cite{addlesee_comprehensive_2020}. Diarization is quite resource-heavy meaning that running a diarization algorithm in real time takes an extreme amount of resources and, unfortunately, is not feasible on normal, consumer-grade hardware. And although diarization APIs exist, they do not respond fast enough for our use case. This made Google's diarization unusable for our system, therefore we decided to handle the diarization separately and integrate it with the real time Google transcription.
 
 \subsection{Natural Language Understanding}
 \label{subsec:nlu}
@@ -215,7 +218,7 @@ As well as these reasons, Google's API boasted diarization capabilities, along w
 \begin{itemize}
   \item Short description of RASA
   \item Explain the aim (detecting intents)
-  \item Refer to the intents described in \ref{sec:data_collection} \nameref{sec:data_collection}
+  \item Refer to the intents described in \ref{sec:data_collection} \cref{sec:data_collection}
   \item Evaluation - show different versions of the model: difference in F-Score, Confusion Matrix, ...
 \end{itemize}
 
