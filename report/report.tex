@@ -192,38 +192,36 @@ A Kappa score of 0.9601 is interpreted as ``almost perfect agreement'' \cite{McH
 \section{Design and Implementation}
 \label{sec:implementation}
 
+Our conversational system consists of several parts, the modular architecture is shown in \Cref{fig:system_architecture}. This section outlines each module and describes how our system manages the process from the users' utterances to the system's response.
+
 \begin{figure}
   \includegraphics*[width=\columnwidth]{images/system_graph.png}
   \caption{Architecture of the conversational system}
   \label{fig:system_architecture}
 \end{figure}
 
-\begin{itemize}
-  \item \textit{from coursework spec:} design and implementation of the system: components and architecture
-\end{itemize}
-
 \subsection{Automatic Speech Recognition}
 \label{subsec:asr}
 
-To enable interaction between users and the conversational system, the first step is to transform user's speech into text, in order to pass text further onto intent recognition (NLU). Transforming audio into text works through Speech-To-Text (STT) software. In recent years, STT systems became more accurate and fast, however, none of the existing systems can yet reliably handle conversations in real time \cite{addlesee_comprehensive_2020}.
+The first step is to transform user's speech into text, in order to pass text further onto intent recognition (NLU). Transforming audio into text works through Speech-To-Text (STT) software. In recent years, STT systems have become more accurate and fast, however, none of the existing systems can yet reliably handle conversations in real time \cite{addlesee_comprehensive_2020}.
 
 Our conversational system required two non-standard aspects from the ASR: (1) real-time transcription and (2) diarization. As our system conceptualised for usage on a robot, it must transcribe what the user is saying in real-time to avoid response delays. Time taken for a system to respond can only be marginally longer than the delay a human would leave before responding \todo{source!}.
 
 Diarization is the process of determining the speaker in multi-party conversations. Therefore, to handle a ``Who wants to be millionaire?'' style game, our system must be able to diarise. This allows us to track the intents of each individual user and determine when users agree or disagree.
-We tried several STT systems including Amazon's Transcribe, IBM's Watson and locally running Pyannote. Our findings were that these are all valid options for transcription but lack real-time diarization. We settled with Google's Cloud Speech-to-Text API due to its high accuracy, real-time transcription capabilities, and customisability. As it is widely used, troubleshooting and integration resources were readily available. In addition, Google's API promised diarization capabilities, and along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate, and it often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other, supporting the findings of \cite{addlesee_comprehensive_2020}. As this made Google's diarization unusable for our system, therefore we decided to handle the diarization separately and integrate it with the real time Google transcription.
+We tried several STT systems including Amazon's Transcribe, IBM's Watson and locally running Pyannote. Our findings were that these are all valid options for transcription but lack real-time diarization. We settled with Google's Cloud Speech-to-Text API due to its high accuracy, real-time transcription capabilities, and customisability. As it is widely used, troubleshooting and integration resources were readily available. In addition, Google's API promised diarization capabilities, which, along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate, and it often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other, supporting the findings of \cite{addlesee_comprehensive_2020}. As this made Google's diarization unusable for our system, we decided to move to a set-up with two microphones (one for each user) and integrate them with the real time Google transcription.
 
 \subsection{Natural Language Understanding}
 \label{subsec:nlu}
 
-Natural Language Understanding (NLU) is the first contact point between a user and conversational AI system. NLU uses many different methods to take in sentences or phrases of natural human language and try and classify them into intents that a computer can use. We use Rasa NLU which uses machine learning to train on our collected data to create a model that can accurately recoginize new, unseen inputs from users similar to the training examples. The NLU model will take the phrases from the ASR and label them with what it thinks the intention of that phrase is and passes that on to the DM.
+Natural Language Understanding (NLU) takes in utterances of natural human language and classifies them into intents that a computer can use. RASA is an open-source framework for building conversational systems. We used its NLU tool to train on our collected data, after cleaning it \todo{word better}. RASA NLU successfully created a model that can accurately recoginize new, unseen inputs, which are similar to the training examples. The phrases transcribed in the ASR component are passed on to the NLU model, which will label them with one of the intents from \Cref{table:intents} and pass this information onto the Dialogue Management part.
 
-\begin{quote}
-  Rasa Open Source is the most popular open source framework for building chat and voice-based AI assistants. Rasa Open Source is an open source conversational AI platform that allows you to understand and hold conversations, and connect to messaging channels and third party systems through a set of APIs. It supplies the building blocks for creating virtual (digital) assistants or chatbots.
-\end{quote}
+% \begin{quote}
+%   Rasa Open Source is the most popular open source framework for building chat and voice-based AI assistants. Rasa Open Source is an open source conversational AI platform that allows you to understand and hold conversations, and connect to messaging channels and third party systems through a set of APIs. It supplies the building blocks for creating virtual (digital) assistants or chatbots.
+% \end{quote}
 
-We are not using all that Rasa has to offer but only Rasa NLU. Rasa NLU only produces a NLU model that can translate human language into intents or labels without the rest of the conversational system like DM and NLG. It takes training data in the form of each intent required with examples of natural language that would be classified under that intent. The model is also capable of entity extraction where it can recognize and label words of interest, like the answer to the question in our case.
+% We are not using all that Rasa has to offer but only Rasa NLU. Rasa NLU only produces a NLU model that can translate human language into intents or labels without the rest of the conversational system like DM and NLG. It takes training data in the form of each intent required with examples of natural language that would be classified under that intent.
 
-The intents NLU is trying to detect and label were described in the \cref{sec:data_collection} section above. Data collection provided hundreds of examples of each intent, which was then cleaned by the NLU team and put in as training data for Rasa NLU.
+The model is also capable of entity extraction, which means it can recognize and label words of interest. In our case, we use entity extraction to find and label the answer to the question or a rejected answer given in an utterance \todo{add an example of this}.
 
 \subsection{Evaluation of NLU}
 \label{subsec:NLU_evaluation}
