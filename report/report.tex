@@ -113,8 +113,6 @@ In dyadic conversations, there are only two roles a participant can take: speake
 
 Data collection was performed by the team. We first collected all available recordings of ``Who Wants to Be a Millionaire'' with two participants, which were transcribed using the YouTube API. To annotate these transcripts, we used the unified set of annotations shown in \Cref{table:intents}. This list allows us to capture as much information as possible, without saturating the data.
 
-\todo{Sort into User and System Intents}
-
 \noindent
 \begin{table}[h!]
   \begin{tabular}{ | p{2cm} | p{5cm} | }
@@ -241,7 +239,7 @@ NLU:    - intent: offer-answer
 \subsubsection{Evaluation of NLU}
 \label{subsec:NLU_evaluation}
 
-An initial model trained on only 4 or 5 annotated transcripts, very little training data was highly innacurate, mislabelled intents, and extracted wrong answers or no answer at all. The accuracy for this model was 47\% with a macro-averaged F1-Score of 0.43.
+An initial model trained on only four annotated transcripts, very little training data was highly innacurate, mislabelled intents, and extracted wrong answers or no answer at all. The accuracy for this model was 47\% with a macro-averaged F1-Score of 0.43.
 
 Using a larger volume of training data significantly improved NLU performance. The model used in our system was trained on 25 transcripts with 566 training examples for each intent. Additional improvement could be obtained by manually cleaning the training data of any misplaced or wrongly extracted examples.
 
@@ -313,7 +311,7 @@ Another reason for using a state machine was the limited amount of transcription
 
 The state machine's configuration is defined inside a JSON file, as shown in \Cref{fig:jacks_figure}. The figure shows the behaviour of the state machine when the state is \verb|question|. An example of previously recorded values influencing the flow can be seen inside \verb|agreement|. When the action decided by the chatbot is overridden by the state machine, it is done according to this configuration. The action chosen by the state machine is a string of JavaScript code, and is found in the configuration object \verb|flow| at \verb|flow[state][intent]|, where \verb|state| is the current state of the machine and \verb|intent| is the name of the most recent user intent.
 
-Throughout the course of a game, the dialogue manager stores relevant values, such as answers offered by the user. These values influence the behaviour of the state machine. An example of this can be observed inside the \verb|seek-confirmation| state when the host asks if the users would like to lock in an answer suggested by them. If a user declines, the host checks if the rejected answer is the same as the one just offered by the user. If it matches, then the host assumes that the users do not want to lock in that answer. However, if the answer being rejected by the user is another one, then the host will assume that they do indeed wish to proceed with their offered answer.
+Throughout the course of a game, the dialogue manager stores relevant values, such as answers offered by the user. These values influence the behaviour of the state machine. An example of this can be observed inside the \verb|seek-confirmation| state when the host asks if the user would like to lock in an answer suggested by them. If a user declines, the host checks if the rejected answer is the same as the one just offered by the user. If it matches, then the host assumes that the user does not want to lock in that answer. However, if the answer rejected by the user is another one, then the host will assume that they do indeed wish to proceed with their offered answer.
 
 A more secure approach to this situation would involve taking a record of all the answers ruled out by the users. The host would then lock in a final answer after a rejected answer if and only if the other two possible answers had also been previously rejected. We would take in a future implementation as it would reduce the risk of the host accepting answers while the users are still deciding.
 
