@@ -114,11 +114,11 @@ In dyadic conversations, there are only two roles a participant can take: speake
 Data collection was performed by the team. We first collected all available recordings of ``Who Wants to Be a Millionaire'' with two participants, which were transcribed using the YouTube API. To annotate these transcripts, we used the unified set of annotations shown in \Cref{table:intents}. This list allows us to capture as much information as possible, without saturating the data.
 
 \noindent
-\begin{table}
-  \begin{tabular}{ | p{2.5cm} | p{5cm} | }
+\begin{table}[h!]
+  \begin{tabular}{ | p{2cm} | p{5cm} | }
     \hline
-    \rowcolor{lightgray}
-    Intent               & Description                                                              \\
+    \rowcolor[HTML]{CCDFF1}
+    \textbf{Intent}      & \textbf{Description}                                                     \\
     \hline
     question             & The system presents the question                                         \\
     \hline
@@ -194,11 +194,11 @@ A Kappa score of 0.9601 is interpreted as ``almost perfect agreement'' \cite{McH
 
 Our conversational system consists of several parts, the modular architecture is shown in \Cref{fig:system_architecture}. This section outlines each module and describes how our system manages the process from the users' utterances to the system's response.
 
-\begin{figure}
-  \includegraphics*[width=\columnwidth]{images/system_graph.png}
+\begin{figure*}
+  \includegraphics[width=\textwidth]{images/sys_graph.jpg}
   \caption{Architecture of the conversational system}
   \label{fig:system_architecture}
-\end{figure}
+\end{figure*}
 
 \subsection{Automatic Speech Recognition}
 \label{subsec:asr}
@@ -208,7 +208,11 @@ The first step is to transform user's speech into text, in order to pass text fu
 Our conversational system required two non-standard aspects from the ASR: (1) real-time transcription and (2) diarization. As our system conceptualised for usage on a robot, it must transcribe what the user is saying in real-time to avoid response delays. Time taken for a system to respond can only be marginally longer than the delay a human would leave before responding \todo{source!}.
 
 Diarization is the process of determining the speaker in multi-party conversations. Therefore, to handle a ``Who wants to be millionaire?'' style game, our system must be able to diarise. This allows us to track the intents of each individual user and determine when users agree or disagree.
-We tried several STT systems including Amazon's Transcribe, IBM's Watson and locally running Pyannote. Our findings were that these are all valid options for transcription but lack real-time diarization. We settled with Google's Cloud Speech-to-Text API due to its high accuracy, real-time transcription capabilities, and customisability. As it is widely used, troubleshooting and integration resources were readily available. In addition, Google's API promised diarization capabilities, which, along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate, and it often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other, supporting the findings of \cite{addlesee_comprehensive_2020}. As this made Google's diarization unusable for our system, we decided to move to a set-up with two microphones (one for each user) and integrate them with the real time Google transcription.
+We tried several STT systems including Amazon's Transcribe, IBM's Watson and locally running Pyannote. Our findings were that these are all valid options for transcription but lack real-time diarization. We settled with Google's Cloud Speech-to-Text API due to its high accuracy, real-time transcription capabilities, and customisability. As it is widely used, troubleshooting and integration resources were readily available. In addition, Google's API promised diarization capabilities, which, along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate, and it often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other, supporting the findings of \cite{addlesee_comprehensive_2020}.
+
+As this made Google's diarization unusable for our system, we decided to move to a set-up with two microphones (one for each user) and integrate them with the real time Google transcription. This allowed us to not only avoid the issue of diarization, but also to improve the quality of the ASR. By removing diarization we were able to use the most up-to-date Google model \verb|latest_long|, which is trained on long-form \todo{long-form??} conversation. This significantly increased the quality of the transcripts produced, which had a cascading effect on the rest of the system, leading to better intent recognition, entity extraction etc.
+
+A drawback of this set-up is that the microphones may pick up both user's voices. This could be mitigated through moving the microphones further apart, or calibrating them. More on this issue is discussed in \Cref{sec:evaluation}.
 
 \subsection{Natural Language Understanding}
 \label{subsec:nlu}
@@ -232,41 +236,29 @@ The NLU model has gone through multiple iterations, starting with very few train
 This model was highly innacurate, constantly mislabeling intents, and extracting wrong answers or no answer at all.
 The Rasa training model used was not very efficient with a small amount of training data so this was expected.
 
-\begin{figure}
-  \includegraphics[width=\columnwidth]{../Rasa/Evaluation/Original_Model/DIETClassifier_confusion_matrix.png}
-\end{figure}
-
 The diagram above shows the entity extraction confusion matrix, where you can see that more than half of the phrases with answers werent extracted.
 It did well with phrases without entities and rarely mislabed entities that werent actually answers, but its general tendency to not extract an entity was poor.
-
-\begin{figure}
-  \includegraphics[width=\columnwidth]{../Rasa/Evaluation/Original_Model/intent_confusion_matrix.png}
-\end{figure}
 
 This diagram shows the confusion matrix for the intents.
 It shows a random scatter over the matrix meaning that the predicted labels and real labels often did not match up.
 The model in general was quite random and inconsistent to say the least.
+\todo{shorten this paragraph}
 
-\paragraph{Used Model} The latest/best model, and the one actually used in our chatbot, was trained on around 25 transcripts with hundreds of training examples for each intent. Furthermore, we went through all the training data and manually cleaned it of any examples that were misplaced or extracted from the transcripts wrong. The added amount of data and the cleaning proved to do wonders as the performance of the model was much more reliable and accurate.
+\paragraph{Used Model} The model used in our system was trained on 25 transcripts with hundreds of training examples for each intent. Furthermore, we manually cleaned the training data of any misplaced or wrongly extracted examples.
 
 \begin{figure}
   \includegraphics[width=\columnwidth]{../Rasa/Evaluation/Clean_Model/DIETClassifier_confusion_matrix.png}
+  \caption{Confusion Matrix of NLU answer extraction}
+  \label{fig:cm_answer_extraction}
 \end{figure}
-
-As can be seen above, the confusion matrix is perfect as the model did not make any mistakes with entity extraction. Of course the model can't be perfect and this is only its performance on our test data, but still a crystal clear difference from the original model.
 
 \begin{figure}
   \includegraphics[width=\columnwidth]{../Rasa/Evaluation/Clean_Model/intent_confusion_matrix.png}
+  \caption{Confusion Matrix of NLU intent recognition}
+  \label{fig:cm_intent_recognition}
 \end{figure}
 
-This diagram again shows the intents and how much more accurate this model is compared to the original. It only has a few mistakes here and there, especially with the more ambiguous intents, but even us as humans confuse those intents often. Regardless, the model is leaps more accurate than its beginning.
-
-\begin{itemize}
-  \item Short description of RASA
-  \item Explain the aim (detecting intents)
-  \item Refer to the intents described in \ref{sec:data_collection} \cref{sec:data_collection}
-  \item Evaluation - show different versions of the model: difference in F-Score, Confusion Matrix, ...
-\end{itemize}
+As can be seen in \Cref{fig:cm_answer_extraction}, the improved model's confusion matrix is perfect \todo{add source}. \Cref{fig:cm_intent_recognition} shows the intent confusion matrix.
 
 \subsection{Dialogue Management}
 \label{subsec:dialogue_management}
@@ -281,9 +273,23 @@ The model was trained using the dataset which we had originally labelled for NLU
 
 The primary difficulty of training was the imbalance in the dataset. Since most of the time, the host will be only listening, \verb|no response| is by far the most common output. This means that having the output as a single SoftMax vector of size 5 would be difficult, as the model would quickly learn to always output \verb|no response|. Traditional undersampling and oversampling methods would also be difficult to make use of, since the \verb|no response| output exists as part of a real conversation, which must be fed into the network sequentially. For example, uncommon system responses could not be oversampled, as they exist as part of a real question, most of which is often filled with \verb|no response| from the host. Artificially increasing their frequency could not be done without altering the questions, which would diminish the integrity of the data.
 
-To overcome this, a separate Sigmoid output was used for \verb|no response| (as shown in the diagrams above). To train this model, whenever \verb|no response| from the host was expected, the loss from the SoftMax vector was set to zero, otherwise L2 loss was used for all outputs. The system was implemented in PyTorch, with the model being trained for 30 epochs with a learning rate of 5x10-4.
+\begin{figure}
+  \includegraphics[width=\columnwidth]{images/DM_LSTM.png}
+  \caption{Architecture of PyTorch Model}
+  \label{fig:model_architecture}
+\end{figure}
+
+To overcome this, a separate Sigmoid output was used for \verb|no response|, as shown in \cref{fig:model_architecture}. To train this model, whenever \verb|no response| from the host was expected, the loss from the SoftMax vector was set to zero, otherwise L2 loss was used for all outputs. The system was implemented in PyTorch, with the model being trained for 30 epochs with a learning rate of 5x10-4.
 
 In future, this architecture could be used for handling multi-person dialogues with more intents or more users by simply scaling the inputs, outputs, and hidden layers accordingly. The model could also be altered to allow for more inputs such as pauses or other non-verbal cues.
+
+\paragraph{Neural Network Architectures}
+\label{par:nn_architectures}
+
+\begin{itemize}
+  \item difference between LSTM \& RNN
+  \item why not RASA, but own DM
+\end{itemize}
 
 \subsubsection{Dialogue Manager - Jack}
 \label{subsec:dm}
@@ -292,24 +298,24 @@ The intent detected by the NLU system from a user's utterance is passed to the d
 
 Another reason for using the state machine was the limited transcript data. The PyTorch model learned off of the transcript data. There are user intents found throughout the transcripts, followed by a certain action (or no action). Therefore, the PyTorch model depended on a sufficient amount of transcript data to function adequately. Using a state machine allowed us to program explicitly how the chatbot is meant to respond to user intents, thus eliminating the need for so more transcript data.
 
-The state machine's configuration is defined inside a JSON file \todo{insert Jack's figure}. When the action decided by the chatbot is overridden by the state machine, it is done according to this configuration. The action chosen by the state machine is a string of JavaScript code, and is found in the configuration object \verb|flow| at \verb|flow[state][intent]|, where \verb|state| is the current state of the machine and \verb|intent| is the name of the most recent user intent.
+\begin{figure}
+  \includegraphics[width=\columnwidth]{images/jacks_figure.png}
+  \caption{The behaviour of the state machine when the state is ``question''}
+  \label{fig:jacks_figure}
+\end{figure}
+
+The state machine's configuration is defined inside a JSON file, as shown in \Cref{fig:jacks_figure}. When the action decided by the chatbot is overridden by the state machine, it is done according to this configuration. The action chosen by the state machine is a string of JavaScript code, and is found in the configuration object \verb|flow| at \verb|flow[state][intent]|, where \verb|state| is the current state of the machine and \verb|intent| is the name of the most recent user intent.
 
 Throughout the course of a game, the dialogue manager stores relevant values, such as answers offered by the user, and these values also influence the behaviour of the state machine. An example of this can be found inside the `seek-confirmation` state when the host asks the users if they would like to lock in an answer suggested by them. If a user responds by rejecting the answer they had just given, then the host will check to see if the answer they are rejecting is the same as the answer that they had just offered. If it is, then the host will assume that they are not wishing to lock in that answer. However, if the answer being rejected by the user is another one, then the host will assume that they do indeed wish to proceed with their offered answer.
 
 A more secure approach to this situation would involve taking a record of all the answers ruled out by the users. The host would then lock in a final answer after a rejected answer if and only if the other two possible answers had also been previously rejected. We would take in a future implementation as it would reduce the risk of the host accepting answers while the users are still deciding.
 
-\subsubsection{Xander}
-\label{subsec:xander}
-Recurrent Neural Networks and Long-Short Term Memory are the two types of Neural Network that have been used throughout the project due the fact that they use context when calculating the outcomes of the Neural Network. A Neural Network has multiple hidden layers each has its own weights and bias. This causes each layer has this they act independently, which is not helpful when trying to identify a pattern between the successive inputs. RNN will have the same weights and bias for the hidden layers, but will supply the a state to each neuron. This state is then used to link the next input to form the next state.
-However, the issue with this is when you have very long pieces of data, especially when referring to dialogue. If there is a long sentence the RNN must do a lot of recursions in order to process every single word or rather state. Then there is the problem of vanishing gradient although this we are less observable throughout our project as the scope of our project was not that large. This is a known and is Long-Short Term Memory, a type of Recurrent Neural Network has been developed.
-Long-Short Term Memory, even as shown in our project has faster processing speeds. This is because it has the means of forgetting by identifying if a piece of input data changes, instead of doing what a normal RRN does and constantly goes back regardless of what the context of the data being given is.
-When deciding how to do the dialogue management when building the chatbot when were considering using the RASA Dialogue Management but had to move away from the toolkit. The reason behind this is although the sophisticated system in place with pre-existing system, using the inbuilt stories and intents within the system, however it was not built in with multiple users in mind. To achieve multi-person dialogue with more than just the chatbot and a single individual would not be able to use Rasa. Rasa was not built with multiple people in mind. This meant there was only the intent and response when developing the dialogue manager.
-For it to function it would have to be heavily worked on just to allow for the multiple people to be used. This ignores any issues with developing the dialogue manger that would take place and would be compounded. To use RASA it would have to train on each epoch twice one for each user to prevent it from falling into a pattern based on how second users may act within the training data. Every intent would need to be created twice, once for each user. Alongside the problems once where the Diarization trying to identify the user there would be issues with the trying to work out which intent belong to which user and since they have both had the same set of training data this could cause a great deal of confusion within the system making it next to impossible to separate the different users. This is why we decided to go with building our own system as this way we could alter the fundamental tools that RASA gives us, obviously the main tools would not have been as robust as RASA as that has an entire development team behind it but it is simple unable to achieve what we required from our task at hand.
-
 \subsection{Natural Language Generation}
 \label{subsec:nlg}
 
 To make the system feel more unique and less robotic, we made use of Natural Language Generation (NLG) for the phrases that the “host” says to the participants. We used OpenAI's API, specifically “gpt-3.5-turbo”, the same version that is used in ChatGPT. This allowed us to prompt for different outputs for the system that convey the same information. For example, when receiving a correct answer, “Yes, that's it! Well done!” and “You got it! Great job!” are both possible outputs. There are 50 different options for each response the “host” can say.
+
+To further improve on NLG within this system, some content moderation could be performed on the generations, to ensure that there are no inappropriate outputs, this can be done entirely within OpenAI's API.  Also, the system could be updated to make use of GPT-4, as GPT-4 works more effectively to avoid inappropriate content and has greater problem solving abilities, however, at this current time it is not publicly available \cite{GPT_4_2023,OpenAI_2023}.
 
 
 \section{Evaluation}
@@ -349,8 +355,6 @@ The experiment followed a between-subjects design. Every participant was require
 \label{sec:future_work}
 
 \textit{from coursework spec:} suggestions for future work
-
-To further improve on NLG within this system, some content moderation could be performed on the generations, to ensure that there are no inappropriate outputs, this can be done entirely within OpenAI's API.  Also, the system could be updated to make use of GPT-4, which at this current time is not publicly available.
 
 
 
