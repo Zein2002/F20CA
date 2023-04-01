@@ -113,16 +113,28 @@ In dyadic conversations, there are only two roles a participant can take: speake
 
 Data collection was performed by the team. We first collected all available recordings of ``Who Wants to Be a Millionaire'' with two participants, which were transcribed using the YouTube API. To annotate these transcripts, we used the unified set of annotations shown in \Cref{table:intents}. This list allows us to capture as much information as possible, without saturating the data.
 
+\todo{Sort into User and System Intents}
+
 \noindent
 \begin{table}[h!]
   \begin{tabular}{ | p{2cm} | p{5cm} | }
     \hline
-    \rowcolor[HTML]{CCDFF1}
+    \rowcolor[HTML]{BFD8EC}
     \textbf{Intent}      & \textbf{Description}                                                     \\
+    \hline \hline
+    \rowcolor[HTML]{DCE9F6}
+    \multicolumn{2}{|c|}{\textit{Host (System) Intents}}                                            \\
     \hline
     question             & The system presents the question                                         \\
     \hline
     options              & The system presents the options                                          \\
+    \hline
+    confirm-agreement    & The system tries to confirm the final answer with participants           \\
+    \hline
+    accept-answer        & System considers answer the final answer                                 \\
+    \hline \hline
+    \rowcolor[HTML]{DCE9F6}
+    \multicolumn{2}{|c|}{\textit{User Intents}}                                                     \\
     \hline
     chit-chat            & Speech not related to the quiz                                           \\
     \hline
@@ -134,11 +146,7 @@ Data collection was performed by the team. We first collected all available reco
     \hline
     ask-agreement        & A player asks the other player for confirmation on their proposed answer \\
     \hline
-    accept-answer        & System considers answer the final answer                                 \\
-    \hline
     final-answer()       & Players give final answer                                                \\
-    \hline
-    confirm-agreement    & The system tries to confirm the final answer with participants           \\
     \hline
     confirm-final-answer & Participants confirm their answer is final                               \\
     \hline
@@ -189,10 +197,12 @@ To ensure reliability and consistency, Cohen's kappa was calculated for a sample
 \noindent
 A Kappa score of 0.9601 is interpreted as ``almost perfect agreement'' \cite{McHugh_2012}. From this, the annotation of transcripts can be concluded as reliable.
 
+
+% DESIGN & IMPLEMENTATION
 \section{Design and Implementation}
 \label{sec:implementation}
 
-Our conversational system consists of several parts, the modular architecture is shown in \Cref{fig:system_architecture}. This section outlines each module and describes how our system manages the process from the users' utterances to the system's response.
+Our conversational system consists of several parts, the modular architecture is shown in \Cref{fig:system_architecture}. This section outlines each unit and describes how our system manages the process from the users' utterances to selecting its response.
 
 \begin{figure*}
   \includegraphics[width=\textwidth]{images/sys_graph.jpg}
@@ -203,71 +213,68 @@ Our conversational system consists of several parts, the modular architecture is
 \subsection{Automatic Speech Recognition}
 \label{subsec:asr}
 
-The first step is to transform user's speech into text, in order to pass text further onto intent recognition (NLU). Transforming audio into text works through Speech-To-Text (STT) software. In recent years, STT systems have become more accurate and fast, however, none of the existing systems can yet reliably handle conversations in real time \cite{addlesee_comprehensive_2020}.
+The first step is to transform user's speech into text, which can be passed onto Natural Language Understanding (NLU) to perform intent recognition. Transforming audio into text works through Speech-To-Text (STT) software. In recent years, STT systems have become more accurate and fast, however, none of the existing systems can yet reliably handle conversations in real-time \cite{addlesee_comprehensive_2020}.
 
-Our conversational system required two non-standard aspects from the ASR: (1) real-time transcription and (2) diarization. As our system conceptualised for usage on a robot, it must transcribe what the user is saying in real-time to avoid response delays. Time taken for a system to respond can only be marginally longer than the delay a human would leave before responding \todo{source!}.
+Our conversational system required two non-standard features from the ASR: (1) real-time transcription and (2) diarization. Given that our system was designed for usage on a robot, it must transcribe what the user is saying in real-time to avoid response delays and ensure natural sounding conversation. Therefore, the time taken for a system to respond can only be marginally longer than the delay a human would leave before responding \cite{Miller_1968}.
 
-Diarization is the process of determining the speaker in multi-party conversations. Therefore, to handle a ``Who wants to be millionaire?'' style game, our system must be able to diarise. This allows us to track the intents of each individual user and determine when users agree or disagree.
-We tried several STT systems including Amazon's Transcribe, IBM's Watson and locally running Pyannote. Our findings were that these are all valid options for transcription but lack real-time diarization. We settled with Google's Cloud Speech-to-Text API due to its high accuracy, real-time transcription capabilities, and customisability. As it is widely used, troubleshooting and integration resources were readily available. In addition, Google's API promised diarization capabilities, which, along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate, and it often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other, supporting the findings of \cite{addlesee_comprehensive_2020}.
+The second feature, diarization, is the process of determining the speaker in multi-party conversations. To handle a ``Who wants to be millionaire?'' style game, our system must be able to diarise to track the intents of each individual user and determine when users agree or disagree. We tried several STT systems including Amazon's Transcribe, IBM's Watson and locally running Pyannote. Our findings were that these are all suitable for transcription but lack real-time diarization. We settled with Google's Cloud Speech-to-Text API due to its high accuracy and customisability. As it is widely used, troubleshooting and integration resources were readily available. In addition, Google's API promised diarization capabilities, which, along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate, and it often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other, supporting the statement that ASR systems are not yet adequate to reliably handle natural spontaneous conversations in real-time \cite{addlesee_comprehensive_2020}.
 
-As this made Google's diarization unusable for our system, we decided to move to a set-up with two microphones (one for each user) and integrate them with the real time Google transcription. This allowed us to not only avoid the issue of diarization, but also to improve the quality of the ASR. By removing diarization we were able to use the most up-to-date Google model \verb|latest_long|, which is trained on long-form \todo{long-form??} conversation. This significantly increased the quality of the transcripts produced, which had a cascading effect on the rest of the system, leading to better intent recognition, entity extraction etc.
+This made Google's diarization unusable for our use case. We therefore moved to a set-up with two microphones (one for each user) and integrated them with the real time Google transcription. By removing diarization we were able to use the most up-to-date Google model \verb|latest_long|, which is trained on long-form conversation. This allowed us to not only avoid the issue of diarization, but also to improve the quality of the transcriptions, which had a cascading effect on the rest of the system, leading to better intent recognition, entity extraction, etc.
 
 A drawback of this set-up is that the microphones may pick up both user's voices. This could be mitigated through moving the microphones further apart, or calibrating them. More on this issue is discussed in \Cref{sec:evaluation}.
+
+The real-time transcription of the users' utterances are then passed onto NLU.
 
 \subsection{Natural Language Understanding}
 \label{subsec:nlu}
 
-Natural Language Understanding (NLU) takes in utterances of natural human language and classifies them into intents that a computer can use. RASA is an open-source framework for building conversational systems. We used its NLU tool to train on our collected data, after cleaning it \todo{word better}. RASA NLU successfully created a model that can accurately recoginize new, unseen inputs, which are similar to the training examples. The phrases transcribed in the ASR component are passed on to the NLU model, which will label them with one of the intents from \Cref{table:intents} and pass this information onto the Dialogue Management part.
+Natural Language Understanding takes in utterances of natural human language and classifies them into intents. RASA is an open-source framework for building conversational systems, which offers NLU tools. We used its NLU tool to train on our pre-processed data. RASA NLU successfully created a model that can accurately label new, unseen inputs from the ``Who wants to be millionnaire'' game domain with an intent from the list given in \Cref{table:intents}.
 
-% \begin{quote}
-%   Rasa Open Source is the most popular open source framework for building chat and voice-based AI assistants. Rasa Open Source is an open source conversational AI platform that allows you to understand and hold conversations, and connect to messaging channels and third party systems through a set of APIs. It supplies the building blocks for creating virtual (digital) assistants or chatbots.
-% \end{quote}
+The model is also capable of entity extraction, which means it can identify words of interest. In our case, we extract a user's answer to a question or a user's rejected answer given from an utterance. For example, a user's utterance could be ``I'm thinking Teaspoon'', which would be classified by the NLU in the following way:
 
-% We are not using all that Rasa has to offer but only Rasa NLU. Rasa NLU only produces a NLU model that can translate human language into intents or labels without the rest of the conversational system like DM and NLG. It takes training data in the form of each intent required with examples of natural language that would be classified under that intent.
+\begin{verbatim}
+NLU:    - intent: offer-answer
+          entities:
+            - answer: "Teaspoon"
+\end{verbatim}
 
-The model is also capable of entity extraction, which means it can recognize and label words of interest. In our case, we use entity extraction to find and label the answer to the question or a rejected answer given in an utterance \todo{add an example of this}.
-
-\subsection{Evaluation of NLU}
+\subsubsection{Evaluation of NLU}
 \label{subsec:NLU_evaluation}
 
-The NLU model has gone through multiple iterations, starting with very few training examples and being highly innacurate to a large amount of clean data producing a highly accurate and reliable model. Two models and their evaluations:
+An initial model trained on only 4 or 5 annotated transcripts, very little training data was highly innacurate, mislabelled intents, and extracted wrong answers or no answer at all. The accuracy for this model was 47\% with a macro-averaged F1-Score of 0.43.
 
-\paragraph{Original} The original model is the first model trained on only 4 or 5 annotated transcripts, very little training data.
-This model was highly innacurate, constantly mislabeling intents, and extracting wrong answers or no answer at all.
-The Rasa training model used was not very efficient with a small amount of training data so this was expected.
+Using a larger volume of training data significantly improved NLU performance. The model used in our system was trained on 25 transcripts with 566 training examples for each intent. Additional improvement could be obtained by manually cleaning the training data of any misplaced or wrongly extracted examples.
 
-The diagram above shows the entity extraction confusion matrix, where you can see that more than half of the phrases with answers werent extracted.
-It did well with phrases without entities and rarely mislabed entities that werent actually answers, but its general tendency to not extract an entity was poor.
+As can be seen in \Cref{fig:cm_answer_extraction}, the improved model's confusion matrix is perfect. \Cref{fig:cm_intent_recognition} shows the intent confusion matrix. This model has an accuracy of 96.3\% with a macro-averaged F1-Score of 0.96.
 
-This diagram shows the confusion matrix for the intents.
-It shows a random scatter over the matrix meaning that the predicted labels and real labels often did not match up.
-The model in general was quite random and inconsistent to say the least.
-\todo{shorten this paragraph}
+The intents identified by the NLU are then passed onto the DM unit.
 
-\paragraph{Used Model} The model used in our system was trained on 25 transcripts with hundreds of training examples for each intent. Furthermore, we manually cleaned the training data of any misplaced or wrongly extracted examples.
-
-\begin{figure}
-  \includegraphics[width=\columnwidth]{../Rasa/Evaluation/Clean_Model/DIETClassifier_confusion_matrix.png}
+\begin{figure}[h!]
+  \includegraphics[width=\columnwidth]{images/answer_confusion_matrix.jpg}
   \caption{Confusion Matrix of NLU answer extraction}
   \label{fig:cm_answer_extraction}
 \end{figure}
 
-\begin{figure}
-  \includegraphics[width=\columnwidth]{../Rasa/Evaluation/Clean_Model/intent_confusion_matrix.png}
+\begin{figure}[h!]
+  \includegraphics[width=\columnwidth]{images/intent_confusion_matrix.jpg}
   \caption{Confusion Matrix of NLU intent recognition}
   \label{fig:cm_intent_recognition}
 \end{figure}
 
-As can be seen in \Cref{fig:cm_answer_extraction}, the improved model's confusion matrix is perfect \todo{add source}. \Cref{fig:cm_intent_recognition} shows the intent confusion matrix.
-
 \subsection{Dialogue Management}
 \label{subsec:dialogue_management}
 
-The dialogue manager is composed of two components: a state machine and a Pytorch model running on top of it. This approach was chosen because, despite involving a conversation which requires intelligent behaviour from the dialogue manager, the game itself is defined by a rigid set of rules. There are ten questions, the conversation must see the system pass from each question to the next, and the game must end at a specified time. Running the model on top of the hard-coded logic of the state machine can ensure that this movement from state to state is observed. \todo{reword "running the model on top of"}
+The dialogue manager is composed of two components: a state machine and a Pytorch model. This approach was chosen because, despite involving a conversation which requires intelligent behaviour from the dialogue manager, the game itself is defined by a set of rigid rules:
+\begin{itemize}
+  \item The users are always asked ten questions.
+  \item The system must drive the conversation by passing from one question to the next.
+  \item The game must end at a specified time.
+\end{itemize}
+\noindent Occasionally overwriting the model's output with the hard-coded logic of the state machine can ensure these rules and that th movement from state to state is observed.
 
 \subsubsection{Neural Network - Cale}
 \label{subsec:nn}
-The neural network model was designed to manage dialogue for a three-person conversation. To do this, it has two inputs, the intent (decided by the NLU) and the user ID (user 1, user 2 or host). These inputs were both one-hot encoded, the intent being a vector of size 14 (one for each intent) and the user number being a vector of size 3. These two vectors were concatenated to produce an input vector of size 17. The network was then trained to predict the host's response for a given intent and user in a sequence. This output is a vector of size 5, one for each of the 4 system intents plus one for \verb|no response|.
+The neural network model is needed to be designed to manage dialogues of three-person conversations. To do this, it has two inputs, the intent (passed on by the NLU) and the user ID (user 1, user 2 or host). These inputs were both one-hot encoded, the intent being a vector of size 14 (one for each intent) and the user number being a vector of size 3. These two vectors were concatenated to produce an input vector of size 17. The network was then trained to predict the host's response for a given intent and user in a sequence. This output is a vector of size 5, one for each of the 4 system intents plus one for \verb|no response|.
 
 The model was trained using the dataset which we had originally labelled for NLU purposes. This provided human labelled sequences of intents and user IDs for each question. Each question would have its intents and user IDs input into the network sequentially, with the model's memory being cleared after every question. Every output from the system which is not \verb|no response| would be input back into the network, allowing for the system to speak multiple lines of dialogue in succession. At the start of each question, the system is set up by first inputting the host having given the \verb|question| intent, to which it will always output the \verb|options| intent. This is required since every question in the training data is started by the host asking the question, then giving the options for the question.
 
@@ -294,19 +301,19 @@ In future, this architecture could be used for handling multi-person dialogues w
 \subsubsection{Dialogue Manager - Jack}
 \label{subsec:dm}
 
-The intent detected by the NLU system from a user's utterance is passed to the dialogue manager from where it is input into the PyTorch model. The model then decides on an appropriate action. The state machine checks if the output from the PyTorch model represents a sensible action. In case there are logical errors, the output will be overridden. For example, if the NLU detects that the user intends to confirm final answer, but no answer has yet been given, the PyTorch model may nonetheless decide on \verb|accept-answer|. As no answer has been given set, the state machine will overwrite this output.
+An intent received from the NLU unit is first input into the PyTorch model. The model then decides on an appropriate action. Afterwards, the state machine checks if the output of the PyTorch model represents a sensible action. In case there are logical errors, the output will be overridden. For example, if the NLU detects that the user intends to confirm final answer, but no answer has yet been given, the PyTorch model may nonetheless decide on \verb|accept-answer|. As no answer has been given yet, the state machine will overwrite this output.
 
-Another reason for using the state machine was the limited transcript data. The PyTorch model learned off of the transcript data. There are user intents found throughout the transcripts, followed by a certain action (or no action). Therefore, the PyTorch model depended on a sufficient amount of transcript data to function adequately. Using a state machine allowed us to program explicitly how the chatbot is meant to respond to user intents, thus eliminating the need for so more transcript data.
+Another reason for using a state machine was the limited amount of transcription data. The PyTorch model learned off of the transcript data, therefore it depended on a sufficient amount of transcript data to function adequately. Using a state machine allowed us to program explicitly how the chatbot is meant to respond to user intents, thus eliminating the need for more transcript data.
 
-\begin{figure}
+\begin{figure}[h!]
   \includegraphics[width=\columnwidth]{images/jacks_figure.png}
-  \caption{The behaviour of the state machine when the state is ``question''}
+  \caption{State Machine behaviour}
   \label{fig:jacks_figure}
 \end{figure}
 
-The state machine's configuration is defined inside a JSON file, as shown in \Cref{fig:jacks_figure}. When the action decided by the chatbot is overridden by the state machine, it is done according to this configuration. The action chosen by the state machine is a string of JavaScript code, and is found in the configuration object \verb|flow| at \verb|flow[state][intent]|, where \verb|state| is the current state of the machine and \verb|intent| is the name of the most recent user intent.
+The state machine's configuration is defined inside a JSON file, as shown in \Cref{fig:jacks_figure}. The figure shows the behaviour of the state machine when the state is \verb|question|. An example of previously recorded values influencing the flow can be seen inside \verb|agreement|. When the action decided by the chatbot is overridden by the state machine, it is done according to this configuration. The action chosen by the state machine is a string of JavaScript code, and is found in the configuration object \verb|flow| at \verb|flow[state][intent]|, where \verb|state| is the current state of the machine and \verb|intent| is the name of the most recent user intent.
 
-Throughout the course of a game, the dialogue manager stores relevant values, such as answers offered by the user, and these values also influence the behaviour of the state machine. An example of this can be found inside the `seek-confirmation` state when the host asks the users if they would like to lock in an answer suggested by them. If a user responds by rejecting the answer they had just given, then the host will check to see if the answer they are rejecting is the same as the answer that they had just offered. If it is, then the host will assume that they are not wishing to lock in that answer. However, if the answer being rejected by the user is another one, then the host will assume that they do indeed wish to proceed with their offered answer.
+Throughout the course of a game, the dialogue manager stores relevant values, such as answers offered by the user. These values influence the behaviour of the state machine. An example of this can be observed inside the \verb|seek-confirmation| state when the host asks if the users would like to lock in an answer suggested by them. If a user declines, the host checks if the rejected answer is the same as the one just offered by the user. If it matches, then the host assumes that the users do not want to lock in that answer. However, if the answer being rejected by the user is another one, then the host will assume that they do indeed wish to proceed with their offered answer.
 
 A more secure approach to this situation would involve taking a record of all the answers ruled out by the users. The host would then lock in a final answer after a rejected answer if and only if the other two possible answers had also been previously rejected. We would take in a future implementation as it would reduce the risk of the host accepting answers while the users are still deciding.
 
