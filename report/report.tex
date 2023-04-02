@@ -335,29 +335,25 @@ To further improve on NLG within this system, some content moderation could be p
 \section{Evaluation}
 \label{sec:evaluation}
 
-\textit{from coursework spec:} evaluation of the system and presentation of the results
-
 \subsection{Methodology}
 \label{subsec:methodology}
 In this study, we performed extrinsic and intrinsic evaluations. The extrinsic evaluation focused on both subjective and objective measures of the system's performance. The subjective measures included the user's enjoyment and perception of the system's natural behaviour, while the objective measures included the number of turns taken and the agreement rate. Additionally, the correlation between correct answers and enjoyment was also examined. Overall, the evaluation aimed to assess the effectiveness of the system in engaging users and providing accurate responses.
 
-The evaluation focused on intrinsic measures of individual components in a multi-party conversational system. The components were assessed separately, with ASR being evaluated using the word error rate, NLU using precision, recall, accuracy, and F1 score, DM IDK YET, and NLG using n-gram-based overlap with BLEU. The aim was to assess the performance of each component and identify areas of improvement.
-
-Additionally, the evaluation also aimed to test the hypothesis that using verbal cues instead of silence cues in a multi-party conversational system increases user interaction and satisfaction with the system. This hypothesis needed to be statistically proved or disproved through significance testing.
+% The evaluation focused on intrinsic measures of individual components in a multi-party conversational system. The components were assessed separately, with ASR being evaluated using the word error rate, NLU using precision, recall, accuracy, and F1 score, DM IDK YET, and NLG using n-gram-based overlap with BLEU. The aim was to assess the performance of each component and identify areas of improvement.
 \subsection{Experiment Layout}
 \label{subsec:experiment_layout}
-The experiment followed a between-subjects design. Every participant was required to read and sign a consent form before they can play the quiz. This was an in-person experiment, with the quiz running on a laptop, where participants can see the questions and the options. Members of the experiment were required to play the quiz at least once. However, they were encouraged to play as many times as they can. After they no longer wished to play, they were asked to complete a questionnaire about their experience. The questionnaire queried them on their experience using a five-point Likert scale.
+The experiment followed a between-subjects design. This was an in-person experiment, with the quiz running on two laptops, where participants can see the questions and the options. Members of the experiment played one round of the quiz (10 questions). Afterwards, they were asked to complete a questionnaire about their experience. The questionnaire queried them on their experience using a five-point Likert scale.
+
+The evaluation took place in two iterations, both iterations with three pairs of participants. In the first evaluation, we followed a strategy of selecting ten questions at random and including all possible answers as entities to enhance the system's entity recognition capabilities. However, this approach had its limitations as it restricted the system's ability to generalize beyond the specific set of questions and answers employed during the evaluation. As such, in system 2, we sought to expand upon the previous evaluation's approach by incorporating a fuzzy matching algorithm that could be applied to all 4000 questions in our database. This technique enabled us to implement a more comprehensive and robust system that could better accommodate a wide range of questions and answers. The incorporation of fuzzy matching represented a significant departure from our earlier approach, as it provided a more flexible and adaptable method for identifying potential answers. The implementation of fuzzy matching allowed the system to generalize its performance beyond the particular game show or environment to which it was initially designed. This capability increased the system's overall utility and extended its applicability to a broader range of applications, thereby enhancing its overall value.
 
 \subsection{Results}
 \label{subsec:results}
 
-\begin{itemize}
-  \item ASR results
-  \item NLU result
-  \item DM result
-        NLG result
-  \item questionnaire result
-\end{itemize}
+\subsubsection{Questionnaire Results}
+We initially intended to test two distinct systems. However, the unexpectedly good performance of our first evaluation session prompted us to shift our focus towards enhancing the existing implementation. These enhancements yielded discernible results, with 83\% of participants expressing satisfaction with the overall system in the first evaluation, and 100\% in the subsequent evaluation. Regarding the system's behavior, 50\% of participants in both evaluations indicated that the system appeared natural. Furthermore, 83\% of participants reported enjoying the experience in both evaluations. This represents a notable advancement in the performance of system 2, as participants reported encountering more challenging questions during the second evaluation, resulting in a lower rate of correct answers. Prior to this improvement, the difficulty of the questions and the lower rate of correct answers had resulted in reduced enjoyment for the participants.
+
+\subsubsection{Fuzzy string matching}
+Fuzzy string matching is a computational technique employed to approximate string matches. In the current study, we employed fuzzy string matching to identify potential answers based on the participants' speech. The selection of an optimal threshold was critical to achieve optimal performance. Empirical analysis was conducted to identify the most effective threshold, with the findings suggesting that 0.5 yielded the highest performance. Subsequent evaluations were conducted using various threshold values, with the system utilizing the 0.5 threshold surpassing all other thresholds in performance. Notably, the system also demonstrated proficiency in recognizing complex terms, such as ``haemocytometer'' and ``viltrumite'', which were unfamiliar to the participants.
 
 \section{Conclusion}
 \label{sec:conclusion}
