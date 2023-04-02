@@ -52,8 +52,8 @@
 \title{Instructions for ACL-2016 Proceedings}
 
 \author{Tom Byars, Cale Clark, Charlie Lyttle, Katie McAskill, Jack Miller, Zein Said, \\
-{\bf Abdullah Sayed, Laura Schauer, Jason Sweeney, Aron Szeles, Xander Wickham} \\
-School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\ {\tt {tjb10, cc164, cl157, klm12, jjm7, zs2008,}} \\ {\tt {as512, lms9, js418, as472, aw127}@hw.ac.uk}}
+{\bf Laura Schauer, Jason Sweeney, Aron Szeles, Xander Wickham} \\
+School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\ {\tt {[tjb10, cc164, cl157, klm12, jjm7, zs2008,}} \\ {\tt {lms9, js418, as472, aw127]}@hw.ac.uk}}
 
 \date{February 2023}
 
@@ -68,17 +68,13 @@ School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\
 \section{Introduction}
 \label{sec:introduction}
 
-\textit{from coursework spec:} main research or technical question addressed \\
-Socially assistive robots (SARs) are a crucial part of the future of many sectors, for example, education or healthcare \cite{gunson_visually_aware_2022}. Especially the latter depends on technology advancements as it is facing numerous obstacles in the future, such as increasing spendings and a growing percentage of older people. A serious lack of healthcare workers is already occurring, with 10 million more healthworkers needed worldwide by 2030 \cite{cooper_ari_2020,Health_workforce_2023}. SARs can pose a solution to the problem by supporting healthcare in various ways, such as encouraging older people to keep living independently for longer or reducing caregiver burden \cite{cooper_ari_2020}.
+Socially assistive robots (SARs) are a crucial part of the future of many sectors, for example, education or healthcare \cite{gunson_visually_aware_2022}. Especially the latter depends on technology advancements as it is facing numerous obstacles in the future, such as increasing spendings and a growing percentage of older people. A serious lack of healthcare workers is already being experienced, with 10 million more health workers needed worldwide by 2030 \cite{cooper_ari_2020,Health_workforce_2023}. SARs can pose a solution to the problem by supporting healthcare in various ways, such as encouraging older people to keep living independently longer or reducing caregiver burden \cite{cooper_ari_2020}.
 
-Healthcare SAR scenarios require SARs to be able to handle multi-party interactions as it is likely that more than one person will interact with the system. Compared to handling dyadic (two-party) interactions, handling multi-party conversations includes more complex challenges, such as Speaker Recognition, Addressee Recognition, Response Selection (summarised in “who says what to whom“) and coordination of turn-taking \cite{Group_1_unpublished_paper,Johansson_Skantze_2015}.
+Healthcare SAR scenarios frequently require SARs to handle multi-party interactions as it is likely in these situations that more than one person will interact with the system (i.e., a hospital waiting room). Therefore, we propose a conversational system in this work that plays a game of ``Who wants to be millionaire?'' with two people. Our system impersonates the host while participants can collaborate on general knowledge trivia questions.
 
-\textit{Include here what exactly we examined about turn-taking}
+The conversational system is trained on multi-party human-human conversation data. We collected the data from recordings of special “Who wants to be millionaire?“ episodes where two candidates collaborated to answer the host's questions.
 
-In this work, we propose a conversational system using a model trained on multi-party human-human conversation data. We collected the data from recordings of special “Who wants to be millionaire?“ episodes where two candidates collaborated to answer the host's questions.
-
-\textit{Include results here.}
-
+Our system is developed to be fitted onto an ARI robot in the course of the SPRING-ARI project. This project encompasses several European universities collaborating on evolving socially assistive robots. They use an ARI robot, which is deployed in a hospital waiting area in France.
 
 \section{Background}
 \label{sec:background}
@@ -93,7 +89,9 @@ The SPRING project conducts research on a SAR robot deployed in an eldercare hos
 
 \subsection{Multi-party Human Robot Interaction}
 \label{subsec:multi_party}
-As stated before, the endeavour to create conversational systems becomes considerably more difficult when dealing with multi-party interactions \cite{Group_1_unpublished_paper}. Especially turn-taking poses a central problem. It is defined as follows:
+The endeavour to create conversational systems becomes considerably more difficult when dealing with multi-party interactions \cite{Group_1_unpublished_paper}. Compared to handling dyadic (two-party) interactions, handling multi-party conversations includes more complex challenges, such as Speaker Recognition, Addressee Recognition, Response Selection (summarised in “who says what to whom“) and coordination of turn-taking \cite{Group_1_unpublished_paper,Johansson_Skantze_2015}.
+
+Especially turn-taking poses a central problem. It is defined as follows:
 
 \begin{quote}
   The rules of turn-taking organize the conversation into turns, during which one of the participants has the right to speak while the others agree to listen. \cite{Żarkowski_2019}
@@ -155,35 +153,6 @@ Data collection was performed by the team. We first collected all available reco
 
 \subsection{Cohen's Kappa Coefficient}
 To ensure reliability and consistency, Cohen's kappa was calculated for a sample of the completed transcripts. It measures the reliability between raters on categorical data, while accounting for agreement happening by chance \cite{Cohen_1960}. A sample of four transcripts are re-annotated by a team member, which amounts to approximately 15\% of the total transcripts.
-
-% Every occurrence by both raters of each annotation label was gathered. An overall agreement rate was calculated using -
-
-% \begin{equation} \label{eq:kappa}
-%   \begin{split}
-%     Agreement & = \frac{total \: Agreed}{total} \\
-%     % Agreement & = \frac{329}{341} \\
-%     Agreement & = \underline{\underline{0.9684}}
-%   \end{split}
-% \end{equation}
-
-% This alone is not reliable enough to trust.\cite{Sun_2011} To calculate the chance of an agreement happening between the two raters, first the probability of a rater choosing a label is calculated. This is done for each rater for every label using -
-
-% \begin{equation}
-%   Prob(R_x[label]) = \frac{R_x \: Total \: for \: [label]}{total}
-% \end{equation}
-
-% Then the chance of agreement for each annotation label is calculated using -
-
-% \begin{equation}
-%   \begin{split}
-%     &ChanceAgreement[label] = \\
-%     &Prob(R_1[label]) * Prob(R_2[label])
-%   \end{split}
-% \end{equation}
-
-% The overall chance of agreement is calculated by summing the chance of agreements for each annotation label.
-
-% Finally, the kappa score is calculated.
 
 \begin{equation}
   \begin{split}
@@ -268,11 +237,11 @@ The dialogue manager is composed of two components: a state machine and a Pytorc
   \item The system must drive the conversation by passing from one question to the next.
   \item The game must end at a specified time.
 \end{itemize}
-\noindent Occasionally overwriting the model's output with the hard-coded logic of the state machine can ensure these rules and that th movement from state to state is observed.
+\noindent Occasionally overwriting the model's output with the hard-coded logic of the state machine ensure these rules are followed and that the movement from state to state is observed.
 
-\subsubsection{Neural Network - Cale}
+\subsubsection{Neural Network}
 \label{subsec:nn}
-The neural network model is needed to be designed to manage dialogues of three-person conversations. To do this, it has two inputs, the intent (passed on by the NLU) and the user ID (user 1, user 2 or host). These inputs were both one-hot encoded, the intent being a vector of size 14 (one for each intent) and the user number being a vector of size 3. These two vectors were concatenated to produce an input vector of size 17. The network was then trained to predict the host's response for a given intent and user in a sequence. This output is a vector of size 5, one for each of the 4 system intents plus one for \verb|no response|.
+The neural network model is needed to be designed to manage dialogues of three-person conversations. To do this, it has two inputs, the intent from the NLU and the user ID (user 1, user 2 or host). These inputs were both one-hot encoded, the intent being a vector of size 14 (one for each intent) and the user number being a vector of size 3. These two vectors were concatenated to produce an input vector of size 17. The network was then trained to predict the host's response for a given intent and user in a sequence. This output is a vector of size 5, one for each of the 4 system intents plus one for \verb|no response| (see \Cref{table:intents}).
 
 The model was trained using the dataset which we had originally labelled for NLU purposes. This provided human labelled sequences of intents and user IDs for each question. Each question would have its intents and user IDs input into the network sequentially, with the model's memory being cleared after every question. Every output from the system which is not \verb|no response| would be input back into the network, allowing for the system to speak multiple lines of dialogue in succession. At the start of each question, the system is set up by first inputting the host having given the \verb|question| intent, to which it will always output the \verb|options| intent. This is required since every question in the training data is started by the host asking the question, then giving the options for the question.
 
@@ -299,9 +268,9 @@ In future, this architecture could be used for handling multi-person dialogues w
 \subsubsection{Dialogue Manager - Jack}
 \label{subsec:dm}
 
-An intent received from the NLU unit is first input into the PyTorch model. The model then decides on an appropriate action. Afterwards, the state machine checks if the output of the PyTorch model represents a sensible action. In case there are logical errors, the output will be overridden. For example, if the NLU detects that the user intends to confirm final answer, but no answer has yet been given, the PyTorch model may nonetheless decide on \verb|accept-answer|. As no answer has been given yet, the state machine will overwrite this output.
+An intent received from the NLU unit is first input into the PyTorch model. The model then decides on an appropriate action. Afterwards, the state machine checks if the output of the PyTorch model represents a sensible action. In case there are logical errors, the output will be overridden. For example, if the NLU detects that the user intends to confirm their final answer, but no answer has yet been given, the PyTorch model may nonetheless decide on \verb|accept-answer|. As no answer has been given yet, the state machine will overwrite this output.
 
-Another reason for using a state machine was the limited amount of transcription data. The PyTorch model learned off of the transcript data, therefore it depended on a sufficient amount of transcript data to function adequately. Using a state machine allowed us to program explicitly how the chatbot is meant to respond to user intents, thus eliminating the need for more transcript data.
+Another reason for using a state machine was the limited amount of transcription data. The PyTorch model learned off of the transcript data, therefore it depended on a sufficient amount of transcript data to function adequately. Using a state machine allowed us to program explicitly how the chatbot responds to user intents, thus eliminating the need for more transcript data.
 
 \begin{figure}[h!]
   \includegraphics[width=\columnwidth]{images/jacks_figure.png}
@@ -313,6 +282,46 @@ The state machine's configuration is defined inside a JSON file, as shown in \Cr
 
 Throughout the course of a game, the dialogue manager stores relevant values, such as answers offered by the user. These values influence the behaviour of the state machine. An example of this can be observed inside the \verb|seek-confirmation| state when the host asks if the user would like to lock in an answer suggested by them. If a user declines, the host checks if the rejected answer is the same as the one just offered by the user. If it matches, then the host assumes that the user does not want to lock in that answer. However, if the answer rejected by the user is another one, then the host will assume that they do indeed wish to proceed with their offered answer.
 
+\noindent
+\begin{table}[h!]
+  \begin{tabular}{ | p{2cm} | p{5cm} | }
+    \hline
+    \rowcolor[HTML]{BFD8EC}
+    \textbf{Intent}           & \textbf{Description}                                                                                                                      \\
+    \hline
+    acknowledge-reject-option & The system acknowledges that a player has dismissed an option and may ask them for a reason.                                              \\
+    \hline
+
+    end-of-game               & The system announces the end of the game and informs the players of how they did.                                                         \\
+    \hline
+
+    offer-generic-guidance    & The system offers advice or encouragement to the players.                                                                                 \\
+    \hline
+
+    question-brief            & The system restates the current question number and question prize.                                                                       \\
+    \hline
+
+    repeat-answer             & The system repeats a player's answer back to them.                                                                                        \\
+    \hline
+
+    return-to-question        & The system returns to the question state, becoming less insistent on locking in answers suggested.                                        \\
+    \hline
+
+    say-correct               & The system states that the players's final answer was correct.                                                                            \\
+    \hline
+
+    say-incorrect             & The system states that the players's final answer was incorrect.                                                                          \\
+    \hline
+
+    seek-confirmation         & The system asks the players if they are wishing to lock in a suggested answer as final.                                                   \\
+    \hline
+
+    seek-direct-answer        & The system asks the players to state their answer. This is done by the system when it suspects that it may have missed an answer offered. \\
+    \hline
+  \end{tabular}
+  \caption{Additional State Machine Intents}
+  \label{table:state_machine_intents}
+\end{table}
 A more secure approach to this situation would involve taking a record of all the answers ruled out by the users. The host would then lock in a final answer after a rejected answer if and only if the other two possible answers had also been previously rejected. We would take in a future implementation as it would reduce the risk of the host accepting answers while the users are still deciding.
 
 \subsection{Natural Language Generation}
@@ -359,7 +368,10 @@ The experiment followed a between-subjects design. Every participant was require
 \section{Future Work}
 \label{sec:future_work}
 
-\textit{from coursework spec:} suggestions for future work
+\begin{enumerate}
+  \item Account for people stating more than 1 answer in an utterance
+  \item
+\end{enumerate}
 
 
 
