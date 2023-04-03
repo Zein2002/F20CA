@@ -49,7 +49,7 @@
 % To add some line spacing in the table
 \renewcommand{\arraystretch}{1.3}
 
-\title{Instructions for ACL-2016 Proceedings}
+\title{Detecting agreement in a multi-party conversation}
 
 \author{Tom Byars, Cale Clark, Charlie Lyttle, Katie McAskill, Jack Miller, Zein Said, \\
 {\bf Laura Schauer, Jason Sweeney, Aron Szeles, Xander Wickham} \\
@@ -61,7 +61,7 @@ School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\
 \maketitle
 
 \begin{abstract}
-  In today's world, there is a need for conversational systems to handle multi-party dialogues. Howevery, multi-party conversational systems still struggle to be usable in a real-life context. Compared to dyadic conversations, there are additional challenges to overcome, like turn-taking, speaker identification, … They are needed as there are many application areas for these systems, such as …  In this paper, we present our work on a multi-party conversational system, which invites two users to play a trivia game in a hospital waiting area. The system detects agreement with a very high accuracy and can … (add evaluation stuff). Our system can be configured to be used on the ARI robot deployed in a hospital waiting area in the course of the SPRING project.
+  Today, conversational systems are expected to handle conversations in multi-party settings. However, practical usability remains difficult for multi-party conversational systems. Compared to dyadic conversations, there are additional challenges to overcome, such as speaker and addressee recognition and turn-taking. In this paper, we present our work on a multi-party conversational system, which invites two users to play a trivia game in a hospital waiting area. The system detects users' agreement or disagreement on a final answer and responds accordingly. Our evaluation includes both qualitative and quantitative results, and we have configured our system to be used on the ARI robot deployed in a hospital waiting area as part of the SPRING project.
 \end{abstract}
 
 
@@ -360,7 +360,7 @@ Therefore, we improved the system for the second iteration with the following fe
   \item Microphones were moved further apart.
 \end{enumerate}
 
-By incorporating a fuzzy matching algorithm (discussed in \Cref{subsec:fuzzy_string}), entity extraction was improved across all 4000 questions in our database \todo{mention where those questions came from}. This technique enabled us to implement a more comprehensive and robust system that could better accommodate a wide range of questions and answers. As discussed in \cref*{subsec:asr}, too little of a distance between microphones meant that both users' voices would get picked up by one. This led to the system detecting agreement (as both user's seemingly agreed on the same answer, while it was infact a duplicated utterance). In addition to adding questions, we also implemented logic to make sure the same question would not show up twice in one round of the game, which was an issue in the first iteration.
+By incorporating a fuzzy matching algorithm (discussed in \Cref{subsec:fuzzy_string}), entity extraction was improved across all questions in our database \todo{mention where those questions came from}. This technique enabled us to implement a more comprehensive and robust system that could better accommodate a wide range of questions and answers. As discussed in \cref*{subsec:asr}, too little of a distance between microphones meant that both users' voices would get picked up by one. This led to the system detecting agreement (as both user's seemingly agreed on the same answer, while it was infact a duplicated utterance). In addition to adding questions, we also implemented logic to make sure the same question would not show up twice in one round of the game, which was an issue in the first iteration.
 
 \subsection{Results}
 \label{subsec:results}
