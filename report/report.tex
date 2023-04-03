@@ -105,11 +105,7 @@ In dyadic conversations, there are only two roles a participant can take: speake
 \section{Data Collection}
 \label{sec:data_collection}
 
-\begin{itemize}
-  \item (Laura) Talk about multi-party data collection
-\end{itemize}
-
-Data collection was performed by the team. We first collected all available recordings of ``Who Wants to Be a Millionaire'' with two participants, which were transcribed using the YouTube API. To annotate these transcripts, we used the unified set of annotations shown in \Cref{table:intents}. This list allows us to capture as much information as possible, without saturating the data.
+An important point to consider in multi-party training data is that most are human-human. This can pose a problem as systems trained on human-human conversations may lack the incentive to help users reach their goals \cite{Group_1_unpublished_paper}. This is not true for our scenario, as our system's goal is to imitate the host of the game show ``Who wants to be millionaire?''. In this game, the host has the clear goal of guiding the participants to finding an answer to a question. However, to our knowledge, there are no multi-party corpora available for this use case, therefore data collection was performed by our team. We first collected all available recordings of ``Who Wants to Be a Millionaire'' with two participants, which were transcribed using the YouTube API. To annotate these transcripts, we used the set of annotations shown in \Cref{table:intents}. This list allows us to capture as much information as possible, without saturating the data.
 
 \noindent
 \begin{table}[h!]
