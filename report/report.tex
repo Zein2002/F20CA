@@ -143,6 +143,12 @@ An important point to consider in multi-party training data is that most are hum
   \label{table:intents}
 \end{table}
 
+\begin{figure*}[h!]
+  \includegraphics[width=\textwidth]{images/sys_graph.jpg}
+  \caption{Architecture of the conversational system}
+  \label{fig:system_architecture}
+\end{figure*}
+
 \subsection{Cohen's Kappa Coefficient}
 To ensure reliability and consistency, Cohen's kappa was calculated for a sample of the completed transcripts. It measures the reliability between raters on categorical data, while accounting for agreement happening by chance \cite{Cohen_1960}. A sample of four transcripts were re-annotated by a team member, which amounts to approximately 15\% of the total transcripts.
 
@@ -163,12 +169,7 @@ A Kappa score of 0.9601 is interpreted as ``almost perfect agreement'' \cite{McH
 
 Our conversational system consists of several parts, the modular architecture is shown in \Cref{fig:system_architecture}. This section outlines each unit and describes how our system manages the process from the users' utterances to selecting its response.
 
-\begin{figure*}
-  \includegraphics[width=\textwidth]{images/sys_graph.jpg}
-  \caption{Architecture of the conversational system}
-  \label{fig:system_architecture}
-\end{figure*}
-
+% AUTOMATIC SPEECH RECOGNITION PART
 \subsection{Automatic Speech Recognition}
 \label{subsec:asr}
 
@@ -184,6 +185,7 @@ A drawback of this set-up is that the microphones may pick up both users' voices
 
 The real-time transcription of the users' utterances are then passed onto NLU.
 
+% NATURAL LANGUAGE UNDERSTANDING PART
 \subsection{Natural Language Understanding}
 \label{subsec:nlu}
 
@@ -202,9 +204,7 @@ The model is also capable of entity extraction, which means it can identify word
 
 An initial model trained on only four annotated transcripts was innacurate, mislabelled intents, and extracted wrong answers or no answer at all. The accuracy for this model was 47\% with a macro-averaged F1-Score of 0.43.
 
-Using a larger volume of training data significantly improved NLU performance. The model used in our system was trained on 25 transcripts with 566 training examples for each intent. Additional improvement could be obtained by manually cleaning the training data of any misplaced or wrongly extracted examples.
-
-As can be seen in \Cref{fig:cm_answer_extraction}, the improved model's confusion matrix is diagonal, meaning there have been no misclassifications. \Cref{fig:cm_intent_recognition} shows the intent confusion matrix. This model has an accuracy of 96.3\% with a macro-averaged F1-Score of 0.96.
+Using a larger volume of training data significantly improved NLU performance. The model used in our system was trained on 25 transcripts with 566 training examples for each intent. Additional improvement could be obtained by manually cleaning the training data of any misplaced or wrongly extracted examples. As can be seen in \Cref{fig:cm_answer_extraction}, the improved model's confusion matrix is diagonal, meaning there have been no misclassifications. There was a small amount of misclassifications in intent recognition, this can be seen in \Cref{app:cm_intent_recognition} shows the intent confusion matrix. This model has an accuracy of 96.3\% with a macro-averaged F1-Score of 0.96.
 
 The intents identified by the NLU are then passed onto the Dialogue Manager (DM) unit.
 
@@ -214,23 +214,20 @@ The intents identified by the NLU are then passed onto the Dialogue Manager (DM)
   \label{fig:cm_answer_extraction}
 \end{figure}
 
-\begin{figure}[h!]
-  \includegraphics[width=\columnwidth]{images/intent_confusion_matrix.jpg}
-  \caption{Confusion Matrix of NLU intent recognition}
-  \label{fig:cm_intent_recognition}
-\end{figure}
-
+% DIALOGUE MANAGEMENT PART
 \subsection{Dialogue Management}
 \label{subsec:dialogue_management}
+The dialogue manager is responsible for selecting an adequate response at any given moment. It is also tasked with asking questions, which it obtains from the OpenTrivia Database, a user-contributed trivia question database under the Creative Commons License \cite{Open_trivia_2023}. The dialogue manager is composed of two components: a state machine and a Pytorch model. This approach was chosen because, despite involving a conversation which requires intelligent behaviour from the dialogue manager, the game itself is defined by a set of rigid rules:
 
-The dialogue manager is composed of two components: a state machine and a Pytorch model. This approach was chosen because, despite involving a conversation which requires intelligent behaviour from the dialogue manager, the game itself is defined by a set of rigid rules:
 \begin{itemize}
   \item The users are always asked ten questions.
   \item The system must drive the conversation by passing from one question to the next.
   \item The game must end at a specified time.
 \end{itemize}
+
 \noindent Occasionally overwriting the model's output with the hard-coded logic of the state machine ensures these rules are followed and that the movement from state to state is observed.
 
+% NEURAL NETWORK PART
 \subsubsection{Neural Network}
 \label{subsec:nn}
 The neural network model is designed to manage dialogues of three-person conversations. To do this, it has two inputs, the intent from the NLU and the user ID (user 1, user 2 or host). These inputs were both one-hot encoded, the intent being a vector of size 14 (one for each intent) and the user number being a vector of size 3. These two vectors were concatenated to produce an input vector of size 17. The network was then trained to predict the host's response for a given intent and user in a sequence. This output is a vector of size 5, one for each of the 4 system intents plus one for \verb|no response| (see \Cref{table:intents}).
@@ -249,14 +246,7 @@ To overcome this, a separate Sigmoid output was used for \verb|no response|, as 
 
 In future, this architecture could be used for handling multi-person dialogues with more intents or more users by simply scaling the inputs, outputs, and hidden layers accordingly. The model could also be altered to allow for more inputs such as pauses or other non-verbal cues.
 
-\paragraph{Neural Network Architectures}
-\label{par:nn_architectures}
-
-\begin{itemize}
-  \item difference between LSTM \& RNN
-  \item why not RASA, but own DM
-\end{itemize}
-
+% STATE MACHINE PART
 \subsubsection{State Machine}
 \label{subsec:dm}
 
@@ -334,7 +324,7 @@ To further improve on NLG within this system, some content moderation could be p
 \label{subsec:experiment_layout}
 We evaluated both subjective and objective measures of the system's performance. The subjective measures included the user's enjoyment and perception of the system's natural behaviour, while the objective measures focussed on the agreement rate. The agreement rate indicates the frequency of the system correctly detecting users' intent to submit a final answer compared to not detecting user agreement or wrongly detecting agreement when there was none.
 
-The experiment followed a between-subjects design. The evaluation took place in-person in two iterations, both iterations with three pairs of participants. Each participant sat in front of a laptop, where they could see the webpage with the question and answer options on the screen. A screenshot can be seen in Appendix\todo{add to appendix}. Each pair of participants played one round of the quiz (10 questions). Afterwards, they were asked to complete a questionnaire about their experience. They rated the system in the following aspects using a five-point Likert scale:
+The experiment followed a between-subjects design. The evaluation took place in-person in two iterations, both iterations with three pairs of participants. Each participant sat in front of a laptop, where they could see the webpage with the question and answer options on the screen (see \Cref{app:system_webpage}). Each pair of participants played one round of the quiz (10 questions). Afterwards, they were asked to complete a questionnaire about their experience. They rated the system in the following aspects using a five-point Likert scale:
 
 \begin{itemize}
   \item Ease of understanding the rules of the game
@@ -392,22 +382,40 @@ Our set of questions is predefined, therefore, the system does not use any wrong
 \section{Future Work}
 \label{sec:future_work}
 
-There are several small-scale problems, that we only detected in the second iteration of our evaluation. Users were reading out all possible answers, which we did not account for. The system recognised this utterance as an answer entity, and assumed the users were offering or finalising an answer. The system's output was also sometimes overlooked, which made state tracking difficult. As an evaluation participant stated, text-to-speech output would make it feel more like a conversational system and remove the need for users to keep reading the host's responses. An issue to consider is how to make sure that the microphone does not pick up the system's own output.
+There are several small-scale problems, which we only detected in the second iteration of our evaluation. Users were reading out all possible answers, which we did not account for. The system recognised this utterance as an answer entity, and assumed the users were offering or finalising an answer. The system's output was also sometimes overlooked, which made correct state tracking difficult. As an evaluation participant stated, text-to-speech output would make it feel more like a conversational system and remove the need for users to keep reading the host's responses. An issue to consider is how to make sure that the microphone does not pick up the system's own output.
 
-The main challenge for our system in terms of system architecture will be to move away from a two-microphone set-up to one microphone. To be able to do so, speech diarization must be able to work in real-time. The ARI robot is equipped with directional microphones, which can help mitigate the problems we encountered. Evaluation of the robot running our system will be necessary to evaluate if this is sufficient. With the additional hardware of the robot,
+In terms of system architecture, the main challenge for our system will be to transition from the set-up with two microphones to using speech diarization in real-time. The ARI robot is fitted with directional microphones, which can help addressing the issues we faced. Furthermore, the robot's hardware could be used to detect visual turn-taking cues. This would allow moving away from simple silence time-out cues.
 
 Another challenge to solve is the system's tendency to accept answers even though only one user agreed. %add more of Katie's stuff
 
-% include your own bib file like this:
-%\bibliographystyle{acl}
-%\bibliography{acl2016}
+% include references
 \bibliography{references}
 \bibliographystyle{acl2016}
 
+% start appendix on a new page with one column
+\clearpage
+\onecolumn
 \appendix
 
-\section{Supplemental Material, Appendix}
-\label{sec:supplemental}
+\section{NLU Intent Recognition Confusion Matrix}
+\label{app:cm_intent_recognition}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/intent_confusion_matrix.jpg}
+  \caption{Confusion Matrix of NLU intent recognition}
+\end{figure}
+
+\newpage
+
+\section{Screenshot of System's Webpage}
+\label{app:system_webpage}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{images/webpage.png}
+  \caption{Screenshot of System's Webpage}
+\end{figure}
 
 
 \end{document}
