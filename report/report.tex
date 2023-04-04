@@ -61,7 +61,7 @@ School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\
 \maketitle
 
 \begin{abstract}
-  Today, conversational systems are expected to handle conversations in multi-party settings. However, practical usability remains difficult for multi-party conversational systems. Compared to dyadic conversations, there are additional challenges to overcome, such as speaker and addressee recognition and turn-taking. In this paper, we present our work on a multi-party conversational system, which invites two users to play a trivia game in a hospital waiting area. The system detects users' agreement or disagreement on a final answer and responds accordingly. Our evaluation includes both qualitative and quantitative results, and we have configured our system to be used on the ARI robot deployed in a hospital waiting area as part of the SPRING project.
+  Today, conversational systems are expected to handle conversations in multi-party settings. However, practical usability remains difficult as there are additional challenges to overcome, such as speaker and addressee recognition and turn-taking. In this paper, we present our work on a multi-party conversational system, which invites two users to play a trivia game in a hospital waiting area. The system detects users' agreement or disagreement on a final answer and responds accordingly. Our evaluation includes both performance and user assessment results, and we have configured the system to be used on the ARI robot deployed in a hospital waiting area as part of the SPRING project.
 \end{abstract}
 
 
@@ -384,17 +384,9 @@ Our set of questions is predefined, therefore, the system does not use any wrong
 
 There are several small-scale problems, that we only detected in the second iteration of our evaluation. Users were reading out all possible answers, which we did not account for. The system recognised this utterance as an answer entity, and assumed the users were offering or finalising an answer. The system's output was also sometimes overlooked, which made state tracking difficult. As an evaluation participant stated, text-to-speech output would make it feel more like a conversational system and remove the need for users to keep reading the host's responses. An issue to consider is how to make sure that the microphone does not pick up the system's own output.
 
-The main challenge for our system in terms of system architecture will be to move away from a two-microphone set-up to one microphone. To be able to do so, speech diarization must be able to work in real-time. The ARI robot is equipped with directional microphones, which can help mitigate the problems we encountered. Evaluation of the robot running our system will be necessary to evaluate if this is sufficient.
+The main challenge for our system in terms of system architecture will be to move away from a two-microphone set-up to one microphone. To be able to do so, speech diarization must be able to work in real-time. The ARI robot is equipped with directional microphones, which can help mitigate the problems we encountered. Evaluation of the robot running our system will be necessary to evaluate if this is sufficient. With the additional hardware of the robot,
 
 Another challenge to solve is the system's tendency to accept answers even though only one user agreed. %add more of Katie's stuff
-
-
-\section*{Acknowledgments}
-\label{sec:acknowledgments}
-
-The acknowledgments should go immediately before the references.  Do
-not number the acknowledgments section. Do not include this section
-when submitting your paper for review.
 
 % include your own bib file like this:
 %\bibliographystyle{acl}
