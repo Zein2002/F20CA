@@ -61,20 +61,20 @@ School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\
 \maketitle
 
 \begin{abstract}
-  Today, conversational systems are expected to handle conversations in multi-party settings. However, practical usability remains difficult as there are additional challenges to overcome, such as speaker and addressee recognition and turn-taking. In this paper, we present our work on a multi-party conversational system, which invites two users to play a trivia game in a hospital waiting area. The system detects users' agreement or disagreement on a final answer and responds accordingly. Our evaluation includes both performance and user assessment results, and we have configured the system to be used on the ARI robot deployed in a hospital waiting area as part of the SPRING project.
+  Today, conversational systems are expected to handle conversations in multi-party settings, especially as Socially Assistive Robots (SARs). However, practical usability remains difficult as there are additional challenges to overcome, such as speaker and addressee recognition and turn-taking. In this paper, we present our work on a multi-party conversational system, which invites two users to play a trivia game in a hospital waiting area. The system detects users' agreement or disagreement on a final answer and responds accordingly. Our evaluation includes both performance and user assessment results, and we have configured the system to be used on the ARI robot deployed in a hospital waiting area as part of the SPRING project.
 \end{abstract}
 
 
 \section{Introduction}
 \label{sec:introduction}
 
-Socially assistive robots (SARs) are a crucial part of the future of many sectors, for example, education or healthcare \cite{gunson_visually_aware_2022}. Especially the latter depends on technology advancements as it is facing numerous obstacles in the future, such as increasing spendings and a growing percentage of older people. A serious lack of healthcare workers is already being experienced, with 10 million more health workers needed worldwide by 2030 \cite{cooper_ari_2020,Health_workforce_2023}. SARs can pose a solution to the problem by supporting healthcare in various ways, such as encouraging older people to keep living independently longer or reducing caregiver burden \cite{cooper_ari_2020}.
+Socially assistive robots (SARs) are a crucial part of the future of many sectors, for example, education or healthcare \cite{gunson_visually_aware_2022}. Especially the latter depends on technology advancements as it is facing numerous obstacles in the future, such as increasing spendings and a growing percentage of older people. A serious lack of healthcare workers is already being experienced worldwide, with 10 million more health workers needed by 2030 \cite{cooper_ari_2020,Health_workforce_2023}. SARs can pose a solution to the problem by supporting healthcare in various ways, such as encouraging older people to keep living independently longer or reducing caregiver burden \cite{cooper_ari_2020}.
 
-Healthcare SAR scenarios frequently require SARs to handle multi-party interactions as it is likely in these situations that more than one person will interact with the system (i.e., a hospital waiting room). Therefore, we propose a conversational system in this work that plays a game of ``Who wants to be millionaire?'' with two people. Our system impersonates the host while participants can collaborate on general knowledge trivia questions.
+Healthcare SAR scenarios frequently require these robots to handle multi-party interactions as it is likely in these situations that more than one person will interact with the system (i.e., a hospital waiting area). Therefore, we propose a conversational system that plays a game of ``Who wants to be millionaire?'' with two users. Our system impersonates the host while participants can collaborate on general knowledge trivia questions.
 
-The conversational system is trained on multi-party human-human conversation data. We collected the data from recordings of special “Who wants to be millionaire?“ episodes where two candidates collaborated to answer the host's questions.
+The conversational system is trained on multi-party human-human conversation data. We collected the data from recordings of special “Who wants to be millionaire?“ episodes where two candidates collaborated to answer questions.
 
-Our system is developed to be fitted onto an ARI robot in the course of the SPRING-ARI project. This project encompasses several European universities collaborating on evolving socially assistive robots. They use an ARI robot, which is deployed in a hospital waiting area in France.
+Our system is developed to be fitted onto an ARI robot in the course of the SPRING-ARI project. This project encompasses several European universities collaborating on evolving socially assistive robots. The work is tested on an ARI robot, which is deployed in a hospital waiting area in France.
 
 \section{Background}
 \label{sec:background}
@@ -87,7 +87,7 @@ The SPRING project conducts research on a SAR robot deployed in an eldercare hos
 
 \subsection{Multi-party Human Robot Interaction}
 \label{subsec:multi_party}
-The endeavour to create conversational systems becomes considerably more difficult when dealing with multi-party interactions \cite{Addlesee_Data_2023}. Compared to handling dyadic (two-party) interactions, handling multi-party conversations includes more complex challenges, such as Speaker Recognition, Addressee Recognition, Response Selection (summarised in “who says what to whom“) and coordination of turn-taking \cite{Addlesee_Data_2023,Johansson_Skantze_2015}.
+The endeavour to create conversational systems becomes considerably more difficult when dealing with multi-party interactions \cite{Addlesee_Data_2023}. Compared to handling dyadic (two-party) interactions, handling multi-party conversations includes more complex challenges, such as Speaker Recognition, Addressee Recognition, Response Selection (summarised by the phrase ``who says what to whom'') and coordination of turn-taking \cite{Addlesee_Data_2023,Johansson_Skantze_2015}.
 
 Especially turn-taking poses a central problem. It is defined as follows:
 
@@ -97,13 +97,11 @@ Especially turn-taking poses a central problem. It is defined as follows:
 
 In dyadic conversations, there are only two roles a participant can take: speaker or listener, hence it is clear when and to whom the turn is yielded. In multi-party conversations, participants can take multiple roles, therefore turn-taking needs to be coordinated \cite{Johansson_Skantze_2015}. Humans signal their intents mostly through gaze, but also through pauses, prosody, and body positioning \cite{Żarkowski_2019}. To copy this behaviour, earlier models for conversational systems relied on silence time-outs to coordinate turn-taking, however, this approach is found to be too simplistic \cite{skantze_turn_taking_2021}. Instead, mimicking human turn-taking behaviour better by using a combination of verbal and non-verbal cues leads to robots that are better perceived \cite{moujahid_multi_party_2022}.
 
-
-
-
+% DATA COLLECTION
 \section{Data Collection}
 \label{sec:data_collection}
 
-An important point to consider in multi-party training data is that most are human-human. This can pose a problem as systems trained on human-human conversations may lack the incentive to help users reach their goals \cite{Addlesee_Data_2023}. This is not true for our scenario, as our system's goal is to imitate the host of the game show ``Who wants to be millionaire?''. In this game, the host has the clear goal of guiding the participants to finding an answer to a question. However, to our knowledge, there are no multi-party corpora available for this use case, therefore data collection was performed by our team. We first collected all available recordings of ``Who Wants to Be a Millionaire'' with two participants, which were transcribed using the YouTube API. To annotate these transcripts, we used the set of annotations shown in \Cref{table:intents}. This list allows us to capture as much information as possible, without saturating the data.
+An important point to consider in multi-party training data is that most are human-human. This can pose a problem as systems trained on human-human conversations may lack the incentive to help users reach their goals \cite{Addlesee_Data_2023}. However, in our scenario, the system's goal is to imitate the host of ``Who wants to be millionaire?''. In this game show, the host has the clear goal of guiding the participants to finding an answer to a question. However, to our knowledge, there are no multi-party corpora available for this use case, therefore data collection was performed by our team. We first collected all available recordings of ``Who Wants to Be a Millionaire'' with two participants, which were transcribed using the YouTube API. To annotate these transcripts, we used the set of annotations shown in \Cref{table:intents}. This list allows us to capture as much information as possible, without saturating the data.
 
 \noindent
 \begin{table}[h!]
@@ -146,7 +144,7 @@ An important point to consider in multi-party training data is that most are hum
 \end{table}
 
 \subsection{Cohen's Kappa Coefficient}
-To ensure reliability and consistency, Cohen's kappa was calculated for a sample of the completed transcripts. It measures the reliability between raters on categorical data, while accounting for agreement happening by chance \cite{Cohen_1960}. A sample of four transcripts are re-annotated by a team member, which amounts to approximately 15\% of the total transcripts.
+To ensure reliability and consistency, Cohen's kappa was calculated for a sample of the completed transcripts. It measures the reliability between raters on categorical data, while accounting for agreement happening by chance \cite{Cohen_1960}. A sample of four transcripts were re-annotated by a team member, which amounts to approximately 15\% of the total transcripts.
 
 \begin{equation}
   \begin{split}
@@ -174,15 +172,15 @@ Our conversational system consists of several parts, the modular architecture is
 \subsection{Automatic Speech Recognition}
 \label{subsec:asr}
 
-The first step is to transform user's speech into text, which can be passed onto Natural Language Understanding (NLU) to perform intent recognition. Transforming audio into text works through Speech-To-Text (STT) software. In recent years, STT systems have become more accurate and fast, however, none of the existing systems can yet reliably handle conversations in real-time \cite{addlesee_comprehensive_2020}.
+The first step is to transform user's speech into text, which can be passed onto Natural Language Understanding (NLU). Transforming audio into text works through Speech-To-Text (STT) software. In recent years, STT systems have become more accurate and fast, however, none of the existing systems can yet reliably handle conversations in real-time \cite{addlesee_comprehensive_2020}.
 
-Our conversational system required two non-standard features from the ASR: (1) real-time transcription and (2) diarization. Given that our system was designed for usage on a robot, it must transcribe what the user is saying in real-time to avoid response delays and ensure natural sounding conversation. Therefore, the time taken for a system to respond can only be marginally longer than the delay a human would leave before responding \cite{Miller_1968}.
+Our conversational system required two non-standard features from the ASR: (1) real-time transcription and (2) diarization. Given that it was designed for usage on a robot, it must transcribe what the user is saying in real-time to avoid response delays and ensure natural sounding conversation. Therefore, the time taken for a system to respond can only be marginally longer than the delay a human would leave before responding \cite{Miller_1968}.
 
-The second feature, diarization, is the process of determining the speaker in multi-party conversations. To handle a ``Who wants to be millionaire?'' style game, our system must be able to diarise to track the intents of each individual user and determine when users agree or disagree. We tried several STT systems including Amazon's Transcribe, IBM's Watson and locally running Pyannote. Our findings were that these are all suitable for transcription but lack real-time diarization. We settled with Google's Cloud Speech-to-Text API due to its high accuracy and customisability. As it is widely used, troubleshooting and integration resources were readily available. In addition, Google's API promised diarization capabilities, which, along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate, and it often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other, supporting the statement that ASR systems are not yet adequate to reliably handle natural spontaneous conversations in real-time \cite{addlesee_comprehensive_2020}.
+The second feature, diarization, is the process of determining the speaker in multi-party conversations. To handle a ``Who wants to be millionaire?'' style game, our system must be able to diarise to track the intents of each individual user to determine when users agree on a final answer. We tried several STT systems including Amazon's Transcribe, IBM's Watson and locally running Pyannote. Our findings were that these are all suitable for transcription but lack real-time diarization. We settled with Google's Cloud Speech-to-Text API due to its high accuracy and customisability. As it is widely used, troubleshooting and integration resources were readily available. In addition, Google's API promised diarization capabilities, which, along with its real-time transcription capabilities seemed to fit our use case. However, in use, diarization was inaccurate, and it often grouped two separate speakers together or split sentences up seemingly at random. This became even more apparent when two users were speaking over each other, supporting the statement that ASR systems are ``not yet adequate to reliably handle natural spontaneous conversations in real-time'' \cite{addlesee_comprehensive_2020}.
 
 This made Google's diarization unusable for our use case. We therefore moved to a set-up with two microphones (one for each user) and integrated them with the real time Google transcription. By removing diarization we were able to use the most up-to-date Google model \verb|latest_long|, which is trained on long-form conversation. This allowed us to not only avoid the issue of diarization, but also to improve the quality of the transcriptions, which had a cascading effect on the rest of the system, leading to better intent recognition, entity extraction, etc.
 
-A drawback of this set-up is that the microphones may pick up both user's voices. This could be mitigated through moving the microphones further apart, or calibrating them. More on this issue is discussed in \Cref{sec:evaluation}.
+A drawback of this set-up is that the microphones may pick up both users' voices. This could be mitigated through moving the microphones further apart, or calibrating them. The issue became apparent during our evaluation, results of which are discussed in \Cref{sec:evaluation}.
 
 The real-time transcription of the users' utterances are then passed onto NLU.
 
@@ -194,21 +192,21 @@ Natural Language Understanding takes in utterances of natural human language and
 The model is also capable of entity extraction, which means it can identify words of interest. In our case, we extract a user's answer to a question or a user's rejected answer given from an utterance. For example, a user's utterance could be ``I'm thinking Teaspoon'', which would be classified by the NLU in the following way:
 
 \begin{verbatim}
-NLU:    - intent: offer-answer
-          entities:
-            - answer: "Teaspoon"
+  - intent: offer-answer
+    entities:
+      - answer: "Teaspoon"
 \end{verbatim}
 
 \subsubsection{Evaluation of NLU}
 \label{subsec:NLU_evaluation}
 
-An initial model trained on only four annotated transcripts, very little training data was highly innacurate, mislabelled intents, and extracted wrong answers or no answer at all. The accuracy for this model was 47\% with a macro-averaged F1-Score of 0.43.
+An initial model trained on only four annotated transcripts was innacurate, mislabelled intents, and extracted wrong answers or no answer at all. The accuracy for this model was 47\% with a macro-averaged F1-Score of 0.43.
 
 Using a larger volume of training data significantly improved NLU performance. The model used in our system was trained on 25 transcripts with 566 training examples for each intent. Additional improvement could be obtained by manually cleaning the training data of any misplaced or wrongly extracted examples.
 
-As can be seen in \Cref{fig:cm_answer_extraction}, the improved model's confusion matrix is perfect. \Cref{fig:cm_intent_recognition} shows the intent confusion matrix. This model has an accuracy of 96.3\% with a macro-averaged F1-Score of 0.96.
+As can be seen in \Cref{fig:cm_answer_extraction}, the improved model's confusion matrix is diagonal, meaning there have been no misclassifications. \Cref{fig:cm_intent_recognition} shows the intent confusion matrix. This model has an accuracy of 96.3\% with a macro-averaged F1-Score of 0.96.
 
-The intents identified by the NLU are then passed onto the DM unit.
+The intents identified by the NLU are then passed onto the Dialogue Manager (DM) unit.
 
 \begin{figure}[h!]
   \includegraphics[width=\columnwidth]{images/answer_confusion_matrix.jpg}
@@ -231,11 +229,11 @@ The dialogue manager is composed of two components: a state machine and a Pytorc
   \item The system must drive the conversation by passing from one question to the next.
   \item The game must end at a specified time.
 \end{itemize}
-\noindent Occasionally overwriting the model's output with the hard-coded logic of the state machine ensure these rules are followed and that the movement from state to state is observed.
+\noindent Occasionally overwriting the model's output with the hard-coded logic of the state machine ensures these rules are followed and that the movement from state to state is observed.
 
 \subsubsection{Neural Network}
 \label{subsec:nn}
-The neural network model is needed to be designed to manage dialogues of three-person conversations. To do this, it has two inputs, the intent from the NLU and the user ID (user 1, user 2 or host). These inputs were both one-hot encoded, the intent being a vector of size 14 (one for each intent) and the user number being a vector of size 3. These two vectors were concatenated to produce an input vector of size 17. The network was then trained to predict the host's response for a given intent and user in a sequence. This output is a vector of size 5, one for each of the 4 system intents plus one for \verb|no response| (see \Cref{table:intents}).
+The neural network model is designed to manage dialogues of three-person conversations. To do this, it has two inputs, the intent from the NLU and the user ID (user 1, user 2 or host). These inputs were both one-hot encoded, the intent being a vector of size 14 (one for each intent) and the user number being a vector of size 3. These two vectors were concatenated to produce an input vector of size 17. The network was then trained to predict the host's response for a given intent and user in a sequence. This output is a vector of size 5, one for each of the 4 system intents plus one for \verb|no response| (see \Cref{table:intents}).
 
 The model was trained using the dataset which we had originally labelled for NLU purposes. This provided human labelled sequences of intents and user IDs for each question. Each question would have its intents and user IDs input into the network sequentially, with the model's memory being cleared after every question. Every output from the system which is not \verb|no response| would be input back into the network, allowing for the system to speak multiple lines of dialogue in succession. At the start of each question, the system is set up by first inputting the host having given the \verb|question| intent, to which it will always output the \verb|options| intent. This is required since every question in the training data is started by the host asking the question, then giving the options for the question.
 
@@ -259,12 +257,12 @@ In future, this architecture could be used for handling multi-person dialogues w
   \item why not RASA, but own DM
 \end{itemize}
 
-\subsubsection{Dialogue Manager - Jack}
+\subsubsection{State Machine}
 \label{subsec:dm}
 
-An intent received from the NLU unit is first input into the PyTorch model. The model then decides on an appropriate action. Afterwards, the state machine checks if the output of the PyTorch model represents a sensible action. In case there are logical errors, the output will be overridden. For example, if the NLU detects that the user intends to confirm their final answer, but no answer has yet been given, the PyTorch model may nonetheless decide on \verb|accept-answer|. As no answer has been given yet, the state machine will overwrite this output.
+An intent received from the NLU unit is first input into the PyTorch model, which outputs an action. Afterwards, the state machine checks if the output of the PyTorch model represents a sensible action. In case there are logical errors, the output will be overridden. For example, if the NLU detects that the user intends to confirm their final answer, but no answer has yet been given, the PyTorch model may nonetheless decide on \verb|accept-answer|. As no answer has been given yet, the state machine will overwrite this output.
 
-Another reason for using a state machine was the limited amount of transcription data. The PyTorch model learned off of the transcript data, therefore it depended on a sufficient amount of transcript data to function adequately. Using a state machine allowed us to program explicitly how the chatbot responds to user intents, thus eliminating the need for more transcript data.
+Another reason for using a state machine was the limited amount of transcription data. The PyTorch model learned off of the transcript data, therefore it depended on a sufficient amount of transcript data to function adequately. The state machine extends the set of actions by ten additional intends, which are listed in \Cref{table:state_machine_intents}. This allowed us to program explicitly how the chatbot responds to user intents, thus eliminating the need for more transcript data.
 
 \begin{figure}[h!]
   \includegraphics[width=\columnwidth]{images/jacks_figure.png}
@@ -318,6 +316,8 @@ Throughout the course of a game, the dialogue manager stores relevant values, su
 \end{table}
 A more secure approach to this situation would involve taking a record of all the answers ruled out by the users. The host would then lock in a final answer after a rejected answer if and only if the other two possible answers had also been previously rejected. We would take in a future implementation as it would reduce the risk of the host accepting answers while the users are still deciding.
 
+Once the DM has identified an appropriate response, this intent is passed onto the Natural Language Generation (NLG) unit.
+
 \subsection{Natural Language Generation}
 \label{subsec:nlg}
 
@@ -334,7 +334,7 @@ To further improve on NLG within this system, some content moderation could be p
 \label{subsec:experiment_layout}
 We evaluated both subjective and objective measures of the system's performance. The subjective measures included the user's enjoyment and perception of the system's natural behaviour, while the objective measures focussed on the agreement rate. The agreement rate indicates the frequency of the system correctly detecting users' intent to submit a final answer compared to not detecting user agreement or wrongly detecting agreement when there was none.
 
-The experiment followed a between-subjects design. This was an in-person experiment, with the quiz running on a laptop for each participant, where participants could see the question and answer options on the screen. Each pair of participants played one round of the quiz (10 questions). Afterwards, they were asked to complete a questionnaire about their experience. They rated the system in the following aspects using a five-point Likert scale:
+The experiment followed a between-subjects design. The evaluation took place in-person in two iterations, both iterations with three pairs of participants. Each participant sat in front of a laptop, where they could see the webpage with the question and answer options on the screen. A screenshot can be seen in Appendix\todo{add to appendix}. Each pair of participants played one round of the quiz (10 questions). Afterwards, they were asked to complete a questionnaire about their experience. They rated the system in the following aspects using a five-point Likert scale:
 
 \begin{itemize}
   \item Ease of understanding the rules of the game
@@ -345,9 +345,19 @@ The experiment followed a between-subjects design. This was an in-person experim
   \item Overall satisfaction
 \end{itemize}
 
-The evaluation took place in two iterations, both iterations with three pairs of participants. In the first iteration, we followed a strategy of selecting ten questions at random from a set of 34 and included all possible answers as entities to enhance the system's ability to recognise entities. However, this approach restricted generalization beyond the specific set of questions and answers.
+In the first iteration, we followed a strategy of selecting ten questions at random from a set of 34 and included all possible answers as entities to make sure the system was able to recognise them. For example, the answer option ``Bushwhackers'' had the following variations:
 
-Therefore, we improved the system for the second iteration with the following features:
+\begin{verbatim}
+  "The Bushwhackers",
+  "the bushwhackers",
+  "bushwhackers",
+  "bush whackers",
+  "bush wackers",
+  "bushwackers",
+  "whackers"
+\end{verbatim}
+
+However, this approach restricted generalization beyond the specific set of questions and answers. We also came across additional issues, such as microphones picking up both users' voices. Therefore, we improved the system for the second iteration with the following features:
 
 \begin{enumerate}
   \item The set of questions was expanded to 3490.
@@ -355,13 +365,13 @@ Therefore, we improved the system for the second iteration with the following fe
   \item Microphones were moved further apart.
 \end{enumerate}
 
-By incorporating a fuzzy matching algorithm (discussed in \Cref{subsec:fuzzy_string}), entity extraction was improved across all questions in our database \todo{mention where those questions came from}. This technique enabled us to implement a more comprehensive and robust system that could better accommodate a wide range of questions and answers. As discussed in \cref*{subsec:asr}, too little of a distance between microphones meant that both users' voices would get picked up by one. This led to the system detecting agreement (as both user's seemingly agreed on the same answer, while it was infact a duplicated utterance). In addition to adding questions, we also implemented logic to make sure the same question would not show up twice in one round of the game, which was an issue in the first iteration.
+By incorporating a fuzzy matching algorithm (discussed in \Cref{subsec:fuzzy_string}), entity extraction was improved across all questions in our database. This technique enabled us to implement a more comprehensive and robust system that could better accommodate a wide range of questions and answers. As discussed in \cref*{subsec:asr}, too little of a distance between microphones meant that both users' voices would get picked up by one. This led to the system detecting agreement as both users' seemingly agreed on the same answer, while it was in fact a duplicated utterance. In addition to adding questions, we also implemented logic to make sure the same question would not show up twice in one round of the game, which was an issue in the first iteration.
 
 \subsection{Results}
 \label{subsec:results}
 
 \subsubsection{Questionnaire Results}
-The enhancements between the two iterations yielded discernible results, with 83\% of participants expressing satisfaction with the overall system in the first evaluation, and 100\% in the subsequent evaluation. Regarding the system's behavior, 50\% of participants in both evaluations indicated that the system appeared natural. Furthermore, 83\% of participants reported enjoying the experience in both evaluations. This represents a notable advancement in the performance of system 2, as participants reported encountering more challenging questions during the second evaluation, resulting in a lower rate of correct answers. Prior to this improvement, the difficulty of the questions and the lower rate of correct answers had resulted in reduced enjoyment for the participants.
+The enhancements between the two iterations yielded improvements, with 83\% of participants expressing satisfaction with the overall system in the first evaluation, and 100\% in the subsequent evaluation. Regarding the system's behaviour, 50\% of participants in both evaluations indicated that the system appeared natural. Furthermore, 83\% of participants reported enjoying the experience in both evaluations. This represents a notable advancement in the performance of system 2, as participants reported encountering more challenging questions during the second evaluation, resulting in a lower rate of correct answers. Prior to this improvement, the difficulty of the questions and the lower rate of correct answers had resulted in reduced enjoyment for the participants.
 
 \subsubsection{Fuzzy string matching}
 \label{subsec:fuzzy_string}
