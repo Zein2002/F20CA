@@ -371,8 +371,9 @@ The enhancements between the two iterations yielded improvements, with 83\% of p
 Fuzzy string matching is a computational technique employed to approximate string matches. In our system, we employed fuzzy string matching to identify potential answers based on the participants' speech. The selection of an optimal threshold was critical to achieve optimal performance. Empirical analysis was conducted to identify the most effective threshold, with the findings suggesting that 0.5 yielded the highest performance. Subsequent evaluations were conducted using various threshold values, with the system utilizing the 0.5 threshold surpassing all other thresholds in performance. Notably, the system also demonstrated proficiency in recognizing complex terms, such as ``haemocytometer'' and ``viltrumite'', which were unfamiliar to the participants.
 
 \subsection{Confusion Matrix}
-This confusion matrix shows the predictions made by the system throughout all evaluations. The true positive value is when the system accurately identifies agreement, the false positive value is when it identifies agreement that hasn't happened, false negative is when the system misses an agreement and the true negative value is when users do not wish to lock in an answer and the system recognises that.
+The original matrix created was similar to a traditional confusion matrix in being 2 x 2. That matrix did not accurately portray the capabilities of the system as the issues caused by both microphones hearing one user were not separated from issues within the system. Therefore a new confusion matrix was created with an extra column to separate agreement detected due to the microphone issue.
 
+This confusion matrix shows the predictions made by the system for 6 evaluations. The True Positive value is when the system accurately identifies agreement, the False Positive value is when it identifies agreement that hasn't happened (with additional column to separate the microphone issue), False Negative is when the system misses an agreement and the True Negative value is when users do not wish to lock in an answer and the system recognises that.
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=\columnwidth]{images/agreement_confusion_matrix.png}
@@ -380,15 +381,25 @@ This confusion matrix shows the predictions made by the system throughout all ev
 \end{figure}
 
 \subsubsection{Calculations}
-$Recall Rate = TP / P = 34 / 39 = 0.87 = 87\%$
-$Specificity Rate = TN / N = 6 / 25 = 0.24 = 24\%$
-$Accuracy Rate = (TP + TN) / Total = 40 / 64 = 0.62 = 62\%$
-$Error Rate = (FP + FN) / Total = 24 / 64 = 0.37 = \%37$
+These calculations are carried out without acknowledging the microphone issue.
+$Recall\:Rate = TP / P = 34 / 39 = 0.87 = 87\%$
+
+$Specificity\:Rate = TN / N = 6 / 25 = 0.24 = 24\%$
+
+$Accuracy\:Rate = (TP + TN) / Total = 40 / 64 = 0.62 = 62\%$
+
+$Error\:Rate = (FP + FN) / Total = 24 / 64 = 0.37 = 37\%$
+
+By adding the "Agreement detected due to microphone issue" column, issues relating to multiple microphones are removed from the calculations and a more accurate error rate can be calculating using the FP and FN values that are related to issues within the system.
+
+$New\:Error\:Rate = (5 + 5) / 50 = 0.2 = 20\%$
+
+This tells us that if the microphone issue did not exist then our system would have an error rate of 20\%
 \subsubsection{Analysis}
+
 From the matrix, it can be seen that the the main issue with the system is false positive predictions. The reason for this is the microphones of both laptops picking up the same sentence and the system classing this as agreement when only one user had spoken.
 
 The false negatives tended to occur when the answer names are very obscure and the system struggled to pick them up.
-
 \section{Conclusion}
 \label{sec:conclusion}
 
