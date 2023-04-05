@@ -61,10 +61,10 @@ School of Mathematics and Computer Science, Heriot-Watt University, Edinburgh \\
 \maketitle
 
 \begin{abstract}
-  Today, conversational systems are expected to handle conversations in multi-party settings, especially as Socially Assistive Robots (SARs). However, practical usability remains difficult as there are additional challenges to overcome, such as speaker and addressee recognition and turn-taking. In this paper, we present our work on a multi-party conversational system, which invites two users to play a trivia game in a hospital waiting area. The system detects users' agreement or disagreement on a final answer and responds accordingly. Our evaluation includes both performance and user assessment results, and we have configured the system to be used on the ARI robot deployed in a hospital waiting area as part of the SPRING project.
+  Today, conversational systems are expected to handle conversations in multi-party settings, especially as Socially Assistive Robots (SARs). However, practical usability remains difficult as there are additional challenges to overcome, such as speaker and addressee recognition and turn-taking. In this paper, we present our work on a multi-party conversational system, which invites two users to play a trivia game in a hospital waiting area. The system detects users' agreement or disagreement on a final answer and responds accordingly. Our evaluation includes both performance and user assessment results, with a focuse on detecting user agreement. We have configured the system to be used on the ARI robot deployed in a hospital waiting area as part of the SPRING project.
 \end{abstract}
 
-
+% INTRODUCTION PART
 \section{Introduction}
 \label{sec:introduction}
 
@@ -72,10 +72,11 @@ Socially assistive robots (SARs) are a crucial part of the future of many sector
 
 Healthcare SAR scenarios frequently require these robots to handle multi-party interactions as it is likely in these situations that more than one person will interact with the system (i.e., a hospital waiting area). Therefore, we propose a conversational system that plays a game of ``Who wants to be millionaire?'' with two users. Our system impersonates the host while participants can collaborate on general knowledge trivia questions.
 
-The conversational system is trained on multi-party human-human conversation data. We collected the data from recordings of special “Who wants to be millionaire?“ episodes where two candidates collaborated to answer questions.
+The conversational system is trained on multi-party human-human conversation data. We collected the data from recordings of special “Who wants to be millionaire?“ episodes where two candidates collaborated to answer questions. The system's aim is to guide users to collaborate and ultimately agree on an answer to the question. The code for this project is open-source and available on GitHub\footnote[1]{\url{https://github.com/JsnSwny/tarrant}}.
 
 Our system is developed to be fitted onto an ARI robot in the course of the SPRING-ARI project. This project encompasses several European universities collaborating on evolving socially assistive robots. The work is tested on an ARI robot, which is deployed in a hospital waiting area in France.
 
+% LIT REVIEW PART 
 \section{Background}
 \label{sec:background}
 
@@ -85,23 +86,25 @@ For healthcare, as well as for any other sector, the difficulty of successfully 
 
 The SPRING project conducts research on a SAR robot deployed in an eldercare hospital reception area \cite{addlesee_comprehensive_2020}. The conversational system is deployed on the humanoid ARI robot produced by Pal Robotics \cite{palrobot}. ARIs capabilities can be extended with custom AI algorithms, in the case of SPRING-ARI a visual perception system, a dialogue system, and a social interaction planner \cite{addlesee_comprehensive_2020}. While the SPRING-ARI system successfully demonstrates that task-based, social and visually grounded dialogue can be combined with physical actions, it still lacks the ability to handle conversations with more than one person simultaneously \cite{addlesee_comprehensive_2020}.
 
-\subsection{Multi-party Human Robot Interaction}
+\subsection{Multi-party conversational systems}
 \label{subsec:multi_party}
-The endeavour to create conversational systems becomes considerably more difficult when dealing with multi-party interactions \cite{Addlesee_Data_2023}. Compared to handling dyadic (two-party) interactions, handling multi-party conversations includes more complex challenges, such as Speaker Recognition, Addressee Recognition, Response Selection (summarised by the phrase ``who says what to whom'') and coordination of turn-taking \cite{Addlesee_Data_2023,Johansson_Skantze_2015}.
+In general, most conversational systems are only able to handle dyadic (two-party) conversations \cite{Mahajan_Santhanam_Shaikh_2022,moujahid_multi_party_2022}. The endeavour to create conversational systems becomes considerably more difficult when dealing with multi-party interactions \cite{Addlesee_Data_2023}. Compared to handling dyadic interactions, handling multi-party conversations includes more complex challenges, such as coordination of turn-taking and Speaker Recognition, Addressee Recognition, Response Selection (summarised by the phrase ``Who says what to whom'') \cite{Addlesee_Data_2023,Johansson_Skantze_2015}.
 
-Especially turn-taking poses a central problem. It is defined as follows:
+Turn-taking poses a central problem. It is defined as follows:
 
 \begin{quote}
   The rules of turn-taking organize the conversation into turns, during which one of the participants has the right to speak while the others agree to listen. \cite{Żarkowski_2019}
 \end{quote}
 
-In dyadic conversations, there are only two roles a participant can take: speaker or listener, hence it is clear when and to whom the turn is yielded. In multi-party conversations, participants can take multiple roles, therefore turn-taking needs to be coordinated \cite{Johansson_Skantze_2015}. Humans signal their intents mostly through gaze, but also through pauses, prosody, and body positioning \cite{Żarkowski_2019}. To copy this behaviour, earlier models for conversational systems relied on silence time-outs to coordinate turn-taking, however, this approach is found to be too simplistic \cite{skantze_turn_taking_2021}. Instead, mimicking human turn-taking behaviour better by using a combination of verbal and non-verbal cues leads to robots that are better perceived \cite{moujahid_multi_party_2022}.
+In dyadic conversations, there are only two roles a participant can take: speaker or listener, hence it is clear when and to whom the turn is yielded. In multi-party conversations, participants can take multiple roles, therefore turn-taking needs to be coordinated \cite{Johansson_Skantze_2015}.
+
+Most existing multi-party conversational research has focussed on the sub-tasks of ``Who says what to whom''. Mahajan et al. identified 15 papers in the last decade focussing on one or more of these sub-tasks within an english-speaking context \cite{Mahajan_Santhanam_Shaikh_2022}. Centralised evaluation criteria are relatively new, and most existing systems are not consistently evaluated. One previous study, conducted by Skantze et al, required users to collaborate with a robot in a multi-party setting. The users' task was to play a card game with the Furhat robot where they had to sort the cards in a specific order. However, the research focussed on turn-taking cues rather than the system's performance in terms of aiding users to collaborate or detecting agreement between users \cite{Skantze_Johansson_Beskow_2015,Furhat_2023}.
 
 % DATA COLLECTION
 \section{Data Collection}
 \label{sec:data_collection}
 
-An important point to consider in multi-party training data is that most are human-human. This can pose a problem as systems trained on human-human conversations may lack the incentive to help users reach their goals \cite{Addlesee_Data_2023}. However, in our scenario, the system's goal is to imitate the host of ``Who wants to be millionaire?''. In this game show, the host has the clear goal of guiding the participants to finding an answer to a question. However, to our knowledge, there are no multi-party corpora available for this use case, therefore data collection was performed by our team. We first collected all available recordings of ``Who Wants to Be a Millionaire'' with two participants, which were transcribed using the YouTube API. To annotate these transcripts, we used the set of annotations shown in \Cref{table:intents}. This list allows us to capture as much information as possible, without saturating the data.
+An important point to consider in multi-party training data is that most are human-human. This can pose a problem as systems trained on human-human conversations may lack the incentive to help users reach their goals \cite{Addlesee_Data_2023}. However, in our scenario, the system has the clear goal of guiding the participants to finding an answer to a question. To our knowledge, there are no multi-party corpora available for this use case, therefore data collection was performed by our team. We first collected all available recordings of ``Who Wants to Be a Millionaire'' with two participants, which were transcribed using the YouTube API. To annotate these transcripts, we used the set of annotations shown in \Cref{table:intents}. This list allows us to capture as much information as possible, without saturating the data.
 
 \noindent
 \begin{table}[h!]
@@ -401,11 +404,11 @@ Our set of questions is predefined, therefore, the system does not use any wrong
 \section{Future Work}
 \label{sec:future_work}
 
-There are several small-scale problems, which we only detected in the second iteration of our evaluation. Users were reading out all possible answers, which we did not account for. The system recognised this utterance as an answer entity, and assumed the users were offering or finalising an answer. The system's output was also sometimes overlooked, which made correct state tracking difficult. As an evaluation participant stated, text-to-speech output would make it feel more like a conversational system and remove the need for users to keep reading the host's responses. An issue to consider is how to make sure that the microphone does not pick up the system's own output.
+There are several small-scale problems, which we only detected in the second iteration of our evaluation. Users were reading out all possible answers, which we did not account for. The system recognised this utterance as an answer entity, and assumed the users were offering or finalising an answer. The system's output was also sometimes overlooked, which made correct state tracking difficult. As an evaluation participant stated, text-to-speech output would make it feel more like a conversational system and remove the need for users to keep reading the host's responses.
 
-In terms of system architecture, the main challenge for our system will be to transition from the set-up with two microphones to using speech diarization in real-time. The ARI robot is fitted with directional microphones, which can help addressing the issues we faced. Furthermore, the robot's hardware could be used to detect visual turn-taking cues. This would allow moving away from simple silence time-out cues.
+The main challenge for our system will be to transition from the set-up with two microphones to using speech diarization in real-time. This transition will make the microphone issue of picking up both users' voices redundant. As the ARI robot is fitted with directional microphones, deploying our system on the robot can pose a solution to this problem. Furthermore, the robot's hardware could be used to detect visual turn-taking cues. This would allow moving away from simple silence time-out cues.
 
-Another challenge to solve is the system's tendency to accept answers even though only one user agreed. %add more of Katie's stuff
+To make our system better comparable to other multi-party conversational systems, it should be evaluted against the error reporting taxonomy by Higashinaka et al \cite{Higashinaka_Araki_Tsukahara_Mizukami_2021}, extended for multi-party dialogue systems by Mahajan et al \cite{Mahajan_Santhanam_Shaikh_2022}.
 
 % include references
 \bibliography{references}
