@@ -371,47 +371,35 @@ The enhancements between the two iterations yielded improvements, with 83\% of p
 
 \subsubsection{Fuzzy String Matching}
 \label{subsec:fuzzy_string}
-Fuzzy string matching is a computational technique to approximate string matches. It does so by tokenizing both strings and comparing the similarity of common tokens of both strings. In our system, we employed fuzzy string matching to identify potential answers based on the participants' speech. The selection of an optimal similarity threshold was critical for performance. Empirical analysis was conducted to identify the most effective threshold, with the findings suggesting that 0.5 yielded the highest performance. Subsequent evaluations were conducted using various threshold values, with the system utilizing the 0.5 threshold surpassing all other thresholds in performance. Notably, the system also demonstrated proficiency in recognizing complex terms, such as ``haemocytometer'' and ``viltrumite'', which were unfamiliar to the participants.
+Fuzzy string matching is a computational technique to approximate string matches. It does so by tokenizing both strings and comparing the similarity of common tokens of both strings. In our system, we employed fuzzy string matching to identify potential answers based on the participants' speech. The selection of an optimal similarity threshold was critical for performance. We performed a within-subject analysis, comparing a 0.5 and 0.7 threshold. The 0.5 threshold yielded the best performance, as all users' answers were matched with an answer option. With a 0.7 threshold, 33\% of users' answers were not matched due to imperfect transcriptions. A 0.5 threshold is more effective mitigating transcription errors compared to a 0.7 threshold.
 
-\subsection{Confusion Matrix}
-The original matrix created was similar to a traditional confusion matrix in being 2 x 2. That matrix did not accurately portray the capabilities of the system as the issues caused by both microphones hearing one user were not separated from issues within the system. Therefore a new confusion matrix was created with an extra column to separate agreement detected due to the microphone issue.
-
+\subsection{Agreement Detection}
 This confusion matrix shows the predictions made by the system for 6 evaluations. The True Positive value is when the system accurately identifies agreement, the False Positive value is when it identifies agreement that hasn't happened (with additional column to separate the microphone issue), False Negative is when the system misses an agreement and the True Negative value is when users do not wish to lock in an answer and the system recognises that.
+
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=\columnwidth]{images/agreement_confusion_matrix.png}
   \caption{Agreement Detection Confusion Matrix}
 \end{figure}
 
-\subsubsection{Calculations}
-These calculations are carried out without acknowledging the microphone issue.
-$Recall\:Rate = TP / P = 34 / 39 = 0.87 = 87\%$
+By adding the ``Agreement detected due to microphone issue'' column, issues relating to multiple microphones lead to a more accurate agreement and error rate.
 
-$Specificity\:Rate = TN / N = 6 / 25 = 0.24 = 24\%$
+\begin{equation}
+  \begin{split}
+    & Agreement\:Rate = \frac{34 + 6}{50} = 80\% \\
+    & Error\:Rate = \frac{5 + 5}{50} = 20\%
+  \end{split}
+\end{equation}
 
-$Accuracy\:Rate = (TP + TN) / Total = 40 / 64 = 0.62 = 62\%$
+\noindent Without the microphone issue, our system would have an agreement rate of 80\% with an error rate of 20\%.
 
-$Error\:Rate = (FP + FN) / Total = 24 / 64 = 0.37 = 37\%$
+From the matrix, it can be seen that the main issue with the system is false positive predictions. The reason for this is the microphones of both laptops picking up the same sentence and the system classing this as agreement when only one user had spoken. The false negatives tended to occur when the answer names are very obscure and the system struggled to pick them up.
 
-By adding the "Agreement detected due to microphone issue" column, issues relating to multiple microphones are removed from the calculations and a more accurate error rate can be calculating using the FP and FN values that are related to issues within the system.
-
-$New\:Error\:Rate = (5 + 5) / 50 = 0.2 = 20\%$
-
-This tells us that if the microphone issue did not exist then our system would have an error rate of 20\%
-\subsubsection{Analysis}
-
-From the matrix, it can be seen that the the main issue with the system is false positive predictions. The reason for this is the microphones of both laptops picking up the same sentence and the system classing this as agreement when only one user had spoken.
-
-The false negatives tended to occur when the answer names are very obscure and the system struggled to pick them up.
-\section{Conclusion}
+\section{Conclusion and Future Work}
 \label{sec:conclusion}
 
 In this report, we have presented a conversational system to play a game of ``Who wants to be millionaire?'' in a multi-party setting. The system is able to detect users agreeing on a final answer, or will continue asking for an answer to encourage users to reach a conclusion. The question and answer options are displayed on a website, which is intended to mimic the ARI robot's screen.
-To evaluate the system, we conducted an experiment assessing users' perception of the system, as well as its performance.
-% Include more stuff from Katie
-
-\section{Future Work}
-\label{sec:future_work}
+To evaluate the system, we conducted an experiment assessing users' perception of the system, as well as its performance. If the microphone issue can be avoided, the system reaches an agreement rate of 80\%.
 
 There are several small-scale problems, which we only detected in the second iteration of our evaluation. Users were reading out all possible answers, which we did not account for. The system recognised this utterance as an answer entity, and assumed the users were offering or finalising an answer. The system's output was also sometimes overlooked, which made correct state tracking difficult. As an evaluation participant stated, text-to-speech output would make it feel more like a conversational system and remove the need for users to keep reading the host's responses.
 
