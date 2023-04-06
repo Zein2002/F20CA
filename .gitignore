@@ -40,3 +40,6 @@ notes.txt
 
 ## VSCode Settings
 .vscode/
+
+## Evaluation files
+*.txt 
